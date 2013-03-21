@@ -944,23 +944,23 @@ header #profil #connexionLink {
 }
 
 #content #menus #b1  .bloc-menus #legumes {
-	color: #00A64A;
+	color:#95ED6F;
 }
 
-#content #menus #b1  .bloc-menus #fruits {
-	color: #00A64A;
+#content #menus #b1  .bloc-menus #cereales{
+	color:#D66918;
 }
 
-#content #menus #b1  .bloc-menus #fruits {
-	color: #00A64A;
+#content #menus #b1  .bloc-menus #proteines {
+	 color:#CE1C21;
 }
 
-#content #menus #b1  .bloc-menus #fruits {
-	color: #00A64A;
+#content #menus #b1  .bloc-menus #produitsLaitiers {
+	 color:#5286C6;
 }
 
-#content #menus #b1  .bloc-menus #fruits {
-	color: #00A64A;
+#content #menus #b1  .bloc-menus #matieresGrasses {
+	 color:#E1D201;
 }
 
 #content #menus  #b1 .bloc-menu {

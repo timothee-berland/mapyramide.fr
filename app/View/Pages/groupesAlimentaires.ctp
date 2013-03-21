@@ -15,23 +15,23 @@
 	<!-- En cliquant sur ce lien, vous êtes redirigé vers la page contenant la description des fruits ainsi qu'une liste non exhaustive de ces derniers -->
     <div id="b1">
 		<article id="fruits" class="bloc-menu">
-			<h3 style="color:#00A64A"> Fruits </h3>
+			<h3> Fruits </h3>
 			 <a href="fruits" ><p><img height="180px" width="250px" src="../img/Fruits.png" alt="Fruits"/></p></a>
 		</article>
     </div>
 	
 	<!-- En cliquant sur ce lien, vous êtes redirigé vers la page contenant la description des légumes ainsi qu'une liste non exhaustive de ces derniers -->
 	<div id="b1">
-		<article class="bloc-menu">
-			<h3 style="color:#95ED6F"> Légumes </h3>
+		<article id="legumes" class="bloc-menu">
+			<h3> Légumes </h3>
 			<a href="legumes" ><p><img height="180px" width="250px" src="../img/Légumes.jpg" alt="Légumes"/></p></a>
 		</article>
     </div>
 	
 	<!-- En cliquant sur ce lien, vous êtes redirigé vers la page contenant la description des céréeales ainsi qu'une liste non exhaustive de ces dernières -->
     <div id="b1">
-		<article class="bloc-menu">
-			<h3 style="color:#D66918"> Céréales </h3>
+		<article id="cereales" class="bloc-menu">
+			<h3> Céréales </h3>
 			<a href="cereales" ><p><img height="180px" width="250px" src="../img/Céréales.jpg" alt="Céréales"/></p></a>
 		</article>
     </div>
@@ -39,8 +39,8 @@
 	<!-- En cliquant sur ce lien, vous êtes redirigé vers la page contenant la description des eliments protéinés ainsi qu'une liste non exhaustive
 		de ces derniers -->	    
 	<div id="b1">
-		<article class="bloc-menu">
-			<h3 style="color:#CE1C21"> Produits protéinés </h3>
+		<article id="proteines" class="bloc-menu">
+			<h3> Produits protéinés </h3>
 			<a href="proteines" ><p><img height="180px" width="250px" src="../img/AlimentsProtéinés.jpg" alt="AlimentsProtéinés"/></p></a>
 		</article>
     </div>
@@ -48,8 +48,8 @@
 	<!-- En cliquant sur ce lien, vous êtes redirigé vers la page contenant la description des produits laitiers ainsi qu'une liste non exhaustive
 		de ces derniers -->
 	<div id="b1">
-		<article class="bloc-menu">
-			<h3 style="color:#5286C6"> Produits laitiers </h3>
+		<article id="produitsLaitiers" class="bloc-menu">
+			<h3> Produits laitiers </h3>
 			<a href="produitslaitiers" ><p><img height="180px" width="250px" src="../img/ProduitsLaitiers.jpg" alt="ProduitsLaitiers"/></p></a>
 		</article>
     </div>
@@ -57,8 +57,8 @@
 	<!-- En cliquant sur ce lien, vous êtes redirigé vers la page contenant la description des matières grasses ainsi qu'une liste non exhaustive
 		de ces derniers -->
 	<div id="b1">
-		<article class="bloc-menu">
-			<h3 style="color:#E1D201"> Matières grasses </h3>
+		<article matieresGrasses class="bloc-menu">
+			<h3> Matières grasses </h3>
 			<a href="matieresgrasses" ><p><img height="180px" width="250px" src="../img/Huiles.jpg" alt="MatieresGrasses"/></p></a>
 		</article>
     </div>
