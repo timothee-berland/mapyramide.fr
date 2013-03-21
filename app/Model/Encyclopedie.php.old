@@ -1,0 +1,226 @@
+<?php
+	
+	// Sélection des aliments contenant le mot $nom
+    function getAliments($nom) {
+
+        global $connexion;
+
+        $sql = "SELECT numAliment, numFamilleAliment, nomFR, type, quantitePetitePortion, quantiteMoyennePortion, quantiteGrandePortion ";
+        $sql .= " FROM aliments ";
+		$sql .= "WHERE nomFR LIKE '%$nom%' ";
+
+        $requete = $connexion->prepare($sql);
+        $requete->execute();
+
+        $data = array();
+        $i = 0;
+
+        while($aliment = $requete->fetch(PDO::FETCH_OBJ)) {
+            $data[$i]["numAliment"]     			= $aliment->numAliment;
+            $data[$i]["numFamilleAliment"]      	= $aliment->numFamilleAliment;
+            $data[$i]["nomFR"] 						= $aliment->nomFR;
+			$data[$i]["type"] 						= $aliment->type;	
+		    $data[$i]["quantitePetitePortion"] 		= $aliment->quantitePetitePortion;
+		    $data[$i]["quantiteMoyennePortion"] 	= $aliment->quantiteMoyennePortion;
+		    $data[$i]["quantiteGrandePortion"] 		= $aliment->quantiteGrandePortion;
+            $i++;   
+        }
+        $requete->closeCursor();
+
+        return $data;
+    }
+	
+	// Sélection un aliment
+    function getAliment($id) {
+
+        global $connexion;
+
+        $sql = "SELECT numAliment, numFamilleAliment, nomFR, type, quantitePetitePortion, quantiteMoyennePortion, quantiteGrandePortion ";
+        $sql .= "FROM aliments ";
+	    $sql .= "WHERE numAliment = ? ";
+
+        $requete = $connexion->prepare($sql);
+        $requete->execute(array( $id));
+
+        $data = array();
+
+        while($aliment = $requete->fetch(PDO::FETCH_OBJ)) {
+            $data["numAliment"]     			= $aliment->numAliment;
+            $data["numFamilleAliment"]      	= $aliment->numFamilleAliment;
+            $data["nomFR"] 						= $aliment->nomFR;
+			$data["type"] 						= $aliment->type;	
+		    $data["quantitePetitePortion"] 		= $aliment->quantitePetitePortion;
+		    $data["quantiteMoyennePortion"] 	= $aliment->quantiteMoyennePortion;
+		    $data["quantiteGrandePortion"] 		= $aliment->quantiteGrandePortion;
+        }
+        $requete->closeCursor();
+
+        return $data;
+    }
+	
+	// Récupère les éléments qui composent un aliment
+    function getCompoAliment($id) {
+
+        global $connexion;
+
+        $sql = "SELECT c.specFR AS nomConstituant, d.valeurMoy AS valeurMoyenne ";
+        $sql .= "FROM constituants c ";
+		$sql .= "JOIN donnees_compilees d ";
+	    $sql .= "ON c.numConstituant=d.numConstituant ";
+	    $sql .= "WHERE d.numAliment = ? ";
+
+        $requete = $connexion->prepare($sql);
+        $requete->execute(array( $id));
+
+        $data = array();
+
+		$i = 0;
+		
+        while($aliment = $requete->fetch(PDO::FETCH_OBJ)) {
+            $data[$i]["specFR"]     			= $aliment->nomConstituant;
+            $data[$i]["valeurMoy"]      		= $aliment->valeurMoyenne;
+			$i++;
+        }
+        $requete->closeCursor();
+
+        return $data;
+    }
+	
+
+	// Récupère la valeur énergétique d'un aliment 
+    function getEnergieAliment($id) {
+
+        global $connexion;
+
+        $sql = "SELECT c.numConstituant AS numConst, c.specFR AS nomConstituant, d.valeurMoy AS valeurMoyenne ";
+        $sql .= "FROM constituants c ";
+		$sql .= "JOIN donnees_compilees d ";
+	    $sql .= "ON c.numConstituant=d.numConstituant ";
+	    $sql .= "WHERE c.numConstituant = 328 ";
+		$sql .= "AND d.numAliment = ? ";
+
+		
+        $requete = $connexion->prepare($sql);
+        $requete->execute(array( $id));
+
+        $data = array();
+
+	    while($aliment = $requete->fetch(PDO::FETCH_OBJ)) {
+            $data["numConstituant"]			= $aliment->numConst;
+			$data["specFR"]     			= $aliment->nomConstituant;
+			$data["valeurMoy"]     			= $aliment->valeurMoyenne;
+        }
+        $requete->closeCursor();
+
+        return $data;
+    }
+	
+	// Récupère la valeur des lipides d'un aliment 
+    function getLipidesAliment($id) {
+
+        global $connexion;
+
+        $sql = "SELECT c.numConstituant AS numConst, c.specFR AS nomConstituant, d.valeurMoy AS valeurMoyenne ";
+        $sql .= "FROM constituants c ";
+		$sql .= "JOIN donnees_compilees d ";
+	    $sql .= "ON c.numConstituant=d.numConstituant ";
+		$sql .= "WHERE c.numConstituant = 40000 ";
+		$sql .= "AND d.numAliment = ? ";
+
+		
+        $requete = $connexion->prepare($sql);
+        $requete->execute(array( $id));
+
+        $data = array();
+
+	    while($aliment = $requete->fetch(PDO::FETCH_OBJ)) {
+            $data["numConstituant"]			= $aliment->numConst;
+			$data["specFR"]     			= $aliment->nomConstituant;
+			$data["valeurMoy"]     			= $aliment->valeurMoyenne;
+        }
+        $requete->closeCursor();
+
+        return $data;
+    }
+	
+	// Récupère la valeur des sucres ajoutés d'un aliment 
+    function getGlucidesAliment($id) {
+
+        global $connexion;
+
+        $sql = "SELECT c.numConstituant AS numConst, c.specFR AS nomConstituant, d.valeurMoy AS valeurMoyenne ";
+        $sql .= "FROM constituants c ";
+		$sql .= "JOIN donnees_compilees d ";
+	    $sql .= "ON c.numConstituant=d.numConstituant ";
+		$sql .= "WHERE c.numConstituant = 31000 ";
+		$sql .= "AND d.numAliment = ? ";
+		
+        $requete = $connexion->prepare($sql);
+        $requete->execute(array( $id));
+
+        $data = array();
+
+	    while($aliment = $requete->fetch(PDO::FETCH_OBJ)) {
+            $data["numConstituant"]			= $aliment->numConst;
+			$data["specFR"]     			= $aliment->nomConstituant;
+			$data["valeurMoy"]     			= $aliment->valeurMoyenne;
+        }
+        $requete->closeCursor();
+
+        return $data;
+    }
+	
+	// Récupère la valeur des acides gras saturés d'un aliment 
+    function getAGSAliment($id) {
+
+        global $connexion;
+
+        $sql = "SELECT c.numConstituant AS numConst, c.specFR AS nomConstituant, d.valeurMoy AS valeurMoyenne ";
+        $sql .= "FROM constituants c ";
+		$sql .= "JOIN donnees_compilees d ";
+	    $sql .= "ON c.numConstituant=d.numConstituant ";
+		$sql .= "WHERE c.numConstituant = 40302 ";
+		$sql .= "AND d.numAliment = ? ";
+		
+        $requete = $connexion->prepare($sql);
+        $requete->execute(array( $id));
+
+        $data = array();
+
+	    while($aliment = $requete->fetch(PDO::FETCH_OBJ)) {
+            $data["numConstituant"]			= $aliment->numConst;
+			$data["specFR"]     			= $aliment->nomConstituant;
+			$data["valeurMoy"]     			= $aliment->valeurMoyenne;
+        }
+        $requete->closeCursor();
+
+       return $data;
+    }
+	
+		// Récupère la valeur du sodium présent dans d'un aliment 
+    function getSodiumAliment($id) {
+
+        global $connexion;
+
+        $sql = "SELECT c.numConstituant AS numConst, c.specFR AS nomConstituant, d.valeurMoy AS valeurMoyenne ";
+        $sql .= "FROM constituants c ";
+		$sql .= "JOIN donnees_compilees d ";
+	    $sql .= "ON c.numConstituant=d.numConstituant ";
+		$sql .= "WHERE c.numConstituant = 10110 ";
+		$sql .= "AND d.numAliment = ? ";
+		
+        $requete = $connexion->prepare($sql);
+        $requete->execute(array( $id));
+
+        $data = array();
+
+	    while($aliment = $requete->fetch(PDO::FETCH_OBJ)) {
+            $data["numConstituant"]			= $aliment->numConst;
+			$data["specFR"]     			= $aliment->nomConstituant;
+			$data["valeurMoy"]     			= $aliment->valeurMoyenne;
+        }
+        $requete->closeCursor();
+
+        return $data;
+    }
+	

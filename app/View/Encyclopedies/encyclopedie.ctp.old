@@ -1,0 +1,76 @@
+<?php 
+require_once ("model/encyclopedie.php");
+require_once ("controller/encyclopedie.php");
+
+?>
+
+<form method="POST">
+<div id="content">	
+
+    <div id="presentation">
+	    <div id="titre-accueil">
+			<div id="profil">
+				<div id="logo-ajout"> Créer mon profil</div>
+				<a href="index.php" > Créer mon profil </a>
+			
+				<div id="logo-connexion"> Me connecter</div>
+				<a href="?page=connexion" > Me connecter </a>
+			</div>
+			<span> Encyclopédie </span> 
+			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum turpis elit, viverra vitae tempus ac, interdum eu enim </p> 
+			
+			<select id="recherche">
+			<option value="1">Tous les aliments</option>
+			</select> <br><br>
+			
+			<input type="text" name="zone-aliment" value="" id="zone-aliment" /> <br><br><br> 
+
+			<input type="submit" value="Rechercher" />
+		</div>
+	</div>
+	
+		<div id="encyclo">
+	    <span> Résultats </span>
+		<div id="bloc-gauche">
+			<?php resultatsRecherche1(); ?>			
+		</div>
+		
+		<div id="bloc-droit"> </div>
+		
+		<div id="bloc-droit"> </div>
+	</div>
+</div>
+</form>
+
+
+<script type="text/javascript">
+function afficherNutriment() {
+	document.getElementById("info-nutriment").style.display = "block";
+	document.getElementById("info-aliment").style.display = "none";
+}
+
+function afficherAliment() {
+	document.getElementById("info-aliment").style.display = "block";
+	document.getElementById("info-nutriment").style.display = "none";
+}
+
+function afficherNutriment2() {
+	document.getElementById("info-nutriment2").style.display = "block";
+	document.getElementById("info-aliment2").style.display = "none";
+}
+
+function afficherAliment2() {
+	document.getElementById("info-aliment2").style.display = "block";
+	document.getElementById("info-nutriment2").style.display = "none";
+}
+
+function effacerBlocAliment1() {
+	document.getElementById("titre").style.display = "none";
+	document.getElementById("supprimer").style.displau = "none";
+	document.getElementById("choix-portion").style.displau = "none";
+}
+
+function effacerBlocAliment2() {
+	document.getElementById("titre2").style.display = "none";
+}
+</script>

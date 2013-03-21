@@ -1,0 +1,58 @@
+<?php
+App::uses('AppController', 'Controller');
+/**
+ * Donneescompilees Controller
+ *
+ * @property Donneescompilee $Donneescompilee
+ */
+class AlimentsController extends AppController {
+
+	// Pour utiliser des modèles spécifiques
+	public $uses = array('Aliment', 'Constituantaliment', 'Donneescompilee', 'Famillealiment');
+
+	public function index($id1=NULL, $id2=NULL) {
+		if ($this->request->is('post')) {
+			if (!empty ($_POST['zone-aliment'])) {
+				$aRechercher = $_POST['zone-aliment'];
+				$resultats = $this->Aliment->find('all', array('conditions' => array('Aliment.nomFR LIKE' => '%'.$aRechercher.'%')));
+				$this->set('resultats', $resultats);
+			}
+		}
+		
+		if ($id1 != NULL) :
+			$aliment1 = $this->Aliment->find('first', array('conditions' => array('Aliment.id' => $id1)));
+			
+			for ($i=0; sizeof($aliment1['Donneesaliment']) > $i; $i++) {
+				$listeConstituants[$i] = $aliment1['Donneesaliment'][$i]['constituantaliments_id'];
+			}
+				
+			$constituantsAliment1 = $this->Donneescompilee->Constituantaliments->find('all', 
+				array(
+					'conditions' => array(
+						'Constituantaliments.id' => $listeConstituants)
+					));
+			$this->set('aliment1', $aliment1);
+			$this->set('constituantsAliment1', $constituantsAliment1);
+		endif;
+
+		if ($id2 != NULL) {
+			$aliment2 = $this->Aliment->find('first', array('conditions' => array('Aliment.id' => $id2)));
+			for ($i=0; sizeof($aliment2['Donneesaliment']) > $i; $i++) {
+				$listeConstituants[$i] = $aliment2['Donneesaliment'][$i]['constituantaliments_id'];
+			}
+				
+			$constituantsAliment2 = $this->Donneescompilee->Constituantaliments->find('all', 
+				array(
+					'conditions' => array(
+						'Constituantaliments.id' => $listeConstituants)
+					));
+			$this->set('aliment2', $aliment2);
+			$this->set('constituantsAliment2', $constituantsAliment2);
+		}
+	}
+
+	public function afficheUnAliment() {
+
+	}
+
+}
