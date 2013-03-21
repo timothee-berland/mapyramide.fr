@@ -67,7 +67,7 @@ endif;
 	<div class="main-slider-content" >
 	<ul class="sliders-wrap-inner">
 	    <li>
-	          <img  src="/mapyramide/img/slider/slide-1.png" title="" alt="alt" />           
+	          <img  src="/mapyramide.fr/img/slider/slide-1.png" title="" alt="alt" />           
 	          <div class="slider-description">
 	            <h4>Lorem ipsum dolor</h4>
 	            <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est...
@@ -77,7 +77,7 @@ endif;
 	    </li>
 	    
 	    <li>
-	          <img  src="/mapyramide/img/slider/slide-2.png" title="" alt="alt" />           
+	          <img  src="/mapyramide.fr/img/slider/slide-2.png" title="" alt="alt" />           
 	          <div class="slider-description">
 	            <h4>Lorem ipsum dolor</h4>
 	            <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est...
@@ -87,7 +87,7 @@ endif;
 	    </li>
 	    
 	    <li>
-	          <img  src="/mapyramide/img/slider/slide-3.png" title="" alt="alt" />           
+	          <img  src="/mapyramide.fr/img/slider/slide-3.png" title="" alt="alt" />           
 	          <div class="slider-description">
 	            <h4>Lorem ipsum dolor</h4>
 	            <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est...
@@ -97,7 +97,7 @@ endif;
 	    </li>
 	    
 	    <li>
-	          <img  src="/mapyramide/img/slider/slide-4.png" title="" alt="alt" />           
+	          <img  src="/mapyramide.fr/img/slider/slide-4.png" title="" alt="alt" />           
 	          <div class="slider-description">
 	            <h4>Lorem ipsum dolor</h4>
 	            <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est...
@@ -114,10 +114,10 @@ endif;
 	<div class="navigator-content">
 	  <div class="navigator-wrapper">
 	        <ul class="navigator-wrap-inner">
-	           <li><img  src="/mapyramide/img/slider/slide-1_thumb.png" alt="alt" /></li>
-	           <li><img  src="/mapyramide/img/slider/slide-2_thumb.png" alt="alt" /></li>
-	           <li><img  src="/mapyramide/img/slider/slide-3_thumb.png" alt="alt" /></li>
-	           <li><img  src="/mapyramide/img/slider/slide-4_thumb.png" alt="alt" /></li>
+	           <li><img  src="/mapyramide.fr/img/slider/slide-1_thumb.png" alt="alt" /></li>
+	           <li><img  src="/mapyramide.fr/img/slider/slide-2_thumb.png" alt="alt" /></li>
+	           <li><img  src="/mapyramide.fr/img/slider/slide-3_thumb.png" alt="alt" /></li>
+	           <li><img  src="/mapyramide.fr/img/slider/slide-4_thumb.png" alt="alt" /></li>
 	        </ul>
 	  </div>
 	  <div class="button-next">Next</div>

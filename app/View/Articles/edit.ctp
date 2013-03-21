@@ -1,4 +1,4 @@
-<script type="text/javascript" src="/mapyramide/js/ckeditor/ckeditor.js"></script>
+<script type="text/javascript" src="/mapyramide.fr/js/ckeditor/ckeditor.js"></script>
 
 <div id="bloc-editeur">
 		<?php 

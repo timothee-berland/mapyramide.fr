@@ -40,27 +40,27 @@ $cakeDescription = __d('cake_dev', 'CakePHP: the rapid development php framework
 	<!-- Adding "maximum-scale=1" fixes the Mobile Safari auto-zoom bug: http://filamentgroup.com/examples/iosScaleBug/ -->		
 			
 	<!-- JS -->
-	<script  src="/mapyramide/js/slider/jquery-1.7.1.min.js"></script>
-	<script  src="/mapyramide/js/slider/custom.js"></script>
-	<script  src="/mapyramide/js/slider/tabs.js"></script>
-	<script  src="/mapyramide/js/slider/css3-mediaqueries.js"></script>
-	<script  src="/mapyramide/js/slider/jquery.columnizer.min.js"></script>
+	<script  src="/mapyramide.fr/js/slider/jquery-1.7.1.min.js"></script>
+	<script  src="/mapyramide.fr/js/slider/custom.js"></script>
+	<script  src="/mapyramide.fr/js/slider/tabs.js"></script>
+	<script  src="/mapyramide.fr/js/slider/css3-mediaqueries.js"></script>
+	<script  src="/mapyramide.fr/js/slider/jquery.columnizer.min.js"></script>
 	
 	<!-- Lof slider -->
-	<script  src="/mapyramide/js/slider/jquery.easing.js"></script>
-	<script  src="/mapyramide/js/slider/lof-slider.js"></script>
+	<script  src="/mapyramide.fr/js/slider/jquery.easing.js"></script>
+	<script  src="/mapyramide.fr/js/slider/lof-slider.js"></script>
 	<!-- ENDS slider -->
 	
 	<!-- JCarousel -->
-	<script type="text/javascript"  src="/mapyramide/js/slider/jquery.jcarousel.min.js"></script>
+	<script type="text/javascript"  src="/mapyramide.fr/js/slider/jquery.jcarousel.min.js"></script>
 	<!-- ENDS JCarousel -->
 
 	<!--   superfish   -->
 	<!-- (Beaux menus) -->
 	<link rel="stylesheet" media="screen" href="/mapyramide/js/superfish-1.4.8/css/superfish.css" /> 
-	<script src="/mapyramide/js/superfish-1.4.8/js/hoverIntent.js"></script>
-	<script src="/mapyramide/js/superfish-1.4.8/js/superfish.js"></script>
-	<script src="/mapyramide/js/superfish-1.4.8/js/supersubs.js"></script>
+	<script src="/mapyramide.fr/js/superfish-1.4.8/js/hoverIntent.js"></script>
+	<script src="/mapyramide.fr/js/superfish-1.4.8/js/superfish.js"></script>
+	<script src="/mapyramide.fr/js/superfish-1.4.8/js/supersubs.js"></script>
 	<script type="text/javascript">
 		// initialise plugins
 		jQuery(function(){
