@@ -31,6 +31,6 @@
 		</p> 
 		
 		<!-- Image située en bas de page -->
-		<img height="130px" width="660px" src="img/calories.jpg" alt="Calories"/>
+		<img height="130px" width="660px" src="../img/calories.jpg" alt="Calories"/>
 	</div>
 </div>

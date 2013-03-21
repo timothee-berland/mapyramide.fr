@@ -33,7 +33,7 @@
 		<br/><br/><br/><br/>
 		
 		<!-- Image située en bas de page -->
-		<img height="130px" width="950px" src="img/calories.jpg" alt="Calories"/>
+		<img height="130px" width="950px" src="../img/calories.jpg" alt="Calories"/>
 				
 	</div>
 </div>

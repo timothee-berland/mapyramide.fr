@@ -20,7 +20,7 @@
 				</td>
 				<td>
 					<!-- Image illustrant le paragraphe "En général" -->
-					<p><img height="200px" width="260px" src="img/Fruits.png" alt="Fruits"/></p>
+					<p><img height="200px" width="260px" src="../img/Fruits.png" alt="Fruits"/></p>
 				</td>
 			</tr>
 			
@@ -39,7 +39,7 @@
 				<td>
 					<br/><br/><br/><br/><br/><br/>
 					<!-- Image illustrant le paragraphe n°1 -->
-					<p><img height="200px" width="260px" src="img/Fruits.png" alt="Fruits"/></p>
+					<p><img height="200px" width="260px" src="../img/Fruits.png" alt="Fruits"/></p>
 				</td>
 			</tr>
 			
@@ -58,7 +58,7 @@
 				<td>
 					<br/><br/><br/><br/><br/><br/>
 					<!-- Image illustrant le paragraphe n°2 -->
-					<p><img height="200px" width="260px" src="img/Fruits.png" alt="Fruits"/></p>
+					<p><img height="200px" width="260px" src="../img/Fruits.png" alt="Fruits"/></p>
 				</td>
 			</tr>
 		</table>

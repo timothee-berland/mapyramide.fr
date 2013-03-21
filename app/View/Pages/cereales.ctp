@@ -28,7 +28,7 @@
 				<td>
 					<br/><br/><br/>
 					<!-- Image illustrant le paragraphe n°2 -->
-					<p><img height="200px" width="260px" src="img/Fruits.png" alt="Fruits"/></p>
+					<p><img height="200px" width="260px" src="../img/Fruits.png" alt="Fruits"/></p>
 				</td>
 			</tr>
 		</table>
