@@ -57,7 +57,7 @@ $cakeDescription = __d('cake_dev', 'CakePHP: the rapid development php framework
 
 	<!--   superfish   -->
 	<!-- (Beaux menus) -->
-	<link rel="stylesheet" media="screen" href="/mapyramide/js/superfish-1.4.8/css/superfish.css" /> 
+	<link rel="stylesheet" media="screen" href="/mapyramide.fr/js/superfish-1.4.8/css/superfish.css" /> 
 	<script src="/mapyramide.fr/js/superfish-1.4.8/js/hoverIntent.js"></script>
 	<script src="/mapyramide.fr/js/superfish-1.4.8/js/superfish.js"></script>
 	<script src="/mapyramide.fr/js/superfish-1.4.8/js/supersubs.js"></script>
@@ -83,16 +83,16 @@ $cakeDescription = __d('cake_dev', 'CakePHP: the rapid development php framework
 		</div>
 		<?php endif; ?>
 		
-		<a href="/mapyramide"><div id="AGD-logo">AG Diététique </div></a>
-		<a href="/mapyramide"><div id="NomSite"> Ma Pyramide Alimentaire </div></a>
+		<a href="/mapyramide.fr"><div id="AGD-logo">AG Diététique </div></a>
+		<a href="/mapyramide.fr"><div id="NomSite"> Ma Pyramide Alimentaire </div></a>
 		<!-- <a href="javascript:void(0)" class="button green"> <span class="phone"></span> Contact </a> -->
 		<div id="profil">
 			<?php if (AuthComponent::user('id') == NULL): ?>
 				<div id="logo-ajout"> Créer rofil</div>
 				<div id='liens'>
-					<a href="/mapyramide/users/add"> Créer mon profil </a>
+					<a href="/mapyramide.fr/users/add"> Créer mon profil </a>
 					<br>
-					<a href="/mapyramide/users/login" id="connexionLink"> ou me connecter </a>
+					<a href="/mapyramide.fr/users/login" id="connexionLink"> ou me connecter </a>
 				</div>
 			<?php else: ?>
 				
@@ -103,35 +103,35 @@ $cakeDescription = __d('cake_dev', 'CakePHP: the rapid development php framework
 
 	<nav id="filter">
 		<ul id="navigation" class="sf-menu"> 
-			<li><a href="/mapyramide/pages/groupesalimentaires">Mon assiette</a>
+			<li><a href="/mapyramide.fr/pages/groupesalimentaires">Mon assiette</a>
 				<ul class="dropdown">
-					<li class="dropdown-first"><a href="/mapyramide/pages/fruits">Fruits</a></li>
-					<li class="dropdown-middle"><a href="/mapyramide/pages/legumes">Légumes</a></li>
+					<li class="dropdown-first"><a href="/mapyramide.fr/pages/fruits">Fruits</a></li>
+					<li class="dropdown-middle"><a href="/mapyramide.fr/pages/legumes">Légumes</a></li>
 					<li class="dropdown-middle"><a href="#">Grains</a></li>
-					<li class="dropdown-middle"><a href="/mapyramide/pages/proteines">Protéines</a></li>
-					<li class="dropdown-middle"><a href="/mapyramide/pages/produitslaitiers">Produits Laitiers</a></li>
-					<li class="dropdown-last"><a href="/mapyramide/pages/matieresgrasses">Huiles</a></li>
+					<li class="dropdown-middle"><a href="/mapyramide.fr/pages/proteines">Protéines</a></li>
+					<li class="dropdown-middle"><a href="/mapyramide.fr/pages/produitslaitiers">Produits Laitiers</a></li>
+					<li class="dropdown-last"><a href="/mapyramide.fr/pages/matieresgrasses">Huiles</a></li>
 					<li> <a>Test</a> 
 						<ul class="dropdown">
-							<li class="dropdown-first"><a href="/mapyramide/pages/fruits">Fruits</a></li>
-							<li class="dropdown-middle"><a href="/mapyramide/pages/legumes">Légumes</a></li>
+							<li class="dropdown-first"><a href="/mapyramide.fr/pages/fruits">Fruits</a></li>
+							<li class="dropdown-middle"><a href="/mapyramide.fr/pages/legumes">Légumes</a></li>
 							<li class="dropdown-middle"><a href="#">Grains</a></li>
-							<li class="dropdown-middle"><a href="/mapyramide/pages/proteines">Protéines</a></li>
-							<li class="dropdown-middle"><a href="/mapyramide/pages/produitslaitiers">Produits Laitiers</a></li>
-							<li class="dropdown-last"><a href="/mapyramide/pages/matieresgrasses">Huiles</a></li>
+							<li class="dropdown-middle"><a href="/mapyramide.fr/pages/proteines">Protéines</a></li>
+							<li class="dropdown-middle"><a href="/mapyramide.fr/pages/produitslaitiers">Produits Laitiers</a></li>
+							<li class="dropdown-last"><a href="/mapyramide.fr/pages/matieresgrasses">Huiles</a></li>
 						</ul>
 					</li>
 				</ul>
 			</li>
 			<li><a id="test" href="#">Poids / Calories</a>
 				<ul class="dropdown">
-					<li class="dropdown-first"><a href="/mapyramide/pages/gestionpoids">Gestion du poids</a></li>
-					<li class="dropdown-last"><a href="/mapyramide/pages/calories">Calories</a></li>
+					<li class="dropdown-first"><a href="/mapyramide.fr/pages/gestionpoids">Gestion du poids</a></li>
+					<li class="dropdown-last"><a href="/mapyramide.fr/pages/calories">Calories</a></li>
 				</ul>
 			</li>
 			<li><a href="#">Activité physique</a>
 				<ul class="dropdown">
-					<li class="dropdown-first"><a href="/mapyramide/pages/importancesport">Importance</a></li>
+					<li class="dropdown-first"><a href="/mapyramide.fr/pages/importancesport">Importance</a></li>
 					<li class="dropdown-middle"><a href="#">Temps de pratique</a></li>
 					<li class="dropdown-middle"><a href="#">Calories consommées</a></li>
 					<li class="dropdown-last"><a href="#">Gérer mon activité</a></li>
@@ -139,8 +139,8 @@ $cakeDescription = __d('cake_dev', 'CakePHP: the rapid development php framework
 			</li>
 			<li><a href="#">Ressources</a>
 				<ul class="dropdown">
-					<li class="dropdown-first"><a href="/mapyramide/imcenfants/">Calculateur IMC</a></li>
-					<li class="dropdown-last"><a href="/mapyramide/pages/supertracker">Super traqueur</a></li>
+					<li class="dropdown-first"><a href="/mapyramide.fr/imcenfants/">Calculateur IMC</a></li>
+					<li class="dropdown-last"><a href="/mapyramide.fr/pages/supertracker">Super traqueur</a></li>
 				</ul>
 			</li>
 		</ul>

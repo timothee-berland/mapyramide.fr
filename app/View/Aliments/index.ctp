@@ -28,9 +28,9 @@
 						foreach ($resultats as $resultat) { ?>
 							<li>
 								<?php if (!isset($aliment1)): ?>
-								<a href="/mapyramide/aliments/index/<?php echo $resultat['Aliment']['id']?>">
+								<a href="/mapyramide.fr/aliments/index/<?php echo $resultat['Aliment']['id']?>">
 								<?php elseif (!isset($aliment2)): ?>
-								<a href="/mapyramide/aliments/index/<?php echo $aliment1['Aliment']['id']?>/<?php echo $resultat['Aliment']['id']?>">
+								<a href="/mapyramide.fr/aliments/index/<?php echo $aliment1['Aliment']['id']?>/<?php echo $resultat['Aliment']['id']?>">
 								<?php else : ?>
 								<a href="#" onClick="alimentsMax();">
 								<?php endif; ?>

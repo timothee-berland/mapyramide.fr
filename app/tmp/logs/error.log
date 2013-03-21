@@ -20228,3 +20228,72 @@ Stack Trace:
 #6 C:\_Jeux SSD\EasyPHP-12.1\www\mapyramide.fr\lib\Cake\Routing\Dispatcher.php(161): Dispatcher->_invoke(Object(PagesController), Object(CakeRequest), Object(CakeResponse))
 #7 C:\_Jeux SSD\EasyPHP-12.1\www\mapyramide.fr\app\webroot\index.php(97): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
 #8 {main}
+2013-03-21 18:17:43 Error: [MissingControllerException] Controller class ImgController could not be found.
+Exception Attributes: array (
+  'class' => 'ImgController',
+  'plugin' => NULL,
+)
+Request URL: /mapyramide.fr/img/load-indicator.gif
+Stack Trace:
+#0 C:\_Jeux SSD\EasyPHP-12.1\www\mapyramide.fr\app\webroot\index.php(97): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-03-21 18:26:11 Error: [MissingViewException] View file "C:\_Jeux SSD\EasyPHP-12.1\www\mapyramide.fr\app\View\Pages\js\superfish-1.4.8\css\superfish.css.ctp" is missing.
+Exception Attributes: array (
+  'file' => 'C:\\_Jeux SSD\\EasyPHP-12.1\\www\\mapyramide.fr\\app\\View\\Pages\\js\\superfish-1.4.8\\css\\superfish.css.ctp',
+)
+Request URL: /mapyramide.fr/pages/js/superfish-1.4.8/css/superfish.css
+Stack Trace:
+#0 C:\_Jeux SSD\EasyPHP-12.1\www\mapyramide.fr\lib\Cake\View\View.php(467): View->_getViewFileName('js/superfish-1....')
+#1 C:\_Jeux SSD\EasyPHP-12.1\www\mapyramide.fr\lib\Cake\Controller\Controller.php(947): View->render('js/superfish-1....', NULL)
+#2 C:\_Jeux SSD\EasyPHP-12.1\www\mapyramide.fr\app\Controller\PagesController.php(78): Controller->render('js/superfish-1....')
+#3 [internal function]: PagesController->display('js', 'superfish-1.4.8', 'css', 'superfish.css')
+#4 C:\_Jeux SSD\EasyPHP-12.1\www\mapyramide.fr\lib\Cake\Controller\Controller.php(485): ReflectionMethod->invokeArgs(Object(PagesController), Array)
+#5 C:\_Jeux SSD\EasyPHP-12.1\www\mapyramide.fr\lib\Cake\Routing\Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#6 C:\_Jeux SSD\EasyPHP-12.1\www\mapyramide.fr\lib\Cake\Routing\Dispatcher.php(161): Dispatcher->_invoke(Object(PagesController), Object(CakeRequest), Object(CakeResponse))
+#7 C:\_Jeux SSD\EasyPHP-12.1\www\mapyramide.fr\app\webroot\index.php(97): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#8 {main}
+2013-03-21 18:26:12 Error: [MissingViewException] View file "C:\_Jeux SSD\EasyPHP-12.1\www\mapyramide.fr\app\View\Pages\js\superfish-1.4.8\js\supersubs.js.ctp" is missing.
+Exception Attributes: array (
+  'file' => 'C:\\_Jeux SSD\\EasyPHP-12.1\\www\\mapyramide.fr\\app\\View\\Pages\\js\\superfish-1.4.8\\js\\supersubs.js.ctp',
+)
+Request URL: /mapyramide.fr/pages/js/superfish-1.4.8/js/supersubs.js
+Stack Trace:
+#0 C:\_Jeux SSD\EasyPHP-12.1\www\mapyramide.fr\lib\Cake\View\View.php(467): View->_getViewFileName('js/superfish-1....')
+#1 C:\_Jeux SSD\EasyPHP-12.1\www\mapyramide.fr\lib\Cake\Controller\Controller.php(947): View->render('js/superfish-1....', NULL)
+#2 C:\_Jeux SSD\EasyPHP-12.1\www\mapyramide.fr\app\Controller\PagesController.php(78): Controller->render('js/superfish-1....')
+#3 [internal function]: PagesController->display('js', 'superfish-1.4.8', 'js', 'supersubs.js')
+#4 C:\_Jeux SSD\EasyPHP-12.1\www\mapyramide.fr\lib\Cake\Controller\Controller.php(485): ReflectionMethod->invokeArgs(Object(PagesController), Array)
+#5 C:\_Jeux SSD\EasyPHP-12.1\www\mapyramide.fr\lib\Cake\Routing\Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#6 C:\_Jeux SSD\EasyPHP-12.1\www\mapyramide.fr\lib\Cake\Routing\Dispatcher.php(161): Dispatcher->_invoke(Object(PagesController), Object(CakeRequest), Object(CakeResponse))
+#7 C:\_Jeux SSD\EasyPHP-12.1\www\mapyramide.fr\app\webroot\index.php(97): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#8 {main}
+2013-03-21 18:26:12 Error: [MissingViewException] View file "C:\_Jeux SSD\EasyPHP-12.1\www\mapyramide.fr\app\View\Pages\js\superfish-1.4.8\js\hoverIntent.js.ctp" is missing.
+Exception Attributes: array (
+  'file' => 'C:\\_Jeux SSD\\EasyPHP-12.1\\www\\mapyramide.fr\\app\\View\\Pages\\js\\superfish-1.4.8\\js\\hoverIntent.js.ctp',
+)
+Request URL: /mapyramide.fr/pages/js/superfish-1.4.8/js/hoverIntent.js
+Stack Trace:
+#0 C:\_Jeux SSD\EasyPHP-12.1\www\mapyramide.fr\lib\Cake\View\View.php(467): View->_getViewFileName('js/superfish-1....')
+#1 C:\_Jeux SSD\EasyPHP-12.1\www\mapyramide.fr\lib\Cake\Controller\Controller.php(947): View->render('js/superfish-1....', NULL)
+#2 C:\_Jeux SSD\EasyPHP-12.1\www\mapyramide.fr\app\Controller\PagesController.php(78): Controller->render('js/superfish-1....')
+#3 [internal function]: PagesController->display('js', 'superfish-1.4.8', 'js', 'hoverIntent.js')
+#4 C:\_Jeux SSD\EasyPHP-12.1\www\mapyramide.fr\lib\Cake\Controller\Controller.php(485): ReflectionMethod->invokeArgs(Object(PagesController), Array)
+#5 C:\_Jeux SSD\EasyPHP-12.1\www\mapyramide.fr\lib\Cake\Routing\Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#6 C:\_Jeux SSD\EasyPHP-12.1\www\mapyramide.fr\lib\Cake\Routing\Dispatcher.php(161): Dispatcher->_invoke(Object(PagesController), Object(CakeRequest), Object(CakeResponse))
+#7 C:\_Jeux SSD\EasyPHP-12.1\www\mapyramide.fr\app\webroot\index.php(97): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#8 {main}
+2013-03-21 18:26:12 Error: [MissingViewException] View file "C:\_Jeux SSD\EasyPHP-12.1\www\mapyramide.fr\app\View\Pages\js\superfish-1.4.8\js\superfish.js.ctp" is missing.
+Exception Attributes: array (
+  'file' => 'C:\\_Jeux SSD\\EasyPHP-12.1\\www\\mapyramide.fr\\app\\View\\Pages\\js\\superfish-1.4.8\\js\\superfish.js.ctp',
+)
+Request URL: /mapyramide.fr/pages/js/superfish-1.4.8/js/superfish.js
+Stack Trace:
+#0 C:\_Jeux SSD\EasyPHP-12.1\www\mapyramide.fr\lib\Cake\View\View.php(467): View->_getViewFileName('js/superfish-1....')
+#1 C:\_Jeux SSD\EasyPHP-12.1\www\mapyramide.fr\lib\Cake\Controller\Controller.php(947): View->render('js/superfish-1....', NULL)
+#2 C:\_Jeux SSD\EasyPHP-12.1\www\mapyramide.fr\app\Controller\PagesController.php(78): Controller->render('js/superfish-1....')
+#3 [internal function]: PagesController->display('js', 'superfish-1.4.8', 'js', 'superfish.js')
+#4 C:\_Jeux SSD\EasyPHP-12.1\www\mapyramide.fr\lib\Cake\Controller\Controller.php(485): ReflectionMethod->invokeArgs(Object(PagesController), Array)
+#5 C:\_Jeux SSD\EasyPHP-12.1\www\mapyramide.fr\lib\Cake\Routing\Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#6 C:\_Jeux SSD\EasyPHP-12.1\www\mapyramide.fr\lib\Cake\Routing\Dispatcher.php(161): Dispatcher->_invoke(Object(PagesController), Object(CakeRequest), Object(CakeResponse))
+#7 C:\_Jeux SSD\EasyPHP-12.1\www\mapyramide.fr\app\webroot\index.php(97): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#8 {main}
