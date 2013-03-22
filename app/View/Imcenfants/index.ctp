@@ -17,8 +17,8 @@
 			<!-- On récupère le sexe, la taille, le poids, l'âge et le temps moyen de pratique d"une activité physique par l'utilisateur.
 			     Ces informations nous permettent, par la suite, de calculer l'IMC de la personne -->
 			<label for="sexe"> Sexe </label>
-			<input type="radio" name="sexe" id="homme" value="homme" checked="checked" /> Masculin
-			<input type="radio" name="sexe" id="femme" value="femme"/> Feminin 
+			<input type="radio" name="sexe" id="homme" value="homme" checked="checked" /> <a class="labelInscription">Masculin</a>
+			<input type="radio" name="sexe" id="femme" value="femme"/> <a class="labelInscription">Feminin</a>
 			<br/><br/>
 
 			<label for="taille"> Taille </label>

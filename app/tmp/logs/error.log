@@ -20297,3 +20297,18 @@ Stack Trace:
 #6 C:\_Jeux SSD\EasyPHP-12.1\www\mapyramide.fr\lib\Cake\Routing\Dispatcher.php(161): Dispatcher->_invoke(Object(PagesController), Object(CakeRequest), Object(CakeResponse))
 #7 C:\_Jeux SSD\EasyPHP-12.1\www\mapyramide.fr\app\webroot\index.php(97): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
 #8 {main}
+2013-03-21 19:10:59 Error: [MissingViewException] View file "C:\_Jeux SSD\EasyPHP-12.1\www\mapyramide.fr\app\View\Pages\bienfaitslegumes.ctp" is missing.
+Exception Attributes: array (
+  'file' => 'C:\\_Jeux SSD\\EasyPHP-12.1\\www\\mapyramide.fr\\app\\View\\Pages\\bienfaitslegumes.ctp',
+)
+Request URL: /mapyramide.fr/pages/bienfaitslegumes
+Stack Trace:
+#0 C:\_Jeux SSD\EasyPHP-12.1\www\mapyramide.fr\lib\Cake\View\View.php(467): View->_getViewFileName('bienfaitslegume...')
+#1 C:\_Jeux SSD\EasyPHP-12.1\www\mapyramide.fr\lib\Cake\Controller\Controller.php(947): View->render('bienfaitslegume...', NULL)
+#2 C:\_Jeux SSD\EasyPHP-12.1\www\mapyramide.fr\app\Controller\PagesController.php(78): Controller->render('bienfaitslegume...')
+#3 [internal function]: PagesController->display('bienfaitslegume...')
+#4 C:\_Jeux SSD\EasyPHP-12.1\www\mapyramide.fr\lib\Cake\Controller\Controller.php(485): ReflectionMethod->invokeArgs(Object(PagesController), Array)
+#5 C:\_Jeux SSD\EasyPHP-12.1\www\mapyramide.fr\lib\Cake\Routing\Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#6 C:\_Jeux SSD\EasyPHP-12.1\www\mapyramide.fr\lib\Cake\Routing\Dispatcher.php(161): Dispatcher->_invoke(Object(PagesController), Object(CakeRequest), Object(CakeResponse))
+#7 C:\_Jeux SSD\EasyPHP-12.1\www\mapyramide.fr\app\webroot\index.php(97): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#8 {main}
