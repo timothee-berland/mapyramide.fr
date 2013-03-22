@@ -9,7 +9,7 @@
 			<div id="btn-modifier"><?php echo $this->Html->link('Modifier', 'articles/edit/' . $article['id']) ?></div>
 
 			<!-- Bouton suppression -->
-			<a href="articles/delete/<?php echo $article['id'];?>" onClick="return(confirmation())"><div id="btn-supprimer">Supprimer</div></a>
+			<?php echo $this->Html->link('<div id="btn-supprimer">Supprimer</div>', 'articles/delete/' . $article['id'], array('onClick' => 'return (confirmation())', 'escape' => false)); ?>
 			
 		</div>
 	</div>

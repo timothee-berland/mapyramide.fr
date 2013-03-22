@@ -49,15 +49,15 @@
 
 		<?php if(isset($aliment1)): ?>
 			<div class="bloc-droit"> 
-				<div id='supprimer'>
-					<?php 
-						if(isset($aliment2)): 
-							echo $this->Html->link(' . ', '/aliments/index/' . $aliment2['Aliment']['id']);
-						else : 
-							echo $this->Html->link(' . ', '/aliments/index/');
-						endif; 
-					?>
-				</div>
+				
+				<?php 
+					if(isset($aliment2)): 
+						echo $this->Html->link('<div id="supprimer"></div>', '/aliments/index/' . $aliment2['Aliment']['id'], array('escape' => false));
+					else : 
+						echo $this->Html->link('<div id="supprimer"></div>', '/aliments/index/', array('escape' => false));
+					endif; 
+				?>
+				
 
 			   	<div id="titre">
 					<?php
@@ -132,9 +132,9 @@
 
 		<?php if(isset($aliment2)): ?>
 			<div class="bloc-droit"> 
-				<div id="supprimer2">  
-					<?php echo $this->Html->link(' . ', '/aliments/index/' . $aliment1['Aliment']['id']); ?>
-				</div>
+				  
+				<?php echo $this->Html->link('<div id="supprimer2"></div>', '/aliments/index/' . $aliment1['Aliment']['id'], array('escape' => false)); ?>
+				
 			   	<div id="titre2">
 					<?php
 						echo "<h2>".$aliment2['Aliment']['nomFR']."</h2>";
