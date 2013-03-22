@@ -1,9 +1,9 @@
-<form action="/mapyramide/users/login" id="UserLoginForm" method="post" accept-charset="utf-8">
+<form action="/mapyramide.fr/users/login" id="UserLoginForm" method="post" accept-charset="utf-8">
 
 	<?php echo $this->Session->flash('auth'); ?>
 	<?php echo $this->Form->create('User'); ?>
 
-<span> Connexion </span> 
+<span2> Connexion </span2> 
 <div id="bloc1">
     <label for="UserUsername"> Identifiant</label>
 	<input type="text" name="data[User][username]" id="UserUsername" required="required"/> <br><br>

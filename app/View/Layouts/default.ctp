@@ -90,9 +90,9 @@ $cakeDescription = __d('cake_dev', 'CakePHP: the rapid development php framework
 			<?php if (AuthComponent::user('id') == NULL): ?>
 				<div id="logo-ajout"> Créer rofil</div>
 				<div id='liens'>
-					<a href="/mapyramide.fr/users/add"> Créer mon profil </a>
+					<?php echo $this->Html->link('Créer mon profil', '/users/add') ?>
 					<br>
-					<a href="/mapyramide.fr/users/login" id="connexionLink"> ou me connecter </a>
+					<?php echo $this->Html->link('ou me connecter', '/users/login', array('id' => 'connexionLink')) ?>
 				</div>
 			<?php else: ?>
 				

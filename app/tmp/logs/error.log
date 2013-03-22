@@ -20321,3 +20321,54 @@ Request URL: /mapyramide.fr/img/load-indicator.gif
 Stack Trace:
 #0 C:\_Jeux SSD\EasyPHP-12.1\www\mapyramide.fr\app\webroot\index.php(97): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
 #1 {main}
+2013-03-22 16:51:39 Error: [MissingActionException] Action UsersController::users() could not be found.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'users',
+)
+Request URL: /mapyramide.fr/users/users/edit/4
+Stack Trace:
+#0 C:\_Jeux SSD\EasyPHP-12.1\www\mapyramide.fr\lib\Cake\Routing\Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#1 C:\_Jeux SSD\EasyPHP-12.1\www\mapyramide.fr\lib\Cake\Routing\Dispatcher.php(161): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#2 C:\_Jeux SSD\EasyPHP-12.1\www\mapyramide.fr\app\webroot\index.php(97): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2013-03-22 17:11:13 Error: Fatal Error (4): syntax error, unexpected '?>' in [C:\_Jeux SSD\EasyPHP-12.1\www\mapyramide.fr\app\View\Aliments\index.ctp, line 38]
+2013-03-22 17:11:13 Error: [FatalErrorException] syntax error, unexpected '?>'
+Request URL: /mapyramide.fr/aliments
+Stack Trace:
+#0 C:\_Jeux SSD\EasyPHP-12.1\www\mapyramide.fr\lib\Cake\Error\ErrorHandler.php(183): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'C:\_Jeux SSD\Ea...', 38)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'C:\_Jeux SSD\Ea...', 38, Array)
+#2 C:\_Jeux SSD\EasyPHP-12.1\www\mapyramide.fr\lib\Cake\Core\App.php(926): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'C:\_Jeux SSD\Ea...', 38, Array)
+#3 C:\_Jeux SSD\EasyPHP-12.1\www\mapyramide.fr\lib\Cake\Core\App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-03-22 17:12:41 Error: Fatal Error (4): syntax error, unexpected 'endif' (T_ENDIF), expecting ',' or ';' in [C:\_Jeux SSD\EasyPHP-12.1\www\mapyramide.fr\app\View\Aliments\index.ctp, line 37]
+2013-03-22 17:12:41 Error: [FatalErrorException] syntax error, unexpected 'endif' (T_ENDIF), expecting ',' or ';'
+Request URL: /mapyramide.fr/aliments
+Stack Trace:
+#0 C:\_Jeux SSD\EasyPHP-12.1\www\mapyramide.fr\lib\Cake\Error\ErrorHandler.php(183): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'C:\_Jeux SSD\Ea...', 37)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'C:\_Jeux SSD\Ea...', 37, Array)
+#2 C:\_Jeux SSD\EasyPHP-12.1\www\mapyramide.fr\lib\Cake\Core\App.php(926): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'C:\_Jeux SSD\Ea...', 37, Array)
+#3 C:\_Jeux SSD\EasyPHP-12.1\www\mapyramide.fr\lib\Cake\Core\App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-03-22 17:23:36 Error: Fatal Error (4): syntax error, unexpected '<', expecting ')' in [C:\_Jeux SSD\EasyPHP-12.1\www\mapyramide.fr\app\View\Aliments\index.ctp, line 54]
+2013-03-22 17:23:36 Error: [FatalErrorException] syntax error, unexpected '<', expecting ')'
+Request URL: /mapyramide.fr/aliments/index/25001/1009
+Stack Trace:
+#0 C:\_Jeux SSD\EasyPHP-12.1\www\mapyramide.fr\lib\Cake\Error\ErrorHandler.php(183): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'C:\_Jeux SSD\Ea...', 54)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'C:\_Jeux SSD\Ea...', 54, Array)
+#2 C:\_Jeux SSD\EasyPHP-12.1\www\mapyramide.fr\lib\Cake\Core\App.php(926): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'C:\_Jeux SSD\Ea...', 54, Array)
+#3 C:\_Jeux SSD\EasyPHP-12.1\www\mapyramide.fr\lib\Cake\Core\App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-03-22 17:27:33 Error: Fatal Error (4): syntax error, unexpected 'echo' (T_ECHO), expecting ')' in [C:\_Jeux SSD\EasyPHP-12.1\www\mapyramide.fr\app\View\Aliments\index.ctp, line 54]
+2013-03-22 17:27:34 Error: [FatalErrorException] syntax error, unexpected 'echo' (T_ECHO), expecting ')'
+Request URL: /mapyramide.fr/aliments/index/25001/1009
+Stack Trace:
+#0 C:\_Jeux SSD\EasyPHP-12.1\www\mapyramide.fr\lib\Cake\Error\ErrorHandler.php(183): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'C:\_Jeux SSD\Ea...', 54)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'C:\_Jeux SSD\Ea...', 54, Array)
+#2 C:\_Jeux SSD\EasyPHP-12.1\www\mapyramide.fr\lib\Cake\Core\App.php(926): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'C:\_Jeux SSD\Ea...', 54, Array)
+#3 C:\_Jeux SSD\EasyPHP-12.1\www\mapyramide.fr\lib\Cake\Core\App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}

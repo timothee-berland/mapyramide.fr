@@ -27,15 +27,16 @@
 						echo "<ul>";
 						foreach ($resultats as $resultat) { ?>
 							<li>
-								<?php if (!isset($aliment1)): ?>
-								<a href="/mapyramide.fr/aliments/index/<?php echo $resultat['Aliment']['id']?>">
-								<?php elseif (!isset($aliment2)): ?>
-								<a href="/mapyramide.fr/aliments/index/<?php echo $aliment1['Aliment']['id']?>/<?php echo $resultat['Aliment']['id']?>">
-								<?php else : ?>
-								<a href="#" onClick="alimentsMax();">
-								<?php endif; ?>
-									<?php echo $resultat['Aliment']['nomFR']?>
-								</a>
+								<?php 
+									if (!isset($aliment1)): 
+										echo $this->Html->link($resultat['Aliment']['nomFR'], '/aliments/index/' . $resultat['Aliment']['id']);
+									elseif (!isset($aliment2)): 
+										echo $this->Html->link($resultat['Aliment']['nomFR'], '/aliments/index/' . $aliment1['Aliment']['id'] .'/' . $resultat['Aliment']['id']);
+									else : 
+										echo '<a href="#" onClick="alimentsMax();">' . $resultat['Aliment']['nomFR'] . '</a>';
+									endif; 
+								?>
+								
 							</li>
 				  <?php } 
 						echo "</ul>";
@@ -48,13 +49,16 @@
 
 		<?php if(isset($aliment1)): ?>
 			<div class="bloc-droit"> 
-				<div id="supprimer">  
-					<?php if(isset($aliment2)): ?>
-						<a href='/mapyramide/aliments/index/<?php echo $aliment2['Aliment']['id']?>'> &nbsp .</a>
-					<?php else : ?>
-						<a href='/mapyramide/aliments/index'> &nbsp .</a>
-					<?php endif; ?>
+				<div id='supprimer'>
+					<?php 
+						if(isset($aliment2)): 
+							echo $this->Html->link(' . ', '/aliments/index/' . $aliment2['Aliment']['id']);
+						else : 
+							echo $this->Html->link(' . ', '/aliments/index/');
+						endif; 
+					?>
 				</div>
+
 			   	<div id="titre">
 					<?php
 						echo "<h2>".$aliment1['Aliment']['nomFR']."</h2>";
@@ -129,7 +133,7 @@
 		<?php if(isset($aliment2)): ?>
 			<div class="bloc-droit"> 
 				<div id="supprimer2">  
-					<a href='/mapyramide/aliments/index/<?php echo $aliment1['Aliment']['id']?>'> &nbsp .</a>
+					<?php echo $this->Html->link(' . ', '/aliments/index/' . $aliment1['Aliment']['id']); ?>
 				</div>
 			   	<div id="titre2">
 					<?php
