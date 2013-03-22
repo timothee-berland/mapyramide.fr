@@ -38,9 +38,9 @@
 			<label for="actPhys"> Activité physique  </label> 
 			<select id="actPhys">
 				<option value="1"> Sédentaire </option>
-				<option value="2"> Faiblement actif </option>
-				<option value="3"> Actif </option> 
-				<option value="4"> Très actif </option> 
+				<option value="1.25"> Faiblement actif </option>
+				<option value="1.5"> Actif </option> 
+				<option value="1.75"> Très actif </option> 
 			</select> <br><br>
 
 			<?php echo $this->Form->end('Calculer'); ?>
