@@ -731,6 +731,7 @@ body > #container {
 #content #presentation {
     float : left;
 	width: 950px;
+	height : 280;
 	margin-left : 12%;
 }
 
@@ -776,6 +777,7 @@ header #profil #connexionLink {
 #content #presentation {
     float : left;
 	width: 1100px;
+	height : 300px;
 	margin :  0 0 0 55px;
 	padding-left : 50px;
 }
@@ -839,6 +841,7 @@ header #profil #connexionLink {
 #content #presentation #texte{
     float : left;
 	width: 650px;
+	height : 280px;
 	padding: 10px 20px 10px 20px;
 }
 #content #presentation #texte .images{
@@ -934,8 +937,36 @@ border : 1px;
 	margin-bottom : 20px;
 	font-weight : bold;
 	color : #A6BC2A;
+}
+
+#content #presentation #texte4 p{
+    display: block;
+	font:17px Corbel,'Segoe UI',Arial, sans-serif;
+	margin-left : 20px;
+	color : #000000;
+    float:left;
+}
+
+#content #presentation #texte4 h1{
+    display: block;
+	font:20px Corbel,'Segoe UI',Arial, sans-serif;
+	margin-top :5px;
+	margin-bottom :7px;
+	margin-left : 20px;
+	padding-top : 30px;
+	font-weight : bold;
+	color : #4D2B08;
+    float:left;
 
 }
+
+#content #presentation #texte4 table {
+ width : 1060px;
+ margin-top : 300px;
+ margin-left : 50px;
+    
+}
+
 #content #presentation #titre-accueil{
     float : left;
 	width: 630px;

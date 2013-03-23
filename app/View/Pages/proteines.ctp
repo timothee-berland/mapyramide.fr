@@ -2,11 +2,13 @@
 	<div id="image">
 	</div>
 	
-	<div id="texte">
+	<div id="texte3">
 		<!-- Cette page est accessible à partir du mnu situé en haut de page : Cliquez sur "Mon assiette" -> "Protéines" -->
-		<span><span></span><span></span><span></span> Produits protéinés </span> 
+		<span> Produits protéinés </span> 
 		<br/><br/><br/><br/><br/><br/>
-		
+	</div>
+	
+	<div id="texte">
 		<h1> Quantité quotidienne conseillée </h1>
 		<p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum turpis elit, viverra vitae tempus ac, 
 			ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum turpis elit, viverra vitae tempus ac, interdum eu enim

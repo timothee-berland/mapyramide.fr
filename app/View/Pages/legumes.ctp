@@ -1,12 +1,12 @@
 ﻿<div id="presentation">
 	<div id="image">
 	</div>
-	<div id="texte">
+	<div id="texte0">
 		<!-- Cette page est accessible depuis le menu situé en haut de la page : Cliquez sur "Mon assiette" -> Légumes -->
-		<span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span>
-		<span></span><span></span><span></span> Légumes </span> 
+		<span> Légumes </span> 
 		<br/><br/><br/><br/><br/><br/>
-		
+	</div>
+	<div id="texte">	
 		<h1> Quantité quotidienne conseillée </h1>
 		<p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum turpis elit, viverra vitae tempus ac, 
 		ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum turpis elit, viverra vitae tempus ac, interdum eu enim
@@ -15,8 +15,8 @@
 		<br/><br/><br/><br/><br/><br/>
 	</div> 
 	
-	<div id="texte">
-		<table  width=145%; >
+	<div id="texte4">
+		<table>
 			<tr>
 				<td >
 					<!-- class = "images"-->

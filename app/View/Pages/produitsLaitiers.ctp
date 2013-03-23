@@ -2,9 +2,12 @@
 	<div id="image">
 	</div>
 	
-	<div id="texte">
+	<div id="texte3">
 		<!-- Cette page est accessible à partir du menu situé en haut de page : Cliquez sur "Mon assiette" -> "Produits laitiers" -->
-		<span><span></span><span></span><span></span> Produits laitiers </span> 
+		<span> Produits laitiers </span> 
+	</div>
+	
+	<div id="texte">
 		<br/><br/><br/><br/><br/><br/>
 		<h1> Quantité quotidienne conseillée </h1>
 		<p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum turpis elit, viverra vitae tempus ac, 
@@ -14,8 +17,8 @@
 		</p>
 	</div> 
 	
-	<div id="texte">
-		<table  width=145%; >
+	<div id="texte4">
+		<table>
 			<tr>
 				<td >
 					<!-- class = "images"-->

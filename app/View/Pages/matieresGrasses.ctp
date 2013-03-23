@@ -4,7 +4,7 @@
 	
 	<div id="texte">
 		<!-- Cette page est accessible depuis le menu situé en haut de page : Cliquez sur "Mon assiette" -> "Matières grasses" -->
-		<span><span></span><span></span><span></span> Matières grasses </span> 
+		<span> Matières grasses </span> 
 		<br/><br/><br/><br/><br/><br/>
 		<h1> Quantité quotidienne conseillée </h1>
 		<p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum turpis elit, viverra vitae tempus ac, 
@@ -14,8 +14,8 @@
 		<br/><br/><br/><br/><br/><br/>
 	</div>
 	
-	<div id="texte">
-		<table  width=145%; >
+	<div id="texte4">
+		<table>
 			<tr>
 				<td >
 					<!-- class = "images"-->
