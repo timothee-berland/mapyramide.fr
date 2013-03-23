@@ -30,7 +30,7 @@
 				<td>
 					<br/><br/><br/>
 					<!-- Image illustrant le paragraphe n°2 -->
-					<p><img height="200px" width="260px" src="../img/Fruits.png" alt="Fruits"/></p>
+					<p><?php echo $this->Html->image('Fruits.png', array('height' => '200px', 'width' => '260px', 'alt' => 'Fruits')); ?></p>
 				</td>
 			</tr>
 		</table>
@@ -74,12 +74,13 @@
 					
 							<td style="padding-left: 20px ">
 								<br/>
-								<?php
-								echo("<A class='zoombox zgallery1' href='../img/epinards.jpg'  ><ul><li> Epinards </li></A>");
-								?>
-								<li> Laitue </li>
-								<li> Mesclun </li>	
-							</ul>
+								<ul>
+									<?php
+									echo $this->Html->link('<li> Epinards </li>', '../img/Epinards.jpg', array('class' => 'zoombox zgallery1', 'alt' => 'Epinards', 'escape' => false));
+									?>
+									<li> Laitue </li>
+									<li> Mesclun </li>	
+								</ul>
 							</td>
 						</tr>
 					</table>
@@ -96,19 +97,21 @@
 							
 							<!-- Légumes féculents -->
 							<td>
-								<?php
-									echo("<A class='zoombox zgallery2' href='../img/chataigne.jpg'  ><ul><li> Châtaigne </li></A>");
-									echo("<li> Maïs </li>");
-									echo("<li> Manioc </li>");
-								?>
+								<ul>
+									<?php
+										echo $this->Html->link('<li> Châtaigne </li>', '../img/Châtaigne.jpg', array('class' => 'zoombox zgallery1', 'alt' => 'Châtaigne', 'escape' => false));
+										echo("<li> Maïs </li>");
+										echo("<li> Manioc </li>");
+									?>
+								</ul>
 							</td>
 					
 							<td style="padding-left: 20px ">
-							<br/>
-								<li> Petit pois </li>
-								<?php
-								echo("<A class='zoombox zgallery2' href='../img/pommesDeTerre.jpg'  ><ul><li> Pommes de terre </li></ul></A>");
-								?>	
+								<br/>
+								<ul>
+									<li> Petit pois </li>
+									<?php echo $this->Html->link('<li> Pommes de terre </li>', '../img/Pommes de terre.jpg', array('class' => 'zoombox zgallery1', 'alt' => 'Pommes de terre', 'escape' => false)); ?>
+								</ul>
 							</td>
 						</tr>
 					</table>
@@ -125,26 +128,27 @@
 							
 							<!-- Autres légumes -->
 							<td>
-								<?php
-									echo("<br/> <br/><li> Artichaut </li>");
-									echo("<li> Asperge </li>");
-									echo("<li> Avocat </li>");
-								?>
-								<li> Betterave </li>
-								<li> Chou </li>
-								<li> Chou-fleur </li>
+								<ul>
+									<?php
+										echo("<br/> <br/><li> Artichaut </li>");
+										echo("<li> Asperge </li>");
+										echo("<li> Avocat </li>");
+									?>
+									<li> Betterave </li>
+									<li> Chou </li>
+									<li> Chou-fleur </li>
+								</ul>
 							</td>
 					
 							<td style="padding-left: 20px ">
-								<br/><br/>
-								<li> Céleri </li>
-								<li> Champignon </li>
-								<li> Concombre </li>
-								<li> Courgette </li>
-								<?php
-									echo("<A class='zoombox zgallery3' href='../img/oignon.jpg'  ><ul><li> Oignon </li></A>");
-								?>
-								<li> Navet </li>
+								<ul>
+									<br/><br/>
+									<li> Céleri </li>
+									<li> Champignon </li>
+									<li> Concombre </li>
+									<li> Courgette </li>
+									<?php echo $this->Html->link('<li> Oignon </li>', '../img/Oignon.jpg', array('class' => 'zoombox zgallery1', 'alt' => 'Oignon', 'escape' => false)); ?>
+									<li> Navet </li>
 								</ul>
 							</td>
 						</tr>
@@ -160,8 +164,8 @@
 
 
 <!--Script permettant l'affichage des images à l'aide de zoombox -->
-<script type="text/javascript" src="../js/zoombox/zoombox.js"></script>
-<link href="../js/zoombox/zoombox.css" rel="stylesheet" type="text/css" media="screen" />
+<?php echo $this->Html->script('zoombox/zoombox.js'); ?>
+<?php echo $this->Html->css('/js/zoombox/zoombox.css'); ?>
 
  <script type="text/javascript">
         jQuery(function($){

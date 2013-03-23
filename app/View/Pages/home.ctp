@@ -67,41 +67,41 @@ endif;
 	<div class="main-slider-content" >
 	<ul class="sliders-wrap-inner">
 	    <li>
-	          <img  src="/mapyramide.fr/img/slider/slide-1.png" title="" alt="alt" />           
+	          <?php echo $this->Html->image('slider/slide-1.png', array('title' => '', 'alt' => 'alt')); ?>
 	          <div class="slider-description">
 	            <h4>Lorem ipsum dolor</h4>
 	            <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est...
-	            <a class="link" href="#">Read more </a>
+	            <?php echo $this->Html->link('En savoir plus', '#', array('class' => 'link')); ?>
 	            </p>
 	         </div>
 	    </li>
 	    
 	    <li>
-	          <img  src="/mapyramide.fr/img/slider/slide-2.png" title="" alt="alt" />           
+	          <?php echo $this->Html->image('slider/slide-2.png', array('title' => '', 'alt' => 'alt')); ?>
 	          <div class="slider-description">
 	            <h4>Lorem ipsum dolor</h4>
 	            <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est...
-	            <a class="link" href="#">Read more </a>
+	            <?php echo $this->Html->link('En savoir plus', '#', array('class' => 'link')); ?>
 	            </p>
 	         </div>
 	    </li>
 	    
 	    <li>
-	          <img  src="/mapyramide.fr/img/slider/slide-3.png" title="" alt="alt" />           
+	          <?php echo $this->Html->image('slider/slide-3.png', array('title' => '', 'alt' => 'alt')); ?>
 	          <div class="slider-description">
 	            <h4>Lorem ipsum dolor</h4>
 	            <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est...
-	            <a class="link" href="#">Read more </a>
+	            <?php echo $this->Html->link('En savoir plus', '#', array('class' => 'link')); ?>
 	            </p>
 	         </div>
 	    </li>
 	    
 	    <li>
-	          <img  src="/mapyramide.fr/img/slider/slide-4.png" title="" alt="alt" />           
+	          <?php echo $this->Html->image('slider/slide-4.png', array('title' => '', 'alt' => 'alt')); ?>
 	          <div class="slider-description">
 	            <h4>Lorem ipsum dolor</h4>
 	            <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est...
-	            <a class="link" href="#">Read more </a>
+	            <?php echo $this->Html->link('En savoir plus', '#', array('class' => 'link')); ?>
 	            </p>
 	         </div>
 	    </li>
@@ -114,10 +114,10 @@ endif;
 	<div class="navigator-content">
 	  <div class="navigator-wrapper">
 	        <ul class="navigator-wrap-inner">
-	           <li><img  src="/mapyramide.fr/img/slider/slide-1_thumb.png" alt="alt" /></li>
-	           <li><img  src="/mapyramide.fr/img/slider/slide-2_thumb.png" alt="alt" /></li>
-	           <li><img  src="/mapyramide.fr/img/slider/slide-3_thumb.png" alt="alt" /></li>
-	           <li><img  src="/mapyramide.fr/img/slider/slide-4_thumb.png" alt="alt" /></li>
+	           <li><?php echo $this->Html->image('slider/slide-1_thumb.png', array('alt' => 'alt')); ?></li>
+	           <li><?php echo $this->Html->image('slider/slide-2_thumb.png', array('alt' => 'alt')); ?></li>
+	           <li><?php echo $this->Html->image('slider/slide-3_thumb.png', array('alt' => 'alt')); ?></li>
+	           <li><?php echo $this->Html->image('slider/slide-4_thumb.png', array('alt' => 'alt')); ?></li>
 	        </ul>
 	  </div>
 	  <div class="button-next">Next</div>

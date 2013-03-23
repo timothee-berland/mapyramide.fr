@@ -16,7 +16,7 @@
     <div id="b1">
 		<article id="fruits" class="bloc-menu">
 			<h3> Fruits </h3>
-			 <a href="fruits" ><p><img height="180px" width="250px" src="../img/Fruits.png" alt="Fruits"/></p></a>
+			<a href="fruits" ><p><?php echo $this->Html->image('Fruits.png', array('height' => '180px', 'width' => '250px', 'alt' => 'Fruits')); ?></p></a>
 		</article>
     </div>
 	
@@ -24,7 +24,7 @@
 	<div id="b1">
 		<article id="legumes" class="bloc-menu">
 			<h3> Légumes </h3>
-			<a href="legumes" ><p><img height="180px" width="250px" src="../img/Légumes.jpg" alt="Légumes"/></p></a>
+			<a href="legumes" ><p><?php echo $this->Html->image('Légumes.jpg', array('height' => '180px', 'width' => '250px', 'alt' => 'Légumes')); ?></p></a>
 		</article>
     </div>
 	
@@ -32,7 +32,7 @@
     <div id="b1">
 		<article id="cereales" class="bloc-menu">
 			<h3> Céréales </h3>
-			<a href="cereales" ><p><img height="180px" width="250px" src="../img/Céréales.jpg" alt="Céréales"/></p></a>
+			<a href="cereales" ><p><?php echo $this->Html->image('Céréales.jpg', array('height' => '180px', 'width' => '250px', 'alt' => 'Céréales')); ?></p></a>
 		</article>
     </div>
 	
@@ -41,7 +41,7 @@
 	<div id="b1">
 		<article id="proteines" class="bloc-menu">
 			<h3> Produits protéinés </h3>
-			<a href="proteines" ><p><img height="180px" width="250px" src="../img/AlimentsProtéinés.jpg" alt="AlimentsProtéinés"/></p></a>
+			<a href="proteines" ><p><?php echo $this->Html->image('AlimentsProtéinés.jpg', array('height' => '180px', 'width' => '250px', 'alt' => 'AlimentsProtéinés')); ?></p></a>
 		</article>
     </div>
 	
@@ -50,7 +50,7 @@
 	<div id="b1">
 		<article id="produitsLaitiers" class="bloc-menu">
 			<h3> Produits laitiers </h3>
-			<a href="produitslaitiers" ><p><img height="180px" width="250px" src="../img/ProduitsLaitiers.jpg" alt="ProduitsLaitiers"/></p></a>
+			<a href="produitslaitiers" ><p><?php echo $this->Html->image('ProduitsLaitiers.jpg', array('height' => '180px', 'width' => '250px', 'alt' => 'ProduitsLaitiers')); ?></p></a>
 		</article>
     </div>
 	
@@ -59,7 +59,7 @@
 	<div id="b1">
 		<article matieresGrasses class="bloc-menu">
 			<h3> Matières grasses </h3>
-			<a href="matieresgrasses" ><p><img height="180px" width="250px" src="../img/Huiles.jpg" alt="MatieresGrasses"/></p></a>
+			<a href="matieresgrasses" ><p><?php echo $this->Html->image('Huiles.jpg', array('height' => '180px', 'width' => '250px', 'alt' => 'MatieresGrasses')); ?></p></a>
 		</article>
     </div>
 </div>

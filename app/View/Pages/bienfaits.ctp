@@ -28,7 +28,7 @@
 				</td>
 				<td>
 					<!-- Image illustrant le paragraphe n°2 -->
-					<p><img height="200px" width="260px" src="../img/Fruits.png" alt="Fruits"/></p>
+					<p><?php echo $this->Html->image('Fruits.png', array('height' => '200px', 'width' => '260px', 'alt' => 'Fruits')); ?></p>
 				</td>
 			</tr>
 		</table>
@@ -46,7 +46,7 @@
 				</td>
 				<td>
 					<!-- Image illustrant le paragraphe n°3 -->
-					<p><img height="200px" width="260px" src="../img/Fruits.png" alt="Fruits"/></p>
+					<p><?php echo $this->Html->image('Fruits.png', array('height' => '200px', 'width' => '260px', 'alt' => 'Fruits')); ?></p>
 				</td>
 			</tr>
 		</table>

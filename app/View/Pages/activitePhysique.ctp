@@ -33,7 +33,6 @@
 		<br/><br/><br/><br/>
 		
 		<!-- Image située en bas de page -->
-		<img height="130px" width="950px" src="../img/calories.jpg" alt="Calories"/>
-				
+		<?php echo $this->Html->image('calories.jpg', array('height' => '130px', 'width' => '950px', 'alt' => 'Calories')); ?>
 	</div>
 </div>

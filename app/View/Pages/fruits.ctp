@@ -29,7 +29,7 @@
 				<td>
 					<br/><br/><br/>
 					<!--  Image illustrant le paragraphe "Equivalence pour une coupe de fruits -->
-					<p><img height="200px" width="260px" src="../img/Fruits.png" alt="Fruits"/></p>
+					<p><?php echo $this->Html->image('Fruits.png', array('height' => '200px', 'width' => '260px', 'alt' => 'Fruits')); ?></p>
 				</td>
 			</tr>
 		</table>
@@ -54,15 +54,18 @@
 					<table width=300%; >
 						<tr>
 							<td>
-								<!-- Liste des fruits : affichage des images des différents fruits à l'aide de zoombox -->
-								<?php
-								echo("<A class='zoombox zgallery1' href='../img/abricot.jpg'  ><ul><li> Abricot </li></A>");
-								echo("<li> Banane </li>");
-								echo("<A class='zoombox zgallery1' href='../img/cerise.jpg'  ><li> Cerise </li></A>");
-								?>
-								<li> Mangue </li>
-								<li> Melon </li>
-								<li> Papaye </li>
+								<ul>
+									<!-- Liste des fruits : affichage des images des différents fruits à l'aide de zoombox -->
+									<!-- #TODO : foreach -->
+									<?php
+									echo $this->Html->link('<li> Abricot </li>', '../img/Abricot.jpg', array('class' => 'zoombox zgallery1', 'alt' => 'Abricot', 'escape' => false));
+									echo $this->Html->link('<li> Banane </li>', '../img/Banane.jpg', array('class' => 'zoombox zgallery1', 'alt' => 'Banane', 'escape' => false));
+									echo $this->Html->link('<li> Cerise </li>', '../img/Cerise.jpg', array('class' => 'zoombox zgallery1', 'alt' => 'Cerise', 'escape' => false));
+									echo $this->Html->link('<li> Mangue </li>', '../img/Mangue.jpg', array('class' => 'zoombox zgallery1', 'alt' => 'Mangue', 'escape' => false));
+									echo $this->Html->link('<li> Melon </li>', '../img/Melon.jpg', array('class' => 'zoombox zgallery1', 'alt' => 'Melon', 'escape' => false));
+									echo $this->Html->link('<li> Papaye </li>', '../img/Papaye.jpg', array('class' => 'zoombox zgallery1', 'alt' => 'Papaye', 'escape' => false));
+									?>
+								</ul>
 							</td>
 					
 							<td style="padding-left: 50px ">
@@ -99,8 +102,8 @@
 </div>
 
 <!--Script permettant l'affichage des images à l'aide de zoombox -->
-<script type="text/javascript" src="../js/zoombox/zoombox.js"></script>
-<link href="../js/zoombox/zoombox.css" rel="stylesheet" type="text/css" media="screen" />
+<?php echo $this->Html->script('zoombox/zoombox.js'); ?>
+<?php echo $this->Html->css('/js/zoombox/zoombox.css'); ?>
 
 <script type="text/javascript">
     jQuery(function($){

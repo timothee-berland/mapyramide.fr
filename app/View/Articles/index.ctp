@@ -1,12 +1,12 @@
 <?php foreach ($articles[0]['Article'] as $article) : ?>
 	<div id="bloc-index">
 		<p id="article">
-			Titre : <?php echo $article['title'] . ' Catégorie : ' . $article['category_id']; ?>
+			Titre : <?php echo $article['title'] . ' Numéro de catégorie : ' . $article['category_id']; ?>
 		</p>
 
 		<div id="btns-index">
 			<!-- Bouton modifications -->
-			<div id="btn-modifier"><?php echo $this->Html->link('Modifier', 'articles/edit/' . $article['id']) ?></div>
+			<?php echo $this->Html->link('<div id="btn-modifier">Modifier</div>', 'articles/edit/' . $article['id'], array('escape' => false)); ?>
 
 			<!-- Bouton suppression -->
 			<?php echo $this->Html->link('<div id="btn-supprimer">Supprimer</div>', 'articles/delete/' . $article['id'], array('onClick' => 'return (confirmation())', 'escape' => false)); ?>

@@ -9,17 +9,7 @@
 		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum turpis elit, viverra vitae tempus ac, interdum eu enim
 		ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum turpis elit, viverra vitae tempus ac, interdum eu enim
 		ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum turpis elit, viverra vitae tempus ac, interdum eu enim. 
-		</p> 
-		
-	    <div id="profil">
-			<!-- Permet à l'utilisateur, non inscrit, de s'inscrire sur le site & de définir son profil -->
-			<div id="logo-ajout"> Créer mon profil</div>
-			<a href="index.php" > Créer mon profil </a>
-		
-			<!-- Permet à l'utilisateur de se connecter. Ceci induit le fait que l'utilisateur est déjà inscrit (possède un identifiant & un mot de passe -->
-			<div id="logo-connexion"> Me connecter</div>
-			<a href="?page=connexion" > Me connecter </a>
-		</div>
+		</p>
 	</div>
 
 </div>
