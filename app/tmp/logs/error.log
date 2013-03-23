@@ -20702,3 +20702,14 @@ Stack Trace:
 #1 C:\Program Files (x86)\EasyPHP-12.1\www\mapyramide.fr\lib\Cake\Routing\Dispatcher.php(161): Dispatcher->_invoke(Object(ImcenfantsController), Object(CakeRequest), Object(CakeResponse))
 #2 C:\Program Files (x86)\EasyPHP-12.1\www\mapyramide.fr\app\webroot\index.php(97): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
 #3 {main}
+2013-03-23 19:44:43 Error: [MissingActionException] Action ImcenfantsController::caloriesbrulees() could not be found.
+Exception Attributes: array (
+  'controller' => 'ImcenfantsController',
+  'action' => 'caloriesbrulees',
+)
+Request URL: /mapyramide.fr/imcenfants/caloriesbrulees
+Stack Trace:
+#0 C:\Program Files (x86)\EasyPHP-12.1\www\mapyramide.fr\lib\Cake\Routing\Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#1 C:\Program Files (x86)\EasyPHP-12.1\www\mapyramide.fr\lib\Cake\Routing\Dispatcher.php(161): Dispatcher->_invoke(Object(ImcenfantsController), Object(CakeRequest), Object(CakeResponse))
+#2 C:\Program Files (x86)\EasyPHP-12.1\www\mapyramide.fr\app\webroot\index.php(97): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
