@@ -40,27 +40,27 @@ $cakeDescription = __d('cake_dev', 'CakePHP: the rapid development php framework
 	<!-- Adding "maximum-scale=1" fixes the Mobile Safari auto-zoom bug: http://filamentgroup.com/examples/iosScaleBug/ -->		
 			
 	<!-- JS -->
-	<script  src="/mapyramide.fr/js/slider/jquery-1.7.1.min.js"></script>
-	<script  src="/mapyramide.fr/js/slider/custom.js"></script>
-	<script  src="/mapyramide.fr/js/slider/tabs.js"></script>
-	<script  src="/mapyramide.fr/js/slider/css3-mediaqueries.js"></script>
-	<script  src="/mapyramide.fr/js/slider/jquery.columnizer.min.js"></script>
+	<?php echo $this->html->script('slider/jquery-1.7.1.min.js'); ?>
+	<?php echo $this->html->script('slider/custom.js'); ?>
+	<?php echo $this->html->script('slider/tabs.js'); ?>
+	<?php echo $this->html->script('slider/css3-mediaqueries.js'); ?>
+	<?php echo $this->html->script('slider/jquery.columnizer.min.js'); ?>
 	
 	<!-- Lof slider -->
-	<script  src="/mapyramide.fr/js/slider/jquery.easing.js"></script>
-	<script  src="/mapyramide.fr/js/slider/lof-slider.js"></script>
+	<?php echo $this->html->script('slider/jquery.easing.js'); ?>
+	<?php echo $this->html->script('slider/lof-slider.js'); ?>
 	<!-- ENDS slider -->
 	
 	<!-- JCarousel -->
-	<script type="text/javascript"  src="/mapyramide.fr/js/slider/jquery.jcarousel.min.js"></script>
+	<?php echo $this->html->script('slider/jquery.jcarousel.min.js'); ?>
 	<!-- ENDS JCarousel -->
 
 	<!--   superfish   -->
 	<!-- (Beaux menus) -->
-	<link rel="stylesheet" media="screen" href="/mapyramide.fr/js/superfish-1.4.8/css/superfish.css" /> 
-	<script src="/mapyramide.fr/js/superfish-1.4.8/js/hoverIntent.js"></script>
-	<script src="/mapyramide.fr/js/superfish-1.4.8/js/superfish.js"></script>
-	<script src="/mapyramide.fr/js/superfish-1.4.8/js/supersubs.js"></script>
+	<?php echo $this->html->css('/js/superfish-1.4.8/css/superfish.css'); ?>
+	<?php echo $this->html->script('superfish-1.4.8/js/hoverIntent.js'); ?>
+	<?php echo $this->html->script('superfish-1.4.8/js/superfish.js'); ?>
+	<?php echo $this->html->script('superfish-1.4.8/js/supersubs.js'); ?>
 	<script type="text/javascript">
 		// initialise plugins
 		jQuery(function(){
@@ -76,23 +76,24 @@ $cakeDescription = __d('cake_dev', 'CakePHP: the rapid development php framework
 	<header>
 		<?php if (AuthComponent::user('id') == 1): ?>
 		<div class="menu3">
-		    <a href="#1">Gérer les photos</a>
-		    <a href="#2">Gérer les articles</a>
-		    <a href="#3">Gérer la base de données</a>
-		    <a href="#4">Gérer les utilisateurs</a>
+		    <?php echo $this->Html->link('Gérer les photos', '#'); ?>
+		    <?php echo $this->Html->link('Gérer les articles', '#'); ?>
+		    <?php echo $this->Html->link('Gérer la base de données', '#'); ?>
+		    <?php echo $this->Html->link('Gérer les utilisateurs', '#'); ?>
 		</div>
 		<?php endif; ?>
 		
-		<a href="/mapyramide.fr"><div id="AGD-logo">AG Diététique </div></a>
-		<a href="/mapyramide.fr"><div id="NomSite"> Ma Pyramide Alimentaire </div></a>
+		<?php echo $this->Html->link('<div id="AGD-logo">AG Diététique </div>', '/', array('escape' => false)); ?>
+		<?php echo $this->Html->link('<div id="NomSite"> Ma Pyramide Alimentaire </div>', '/', array('escape' => false)); ?>
 		<!-- <a href="javascript:void(0)" class="button green"> <span class="phone"></span> Contact </a> -->
+
 		<div id="profil">
 			<?php if (AuthComponent::user('id') == NULL): ?>
 				<div id="logo-ajout"> Créer rofil</div>
 				<div id='liens'>
-					<?php echo $this->Html->link('Créer mon profil', '/users/add') ?>
+					<?php echo $this->Html->link('Créer mon profil', '/users/add'); ?>
 					<br>
-					<?php echo $this->Html->link('ou me connecter', '/users/login', array('id' => 'connexionLink')) ?>
+					<?php echo $this->Html->link('ou me connecter', '/users/login', array('id' => 'connexionLink')); ?>
 				</div>
 			<?php else: ?>
 				
@@ -103,44 +104,68 @@ $cakeDescription = __d('cake_dev', 'CakePHP: the rapid development php framework
 
 	<nav id="filter">
 		<ul id="navigation" class="sf-menu"> 
-			<li><a href="/mapyramide.fr/pages/groupesalimentaires">Mon assiette</a>
+			<li><?php echo $this->Html->link('Mon assiette', 'groupesalimentaires'); ?>
 				<ul class="dropdown">
-					<li class="dropdown-first"><a href="/mapyramide.fr/pages/fruits">Fruits</a></li>
-					<li class="dropdown-middle"><a href="/mapyramide.fr/pages/legumes">Légumes</a></li>
-					<li class="dropdown-middle"><a href="#">Grains</a></li>
-					<li class="dropdown-middle"><a href="/mapyramide.fr/pages/proteines">Protéines</a></li>
-					<li class="dropdown-middle"><a href="/mapyramide.fr/pages/produitslaitiers">Produits Laitiers</a></li>
-					<li class="dropdown-last"><a href="/mapyramide.fr/pages/matieresgrasses">Huiles</a></li>
-					<li> <a>Test</a> 
+					<li class="dropdown-first"><?php echo $this->Html->link('Fruits', 'fruits'); ?>
 						<ul class="dropdown">
-							<li class="dropdown-first"><a href="/mapyramide.fr/pages/fruits">Fruits</a></li>
-							<li class="dropdown-middle"><a href="/mapyramide.fr/pages/legumes">Légumes</a></li>
-							<li class="dropdown-middle"><a href="#">Grains</a></li>
-							<li class="dropdown-middle"><a href="/mapyramide.fr/pages/proteines">Protéines</a></li>
-							<li class="dropdown-middle"><a href="/mapyramide.fr/pages/produitslaitiers">Produits Laitiers</a></li>
-							<li class="dropdown-last"><a href="/mapyramide.fr/pages/matieresgrasses">Huiles</a></li>
+							<li class="dropdown-first"><?php echo $this->Html->link('Bienfaits', 'bienfaits'); ?></li>
+							<li class="dropdown-last"><?php echo $this->Html->link('Conseils fruités', 'conseilsfruits'); ?></li>
+						</ul>
+					</li>
+					<li class="dropdown-middle"><?php echo $this->Html->link('Légumes', 'legumes'); ?>
+						<ul class="dropdown">
+							<li class="dropdown-first"><?php echo $this->Html->link('Bienfaits', '#'); ?></li>
+							<li class="dropdown-middle"><?php echo $this->Html->link('Conseils de légumes', '#'); ?></li>
+							<li class="dropdown-last"><?php echo $this->Html->link('Aliments uniques', '#'); ?></li>
+						</ul>
+					</li>
+					<li class="dropdown-middle"><?php echo $this->Html->link('Céréales', '#'); ?>
+						<ul class="dropdown">
+							<li class="dropdown-first"><?php echo $this->Html->link('Bienfaits', '#'); ?></li>
+							<li class="dropdown-last"><?php echo $this->Html->link('Conseils céréaliers', '#'); ?></li>
+						</ul>
+					</li>
+					<li class="dropdown-middle"><?php echo $this->Html->link('Protéines', 'proteines'); ?>
+						<ul class="dropdown">
+							<li class="dropdown-first"><?php echo $this->Html->link('Nutriments et santé', '#'); ?></li>
+							<li class="dropdown-middle"><?php echo $this->Html->link('Conseils protéinés', '#'); ?></li>
+							<li class="dropdown-last"><?php echo $this->Html->link('Végétariens', '#'); ?></li>
+						</ul>
+					</li>
+					<li class="dropdown-middle"><?php echo $this->Html->link('Produits Laitiers', 'produitslaitiers'); ?>
+						<ul class="dropdown">
+							<li class="dropdown-first"><?php echo $this->Html->link('Bienfaits', '#'); ?></li>
+							<li class="dropdown-last"><?php echo $this->Html->link('Conseils laitiers', '#'); ?></li>
+						</ul>
+					</li>
+					<li class="dropdown-last"><?php echo $this->Html->link('Huiles', 'matieresgrasses'); ?>
+						<ul class="dropdown">
+							<li class="dropdown-first"><?php echo $this->Html->link('Importance', '#'); ?></li>
+							<li class="dropdown-middle"><?php echo $this->Html->link('Indemnité', '#'); ?></li>
+							<li class="dropdown-last"><?php echo $this->Html->link('Quantité', '#'); ?></li>
 						</ul>
 					</li>
 				</ul>
 			</li>
-			<li><a id="test" href="#">Poids / Calories</a>
+			<li><?php echo $this->Html->link('Poids / Calories', '#'); ?>
 				<ul class="dropdown">
-					<li class="dropdown-first"><a href="/mapyramide.fr/pages/gestionpoids">Gestion du poids</a></li>
-					<li class="dropdown-last"><a href="/mapyramide.fr/pages/calories">Calories</a></li>
+					<li class="dropdown-first"><?php echo $this->Html->link('Gestion du poids', 'gestionpoids'); ?></li>
+					<li class="dropdown-last"><?php echo $this->Html->link('Calories', 'calories'); ?></li>
 				</ul>
 			</li>
-			<li><a href="#">Activité physique</a>
+			<li><?php echo $this->Html->link('Activité physique', '#'); ?>
 				<ul class="dropdown">
-					<li class="dropdown-first"><a href="/mapyramide.fr/pages/importancesport">Importance</a></li>
-					<li class="dropdown-middle"><a href="#">Temps de pratique</a></li>
-					<li class="dropdown-middle"><a href="#">Calories consommées</a></li>
-					<li class="dropdown-last"><a href="#">Gérer mon activité</a></li>
+					<li class="dropdown-first"><?php echo $this->Html->link("C'est quoi ?", '#'); ?></li>
+					<li class="dropdown-middle"><?php echo $this->Html->link('Ça ? Important ?', 'importancesport'); ?></li>
+					<li class="dropdown-middle"><?php echo $this->Html->link('Temps de pratique', '#'); ?></li>
+					<li class="dropdown-middle"><?php echo $this->Html->link('Calories brulées', '#'); ?></li>
+					<li class="dropdown-last"><?php echo $this->Html->link('Conseils sportifs', '#'); ?></li>
 				</ul>
 			</li>
-			<li><a href="#">Ressources</a>
+			<li><?php echo $this->Html->link('Ressources', '#'); ?>
 				<ul class="dropdown">
-					<li class="dropdown-first"><a href="/mapyramide.fr/imcenfants/">Calculateur IMC</a></li>
-					<li class="dropdown-last"><a href="/mapyramide.fr/pages/supertracker">Super traqueur</a></li>
+					<li class="dropdown-first"><?php echo $this->Html->link('Calculateur IMC', 'imcenfants'); ?></li>
+					<li class="dropdown-last"><?php echo $this->Html->link('Super traqueur', 'supertracker'); ?></li>
 				</ul>
 			</li>
 		</ul>
@@ -189,7 +214,6 @@ $cakeDescription = __d('cake_dev', 'CakePHP: the rapid development php framework
   </legend>
 	<div><?php echo $this->element('sql_dump'); ?></div>
 </fieldset> -->
-
 
 </body>
 </html>

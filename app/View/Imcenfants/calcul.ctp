@@ -8,6 +8,7 @@
 						<h2>Résultat</h2>
 						<br/><br/>
 						<p>Mon IMC est : <?php echo round($imc,2);?></p>
+						<p>Mes besoins énergétiques estimés sont de <?php echo $BEE ?> calories.</p>
 						<br/><br/>
 						<!--Si la personne a plus de 18 ans, on calcule son IMC avec l'équation suivante poids/ taille² -->
 						<?php if ($_POST['zt_age'] > 18): ?>

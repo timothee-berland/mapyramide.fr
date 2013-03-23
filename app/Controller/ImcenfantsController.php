@@ -35,9 +35,46 @@ class ImcenfantsController extends AppController {
 				$imcMax = 24.9;
 			}
 
+			if ($_POST['sexe'] == 'homme') {
+				switch ($_POST['AP']) {
+					case 1: 
+						$AP = 1.0;
+						break;
+					case 2: 
+						$AP = 1.11;
+						break;
+					case 3: 
+						$AP = 1.25;
+						break;
+					case 4: 
+						$AP = 1.48;
+				}
+
+				$BEE = round(864 - 9.72 * $_POST['zt_age'] + $AP * (14.2 * $_POST['zt_poids'] + 503 * $_POST['zt_taille'] / 100));
+
+			} else {
+				switch ($_POST['AP']) {
+					case 1: 
+						$AP = 1000.0;
+						break;
+					case 2: 
+						$AP = 1.12;
+						break;
+					case 3: 
+						$AP = 1.27;
+						break;
+					case 4: 
+						$AP = 1.45;
+				}
+
+				$BEE = round(387 - 7.31 * $_POST['zt_age'] + $AP * (10.9 * $_POST['zt_poids'] + 660.7 * $_POST['zt_taille'] / 100));
+
+			}
+
 			$this->set('imc', $imc);
 			$this->set('imcMin', $imcMin);
 			$this->set('imcMax', $imcMax);
+			$this->set('BEE', $BEE);
 		}
 	}
 }

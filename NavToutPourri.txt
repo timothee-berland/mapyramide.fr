@@ -1,0 +1,68 @@
+<nav id="filter">
+		<ul id="navigation" class="sf-menu"> 
+			<li><?php echo $this->Html->link('Mon assiette', 'groupesalimentaires'); ?>
+				<ul class="dropdown">
+					<li class="dropdown-first"><?php echo $this->Html->link('Fruits', 'fruits'); ?>
+						<ul class="dropdown">
+							<li class="dropdown-first"><?php echo $this->Html->link('Bienfaits et nutriments', 'bienfaits'); ?></li>
+							<li class="dropdown-last"><?php echo $this->Html->link('Conseils pour manger des fruits', 'conseilsfruits'); ?></li>
+						</ul>
+					</li>
+					<li class="dropdown-middle"><?php echo $this->Html->link('Légumes', 'legumes'); ?>
+						<ul class="dropdown">
+							<li class="dropdown-first"><?php echo $this->Html->link('Bienfaits et nutriments', '#'); ?></li>
+							<li class="dropdown-middle"><?php echo $this->Html->link('Conseils pour manger des légumes', '#'); ?></li>
+							<li class="dropdown-last"><?php echo $this->Html->link('Aliments uniques : Petits poids et haricots', '#'); ?></li>
+						</ul>
+					</li>
+					<li class="dropdown-middle"><?php echo $this->Html->link('Céréales', '#'); ?>
+						<ul class="dropdown">
+							<li class="dropdown-first"><?php echo $this->Html->link('Bienfaits et nutriments', '#'); ?></li>
+							<li class="dropdown-last"><?php echo $this->Html->link('Conseils pour manger des céréales', 'conseilsfruits'); ?></li>
+						</ul>
+					</li>
+					<li class="dropdown-middle"><?php echo $this->Html->link('Protéines', 'proteines'); ?>
+						<ul class="dropdown">
+							<li class="dropdown-first"><?php echo $this->Html->link('Nutriments et conséquences sur la santé', '#'); ?></li>
+							<li class="dropdown-middle"><?php echo $this->Html->link('Conseils pour faire des choix judicieux', '#'); ?></li>
+							<li class="dropdown-last"><?php echo $this->Html->link('Choix végétariens', '#'); ?></li>
+						</ul>
+					</li>
+					<li class="dropdown-middle"><?php echo $this->Html->link('Produits Laitiers', 'produitslaitiers'); ?>
+						<ul class="dropdown">
+							<li class="dropdown-first"><?php echo $this->Html->link('Bienfaits et nutriments', '#'); ?></li>
+							<li class="dropdown-last"><?php echo $this->Html->link('Conseils pour faire des choix judicieux', '#'); ?></li>
+						</ul>
+					</li>
+					<li class="dropdown-last"><?php echo $this->Html->link('Huiles', 'matieresgrasses'); ?>
+						<ul class="dropdown">
+							<li class="dropdown-first"><?php echo $this->Html->link('Importance des matières grasses', '#'); ?></li>
+							<li class="dropdown-middle"><?php echo $this->Html->link('Quelle est mon indemnité', '#'); ?></li>
+							<li class="dropdown-last"><?php echo $this->Html->link('Quantité conseillée', '#'); ?></li>
+						</ul>
+					</li>
+				</ul>
+			</li>
+			<li><?php echo $this->Html->link('Poids / Calories', '#'); ?>
+				<ul class="dropdown">
+					<li class="dropdown-first"><?php echo $this->Html->link('Gestion du poids', 'gestionpoids'); ?></li>
+					<li class="dropdown-last"><?php echo $this->Html->link('Calories', 'calories'); ?></li>
+				</ul>
+			</li>
+			<li><?php echo $this->Html->link('Activité physique', '#'); ?>
+				<ul class="dropdown">
+					<li class="dropdown-first"><?php echo $this->Html->link("Qu'est-ce que l'activité physique", '#'); ?></li>
+					<li class="dropdown-middle"><?php echo $this->Html->link('Pourquoi est-ce important', 'importancesport'); ?></li>
+					<li class="dropdown-middle"><?php echo $this->Html->link('Le temps de pratique', '#'); ?></li>
+					<li class="dropdown-middle"><?php echo $this->Html->link('Les calories brulées', '#'); ?></li>
+					<li class="dropdown-last"><?php echo $this->Html->link('Conseils pour augmenter ma pratique du sport', '#'); ?></li>
+				</ul>
+			</li>
+			<li><?php echo $this->Html->link('Ressources', '#'); ?>
+				<ul class="dropdown">
+					<li class="dropdown-first"><?php echo $this->Html->link('Calculateur IMC', 'imcenfants'); ?></li>
+					<li class="dropdown-last"><?php echo $this->Html->link('Super traqueur', 'supertracker'); ?></li>
+				</ul>
+			</li>
+		</ul>
+	</nav>

@@ -20477,3 +20477,90 @@ Request URL: /mapyramide.fr/img/load-indicator.gif
 Stack Trace:
 #0 C:\_Jeux SSD\EasyPHP-12.1\www\mapyramide.fr\app\webroot\index.php(97): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
 #1 {main}
+2013-03-23 12:28:25 Error: Fatal Error (4): syntax error, unexpected '–' (T_STRING) in [C:\_Jeux SSD\EasyPHP-12.1\www\mapyramide.fr\app\Controller\ImcenfantsController.php, line 53]
+2013-03-23 12:28:25 Error: [FatalErrorException] syntax error, unexpected '–' (T_STRING)
+Request URL: /mapyramide.fr/imcenfants/
+Stack Trace:
+#0 C:\_Jeux SSD\EasyPHP-12.1\www\mapyramide.fr\lib\Cake\Error\ErrorHandler.php(183): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'C:\_Jeux SSD\Ea...', 53)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'C:\_Jeux SSD\Ea...', 53, Array)
+#2 C:\_Jeux SSD\EasyPHP-12.1\www\mapyramide.fr\lib\Cake\Core\App.php(926): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'C:\_Jeux SSD\Ea...', 53, Array)
+#3 C:\_Jeux SSD\EasyPHP-12.1\www\mapyramide.fr\lib\Cake\Core\App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-03-23 12:28:54 Error: Fatal Error (4): syntax error, unexpected ',' in [C:\_Jeux SSD\EasyPHP-12.1\www\mapyramide.fr\app\Controller\ImcenfantsController.php, line 70]
+2013-03-23 12:28:54 Error: [FatalErrorException] syntax error, unexpected ','
+Request URL: /mapyramide.fr/imcenfants/
+Stack Trace:
+#0 C:\_Jeux SSD\EasyPHP-12.1\www\mapyramide.fr\lib\Cake\Error\ErrorHandler.php(183): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'C:\_Jeux SSD\Ea...', 70)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'C:\_Jeux SSD\Ea...', 70, Array)
+#2 C:\_Jeux SSD\EasyPHP-12.1\www\mapyramide.fr\lib\Cake\Core\App.php(926): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'C:\_Jeux SSD\Ea...', 70, Array)
+#3 C:\_Jeux SSD\EasyPHP-12.1\www\mapyramide.fr\lib\Cake\Core\App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-03-23 12:29:08 Error: Fatal Error (4): syntax error, unexpected ',' in [C:\_Jeux SSD\EasyPHP-12.1\www\mapyramide.fr\app\Controller\ImcenfantsController.php, line 70]
+2013-03-23 12:29:08 Error: [FatalErrorException] syntax error, unexpected ','
+Request URL: /mapyramide.fr/imcenfants/
+Stack Trace:
+#0 C:\_Jeux SSD\EasyPHP-12.1\www\mapyramide.fr\lib\Cake\Error\ErrorHandler.php(183): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'C:\_Jeux SSD\Ea...', 70)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'C:\_Jeux SSD\Ea...', 70, Array)
+#2 C:\_Jeux SSD\EasyPHP-12.1\www\mapyramide.fr\lib\Cake\Core\App.php(926): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'C:\_Jeux SSD\Ea...', 70, Array)
+#3 C:\_Jeux SSD\EasyPHP-12.1\www\mapyramide.fr\lib\Cake\Core\App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-03-23 12:29:26 Error: Fatal Error (4): syntax error, unexpected ')', expecting ']' in [C:\_Jeux SSD\EasyPHP-12.1\www\mapyramide.fr\app\Controller\ImcenfantsController.php, line 70]
+2013-03-23 12:29:26 Error: [FatalErrorException] syntax error, unexpected ')', expecting ']'
+Request URL: /mapyramide.fr/imcenfants/
+Stack Trace:
+#0 C:\_Jeux SSD\EasyPHP-12.1\www\mapyramide.fr\lib\Cake\Error\ErrorHandler.php(183): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'C:\_Jeux SSD\Ea...', 70)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'C:\_Jeux SSD\Ea...', 70, Array)
+#2 C:\_Jeux SSD\EasyPHP-12.1\www\mapyramide.fr\lib\Cake\Core\App.php(926): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'C:\_Jeux SSD\Ea...', 70, Array)
+#3 C:\_Jeux SSD\EasyPHP-12.1\www\mapyramide.fr\lib\Cake\Core\App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-03-23 12:30:31 Error: Fatal Error (1): Function name must be a string in [C:\_Jeux SSD\EasyPHP-12.1\www\mapyramide.fr\app\Controller\ImcenfantsController.php, line 53]
+2013-03-23 12:30:31 Error: [FatalErrorException] Function name must be a string
+Request URL: /mapyramide.fr/imcenfants/calcul
+Stack Trace:
+#0 C:\_Jeux SSD\EasyPHP-12.1\www\mapyramide.fr\lib\Cake\Error\ErrorHandler.php(183): ErrorHandler::handleFatalError(1, 'Function name m...', 'C:\_Jeux SSD\Ea...', 53)
+#1 [internal function]: ErrorHandler::handleError(1, 'Function name m...', 'C:\_Jeux SSD\Ea...', 53, Array)
+#2 C:\_Jeux SSD\EasyPHP-12.1\www\mapyramide.fr\lib\Cake\Core\App.php(926): call_user_func('ErrorHandler::h...', 1, 'Function name m...', 'C:\_Jeux SSD\Ea...', 53, Array)
+#3 C:\_Jeux SSD\EasyPHP-12.1\www\mapyramide.fr\lib\Cake\Core\App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-03-23 12:35:25 Error: Fatal Error (1): Call to undefined function alert() in [C:\_Jeux SSD\EasyPHP-12.1\www\mapyramide.fr\app\Controller\ImcenfantsController.php, line 37]
+2013-03-23 12:35:25 Error: [FatalErrorException] Call to undefined function alert()
+Request URL: /mapyramide.fr/imcenfants/calcul
+Stack Trace:
+#0 C:\_Jeux SSD\EasyPHP-12.1\www\mapyramide.fr\lib\Cake\Error\ErrorHandler.php(183): ErrorHandler::handleFatalError(1, 'Call to undefin...', 'C:\_Jeux SSD\Ea...', 37)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to undefin...', 'C:\_Jeux SSD\Ea...', 37, Array)
+#2 C:\_Jeux SSD\EasyPHP-12.1\www\mapyramide.fr\lib\Cake\Core\App.php(926): call_user_func('ErrorHandler::h...', 1, 'Call to undefin...', 'C:\_Jeux SSD\Ea...', 37, Array)
+#3 C:\_Jeux SSD\EasyPHP-12.1\www\mapyramide.fr\lib\Cake\Core\App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-03-23 13:22:11 Error: [MissingControllerException] Controller class ImgController could not be found.
+Exception Attributes: array (
+  'class' => 'ImgController',
+  'plugin' => NULL,
+)
+Request URL: /mapyramide.fr/img/load-indicator.gif
+Stack Trace:
+#0 C:\_Jeux SSD\EasyPHP-12.1\www\mapyramide.fr\app\webroot\index.php(97): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-03-23 15:25:12 Error: [MissingControllerException] Controller class ImgController could not be found.
+Exception Attributes: array (
+  'class' => 'ImgController',
+  'plugin' => NULL,
+)
+Request URL: /mapyramide.fr/img/load-indicator.gif
+Stack Trace:
+#0 C:\_Jeux SSD\EasyPHP-12.1\www\mapyramide.fr\app\webroot\index.php(97): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-03-23 15:31:52 Error: [MissingControllerException] Controller class ImgController could not be found.
+Exception Attributes: array (
+  'class' => 'ImgController',
+  'plugin' => NULL,
+)
+Request URL: /mapyramide.fr/img/load-indicator.gif
+Stack Trace:
+#0 C:\_Jeux SSD\EasyPHP-12.1\www\mapyramide.fr\app\webroot\index.php(97): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}

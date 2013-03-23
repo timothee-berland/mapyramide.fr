@@ -36,13 +36,13 @@
 			<p style="text-indent:25px;">ans</p>
 			
 			<label for="actPhys"> Activité physique  </label> 
-			<select id="actPhys">
-				<option value="1"> Sédentaire </option>
-				<option value="1.25"> Faiblement actif </option>
-				<option value="1.5"> Actif </option> 
-				<option value="1.75"> Très actif </option> 
-			</select> <br><br>
-
+			<select id="actPhys" name='AP'>
+				<option value="1" title="Je fais moins de 15 minutes d'activité physique par jour"> Sédentaire </option>
+				<option value="2" title="Tous les jours, ou presque, je fais au moins 15 minutes d'activité physique modérée"> Faiblement actif </option>
+				<option value="3" title="Tous les jours, ou presque, je fais au moins 30 minutes d'activité physique modérée (environ 200 min par semaine)"> Actif </option> 
+				<option value="4" title="Tous les jours, ou presque, je fais de 45 à 60 minutes d’activité physique modérée (environ 300 à 400 min par semaine)&#13;			OU&#13;au moins 3 fois par semaine, à raison de 45 à 60 minutes par séance, je pratique une activité physique d’intensité élevée"> Très actif </option> 
+			</select> 
+			
 			<?php echo $this->Form->end('Calculer'); ?>
 		</fieldset>
 	</div>

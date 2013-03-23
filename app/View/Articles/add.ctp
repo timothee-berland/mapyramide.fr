@@ -1,4 +1,4 @@
-<?php echo $this->html->script('ckeditor/ckeditor.js') ?>
+<?php echo $this->html->script('ckeditor/ckeditor.js'); ?>
 
 <div id="bloc-editeur">
 		<?php 
