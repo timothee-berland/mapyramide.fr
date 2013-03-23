@@ -731,7 +731,6 @@ body > #container {
 #content #presentation {
     float : left;
 	width: 950px;
-	height : 280;
 	margin-left : 12%;
 }
 
@@ -777,7 +776,6 @@ header #profil #connexionLink {
 #content #presentation {
     float : left;
 	width: 1100px;
-	height : 300px;
 	margin :  0 0 0 55px;
 	padding-left : 50px;
 }
@@ -841,7 +839,6 @@ header #profil #connexionLink {
 #content #presentation #texte{
     float : left;
 	width: 650px;
-	height : 280px;
 	padding: 10px 20px 10px 20px;
 }
 #content #presentation #texte .images{

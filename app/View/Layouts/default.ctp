@@ -167,7 +167,7 @@ $cakeDescription = __d('cake_dev', 'CakePHP: the rapid development php framework
 			</li>
 			<li><?php echo $this->Html->link('Ressources', '#'); ?>
 				<ul class="dropdown">
-					<li class="dropdown-first"><?php echo $this->Html->link('Calculateur IMC', 'imcenfants'); ?></li>
+					<li class="dropdown-first"><?php echo $this->Html->link('Calculateur IMC', '/imcenfants'); ?></li>
 					<li class="dropdown-last"><?php echo $this->Html->link('Super traqueur', 'supertracker'); ?></li>
 				</ul>
 			</li>
