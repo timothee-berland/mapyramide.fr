@@ -38,12 +38,8 @@
 	 */
 		public $name = 'Pages';
 
-	/**
-	 * This controller does not use a model
-	 *
-	 * @var array
-	 */
-		public $uses = array();
+	// Pour utiliser des modèles spécifiques
+	public $uses = array('Article');
 
 	/**
 	 * Displays a view
@@ -57,6 +53,12 @@
 		}
 
 		public function display() {
+
+			$derniersArticles = $this->Article->find('all', array(
+				'fields' => array('id', 'title'),
+				'order' => 'created DESC'));
+			$this->set('derniersArticles', $derniersArticles);
+
 			$path = func_get_args();
 
 			$count = count($path);

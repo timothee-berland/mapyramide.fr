@@ -303,6 +303,17 @@ body > #container {
 	margin-left: 50px;
 	padding: 10px;
 }
+    /*--------------------
+   Derniers articles ajoutés
+    ---------------------*/
+#content #derniersArticles #daj {
+	margin: 5px;
+}
+
+#content #derniersArticles h1 {
+	font-size: 1.5em;
+	
+}
 
     /*--------------------
     	Home Slider
@@ -348,13 +359,6 @@ body > #container {
 	left: 252px;
 
 }
-    /*--------------------
-   Derniers articles ajoutés
-    ---------------------*/
-#content #daj {
-	margin: 5px;
-}
-
 
     /*--------------------
       Messages importants

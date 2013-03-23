@@ -50,11 +50,19 @@ endif;
   <legend align="center" id='daj'>
     Derniers articles ajoutés
   </legend>
-	Coucou
-	<?php
-	echo AuthComponent::user('id');
+	
+	<?php 
+		foreach ($derniersArticles as $article): 
+			echo $this->Text->truncate(
+				$this->Html->link(
+					'<h1>' . $article['Article']['title'] . '</h1>', 
+					'/articles/' . $article['Article']['id'], 
+					array('escape' => false)),
+				25,
+				array('ellipsis' => '...', 'html' => true));
+		endforeach; 
 	?>
-	coucou
+	
 </fieldset>
 
 
