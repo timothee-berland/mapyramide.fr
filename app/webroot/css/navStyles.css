@@ -267,7 +267,18 @@ div.menu3 a:hover, div.menu3 a.current
 /*----------------------------
 	Content area
 -----------------------------*/
+html, body, #container {
+	height: 100%;
+}
 
+body > #container {
+	height: auto; 
+	min-height: 100%;
+}
+
+#content {
+	padding-bottom: 150px;
+}
     /*--------------------
     	Accueil
     ---------------------*/
@@ -712,7 +723,6 @@ div.menu3 a:hover, div.menu3 a.current
 	width: 950px;
 	height : 280;
 	margin-left : 12%;
-	min-height : 1250px;
 }
 
 header #profil  {
@@ -1695,12 +1705,12 @@ border-bottom: 1px solid #4D2B08;
 -----------------------------*/
 
 footer {
-  clear: both;
-  font-size: 11px;
-  margin: 0 auto;
-  padding-top: 15px;
-  position: relative;
-  text-align : center;
+	position: relative;
+	height: 80px;
+	margin-top: -80px;
+	clear: both;
+	font-size: 11px;
+	text-align: center;
 }
 
 footer  .bloc-droit{
