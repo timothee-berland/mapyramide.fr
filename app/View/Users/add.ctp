@@ -3,7 +3,7 @@
 	<?php echo $this->Form->create('User'); ?>
 	
 	<!--TODO AJOUTER UNE IMAGE -->
-	<span> Personnalisez votre profil </span> 
+	<span2> Personnalisez votre profil </span2> 
 	<div id="bloc1">	
 
 		<!-- #TODO véifier que le nom d'utilisateur n'existe pas -->
@@ -39,7 +39,7 @@
 		<span>* Informations obligatoires </span>
 	</div>
 			
-	<span> Enregistrez votre profil </span> 
+	<span2> Enregistrez votre profil </span2> 
 	<div id="bloc1">	
 		<label for="UserPassword"> Mot de passe <em> *</em></label>
 		<input type="password" name="data[User][password]" id="UserPassword" required="required"/> <br><br>

@@ -250,6 +250,16 @@ div.menu3 a:hover, div.menu3 a.current
 	text-shadow:1px 1px 1px #315218;
 }
 
+#filter ul li ul li a {
+	width: 124px;
+	padding-left: 15px;
+	padding-right: 5px;
+}
+
+#filter ul li ul li ul li a {
+	width: 133px;
+}
+
 #filter li:hover{
 	text-decoration:none;
 	background: url("../img/bar.png") repeat-x 0 -138px;
@@ -726,30 +736,20 @@ body > #container {
 }
 
 header #profil  {
+	position: absolute;
+	right: -70px;
 	margin-left: 10px;
 	width: 350px;
 	height :60px;
 }
 
-header #profil #logo-ajout{
-	float : left;
-	width : 40px;
-	height : 40px;
-	margin-top : 10px;
-	margin-left : 10px;
-	background: url('../img/ajout.png') no-repeat left center;
-	overflow: hidden;
-	text-align: center;
-	text-indent: -99999px;
-}
-
 header #profil #logo-connexion{
 	float : left;
 	width : 40px;
-	height : 40px;
+	height : 45px;
 	margin-top : 10px;
-	margin-left : 20px;
-	background: url('../img/connexion.png') no-repeat left center;
+	margin-left : 10px;
+	background: url('../img/login.png') no-repeat 0px 0px;
 	overflow: hidden;
 	text-align: center;
 	text-indent: -99999px;
@@ -1766,16 +1766,14 @@ footer .bloc-gauche p{
 	DropDown Menus
 -----------------------------*/
 .dropdown-first {
-	border-top: solid 1px #EEEEEE;
+	border-top: solid 1px #cccccc;
 
 }
 
 .dropdown-middle {
-
 }
 
 .dropdown-last {
-
 }
 
 #navigation li {

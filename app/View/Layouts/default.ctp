@@ -89,15 +89,18 @@ $cakeDescription = __d('cake_dev', 'CakePHP: the rapid development php framework
 
 		<div id="profil">
 			<?php if (AuthComponent::user('id') == NULL): ?>
-				<div id="logo-ajout"> Créer rofil</div>
+				<div id="logo-connexion"> Créer rofil</div>
 				<div id='liens'>
 					<?php echo $this->Html->link('Créer mon profil', '/users/add'); ?>
 					<br>
 					<?php echo $this->Html->link('ou me connecter', '/users/login', array('id' => 'connexionLink')); ?>
 				</div>
 			<?php else: ?>
-				
-
+				<div id='liens'>
+					<?php echo $this->Html->link('Bonjour ' . AuthComponent::user('username'), '/users/edit'); ?>
+					<br>
+					<?php echo $this->Html->link('me déconnecter', '/users/logout', array('id' => 'connexionLink')); ?>
+				</div>
 			<?php endif; ?>
 		</div>
 	</header>
