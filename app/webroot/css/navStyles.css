@@ -1021,6 +1021,38 @@ border : 1px;
     
 }
 
+#content #presentation #texte5 table {
+ width : 1060px;
+ margin-top : 300px;
+ margin-left : 50px;
+    
+}
+#content #presentation #texte5 table  td{
+ padding-left : 20px;
+ padding-right : 20px;
+    
+}
+
+#content #presentation #texte5 p{
+    display: block;
+	font:17px Corbel,'Segoe UI',Arial, sans-serif;
+	margin-left : 20px;
+	color : #000000;
+    float:left;
+}
+
+#content #presentation #texte5 h1{
+    display: block;
+	font:20px Corbel,'Segoe UI',Arial, sans-serif;
+	margin-top :5px;
+	margin-bottom :7px;
+	margin-left : 20px;
+	padding-top : 30px;
+	font-weight : bold;
+	color : #4D2B08;
+    float:left;
+
+}
 #content #presentation #titre-accueil{
     float : left;
 	width: 630px;
