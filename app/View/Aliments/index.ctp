@@ -214,8 +214,8 @@
 	}
 
 	function afficherNutriment() {
-	document.getElementById("info-nutriment").style.display = "block";
-	document.getElementById("info-aliment").style.display = "none";
+		document.getElementById("info-nutriment").style.display = "block";
+		document.getElementById("info-aliment").style.display = "none";
 	}
 
 	function afficherAliment() {

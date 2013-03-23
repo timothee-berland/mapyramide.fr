@@ -288,6 +288,9 @@ body > #container {
 
 #content {
 	padding-bottom: 150px;
+	max-width: 1400px;
+	margin-left: auto;
+  	margin-right: auto;
 }
     /*--------------------
     	Accueil
@@ -728,10 +731,64 @@ body > #container {
     -webkit-border-radius:8px;	
     border-radius:8px;	
 }
+
+#content #blocIMC {
+	position: absolute;
+	top: 0;	
+	left: 0;
+	height: 200%;
+	width: 100%;
+	padding-left: 35%;
+	padding-top: 15%;
+	background-color: black;
+	filter: alpha(opacity=80);
+    -moz-opacity: 0.8;
+    opacity: 0.8;
+    z-index: 0;
+}
+
+#content #blocQuestion {
+	position: absolute;
+	width: 690px;
+	left: 440px;
+	top: 305px;
+    border:4px solid #4D2B08;
+	background-color : #FFFFFF;
+	margin :  0 0 30px 240px;
+	padding-top : 20px;
+	padding-left : 20px;
+	padding-bottom : 10px;
+	-moz-border-radius:8px;
+    -webkit-border-radius:8px;	
+    border-radius:8px;
+    z-index: 2;
+}
+
+#content #blocQuestion ul {
+	margin-left: 40px;
+	margin-top: 3px;
+}
+
+#content #blocQuestion input[type="submit"] {
+	width : 100px;
+	position: absolute;
+	right: 3%;
+	bottom: 5%;
+	height : 30px;
+	padding-left: 5px;
+	padding-right: 5px;
+	font: 17px Corbel,'Segoe UI',Arial, sans-serif;
+	color : #4D2B08;
+	background-color : #FFFFFF;
+	border: 1px solid #4D2B08;
+	-moz-border-radius:8px;
+    -webkit-border-radius:8px;	
+    border-radius:8px;	
+}
+
 #content #presentation {
     float : left;
 	width: 950px;
-	height : 280;
 	margin-left : 12%;
 }
 
@@ -777,7 +834,6 @@ header #profil #connexionLink {
 #content #presentation {
     float : left;
 	width: 1100px;
-	height : 300px;
 	margin :  0 0 0 55px;
 	padding-left : 50px;
 }
@@ -841,7 +897,6 @@ header #profil #connexionLink {
 #content #presentation #texte{
     float : left;
 	width: 650px;
-	height : 280px;
 	padding: 10px 20px 10px 20px;
 }
 #content #presentation #texte .images{
@@ -856,7 +911,6 @@ header #profil #connexionLink {
 #content #presentation #texte1{
     float : left;
 	width: 650px;
-	height : 280px;
 	margin-left: 40px;
 	padding: 10px 20px 10px 20px;
 }
@@ -1812,6 +1866,7 @@ footer {
 	clear: both;
 	font-size: 11px;
 	text-align: center;
+	z-index: -1;
 }
 
 footer  .bloc-droit{

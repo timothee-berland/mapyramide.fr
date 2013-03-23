@@ -1,4 +1,4 @@
-<div id="bloc7">
+<div id="bloc2">
 	<br/>
 	<p style="text-indent:80px;">
 		<div id="bloc5">
@@ -8,7 +8,7 @@
 						<h2>Résultat</h2>
 						<br/><br/>
 						<p>Mon IMC est : <?php echo round($imc,2);?></p>
-						<p>Mes besoins énergétiques estimés sont de <?php echo $BEE ?> calories.</p>
+						<p id='besoinsEnergetiques'>Mes besoins énergétiques estimés sont de <?php echo $BEE ?> calories par jour.</p>
 						<br/><br/>
 						<!--Si la personne a plus de 18 ans, on calcule son IMC avec l'équation suivante poids/ taille² -->
 						<?php if ($_POST['zt_age'] > 18): ?>
@@ -26,11 +26,14 @@
 							   ou une perte pondérale plus contraignante
 							   Dans tous les cas (même si le calcul n'est pas identique dans tous les cas, nous calculons le nombre de calories qu'il doit consommer
 							   en fonction de sa taille, de son poids & de la décision qu'il en prise concernant la perte de poids-->
-							<!-- #TODO : mettre dans une balise <form> sinon le input ne sert à rien -->
-							<?php echo("Vous êtes en surcharge pondérale <br/> Souhaitez-vous perdre du poids ?");
-								  echo("<br/> <br/><a onClick=\"popup('IMC.php')\"><input type=\"submit\" value=\"Oui\"></a>
-									<input type=\"submit\" value=\"Non\" />");?>
 							
+							<!-- #TODO : mettre dans une balise <form> sinon le input ne sert à rien -->
+						  	<div id='choixPertePoids'>
+							Vous êtes en surcharge pondérale <br/> Souhaitez-vous perdre du poids ?
+						  	<br/> <br/>
+						  		<a id='oui'><input type="submit" value="Oui"/></a>
+								<a id='non'><input type="submit" value="Non"/></a>
+							</div>
 							<!-- Si l'utilisateur est un enfant (age<=18 ans), nous lui indiquons seulement, si sa corpulence est "normale" ou non -->
 							<?php endif; ?>
 						<?php else : 
@@ -105,3 +108,57 @@
 		</div>
 	</p>
 </div>
+
+<div id="blocIMC">
+</div>
+
+<div id="blocQuestion">
+	<br/>
+	<p>
+		Perdre du poids et après maintenir ce poids stable ne peut réussir que si deux impératifs sont remplis :<br/>
+		<ul>
+			<li> une réduction des apports alimentaires (nous allons vous aider)</li>
+			<li> et la pratique d'une activité physique continue (nous allons vous aider aussi).</li>
+		</ul> 
+	</p>
+	<br/>
+
+	<p>Souhaitez-vous, effectuer une : </p>
+
+	<p style="text-indent:80px;"><input type="radio" name="radio" value="250" id='m' /> Perte pondérale modérée dans six mois (Conseillée)</p>
+
+	<p style="text-indent:80px;"><input type="radio" name="radio" value="500" id='c' /> Perte pondérale plus contraignante </p>
+	<br/><br/>
+	<input type="submit" name="valider" value="Valider" id='v'>
+</div>
+
+<script type="text/javascript">
+	jQuery(document).ready(function($){
+	    // SHOW/HIDE
+	    $('#blocIMC').hide();
+	    $('#blocQuestion').hide();
+	    $('#bloc2 #oui').click(function(e){
+	    	$('#bloc2 #choixPertePoids').fadeOut();
+	        $('#blocQuestion').fadeIn();
+	        $('#blocIMC').fadeIn();
+	    });
+	    $('#bloc2 #non').click(function(e){
+	        $('#bloc2 #choixPertePoids').fadeOut();
+	    });
+	    $('#blocQuestion #m').click(function(e){
+	        var newBEE = <?php echo $BEE ?> - 250;
+	        document.getElementById('besoinsEnergetiques').innerHTML = "Mes nouveaux besoins énergétiques conseillés</p><p>sont de " + newBEE + " calories par jour.";
+	    });
+		$('#blocQuestion #c').click(function(e){
+	        var newBEE = <?php echo $BEE ?> - 500;
+	        document.getElementById('besoinsEnergetiques').innerHTML = "Mes nouveaux besoins énergétiques conseillés</p><p>sont de " + newBEE + " calories par jour.";
+	    });
+	    $('#blocQuestion #v').click(function(e){
+	        $('#blocQuestion').fadeOut();
+	        $('#blocIMC').fadeOut();
+	    });
+	    
+
+	});
+	
+</script>
