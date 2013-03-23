@@ -1,10 +1,11 @@
 ﻿<div id="presentation">
 	<div id="image">
 	</div>
-    <div id="texte">
+    <div id="texte0">
 		<!-- Cette page est accessible depuis le menu situé en haut de la page : Cliquez sur "Mon assiette" -> "Céréales" -->
-		<span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span>
-		<span></span> Céréales </span> 
+		<span> Céréales </span> 
+	</div>
+	<div id="texte">
 		<br/><br/><br/><br/><br/><br/>
 		<h1> Quantité quotidienne conseillée </h1>
 		<p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum turpis elit, viverra vitae tempus ac, 
@@ -14,8 +15,8 @@
 		<br/><br/><br/><br/><br/><br/>
 		
 	</div> 
-	<div id="texte">
-		<table  width=145%; >
+	<div id="texte0">
+		<table>
 			<tr>
 				<td >
 					<!-- class = "images"-->
@@ -53,7 +54,7 @@
 				<td style="padding-right:80px;"></td>
 				<td><b> Grains raffinés </b></td>
 			</tr>
-	</table>
+		</table>
 		<table width=145%;  >
 			<tr>
 				<td>

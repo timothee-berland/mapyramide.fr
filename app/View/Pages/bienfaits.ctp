@@ -12,9 +12,8 @@
 		</p> 
 	</div>
 	
-	<div id="texte">
-		<table  width=145%;>
-			<br/><br/><br/><br/><br/><br/>
+	<div id="texte0">
+		<table>
 			<tr>
 				<td >
 					<h1>Bienfaits des fruits sur la santé</h1>

@@ -1,13 +1,13 @@
 ﻿<div id="presentation">
 	<div id="image">
 	</div>
-    <div id="texte">
+    <div id="texte0">
 		<!-- Cette page est accessible depuis le menu situé en haut de page : Cliquez sur "Mon assiette" -> "Fruits" -> "Conseils pour manger des fruits" -->
-		<span> <span></span><span></span><span></span>Conseils pour <br/> <span></span><span></span><span></span>manger des fruits </span> 
+		<span> Conseils fruités </span> 
 	</div>
 	
-	<div id="texte">
-		<table  width=145%; >
+	<div id="texte3">
+		<table>
 			<tr>
 				<td >
 					<h1> En général </h1>
@@ -26,7 +26,7 @@
 			
 			<tr>
 				<td >
-					<br/><br/><br/><br/>
+					<br/><br/><br/>
 					<h1> Paragraphe 1 </h1>
 					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum turpis elit, viverra vitae,
 					ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum turpis elit, viverra vitae tempus ac, interdum eu enim
@@ -37,7 +37,7 @@
 					</p>
 				</td>
 				<td>
-					<br/><br/><br/><br/><br/><br/>
+					<br/><br/><br/><br/>
 					<!-- Image illustrant le paragraphe n°1 -->
 					<p><?php echo $this->Html->image('Fruits.png', array('height' => '200px', 'width' => '260px', 'alt' => 'Fruits')); ?></p>
 				</td>
@@ -45,7 +45,7 @@
 			
 			<tr>
 				<td >
-					<br/><br/><br/><br/>
+					<br/><br/><br/>
 					<h1> Paragraphe 2 </h1>
 					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum turpis elit, viverra vitae,
 					ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum turpis elit, viverra vitae tempus ac, interdum eu enim
@@ -56,7 +56,7 @@
 					</p>
 				</td>
 				<td>
-					<br/><br/><br/><br/><br/><br/>
+					<br/><br/><br/><br/>
 					<!-- Image illustrant le paragraphe n°2 -->
 					<p><?php echo $this->Html->image('Fruits.png', array('height' => '200px', 'width' => '260px', 'alt' => 'Fruits')); ?></p>
 				</td>

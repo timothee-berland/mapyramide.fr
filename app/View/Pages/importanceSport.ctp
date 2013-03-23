@@ -8,8 +8,8 @@
 		<span> Pourquoi est-ce important ? </span> 
 	</div>
 	
-	<div id="texte">
-		<table  width=145%; >
+	<div id="texte0">
+		<table>
 			<tr>
 				<td >
 					<h1> Paragraphe 1 </h1>
@@ -30,8 +30,8 @@
 		</table>
 	</div>
 	
-	<div id="texte">
-		<table  width=145%; >
+	<div id="texte0">
+		<table>
 			<br/><br/><br/>
 			<tr>
 				<td >
