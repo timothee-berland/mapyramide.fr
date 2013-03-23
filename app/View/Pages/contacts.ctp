@@ -5,6 +5,6 @@
 <div id="bloc1">
 	<p>AG Diététique (Association Gradient Diététique) est une association de diététique Lozérienne située à : <br/>
 	La Bessière <br/>48340 SAINT PIERRE DE NOGARET<br/><br/>
-	Pour contacter l'un de ses membres, vous pouvez vous adresser à Monsieur ALAUX en utilisant l'adresse suivante : andrealaux43@hotmail.fr
+	Pour contacter l'un de ses membres, vous pouvez vous adresser à Monsieur ALAUX en utilisant l'adresse suivante : postmaster@mapyramide.fr
 	</p>
 </div>

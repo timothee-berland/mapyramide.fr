@@ -1,9 +1,11 @@
 ﻿<div id="presentation">
 	<div id="image">
 	</div>
-    <div id="titre-accueil">
+    <div id="texte2">
 		<!-- Cette page est accessible depuis le menu situé en haut de page : Cliquez sur "Mon assiette" -->
-		<span><span></span><span></span><span></span> Groupes alimentaires </span> 
+		<span> Groupes alimentaires </span> 
+	</div>
+	<div id="texte">
 		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum turpis elit, viverra vitae tempus ac, interdum eu enim
 		ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum turpis elit, viverra vitae tempus ac, interdum eu enim
 		ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum turpis elit, viverra vitae tempus ac, interdum eu enim. 

@@ -4,7 +4,7 @@
     <div id="texte">
 		<!-- Titre de la page accessible depuis le menu situé en haut de la page en cliquant sur "Activité physique" -->
 		<span> Qu'est-ce que <br/> l'activité physique ? </span> 
-		<br/><br/><br/><br/><br/><br/><br/><br/><br/>
+		<br/><br/><br/>
 		
 		<h1>Introduction </h1>
 		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum turpis elit, viverra vitae tempus ac, 
@@ -12,9 +12,8 @@
 			ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum turpis elit, viverra vitae tempus ac, interdum eu enim. </p> 
 	</div>
 	
-	<div id="texte">
-		<table  width=145%; >
-			<br/><br/><br/><br/><br/>
+	<div id="texte0">
+		<table>
 			<tr>
 				<td >
 					<h1> Définition </h1>

@@ -1,10 +1,11 @@
 ﻿<div id="presentation">
 	<div id="image">
 	</div>
-    <div id="texte">
+    <div id="texte2">
 		<!-- Cette page est accessible depuis le menu situé en haut de page : Cliquez sur "Poids/Calories" -> "Calories" -> "Calories vides" -->
-		<span> <span></span><span></span><span></span>Combien de calories vides <br/> <span></span><span></span><span></span><span></span> puis-je consommer ? </span> 
-		<br/><br/><br/><br/><br/><br/><br/><br/><br/>
+		<span>Combien de calories vides </span><br/><span> puis-je consommer ? </span> 
+	</div>
+	<div id="texte">
 		<h1>Introduction </h1>
 		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum turpis elit, viverra vitae tempus ac, 
 		    ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum turpis elit, viverra vitae tempus ac, interdum eu enim
@@ -12,9 +13,8 @@
 		</p> 
 	</div>
 	
-	<div id="texte">
-		<table  width=145%; >
-			<br/><br/><br/><br/><br/><br/>
+	<div id="texte0">
+		<table>
 			<tr>
 				<td >
 					<h1>Paragraphe 1 </h1>
@@ -34,33 +34,32 @@
 		</table>
 	</div>
 	
-	<div id="texte">
-		<table  width=145%; border=1px; >
-			<br/><br/><br/><br/><br/><br/>
-			<h1>Paragraphe 2 </h1>
+	<div id="texte2">
+		<table >
+			<h1> Paragraphe 2 </h1>
 			<tr>
-				<td style="padding: 15px">
+				<td>
 					<h1>Blabla</h1>
 					<p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum turpis elit, viverra vitae,
 					ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum turpis elit, viverra vitae tempus ac, interdum eu enim
 					ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum turpis elit, viverra vitae tempus ac, interdum eu enim. 
 					</p>
 				</td>
-				<td style="padding-right: 15px">
+				<td>
 					<h1>Blabla</h1>
 					<p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum turpis elit, viverra vitae </p>
 				</td>
 			</tr>
 			
 			<tr>
-				<td style="padding: 15px">
+				<td>
 					<h1>Blabla</h1>
 					<p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum turpis elit, viverra vitae,
 					ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum turpis elit, viverra vitae tempus ac, interdum eu enim
 					ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum turpis elit, viverra vitae tempus ac, interdum eu enim. 
 					</p>
 				</td>
-				<td style="padding-right: 15px">
+				<td>
 					<h1>Blabla</h1>
 					<p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum turpis elit, viverra vitae </p>
 				</td>

@@ -1,11 +1,12 @@
 ﻿<div id="presentation">
 	<div id="image">
 	</div>
-    <div id="texte">
+    <div id="texte3">
 		<!-- Cette page est accessible à partir du menu situé en haut de page : Cliquez sur "Poids/Calories" -> "Gestion du poids" -->
-		<span><span></span><span></span><span></span><span></span><span></span><span></span> Gestion du poids </span> 
+		<span> Gestion du poids </span> 
 		<br/><br/><br/><br/><br/><br/>
-		
+	</div>
+	 <div id="texte">
 		<h1> Pourquoi est-ce important ? </h1>
 		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum turpis elit, viverra vitae tempus ac, 
 		ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum turpis elit, viverra vitae tempus ac, interdum eu enim
