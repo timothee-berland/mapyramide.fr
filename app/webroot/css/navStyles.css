@@ -59,19 +59,34 @@ a:hover{
 header{
 	/* background:url('../img/header.png') repeat-x; */
 	display: block;
-	height: 100px;
+	height: 230px;
 	padding: 10px;
-	width: 378px;
+	margin-left: auto;
+	margin-right: auto;
+	min-width: 1080px;
+}
+
+header #nomEtLogo {
+	display: block;
+	height: 39px;
+	position: relative;
+	width: 758px;
+	margin-left: auto;
+	margin-right: auto;
+	padding-right: 300px;
 }
 
 #AGD-logo{
 	background: url('../img/AGD-128.png') no-repeat left center;
 	height: 128px;
 	width: 128px;
-	margin: 15px 15px;
+	margin-left: auto;
+	margin-right: auto;
+	position: relative;
 	overflow: hidden;
 	text-align: center;
 	text-indent: -99999px;
+	float: left;
 }
 
 #NomSite{
@@ -81,9 +96,10 @@ header{
 	margin: 15px 15px;
 	text-align: center;
 	text-indent: -99999px;
-	position: absolute;
-	top: 10px;
-	left: 17%;
+	position: relative;
+	margin-left: auto;
+	margin-right: auto;
+	float: right;
 }
 
 .button {
@@ -206,7 +222,6 @@ div.menu3 a:hover, div.menu3 a.current
 
 #menuEtConnexion #profil  {
 	position: relative;
-	top: 45px;
 	left: 128px;
 	margin-left: 50px;
 	width: 350px;
@@ -218,7 +233,6 @@ div.menu3 a:hover, div.menu3 a.current
 	float : left;
 	width : 40px;
 	height : 45px;
-	margin-top : 10px;
 	margin-left : 10px;
 	background: url('../img/login.png') no-repeat 0px 0px;
 	overflow: hidden;
@@ -228,7 +242,6 @@ div.menu3 a:hover, div.menu3 a.current
 
 #menuEtConnexion #profil #liens {
 	position: relative;
-	top: 10px;
 	height: 45px;
 }
 
@@ -255,7 +268,7 @@ div.menu3 a:hover, div.menu3 a.current
 	background: url("../img/bar.png") repeat-x 0 -94px;
 	display: block;
 	height: 39px;
-	margin: 55px auto;
+	margin-bottom: 55px;
 	position: relative;
 	width: 600px;
 	text-align: center;
@@ -355,6 +368,7 @@ body > #container {
     	Accueil
     ---------------------*/
 #content #derniersArticles {
+	position: absolute;
 	border: 3px solid #A6BC2A;
 	width: 300px;
 	height: 500px;
