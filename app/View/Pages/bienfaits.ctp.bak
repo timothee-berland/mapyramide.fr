@@ -3,9 +3,8 @@
 	</div>
     <div id="texte">
 		<!-- Cette page est accessible à partir du menu situé en haut de page : Cliquez sur "Mon assiette" ->"Fruits" ->"Bienfaits des fruits"
-		     Elle présente les effets bénéfiques qu'ont les fruits sur notre santé -->
-		<span> L'importance de manger </span> <br/>
-		<span> des fruits </span> <br/>
+		     Elle présente les effets bénéfiques qu'on les fruits sur notre santé -->
+		<span> L'importance de manger<br/> des fruits </span> <br/>
 		<h1>Introduction </h1>
 		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum turpis elit, viverra vitae tempus ac, 
 		ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum turpis elit, viverra vitae tempus ac, interdum eu enim
@@ -34,9 +33,9 @@
 		</table>
 	</div>
 	
-	<div id="texte1">
-		<table>
-			<br/>
+	<div id="texte">
+		<table  width=145%; >
+			<br/><br/><br/><br/><br/><br/>
 			<tr>
 				<td >
 					<h1>Nutriments</h1>

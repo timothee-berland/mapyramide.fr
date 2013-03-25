@@ -1,10 +1,10 @@
-﻿<div id="presentation">
+<div id="presentation">
 	<div id="image">
 	</div>
     <div id="texte">
-		<!-- Cette page est accessible depuis le menu situé en haut de page : Cliquez sur "Mon assiette" -> "Fruits" -> "Conseils pour manger des fruits" -->
+		<!-- Cette page est accessible depuis le menu situé en haut de page : Cliquez sur "Mon assiette" -> "Légumes" -> "Conseils pour manger des légumes" -->
 		<span> Conseils pour consommer </span> <br />
-		<span> plus de fruits </span> <br />
+		<span> plus de légumes </span> <br />
 	</div>
 	
 	<div id="texte3">

@@ -1,11 +1,11 @@
-﻿<div id="presentation">
+<div id="presentation">
 	<div id="image">
 	</div>
     <div id="texte">
-		<!-- Cette page est accessible à partir du menu situé en haut de page : Cliquez sur "Mon assiette" ->"Fruits" ->"Bienfaits des fruits"
-		     Elle présente les effets bénéfiques qu'ont les fruits sur notre santé -->
+		<!-- Cette page est accessible à partir du menu situé en haut de page : Cliquez sur "Mon assiette" ->"Légumes" ->"Bienfaits des légumes"
+		     Elle présente les effets bénéfiques qu'ont les légumes sur notre santé -->
 		<span> L'importance de manger </span> <br/>
-		<span> des fruits </span> <br/>
+		<span> des légumes </span> <br/>
 		<h1>Introduction </h1>
 		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum turpis elit, viverra vitae tempus ac, 
 		ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum turpis elit, viverra vitae tempus ac, interdum eu enim
@@ -17,7 +17,7 @@
 		<table>
 			<tr>
 				<td >
-					<h1>Bienfaits des fruits sur la santé</h1>
+					<h1>Bienfaits des légumes sur la santé</h1>
 					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum turpis elit, viverra vitae,
 					ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum turpis elit, viverra vitae tempus ac, interdum eu enim
 					ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum turpis elit, viverra vitae tempus ac, interdum eu enim. 

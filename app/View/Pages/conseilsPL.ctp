@@ -1,17 +1,17 @@
-ï»¿<div id="presentation">
+<div id="presentation">
 	<div id="image">
 	</div>
     <div id="texte">
-		<!-- Cette page est accessible depuis le menu situÃ© en haut de page : Cliquez sur "Mon assiette" -> "Fruits" -> "Conseils pour manger des fruits" -->
-		<span> Conseils pour consommer </span> <br />
-		<span> plus de fruits </span> <br />
+		<!-- Cette page est accessible depuis le menu situé en haut de page : Cliquez sur "Mon assiette" -> "Produits laitiers" -> "Conseils pour des choix judicieux" -->
+		<span> Conseils pour </span> <br />
+		<span> des choix judicieux </span> <br />
 	</div>
 	
 	<div id="texte3">
 		<table>
 			<tr>
 				<td >
-					<h1> En gÃ©nÃ©ral </h1>
+					<h1> En général </h1>
 					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum turpis elit, viverra vitae,
 					ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum turpis elit, viverra vitae tempus ac, interdum eu enim
 					ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum turpis elit, viverra vitae tempus ac, interdum eu enim. 
@@ -20,7 +20,7 @@
 					ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum turpis elit, viverra vitae tempus ac, interdum eu enim.</p>
 				</td>
 				<td>
-					<!-- Image illustrant le paragraphe "En gÃ©nÃ©ral" -->
+					<!-- Image illustrant le paragraphe "En général" -->
 					<p><?php echo $this->Html->image('Fruits.png', array('height' => '200px', 'width' => '260px', 'alt' => 'Fruits')); ?></p>
 				</td>
 			</tr>
@@ -39,7 +39,7 @@
 				</td>
 				<td>
 					<br/>
-					<!-- Image illustrant le paragraphe nÂ°1 -->
+					<!-- Image illustrant le paragraphe n°1 -->
 					<p><?php echo $this->Html->image('Fruits.png', array('height' => '200px', 'width' => '260px', 'alt' => 'Fruits')); ?></p>
 				</td>
 			</tr>
@@ -58,7 +58,7 @@
 				</td>
 				<td>
 					<br/>
-					<!-- Image illustrant le paragraphe nÂ°2 -->
+					<!-- Image illustrant le paragraphe n°2 -->
 					<p><?php echo $this->Html->image('Fruits.png', array('height' => '200px', 'width' => '260px', 'alt' => 'Fruits')); ?></p>
 				</td>
 			</tr>

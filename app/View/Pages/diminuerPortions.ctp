@@ -1,12 +1,12 @@
-﻿<div id="presentation">
+<div id="presentation">
 	<div id="image">
 	</div>
     <div id="texte">
-		<!-- Cette page est accessible à partir du menu situé en haut de page : Cliquez sur "Mon assiette" ->"Fruits" ->"Bienfaits des fruits"
-		     Elle présente les effets bénéfiques qu'ont les fruits sur notre santé -->
-		<span> L'importance de manger </span> <br/>
-		<span> des fruits </span> <br/>
-		<h1>Introduction </h1>
+		<!-- Cette page est accessible à partir du menu situé en haut de page : Cliquez sur "Poids et calories" ->"Gestion pondérale" ->"Diminuer portions"
+		     Elle donne des conseils pour diminuer les portions consommées -->
+		<span> Diminuer la taille   </span> <br/>
+		<span> de mes portions  </span> <br/>
+		<br />
 		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum turpis elit, viverra vitae tempus ac, 
 		ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum turpis elit, viverra vitae tempus ac, interdum eu enim
 		ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum turpis elit, viverra vitae tempus ac, interdum eu enim. 
@@ -17,7 +17,7 @@
 		<table>
 			<tr>
 				<td >
-					<h1>Bienfaits des fruits sur la santé</h1>
+					<h1>Paragraphe 1 </h1>
 					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum turpis elit, viverra vitae,
 					ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum turpis elit, viverra vitae tempus ac, interdum eu enim
 					ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum turpis elit, viverra vitae tempus ac, interdum eu enim. 
@@ -39,7 +39,7 @@
 			<br/>
 			<tr>
 				<td >
-					<h1>Nutriments</h1>
+					<h1> Paragraphe 2</h1>
 					<p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum turpis elit, viverra vitae,
 					ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum turpis elit, viverra vitae tempus ac, interdum eu enim
 					ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum turpis elit, viverra vitae tempus ac, interdum eu enim. </p>
