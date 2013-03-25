@@ -617,6 +617,10 @@ body > #container {
 	margin-bottom : 30px;
 }
 
+#content #bloc2 p1 {
+	text-indent : 80px; 
+}
+
 #content #bloc2  input[type="submit"],
                 input[type="button"] {
     width : 100px;
@@ -666,13 +670,21 @@ body > #container {
 #content #bloc5 {
 	width : 820px;
 	padding-left: 30px;
-	margin-left: -460px;
+	padding-right: 30px;
+	padding-top: 30px;
+	padding-bottom: 30px;
+	margin-left: -600px;
 	margin-bottom: 20px;
 	margin-top : 20px;
 	margin-right:60px;
+	background-color : #FFFFFF;
 	font : 15px Corbel, 'Segoe UI',Arial, sans-serif;
 	border: 1px solid #A6BC2A;
 }
+#content #bloc5  table td{
+	padding-right: 30px;
+}
+
 #content #bloc6 {
 	width : 400px;
 	margin-left: 50px;
@@ -766,6 +778,10 @@ body > #container {
     -webkit-border-radius:8px;	
     border-radius:8px;
     z-index: 2;
+}
+
+#content #blocQuestion p1 {
+	text-indent : 80px;
 }
 
 #content #blocQuestion ul {
@@ -1057,6 +1073,8 @@ border : 1px;
     float:left;
 
 }
+
+
 #content #presentation #titre-accueil{
     float : left;
 	width: 630px;

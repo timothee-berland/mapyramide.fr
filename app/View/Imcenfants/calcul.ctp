@@ -1,8 +1,8 @@
 <div id="bloc2">
 	<br/>
-	<p style="text-indent:80px;">
+	<p1>
 		<div id="bloc5">
-			<table width=820px;>
+			<table>
 				<tr>
 					<td>
 						<h2>Résultat</h2>
@@ -42,7 +42,8 @@
 							} else {
 								echo("Vos paramètres corporels font que ce site ne peut pas vous prendre en charge et vous demande de consulter un médecin ou un diététicien");
 							}
-							endif;?>
+						endif;?>
+						<br/><br/><br/><br/>
 					</td>
 					<td><span></span></td>
 					<td>
@@ -106,7 +107,7 @@
 				</tr>
 			</table>
 		</div>
-	</p>
+	</p1>
 </div>
 
 <div id="blocIMC">
@@ -125,9 +126,9 @@
 
 	<p>Souhaitez-vous, effectuer une : </p>
 
-	<p style="text-indent:80px;"><input type="radio" name="radio" value="250" id='m' /> Perte pondérale modérée dans six mois (Conseillée)</p>
-
-	<p style="text-indent:80px;"><input type="radio" name="radio" value="500" id='c' /> Perte pondérale plus contraignante </p>
+	<p1><input type="radio" name="radio" value="250" id='m' /> Perte pondérale modérée dans six mois (Conseillée)</p1>
+	<br/>
+	<p1><input type="radio" name="radio" value="500" id='c' /> Perte pondérale plus contraignante </p1>
 	<br/><br/>
 	<input type="submit" name="valider" value="Valider" id='v'>
 </div>

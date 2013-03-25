@@ -65,7 +65,7 @@ class DATABASE_CONFIG {
 		'host' => 'localhost',
 		'login' => 'root',
 		'password' => 'toor',
-		'database' => 'mapyramide',
+		'database' => 'mapyramide2013',
 		'prefix' => '',
 		//'encoding' => 'utf8',
 	);
