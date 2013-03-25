@@ -11,6 +11,11 @@ class ImcenfantsController extends AppController {
 		# Nothing to do here...
 	}
 
+	public function beforeFilter() {
+		parent::beforeFilter();
+		$this->Auth->allow('calcul'); // Letting non-users see these pages
+	}
+
 	//Permet de calculer l'IMC d'une personne
 	public function calcul() {
 		//On récupère les informations concernant le poids et la taille de la personne

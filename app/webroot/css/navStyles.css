@@ -187,7 +187,64 @@ div.menu3 a:hover, div.menu3 a.current
     line-height: 25px;
     color:#000;
 }
+/*----------------------------
+	Profil et menus
+-----------------------------*/
+#menuEtConnexion {
+	display: block;
+	height: 39px;
+	position: relative;
+	width: 1000px;
+	margin-left: auto;
+	margin-right: auto;
+	padding-left: 78px;
+}
 
+/*----------------------------
+	Profil
+-----------------------------*/
+
+#menuEtConnexion #profil  {
+	position: relative;
+	top: 45px;
+	left: 128px;
+	margin-left: 50px;
+	width: 350px;
+	height :60px;
+	float: right;
+}
+
+#menuEtConnexion #profil #logo-connexion{
+	float : left;
+	width : 40px;
+	height : 45px;
+	margin-top : 10px;
+	margin-left : 10px;
+	background: url('../img/login.png') no-repeat 0px 0px;
+	overflow: hidden;
+	text-align: center;
+	text-indent: -99999px;
+}
+
+#menuEtConnexion #profil #liens {
+	position: relative;
+	top: 10px;
+	height: 45px;
+}
+
+#menuEtConnexion #profil a  {
+   	height: 40px;
+	margin-top : 20px;
+	font:17px Corbel,'Segoe UI',Arial, sans-serif;
+	font-weight : bold;
+	color : #945906;
+}
+
+#menuEtConnexion #profil #connexionLink {
+	position: relative;
+	margin-left: 30px;
+	font-size: 12px;
+}
 
 /*----------------------------
 	Braun filter bar
@@ -206,6 +263,8 @@ div.menu3 a:hover, div.menu3 a.current
 	-webkit-box-shadow: 0 4px 4px #000;
 	box-shadow: 0 4px 4px #000;
 	top: 0px;
+	float: left;
+	left: 78px;
 }
 
 #filter:before, #filter:after {
@@ -812,45 +871,6 @@ body > #container {
 	margin-left : 12%;
 }
 
-header #profil  {
-	position: absolute;
-	right: -70px;
-	margin-left: 10px;
-	width: 350px;
-	height :60px;
-}
-
-header #profil #logo-connexion{
-	float : left;
-	width : 40px;
-	height : 45px;
-	margin-top : 10px;
-	margin-left : 10px;
-	background: url('../img/login.png') no-repeat 0px 0px;
-	overflow: hidden;
-	text-align: center;
-	text-indent: -99999px;
-}
-
-header #profil #liens {
-	position: relative;
-	top: 10px;
-}
-
-header #profil a  {
-   	height: 40px;
-	margin-top : 20px;
-	font:17px Corbel,'Segoe UI',Arial, sans-serif;
-	font-weight : bold;
-	color : #945906;
-}
-
-header #profil #connexionLink {
-	position: relative;
-	margin-left: 30px;
-	font-size: 12px;
-}
-
 #content #presentation {
     float : left;
 	width: 1100px;
@@ -1213,16 +1233,6 @@ border : 1px;
   border-bottom : 1px solid #4D2B08;
 }
 /* #RAJOUT */
-#content #menus  #b1 .bloc-menu a {
-  font-size: 20px;
-  color : #A6BC2A;
-  text-align: center;
-  position: relative;
-  width: 250px;
-  padding-bottom : 5px;
-  text-decoration : none;
-  border-bottom : 1px solid #4D2B08;
-}
 
 #content #menus  #b1 .bloc-menu a {
   font-size: 20px;
@@ -1239,6 +1249,9 @@ border : 1px;
   border-bottom : 1px solid #4D2B08;
 }
 
+#content #menus  #b1 .bloc-menu h3 a {
+  border-bottom : 0px; /* Pas de deux deuxième bordure ici */
+}
 
 #content #menus #b1 .bloc-menu p{
   font-size: 14px;

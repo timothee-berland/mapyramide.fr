@@ -86,10 +86,80 @@ $cakeDescription = __d('cake_dev', 'CakePHP: the rapid development php framework
 		<?php echo $this->Html->link('<div id="AGD-logo">AG Diététique </div>', '/', array('escape' => false)); ?>
 		<?php echo $this->Html->link('<div id="NomSite"> Ma Pyramide Alimentaire </div>', '/', array('escape' => false)); ?>
 		<!-- <a href="javascript:void(0)" class="button green"> <span class="phone"></span> Contact </a> -->
+	</header>
 
+	<div id='menuEtConnexion'>
+	
+		<nav id="filter">
+			<ul id="navigation" class="sf-menu"> 
+				<li><?php echo $this->Html->link('Mon assiette', '/pages/groupesalimentaires'); ?>
+					<ul class="dropdown">
+						<li class="dropdown-first"><?php echo $this->Html->link('Fruits', '/pages/fruits'); ?>
+							<ul class="dropdown">
+								<li class="dropdown-first"><?php echo $this->Html->link('Bienfaits', '/pages/bienfaits'); ?></li>
+								<li class="dropdown-last"><?php echo $this->Html->link('Conseils', '/pages/conseilsfruits'); ?></li>
+							</ul>
+						</li>
+						<li class="dropdown-middle"><?php echo $this->Html->link('Légumes', '/pages/legumes'); ?>
+							<ul class="dropdown">
+								<li class="dropdown-first"><?php echo $this->Html->link('Bienfaits', '#'); ?></li>
+								<li class="dropdown-middle"><?php echo $this->Html->link('Conseils', '#'); ?></li>
+								<li class="dropdown-last"><?php echo $this->Html->link('Haricots & pois', '#'); ?></li>
+							</ul>
+						</li>
+						<li class="dropdown-middle"><?php echo $this->Html->link('Céréales', '#'); ?>
+							<ul class="dropdown">
+								<li class="dropdown-first"><?php echo $this->Html->link('Bienfaits', '#'); ?></li>
+								<li class="dropdown-last"><?php echo $this->Html->link('Conseils', '#'); ?></li>
+							</ul>
+						</li>
+						<li class="dropdown-middle"><?php echo $this->Html->link('Protéines', '/pages/proteines'); ?>
+							<ul class="dropdown">
+								<li class="dropdown-first"><?php echo $this->Html->link('Bienfaits', '#'); ?></li>
+								<li class="dropdown-middle"><?php echo $this->Html->link('Conseils', '#'); ?></li>
+								<li class="dropdown-last"><?php echo $this->Html->link('Plats végétariens', '#'); ?></li>
+							</ul>
+						</li>
+						<li class="dropdown-middle"><?php echo $this->Html->link('Produits Laitiers', '/pages/produitslaitiers'); ?>
+							<ul class="dropdown">
+								<li class="dropdown-first"><?php echo $this->Html->link('Bienfaits', '#'); ?></li>
+								<li class="dropdown-last"><?php echo $this->Html->link('Conseils', '#'); ?></li>
+							</ul>
+						</li>
+						<li class="dropdown-last"><?php echo $this->Html->link('Huiles', '/pages/matieresgrasses'); ?>
+							<ul class="dropdown">
+								<li class="dropdown-first"><?php echo $this->Html->link('Importance', '#'); ?></li>
+								<li class="dropdown-middle"><?php echo $this->Html->link('Dose recommandée', '#'); ?></li>
+							</ul>
+						</li>
+					</ul>
+				</li>
+				<li><?php echo $this->Html->link('Poids / Calories', '#'); ?>
+					<ul class="dropdown">
+						<li class="dropdown-first"><?php echo $this->Html->link('Gestion du poids', '/pages/gestionpoids'); ?></li>
+						<li class="dropdown-last"><?php echo $this->Html->link('Calories', '/pages/calories'); ?></li>
+					</ul>
+				</li>
+				<li><?php echo $this->Html->link('Activité physique', '#'); ?>
+					<ul class="dropdown">
+						<li class="dropdown-first"><?php echo $this->Html->link("C'est quoi ?", '#'); ?></li>
+						<li class="dropdown-middle"><?php echo $this->Html->link('Ça ? Important ?', '/pages/importancesport'); ?></li>
+						<li class="dropdown-middle"><?php echo $this->Html->link('Temps de pratique', '#'); ?></li>
+						<li class="dropdown-middle"><?php echo $this->Html->link('Calories brulées', '#'); ?></li>
+						<li class="dropdown-last"><?php echo $this->Html->link('Conseils sportifs', '#'); ?></li>
+					</ul>
+				</li>
+				<li><?php echo $this->Html->link('Ressources', '#'); ?>
+					<ul class="dropdown">
+						<li class="dropdown-first"><?php echo $this->Html->link('Calculateur IMC', '/imcenfants'); ?></li>
+						<li class="dropdown-last"><?php echo $this->Html->link('Super traqueur', '/pages/supertracker'); ?></li>
+					</ul>
+				</li>
+			</ul>
+		</nav>
 		<div id="profil">
 			<?php if (AuthComponent::user('id') == NULL): ?>
-				<div id="logo-connexion"> Créer rofil</div>
+				<div id="logo-connexion"> Créer profil</div>
 				<div id='liens'>
 					<?php echo $this->Html->link('Créer mon profil', '/users/add'); ?>
 					<br>
@@ -103,76 +173,8 @@ $cakeDescription = __d('cake_dev', 'CakePHP: the rapid development php framework
 				</div>
 			<?php endif; ?>
 		</div>
-	</header>
-
-	<nav id="filter">
-		<ul id="navigation" class="sf-menu"> 
-			<li><?php echo $this->Html->link('Mon assiette', '/pages/groupesalimentaires'); ?>
-				<ul class="dropdown">
-					<li class="dropdown-first"><?php echo $this->Html->link('Fruits', '/pages/fruits'); ?>
-						<ul class="dropdown">
-							<li class="dropdown-first"><?php echo $this->Html->link('Bienfaits', '/pages/bienfaits'); ?></li>
-							<li class="dropdown-last"><?php echo $this->Html->link('Conseils fruités', '/pages/conseilsfruits'); ?></li>
-						</ul>
-					</li>
-					<li class="dropdown-middle"><?php echo $this->Html->link('Légumes', '/pages/legumes'); ?>
-						<ul class="dropdown">
-							<li class="dropdown-first"><?php echo $this->Html->link('Bienfaits', '#'); ?></li>
-							<li class="dropdown-middle"><?php echo $this->Html->link('Conseils de légumes', '#'); ?></li>
-							<li class="dropdown-last"><?php echo $this->Html->link('Aliments uniques', '#'); ?></li>
-						</ul>
-					</li>
-					<li class="dropdown-middle"><?php echo $this->Html->link('Céréales', '#'); ?>
-						<ul class="dropdown">
-							<li class="dropdown-first"><?php echo $this->Html->link('Bienfaits', '#'); ?></li>
-							<li class="dropdown-last"><?php echo $this->Html->link('Conseils céréaliers', '#'); ?></li>
-						</ul>
-					</li>
-					<li class="dropdown-middle"><?php echo $this->Html->link('Protéines', '/pages/proteines'); ?>
-						<ul class="dropdown">
-							<li class="dropdown-first"><?php echo $this->Html->link('Nutriments et santé', '#'); ?></li>
-							<li class="dropdown-middle"><?php echo $this->Html->link('Conseils protéinés', '#'); ?></li>
-							<li class="dropdown-last"><?php echo $this->Html->link('Végétariens', '#'); ?></li>
-						</ul>
-					</li>
-					<li class="dropdown-middle"><?php echo $this->Html->link('Produits Laitiers', '/pages/produitslaitiers'); ?>
-						<ul class="dropdown">
-							<li class="dropdown-first"><?php echo $this->Html->link('Bienfaits', '#'); ?></li>
-							<li class="dropdown-last"><?php echo $this->Html->link('Conseils laitiers', '#'); ?></li>
-						</ul>
-					</li>
-					<li class="dropdown-last"><?php echo $this->Html->link('Huiles', '/pages/matieresgrasses'); ?>
-						<ul class="dropdown">
-							<li class="dropdown-first"><?php echo $this->Html->link('Importance', '#'); ?></li>
-							<li class="dropdown-middle"><?php echo $this->Html->link('Indemnité', '#'); ?></li>
-							<li class="dropdown-last"><?php echo $this->Html->link('Quantité', '#'); ?></li>
-						</ul>
-					</li>
-				</ul>
-			</li>
-			<li><?php echo $this->Html->link('Poids / Calories', '#'); ?>
-				<ul class="dropdown">
-					<li class="dropdown-first"><?php echo $this->Html->link('Gestion du poids', '/pages/gestionpoids'); ?></li>
-					<li class="dropdown-last"><?php echo $this->Html->link('Calories', '/pages/calories'); ?></li>
-				</ul>
-			</li>
-			<li><?php echo $this->Html->link('Activité physique', '#'); ?>
-				<ul class="dropdown">
-					<li class="dropdown-first"><?php echo $this->Html->link("C'est quoi ?", '#'); ?></li>
-					<li class="dropdown-middle"><?php echo $this->Html->link('Ça ? Important ?', '/pages/importancesport'); ?></li>
-					<li class="dropdown-middle"><?php echo $this->Html->link('Temps de pratique', '#'); ?></li>
-					<li class="dropdown-middle"><?php echo $this->Html->link('Calories brulées', '#'); ?></li>
-					<li class="dropdown-last"><?php echo $this->Html->link('Conseils sportifs', '#'); ?></li>
-				</ul>
-			</li>
-			<li><?php echo $this->Html->link('Ressources', '#'); ?>
-				<ul class="dropdown">
-					<li class="dropdown-first"><?php echo $this->Html->link('Calculateur IMC', '/imcenfants'); ?></li>
-					<li class="dropdown-last"><?php echo $this->Html->link('Super traqueur', '/pages/supertracker'); ?></li>
-				</ul>
-			</li>
-		</ul>
-	</nav>
+		
+	</div>
 
 	<div id="container">
 
