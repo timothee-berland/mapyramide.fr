@@ -42,7 +42,8 @@
 							} else {
 								echo("Vos paramètres corporels font que ce site ne peut pas vous prendre en charge et vous demande de consulter un médecin ou un diététicien");
 							}
-							endif;?>
+						endif;?>
+						<br/><br/><br/><br/>
 					</td>
 					<td><span></span></td>
 					<td>
