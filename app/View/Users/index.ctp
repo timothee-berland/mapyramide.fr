@@ -1,4 +1,5 @@
-<?php foreach ($users as $user) : ?>
+<?php if (isset($users)):
+ foreach ($users as $user) : ?>
 	<div id="bloc-index">
 		<p id="user"><?php echo $user['User']['username']; ?> : <?php echo $user['User']['role']; ?> </p>
 
@@ -10,7 +11,7 @@
 			<a href="users/delete/<?php echo $user['User']['id'];?>" onClick="return(confirmation())"><div id="btn-supprimer">Supprimer</div></a>
 		</div>
 	</div>
-<?php endforeach; ?>
+<?php endforeach; endif;?>
 
 <script type="text/javascript">
 function confirmation() {

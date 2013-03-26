@@ -23,9 +23,14 @@
 		public function index() {
 			// $users = $this->User->find('all');
 			// $this->set('users', $users);
-
-			$this->User->recursive = 0;
-			$this->set('users', $this->paginate());
+			
+			if ($this->User->role == 'administrateur') {
+				$this->User->recursive = 0;
+				$this->set('users', $this->paginate());
+			} elseif (AuthComponent::user('id') != null) {
+				$users = $this->User->find('first', array('conditions', array('id' => AuthComponent::user('id'))));
+				$this->set('users', $users);
+			}
 		}
 
 		public function view($id = null) {
@@ -53,6 +58,7 @@
 			if (!$this->User->exists()) {
 				throw new NotFoundException(__('Utilisateur invalide'));
 			}
+
 			if ($this->request->is('post') || $this->request->is('put')) {
 				if ($this->User->save($this->request->data)) {
 					$this->Session->setFlash(__("L'utilisateur a été modifié"));

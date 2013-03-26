@@ -10,8 +10,8 @@
 		<label for="UserUsername"> Identifiant <em> *</em></label>
 		<input type="text" name="data[User][username]" maxlength="50" type="text" id="UserUsername" required="required"/> <br><br>
 		
-		<label for="UserDatenaissance"> Date de naissance (aaaa/mm/jj) <em> *</em></label>
-		<input type="date" name="data[User][datenaissance]" id="UserDatenaissance" required="required"/> <br><br><br>
+		<label for="UserDatenaissance"> Date de naissance (aaaa-mm-jj) <em> *</em></label>
+		<input type="text" name="data[User][datenaissance]" id="UserDatenaissance" required="required"/> <br><br><br>
 		
 		<label for="UserSexe"> Vous êtes <em> *</em></label>
 		<input type="radio" name="data[User][sexe]" id="homme" value="homme" checked="checked" onClick="masquer(this)" /><a class='labelInscription'> Homme</a>
@@ -60,6 +60,21 @@
 </form>
 </div>
 
+<script>
+	$(function() {
+		$( "#UserDatenaissance" ).datepicker({
+			dateFormat: "yy-mm-dd", 
+			changeMonth: true, 
+			changeYear: true,
+			minDate: "-100Y", 
+			maxDate: "-1",
+			showOtherMonths: true,
+      		selectOtherMonths: true,
+      		defaultDate: "-20Y",
+      		yearRange: "c-101:c"
+		});
+	});
+</script>
 
 <script type="text/javascript">
 function afficher(btn) {
@@ -113,30 +128,14 @@ function validerForm() {
 		formulaire.elements['pas_enceinte'].checked = true;
 	}
 
-	if (formulaire.elements['UserUsername'].value != "") {
-	    if (formulaire.elements['UserDatenaissance'].value != "") {
-	        if (formulaire.elements['UserPassword'].value != "") {
-				if (formulaire.elements['UserPasswordConfirmation'].value != "") {
-					if (formulaire.elements['UserPasswordConfirmation'].value == 
-						formulaire.elements['UserPassword'].value) {
-						return true;
-					} else {
-						alert ('Le mot de passe ne correspond pas');
-					}
-				} else {
-				    alert ('Il vous faut un mot de passe');
-				}
-			} else {
-			    alert ('Le mot de passe n\'est pas renseingé');
-			}
-		} else {
-			alert ('L\'âge n\'est pas renseingé');
-		}
+	if (formulaire.elements['UserPasswordConfirmation'].value == 
+		formulaire.elements['UserPassword'].value) {
+		return true;
 	} else {
-	    alert ('L\'identifiant n\'est pas renseingé');
-    }
+		alert ('Le mot de passe ne correspond pas');
+	}
+	
 	return false;
 }	
-
 </script>
 
