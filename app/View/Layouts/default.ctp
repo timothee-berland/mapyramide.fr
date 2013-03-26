@@ -39,8 +39,12 @@ $cakeDescription = __d('cake_dev', 'CakePHP: the rapid development php framework
 	<meta name="viewport" content="width=device-width, initial-scale=1"/>
 	<!-- Adding "maximum-scale=1" fixes the Mobile Safari auto-zoom bug: http://filamentgroup.com/examples/iosScaleBug/ -->		
 			
-	<!-- JS -->
-	<?php echo $this->html->script('slider/jquery-1.7.1.min.js'); ?>
+	<!-- JQuery & Jquery UI -->
+	<?php echo $this->html->script('jquery-ui-1.10.2.custom/js/jquery-1.9.1.js'); ?>
+	<?php echo $this->html->script('jquery-ui-1.10.2.custom/js/jquery-ui-1.10.2.custom.min.js'); ?>
+	<?php echo $this->Html->css('/js/jquery-ui-1.10.2.custom/css/smoothness/jquery-ui-1.10.2.custom.min.css'); ?>
+
+	<!-- Slider -->
 	<?php echo $this->html->script('slider/custom.js'); ?>
 	<?php echo $this->html->script('slider/tabs.js'); ?>
 	<?php echo $this->html->script('slider/css3-mediaqueries.js'); ?>
@@ -61,6 +65,7 @@ $cakeDescription = __d('cake_dev', 'CakePHP: the rapid development php framework
 	<?php echo $this->html->script('superfish-1.4.8/js/hoverIntent.js'); ?>
 	<?php echo $this->html->script('superfish-1.4.8/js/superfish.js'); ?>
 	<?php echo $this->html->script('superfish-1.4.8/js/supersubs.js'); ?>
+	<?php echo $this->html->script('superfish-1.4.8/jquery.mb.browser-master/jquery.mb.browser.min.js'); ?>
 	<script type="text/javascript">
 		// initialise plugins
 		jQuery(function(){
