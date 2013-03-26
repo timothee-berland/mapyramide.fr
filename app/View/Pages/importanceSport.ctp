@@ -8,7 +8,7 @@
 		<span> Pourquoi est-ce important ? </span> 
 	</div>
 	
-	<div id="texte0">
+	<div id="texte4">
 		<table>
 			<tr>
 				<td >
@@ -30,9 +30,8 @@
 		</table>
 	</div>
 	
-	<div id="texte0">
+	<div id="texte4">
 		<table>
-			<br/><br/><br/>
 			<tr>
 				<td >
 					<h1> Paragraphe 2</h1>
