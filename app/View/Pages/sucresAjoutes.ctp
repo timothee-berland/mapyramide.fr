@@ -2,18 +2,16 @@
 	<div id="image">
 	</div>
     <div id="texte">
-		<!-- Cette page est accessible à partir du menu situé en haut de page : Cliquez sur "Poids et calories" ->"Gestion pondérale" ->"Cuisine maison"
-		     Elle donne des conseils sur la cuisine maison, plus efficace que la nourriture achetée -->
-		<span1> Cuisiner plus souvent </span1> <br/>
-		<span1> à la maison  </span1> <br/>
+		<!-- Cette page est accessible depuis le menu situé en haut de page : Cliquez sur "Poids & Calories" -> "Calories" -> "Sucres ajoutés" -->
+		<span1> Que sont les sucres ajoutés ? </span1> <br/>
 		<br />
 		<p1>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum turpis elit, viverra vitae tempus ac, 
-		ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum turpis elit, viverra vitae tempus ac, interdum eu enim
-		ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum turpis elit, viverra vitae tempus ac, interdum eu enim. 
+		    ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum turpis elit, viverra vitae tempus ac, interdum eu enim
+			ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum turpis elit, viverra vitae tempus ac, interdum eu enim. 
 		</p1> 
 	</div>
 	
-	<div id="texte0">
+<div id="texte0">
 		<table>
 			<tr>
 				<td >

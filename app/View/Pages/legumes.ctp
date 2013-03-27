@@ -1,18 +1,16 @@
 ﻿<div id="presentation">
 	<div id="image">
 	</div>
-	<div id="texte0">
+	<div id="texte">
 		<!-- Cette page est accessible depuis le menu situé en haut de la page : Cliquez sur "Mon assiette" -> Légumes -->
-		<span> Légumes </span> 
-		<br/><br/><br/><br/><br/><br/>
-	</div>
-	<div id="texte">	
+		<span1> Légumes </span1> 
+		<br/>
 		<h1> Quantité quotidienne conseillée </h1>
-		<p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum turpis elit, viverra vitae tempus ac, 
+		<p1> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum turpis elit, viverra vitae tempus ac, 
 		ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum turpis elit, viverra vitae tempus ac, interdum eu enim
 		ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum turpis elit, viverra vitae tempus ac, interdum eu enim. 
-		</p> 
-		<br/><br/><br/><br/><br/><br/>
+		</p1> 
+		<br/>
 	</div> 
 	
 	<div id="texte4">
@@ -21,41 +19,37 @@
 				<td >
 					<!-- class = "images"-->
 					<h1>  Equivalence pour une coupe de légumes </h1>
-					<p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum turpis elit, viverra vitae,
+					<p1> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum turpis elit, viverra vitae,
 					ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum turpis elit, viverra vitae tempus ac, interdum eu enim
 					ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum turpis elit, viverra vitae tempus ac, interdum eu enim. 
-					</p>
+					</p1>
 				</td>
 				
 				<td>
-					<br/><br/><br/>
+					<br/><br/>
 					<!-- Image illustrant le paragraphe n°2 -->
-					<p><?php echo $this->Html->image('Fruits.png', array('height' => '200px', 'width' => '260px', 'alt' => 'Fruits')); ?></p>
+					<p1><?php echo $this->Html->image('Fruits.png', array('height' => '200px', 'width' => '260px', 'alt' => 'Fruits')); ?></p1>
 				</td>
 			</tr>
 		</table>
 	
-	</div>
-	<div id="texte">
-	<h1>  Conseils de consommation </h1>
-	</div>
-	
-	<div id="bloc3">
-		<p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum turpis elit, viverra vitae,
-		ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum turpis elit, viverra vitae tempus ac, interdum eu enim
-		ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum turpis elit, viverra vitae tempus ac, interdum eu enim. 
-		</p>		
+	<div id="texte6">
+		<h1>  Conseils de consommation </h1> <br />
+		<p1> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum turpis elit, viverra vitae,
+			ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum turpis elit, viverra vitae tempus ac, interdum eu enim
+			ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum turpis elit, viverra vitae tempus ac, interdum eu enim. 
+		</p1>
 	</div>
 	
 	<div id="texte1">
 		<table width=145%;>
 			<tr>
-				<td style="padding-right:50px;"></td>
-				<td><b> Légumes verts </b> </td>
-				<td style="padding-right:110px;"></td>
-				<td><b> Légumes féculents </b></td>
-				<td style="padding-right:100px;"></td>
-				<td><b> Autres légumes </b></td>
+				<td style="padding-right:40px;"></td>
+				<td><h3> Légumes verts </h3> </td>
+				<td style="padding-right:30px;"></td>
+				<td><h3> Légumes féculents </h3></td>
+				<td style="padding-right:20px;"></td>
+				<td><h3> Autres légumes </h3></td>
 			</tr>
 		</table>
 		
@@ -72,7 +66,7 @@
 								<li> Cresson </li>
 							</td>
 					
-							<td style="padding-left: 20px ">
+							<td style="padding-left: 50px ">
 								<br/>
 								<ul>
 									<?php
@@ -85,7 +79,7 @@
 						</tr>
 					</table>
 					
-					<td style="padding-right : 130px">
+					<td style="padding-right : 100px">
 					</td>
 				</td>
 				
@@ -106,17 +100,19 @@
 								</ul>
 							</td>
 					
-							<td style="padding-left: 20px ">
-								<br/>
+							<td style="padding-left: 50px ">
+							
 								<ul>
-									<li> Petit pois </li>
-									<?php echo $this->Html->link('<li> Pommes de terre </li>', '../img/Pommes de terre.jpg', array('class' => 'zoombox zgallery1', 'alt' => 'Pommes de terre', 'escape' => false)); ?>
+								   <?php 
+									echo ("<li> Petit pois </li>");
+									echo $this->Html->link('<li> Pommes de terre </li>', '../img/Pommes de terre.jpg', array('class' => 'zoombox zgallery1', 'alt' => 'Pommes de terre', 'escape' => false)); ?>
+								
 								</ul>
 							</td>
 						</tr>
 					</table>
 					
-					<td style="padding-right : 130px">
+					<td style="padding-right : 100px">
 					</td>
 				</td>
 				
@@ -140,7 +136,7 @@
 								</ul>
 							</td>
 					
-							<td style="padding-left: 20px ">
+							<td style="padding-left: 50px ">
 								<ul>
 									<br/><br/>
 									<li> Céleri </li>

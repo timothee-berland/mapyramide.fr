@@ -1,20 +1,16 @@
-﻿<div id="presentation">
+﻿﻿<div id="presentation">
 	<div id="image">
 	</div>
 	
-	<div id="texte3">
-		<!-- Cette page est accessible à partir du menu situé en haut de page : Cliquez sur "Mon assiette" -> "Produits laitiers" -->
-		<span> Produits laitiers </span> 
-	</div>
-	
 	<div id="texte">
-		<br/><br/><br/><br/><br/><br/>
+		<!-- Cette page est accessible à partir du menu situé en haut de page : Cliquez sur "Mon assiette" -> "Produits laitiers" -->
+		<span1> Produits laitiers </span1> 
+		<br/>
 		<h1> Quantité quotidienne conseillée </h1>
-		<p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum turpis elit, viverra vitae tempus ac, 
+		<p1> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum turpis elit, viverra vitae tempus ac, 
 		ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum turpis elit, viverra vitae tempus ac, interdum eu enim
 		ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum turpis elit, viverra vitae tempus ac, interdum eu enim.  
-		<br/><br/><br/><br/><br/><br/>
-		</p>
+		</p1>
 	</div> 
 	
 	<div id="texte4">
@@ -23,42 +19,42 @@
 				<td >
 					<!-- class = "images"-->
 					<h1>  Equivalence pour une coupe de produits laitiers </h1>
-					<p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum turpis elit, viverra vitae,
+					<p1> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum turpis elit, viverra vitae,
 					ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum turpis elit, viverra vitae tempus ac, interdum eu enim
 					ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum turpis elit, viverra vitae tempus ac, interdum eu enim. 
-					</p>
+					</p1>
 				</td>
 				
 				<td>
 					<br/><br/><br/>
 					<!-- Image illustrant le paragraphe n°2 -->
-					<p><?php echo $this->Html->image('Fruits.png', array('height' => '200px', 'width' => '260px', 'alt' => 'Fruits')); ?></p>
+					<p1><?php echo $this->Html->image('Fruits.png', array('height' => '200px', 'width' => '260px', 'alt' => 'Fruits')); ?></p1>
 				</td>
 			</tr>
 		</table>
 	
 	</div>
 	
-	<div id="texte">
-	<h1>  Conseils de consommation </h1>
-	</div>		
-	<div id="bloc3">
-		<p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum turpis elit, viverra vitae,
-		ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum turpis elit, viverra vitae tempus ac, interdum eu enim
-		ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum turpis elit, viverra vitae tempus ac, interdum eu enim. 
-		</p>	
+	<div id="texte6">
+		<h1>  Conseils de consommation </h1> <br />
+		<p1> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum turpis elit, viverra vitae,
+			ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum turpis elit, viverra vitae tempus ac, interdum eu enim
+			ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum turpis elit, viverra vitae tempus ac, interdum eu enim. 
+		</p1>
 	</div>
 	
 	<div id="texte1">
 		<table width=130%; >
 			<tr>
 				<td style="padding-right:20px;"></td>
-				<td><b> Lait & déserts à base de lait </b> </td>
-				<td style="padding-right:-15px;"></td>
-				<td><b> Yaourts </b></td>
-				<td style="padding-right:90px;"></td>
-				<td><b> Fromages </b></td>
+				<td><h3> Lait & déserts à base de lait </h3> </td>
+				<td style="padding-right:-20px;"></td>
+				<td><h3> Yaourts </h3></td>
+				<td style="padding-right:120px;"></td>
+				<td><h3> Fromages </h3></td>
+				<td style="padding-right:120px;"></td>
 			</tr>
+			<tr><td><br /></td></tr>
 		</table>
 		
 		<table width=145%;  >
@@ -68,20 +64,19 @@
 						<tr>
 							<td>
 								<!-- Lait & déserts à base de lait -->
-								<br/><ul><li> Crème glacée </li>
-								<li> Lait aromatisé </li>
-								<li> Lait écrémé </li>
+								<ul><li> Crème glacée </li>
+									<li> Lait aromatisé </li>
+									<li> Lait écrémé </li></ul>
 							</td>
 					
 							<td style="padding-left: 50px ">
-								<br/>
-								<li> Lait entier </li>
+								<ul><li> Lait entier </li>
 								<li> Lait sans lactose </li></ul>
 							</td>
 						</tr>
 					</table>
 					
-					<td style="padding-right : 140px">
+					<td style="padding-right : 130px">
 					</td>
 				</td>
 				
@@ -89,23 +84,22 @@
 				
 					<table width=200%; >
 						<tr>
-							<td style="padding-left : 30px">
+							<td style="padding-left : 50px">
 							</td>
 							
 							<!-- Yaourts -->
 							<td>
-								<br/><br/><ul><li> Yaourt 0% </li>
-								<li> Yaourt allégé </li>
+								<ul><li> Yaourt 0% </li>
+								<li> Yaourt allégé </li></ul>
 							</td>
 					
 							<td style="padding-left: 30px ">
-								<br/>
-								<li> Yaourt au lait entier </li></ul>
+								<ul><li> Yaourt au lait entier </li></ul>
 							</td>
 						</tr>
 					</table>
 					
-					<td style="padding-right : 150px">
+					<td style="padding-right : 110px">
 					</td>
 				</td>
 				
@@ -113,18 +107,17 @@
 				
 					<table width=150%; >
 						<tr>
-							<td style="padding-left : 20px">
+							<td style="padding-left : 50px">
 							</td>
 							
 							<!-- Fromages -->
 							<td>
-								<br/><br/><br/><ul><li> Fromage blanc </li>
-								<li> Mozzarella </li>
+								<ul><li> Fromage blanc </li>
+								<li> Mozzarella </li></ul>
 							</td>
 					
 							<td style="padding-left: 30px ">
-								<br/><br/>
-								<li> Parmesan </li></ul>
+								<ul><li> Parmesan </li></ul>
 							</td>
 						</tr>
 					</table>

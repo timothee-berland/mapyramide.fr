@@ -3,34 +3,33 @@
 	</div>
     <div id="texte">
 		<!-- Cette page est accessible depuis le menu situé en haut de la page : Cliquez sur "Poids/Calories" -> "Calories" -->
-		<span> Calories </span> 
+		<span1> Calories </span1> 
 		<br/>
 	</div>
 	
 	<div id="texte">
-		<h1> Définition </h1>
-		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum turpis elit, viverra vitae tempus ac, 
+		<p1>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum turpis elit, viverra vitae tempus ac, 
 		ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum turpis elit, viverra vitae tempus ac, interdum eu enim
 		ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum turpis elit, viverra vitae tempus ac, interdum eu enim. 
 		<br/><br/>
-		</p> 
+		</p1> 
 
 
-		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum turpis elit, viverra vitae tempus ac, 
+		<p1>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum turpis elit, viverra vitae tempus ac, 
 		ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum turpis elit, viverra vitae tempus ac, interdum eu enim 
 		<br/><br/>
-		</p>
+		</p1>
 		
-		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum turpis elit, viverra vitae tempus ac, 
+		<p1>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum turpis elit, viverra vitae tempus ac, 
 		ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum turpis elit, viverra vitae tempus ac, interdum eu enim 
 		<br/><br/>
-		</p>
+		</p1>
 			
-		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum turpis elit, viverra vitae tempus ac, 
+		<p1>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum turpis elit, viverra vitae tempus ac, 
 		ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum turpis elit, viverra vitae tempus ac, interdum eu enim
 		ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum turpis elit, viverra vitae tempus ac, interdum eu enim.
 		<br/>
-		</p> 
+		</p1> 
 				
 		<!-- Image située en bas de page -->
 		<?php echo $this->Html->image('calories.jpg', array('height' => '130px', 'width' => '660px', 'alt' => 'Calories')); ?>

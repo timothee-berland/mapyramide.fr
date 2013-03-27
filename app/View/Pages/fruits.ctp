@@ -1,16 +1,14 @@
 ﻿<div id="presentation">
 	<div id="image">
 	</div>
-    <div id="texte0">
+    <div id="texte">
 		<!-- Cette page est accessible depuis le menu situé en haut de page : Cliquez sur "Mon assiette" -> "Fruits" -->
-		<span> Fruits </span> 
-	</div>
-	<div id="texte">
+		<span1> Fruits </span1> <br />
 		<h1> Quantité quotidienne conseillée </h1>
-		<p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum turpis elit, viverra vitae tempus ac, 
+		<p1> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum turpis elit, viverra vitae tempus ac, 
 		ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum turpis elit, viverra vitae tempus ac, interdum eu enim
 	ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum turpis elit, viverra vitae tempus ac, interdum eu enim. 
-		</p> 
+		</p1> 
 	</div>
 	
 	<div id="texte4">
@@ -19,31 +17,28 @@
 				<td >
 					<!-- class = "images"-->
 					<h1>  Equivalence pour une coupe de fruits </h1>
-					<p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum turpis elit, viverra vitae,
+					<p1> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum turpis elit, viverra vitae,
 					ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum turpis elit, viverra vitae tempus ac, interdum eu enim
 					ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum turpis elit, viverra vitae tempus ac, interdum eu enim. 
-					</p>
+					</p1>
 				</td>
 				
 				<td>
-					<br/><br/><br/>
+					<br/>
 					<!--  Image illustrant le paragraphe "Equivalence pour une coupe de fruits -->
-					<p><?php echo $this->Html->image('Fruits.png', array('height' => '200px', 'width' => '260px', 'alt' => 'Fruits')); ?></p>
+					<p1><?php echo $this->Html->image('Fruits.png', array('height' => '200px', 'width' => '260px', 'alt' => 'Fruits')); ?></p1>
 				</td>
 			</tr>
 		</table>
 	
 	</div>
 
-	<div id="texte">
-	<h1>  Conseils de consommation </h1>
-	</div>
-	
-	<div id="bloc3">
-		<p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum turpis elit, viverra vitae,
-		ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum turpis elit, viverra vitae tempus ac, interdum eu enim
-		ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum turpis elit, viverra vitae tempus ac, interdum eu enim. 
-		</p>
+	<div id="texte6">
+		<h1>  Conseils de consommation </h1> <br />
+		<p1> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum turpis elit, viverra vitae,
+			ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum turpis elit, viverra vitae tempus ac, interdum eu enim
+			ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum turpis elit, viverra vitae tempus ac, interdum eu enim. 
+		</p1>
 	</div>
 	
 	<div id="texte1">
@@ -67,7 +62,7 @@
 								</ul>
 							</td>
 					
-							<td style="padding-left: 50px ">
+							<td style="padding-left: 50px ; ">
 								<ul>
 									<li> Poire </li>
 									<li> Pomme </li>
@@ -82,17 +77,19 @@
 					</td>
 				</td>
 				
-				<td style="padding-left: 0px ; border-left: medium solid #4D2B08" >
+				<td style="padding-left: 0px ; border-left: medium solid #4D2B08">
 				
 					<!-- Informations sur les fruits mixés -->
-					<div id="bloc4">
-					<p>Fruits mixés <br/> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum turpis elit, viverra vitae tempus ac </p>
+					<h2> Fruits mixés </h2>
+					<div class="bloc">					
+					<p2>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum turpis elit, viverra vitae tempus ac </p2>
 					</div>
 					<br/> 
 					
 					<!-- Informations sur les jus de fruits -->
-					<div id="bloc4">
-					<p>Jus de Fruits <br/> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum turpis elit, viverra vitae tempus ac</p>
+					<h2> Jus de fruis </h2>
+					<div class="bloc">
+					<p2>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum turpis elit, viverra vitae tempus ac</p2>
 					</div>
 				</td>
 			</tr>
