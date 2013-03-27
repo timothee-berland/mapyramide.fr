@@ -368,23 +368,32 @@ body > #container {
     ---------------------*/
 #content #derniersArticles {
 	position: absolute;
-	border: 3px solid #A6BC2A;
+	border: 3px solid #4D2B08;
 	width: 300px;
 	height: 500px;
 	margin: 10px;
 	margin-left: 50px;
 	padding: 10px;
+	-moz-border-radius:8px;
+    -webkit-border-radius:8px;	
+    border-radius:8px;	
 }
     /*--------------------
    Derniers articles ajoutés
     ---------------------*/
 #content #derniersArticles #daj {
-	margin: 5px;
+	padding-left: 15px;
+	padding-right: 15px;
 }
 
-#content #derniersArticles h1 {
-	font-size: 1.5em;
-	
+#content #derniersArticles #accordeon {
+	height: 95%;
+}
+
+#content #derniersArticles #accordeon h1 {
+	font-size: 1.2em;
+	color: #434543;
+	text-decoration: none;
 }
 
     /*--------------------
@@ -520,11 +529,21 @@ body > #container {
 }
 
     /*--------------------
+      Bloc Article
+    ---------------------*/
+#content #bloc1 datesArticles {
+	margin-right: 20px;
+}
+
+#content #bloc1 #contenuArticle {
+	margin-top: 30px;
+}
+    /*--------------------
       Générique \ À trier
     ---------------------*/
     /* C'EST PAS POSSIBLE ÇA, ON PEUT PAS REDEFINIR LE span ÇA FOUT LE BORDEL DANS PLEINS D'AUTRES TRUCS */
     /* #TODO : Changer les 'span' qui utilisaient ça en class='span2'*/
-#content span2{
+#content span2 {
     display: block;
 	font:20px Corbel,'Segoe UI',Arial, sans-serif;
 	margin-top :5px;
@@ -533,7 +552,8 @@ body > #container {
 	padding-top : 30px;
 	font-weight : bold;
 	color : #4D2B08;
-    float:left;
+	float: left;
+	width: 60%;
 }
 
 #content #span1{
@@ -2084,10 +2104,8 @@ border-bottom: 1px solid #4D2B08;
 footer {
 	position: relative;
 	height: 80px;
-	margin-top: -80px;
 	margin-left: auto;
 	margin-right: auto;
-	min-width: 1080px;
 	clear: both;
 	font-size: 11px;
 	text-align: center;

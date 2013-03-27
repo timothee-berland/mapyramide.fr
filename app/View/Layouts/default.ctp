@@ -42,7 +42,7 @@ $cakeDescription = __d('cake_dev', 'CakePHP: the rapid development php framework
 	<!-- JQuery & Jquery UI -->
 	<?php echo $this->html->script('jquery-ui-1.10.2.custom/js/jquery-1.9.1.js'); ?>
 	<?php echo $this->html->script('jquery-ui-1.10.2.custom/js/jquery-ui-1.10.2.custom.min.js'); ?>
-	<?php echo $this->Html->css('/js/jquery-ui-1.10.2.custom/css/smoothness/jquery-ui-1.10.2.custom.min.css'); ?>
+	<?php echo $this->Html->css('/js/jquery-ui-1.10.2.custom/css/smoothness/jquery-ui-1.10.2.custom.css'); ?>
 
 	<!-- Slider -->
 	<?php echo $this->html->script('slider/custom.js'); ?>

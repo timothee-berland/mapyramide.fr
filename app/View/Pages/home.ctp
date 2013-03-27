@@ -50,18 +50,21 @@ endif;
   <legend align="center" id='daj'>
     Derniers articles ajoutés
   </legend>
-	
-	<?php 
-		foreach ($derniersArticles as $article): 
-			echo $this->Text->truncate(
-				$this->Html->link(
-					'<h1>' . $article['Article']['title'] . '</h1>', 
-					'/articles/' . $article['Article']['id'], 
-					array('escape' => false)),
-				25,
-				array('ellipsis' => '...', 'html' => true));
-		endforeach; 
-	?>
+	<div id="accordeon">
+		<?php 
+			foreach ($derniersArticles as $article): 
+				echo $this->Text->truncate(
+					$this->Html->link(
+						'<h1>' . $article['Article']['title'] . '</h1>', 
+						'/articles/article/' . $article['Article']['id'], 
+						array('escape' => false)),
+					25,
+					array('ellipsis' => '...', 'html' => true));
+				$text = "<p>" . $this->Text->truncate($article['Article']['content'], array('html' => true)) . "</p>";
+				echo $this->Html->div($class = null, $text , $options = array());
+			endforeach; 
+		?>
+	</div>
 	
 </fieldset>
 
@@ -144,3 +147,9 @@ endif;
 	<!-- Bouton Super Traqueur -->
 	<div id="btn-super-traqueur">Super Traqueur</div>
 </div>
+
+<script>
+  $(function() {
+    $( "#accordeon" ).accordion();
+  });
+</script>

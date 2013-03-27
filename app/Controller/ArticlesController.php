@@ -8,11 +8,21 @@ class ArticlesController extends AppController {
 	// Pour utiliser des modèles spécifiques
 	public $uses = array('Article', 'Category', 'Form', 'Ck');
 
+	public function beforeFilter() {
+			parent::beforeFilter();
+			$this->Auth->allow('article'); // Letting non-users see public articles
+		}
+
 	public function index() {
 
 		$articles = $this->Category->find('all');
 		$this->set('articles', $articles);
 
+	}
+
+	public function article($id) {
+		$article = $this->Article->find('first', array('options', array('id' => $id)));
+			$this->set('article', $article);
 	}
 
 	public function recherche($id_aliment, $gyf) {

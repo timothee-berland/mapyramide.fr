@@ -55,7 +55,7 @@
 		public function display() {
 
 			$derniersArticles = $this->Article->find('all', array(
-				'fields' => array('id', 'title'),
+				'fields' => array('id', 'title', 'content'),
 				'order' => 'created DESC'));
 			$this->set('derniersArticles', $derniersArticles);
 
