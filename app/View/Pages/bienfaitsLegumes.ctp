@@ -2,15 +2,14 @@
 	<div id="image">
 	</div>
     <div id="texte">
-		<!-- Cette page est accessible à partir du menu situé en haut de page : Cliquez sur "Mon assiette" ->"Légumes" ->"Bienfaits des légumes"
+		<!-- Cette page est accessible à partir du menu situé en haut de page : Cliquez sur "Mon assiette" ->"Légumes" ->"Bienfaits"
 		     Elle présente les effets bénéfiques qu'ont les légumes sur notre santé -->
-		<span> L'importance de manger </span> <br/>
-		<span> des légumes </span> <br/>
-		<h1>Introduction </h1>
-		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum turpis elit, viverra vitae tempus ac, 
+		<span1> L'importance de manger </span1> <br/>
+		<span1> des légumes </span1> <br/>
+		<p1>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum turpis elit, viverra vitae tempus ac, 
 		ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum turpis elit, viverra vitae tempus ac, interdum eu enim
 		ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum turpis elit, viverra vitae tempus ac, interdum eu enim. 
-		</p> 
+		</p1> 
 	</div>
 	
 	<div id="texte0">
@@ -18,35 +17,26 @@
 			<tr>
 				<td >
 					<h1>Bienfaits des légumes sur la santé</h1>
-					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum turpis elit, viverra vitae,
+					<p1>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum turpis elit, viverra vitae,
 					ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum turpis elit, viverra vitae tempus ac, interdum eu enim
 					ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum turpis elit, viverra vitae tempus ac, interdum eu enim. 
-					orem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum turpis elit, viverra vitae tempus ac, 
-					ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum turpis elit, viverra vitae tempus ac, interdum eu enim
-					ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum turpis elit, viverra vitae tempus ac, interdum eu enim.
-					</p>
+					</p1>
 				</td>
 				<td>
 					<!-- Image illustrant le paragraphe n°2 -->
-					<p><?php echo $this->Html->image('Fruits.png', array('height' => '200px', 'width' => '260px', 'alt' => 'Fruits')); ?></p>
+					<p1><?php echo $this->Html->image('Fruits.png', array('height' => '200px', 'width' => '260px', 'alt' => 'Fruits')); ?></p1>
 				</td>
 			</tr>
-		</table>
-	</div>
-	
-	<div id="texte1">
-		<table>
-			<br/>
 			<tr>
 				<td >
 					<h1>Nutriments</h1>
-					<p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum turpis elit, viverra vitae,
+					<p1> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum turpis elit, viverra vitae,
 					ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum turpis elit, viverra vitae tempus ac, interdum eu enim
-					ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum turpis elit, viverra vitae tempus ac, interdum eu enim. </p>
+					ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum turpis elit, viverra vitae tempus ac, interdum eu enim. </p1>
 				</td>
 				<td>
 					<!-- Image illustrant le paragraphe n°3 -->
-					<p><?php echo $this->Html->image('Fruits.png', array('height' => '200px', 'width' => '260px', 'alt' => 'Fruits')); ?></p>
+					<p1><?php echo $this->Html->image('Fruits.png', array('height' => '200px', 'width' => '260px', 'alt' => 'Fruits')); ?></p1>
 				</td>
 			</tr>
 		</table>

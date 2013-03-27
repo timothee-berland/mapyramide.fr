@@ -1,17 +1,14 @@
 ﻿<div id="presentation">
 	<div id="image">
 	</div>
-    <div id="texte2">
+    <div id="texte">
 		<!-- Titre de la page accessible depuis le menu situé en haut de la page en cliquant sur "Activité physique" -->
-		<span> Qu'est-ce que </span><br/><span> l'activité physique ? </span> 
-		<br/><br/><br/>
-	</div>
-	
-	<div id="texte">
-		<h1>Introduction </h1>
-		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum turpis elit, viverra vitae tempus ac, 
+		<span1> Qu'est-ce que </span1> <br/>
+		<span1> l'activité physique ? </span1> 
+		<br/>
+		<p1>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum turpis elit, viverra vitae tempus ac, 
 		    ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum turpis elit, viverra vitae tempus ac, interdum eu enim
-			ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum turpis elit, viverra vitae tempus ac, interdum eu enim. </p> 
+			ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum turpis elit, viverra vitae tempus ac, interdum eu enim. </p1> 
 	</div>
 	
 	<div id="texte4">
@@ -19,13 +16,13 @@
 			<tr>
 				<td >
 					<h1> Définition </h1>
-					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum turpis elit, viverra vitae,
+					<p1>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum turpis elit, viverra vitae,
 					ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum turpis elit, viverra vitae tempus ac, interdum eu enim
 					ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum turpis elit, viverra vitae tempus ac, interdum eu enim. 
 					orem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum turpis elit, viverra vitae tempus ac, 
 					ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum turpis elit, viverra vitae tempus ac, interdum eu enim
 					ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum turpis elit, viverra vitae tempus ac, interdum eu enim.
-					</p>
+					</p1>
 				</td>
 				<td>
 				</td>
@@ -34,6 +31,6 @@
 		<br/><br/><br/><br/>
 		
 		<!-- Image située en bas de page -->
-		<?php echo $this->Html->image('calories.jpg', array('height' => '130px', 'width' => '950px', 'alt' => 'Calories')); ?>
+		<?php echo $this->Html->image('calories.jpg', array('height' => '130px', 'width' => '500px', 'alt' => 'Calories')); ?>
 	</div>
 </div>

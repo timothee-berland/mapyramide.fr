@@ -2,8 +2,8 @@
 	<div id="image">
 	</div>
     <div id="texte">
-		<!-- Cette page est accessible Ã  partir du menu situÃ© en haut de page : Cliquez sur "Poids et calories" ->"Gestion pondÃ©rale" ->"Mes aliments"
-		     Elle donne des conseils sur les aliments dont l'utilisateur Ã  besoin -->
+		<!-- Cette page est accessible à partir du menu situé en haut de page : Cliquez sur "Poids et calories" ->"Gestion pondérale" ->"Mes aliments"
+		     Elle donne des conseils sur les aliments dont l'utilisateur à besoin -->
 		<span1> Les aliments dont </span1> <br/>
 		<span1> j'ai besoin </span1> <br/>
 		<br />
@@ -27,7 +27,7 @@
 					</p1>
 				</td>
 				<td>
-					<!-- Image illustrant le paragraphe nÂ°2 -->
+					<!-- Image illustrant le paragraphe n°2 -->
 					<p1><?php echo $this->Html->image('Fruits.png', array('height' => '200px', 'width' => '260px', 'alt' => 'Fruits')); ?></p1>
 				</td>
 			</tr>
@@ -45,7 +45,7 @@
 					ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum turpis elit, viverra vitae tempus ac, interdum eu enim. </p1>
 				</td>
 				<td>
-					<!-- Image illustrant le paragraphe nÂ°3 -->
+					<!-- Image illustrant le paragraphe n°3 -->
 					<p1><?php echo $this->Html->image('Fruits.png', array('height' => '200px', 'width' => '260px', 'alt' => 'Fruits')); ?></p1>
 				</td>
 			</tr>

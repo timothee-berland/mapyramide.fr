@@ -135,7 +135,7 @@ $cakeDescription = __d('cake_dev', 'CakePHP: the rapid development php framework
 							<li class="dropdown-last"><?php echo $this->Html->link('Matières grasses', '/pages/matieresgrasses'); ?>
 								<ul class="dropdown">
 									<li class="dropdown-first"><?php echo $this->Html->link('Importance', '/pages/importancemg'); ?></li>
-									<li class="dropdown-middle"><?php echo $this->Html->link('Dose recommandée', '#'); ?></li>
+									<li class="dropdown-middle"><?php echo $this->Html->link('Dose recommandée', 'quantiterecommandeemg'); ?></li>
 								</ul>
 							</li>
 						</ul>
@@ -166,11 +166,11 @@ $cakeDescription = __d('cake_dev', 'CakePHP: the rapid development php framework
 					</li>
 					<li><?php echo $this->Html->link('Activité physique', '#'); ?>
 						<ul class="dropdown">
-							<li class="dropdown-first"><?php echo $this->Html->link("Définition", '#'); ?></li>
+							<li class="dropdown-first"><?php echo $this->Html->link("Définition", '/pages/activitephysique'); ?></li>
 							<li class="dropdown-middle"><?php echo $this->Html->link('Importance', '/pages/importancesport'); ?></li>
-							<li class="dropdown-middle"><?php echo $this->Html->link('Temps de pratique', '#'); ?></li>
-							<li class="dropdown-middle"><?php echo $this->Html->link('Calories brulées', '#'); ?></li>
-							<li class="dropdown-last"><?php echo $this->Html->link('Conseils', '#'); ?></li>
+							<li class="dropdown-middle"><?php echo $this->Html->link('Temps de pratique', '/pages/tempspratique'); ?></li>
+							<li class="dropdown-middle"><?php echo $this->Html->link('Calories brulées', '/pages/caloriesbrulees'); ?></li>
+							<li class="dropdown-last"><?php echo $this->Html->link('Conseils', '/pages/conseilssportifs'); ?></li>
 						</ul>
 					</li>
 					<li><?php echo $this->Html->link('Ressources', '#'); ?>

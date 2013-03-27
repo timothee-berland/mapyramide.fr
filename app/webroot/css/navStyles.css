@@ -376,7 +376,7 @@ body > #container {
 	padding: 10px;
 }
     /*--------------------
-   Derniers articles ajoutÃ©s
+   Derniers articles ajoutés
     ---------------------*/
 #content #derniersArticles #daj {
 	margin: 5px;
@@ -395,7 +395,7 @@ body > #container {
 	margin: 50px;
 	top: 228px;
 	left: 43%;
-	overflow:visible; /* corrige le problÃ¨me de fluiditÃ© de l'animation */
+	overflow:visible; /* corrige le problème de fluidité de l'animation */
 }
 
 
@@ -453,7 +453,7 @@ body > #container {
 
 	/*--------------------
   	   Bloc des index et 
-  	   boutons associÃ©s
+  	   boutons associés
     ---------------------*/
 #content #bloc-index {
     float : left;
@@ -520,10 +520,10 @@ body > #container {
 }
 
     /*--------------------
-      GÃ©nÃ©rique \ Ã€ trier
+      Générique \ À trier
     ---------------------*/
-    /* C'EST PAS POSSIBLE Ã‡A, ON PEUT PAS REDEFINIR LE span Ã‡A FOUT LE BORDEL DANS PLEINS D'AUTRES TRUCS */
-    /* #TODO : Changer les 'span' qui utilisaient Ã§a en class='span2'*/
+    /* C'EST PAS POSSIBLE ÇA, ON PEUT PAS REDEFINIR LE span ÇA FOUT LE BORDEL DANS PLEINS D'AUTRES TRUCS */
+    /* #TODO : Changer les 'span' qui utilisaient ça en class='span2'*/
 #content span2{
     display: block;
 	font:20px Corbel,'Segoe UI',Arial, sans-serif;
@@ -941,6 +941,7 @@ body > #container {
 #content #presentation #texte p1{
     display: block;
 	text-indent : 30px;
+	margin-top : 20px;
 	font:17px Corbel,'Segoe UI',Arial, sans-serif;
 	margin-left : 20px;
 	color : #000000;
@@ -966,6 +967,7 @@ body > #container {
 
 #content #presentation #texte0 p1{
     display: block;
+	vertical-align : center;
 	text-indent : 30px;
 	font:17px Corbel,'Segoe UI',Arial, sans-serif;
 	margin-left : 20px;
@@ -987,9 +989,13 @@ body > #container {
 
 #content #presentation #texte0 table {
  width : 90%;
- margin-top : 20px;
  margin-left : 30px;
-    
+}
+
+#content #presentation #texte0 td {
+width : 90%;
+padding-bottom : 30px;
+vertical-align : center;
 }
 
 #content #presentation #texte1 {
@@ -1000,8 +1006,8 @@ body > #container {
 #content #presentation #texte1 p1{
     display: block;
 	text-indent : 30px;
+	margin-rigth : 50px;
 	font:17px Corbel,'Segoe UI',Arial, sans-serif;
-	margin-left : 20px;
 	color : #000000;
     float:left;
 }
@@ -1009,7 +1015,6 @@ body > #container {
 #content #presentation #texte1 h1{
     display: block;
 	font:20px Corbel,'Segoe UI',Arial, sans-serif;
-	margin-left : 20px;
 	font-weight : bold;
 	color : #4D2B08;
     float:left;
@@ -1105,6 +1110,7 @@ float : left;
 #content #presentation #texte3 p1{
     display: block;
 	text-indent : 30px;
+	vertical-align : center;
 	font:17px Corbel,'Segoe UI',Arial, sans-serif;
 	margin-left : 20px;
 	margin-bottom : 10px;
@@ -1128,6 +1134,7 @@ float : left;
 #content #presentation #texte3 table {
  width : 90%;
  margin-left : 50px;
+ vertical-align : center;
     
 }
 
@@ -1185,10 +1192,11 @@ float : left;
     
 }
 
-#content #presentation #texte5 p{
+#content #presentation #texte5 p1{
     display: block;
 	font:17px Corbel,'Segoe UI',Arial, sans-serif;
 	margin-left : 20px;
+	text-indent : 30px;
 	color : #000000;
     float:left;
 }
@@ -1397,7 +1405,7 @@ float : left;
 }
 
 #content #menus  #b1 .bloc-menu h3 a {
-  border-bottom : 0px; /* Pas de deux deuxiÃ¨me bordure ici */
+  border-bottom : 0px; /* Pas de deux deuxième bordure ici */
 }
 
 #content #menus #b1 .bloc-menu p{

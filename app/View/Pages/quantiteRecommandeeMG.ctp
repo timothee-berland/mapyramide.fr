@@ -3,8 +3,8 @@
 	</div>
     <div id="texte">
 		<!-- Cette page est accessible depuis le menu situé en haut de page : Cliquez sur "Mon assiette" -> "Matières grasses" -> "Consommer la quantité recommandée" -->
-		<span> Consommer la quantité  </span> <br />
-		<span> de calories recommandée </span> <br />
+		<span1> Consommer la quantité  </span1> <br />
+		<span1> de calories recommandée </span1> <br />
 	</div>
 	
 	<div id="texte3">
