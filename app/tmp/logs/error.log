@@ -20998,3 +20998,153 @@ Request URL: /mapyramide.fr/img/load-indicator.gif
 Stack Trace:
 #0 C:\Program Files (x86)\EasyPHP-12.1\www\mapyramide.fr\app\webroot\index.php(97): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
 #1 {main}
+2013-03-28 06:44:56 Error: [MissingViewException] View file "C:\Program Files (x86)\EasyPHP-12.1\www\mapyramide.fr\app\View\Pages\plansite.ctp" is missing.
+Exception Attributes: array (
+  'file' => 'C:\\Program Files (x86)\\EasyPHP-12.1\\www\\mapyramide.fr\\app\\View\\Pages\\plansite.ctp',
+)
+Request URL: /mapyramide.fr/pages/plansite
+Stack Trace:
+#0 C:\Program Files (x86)\EasyPHP-12.1\www\mapyramide.fr\lib\Cake\View\View.php(467): View->_getViewFileName('plansite')
+#1 C:\Program Files (x86)\EasyPHP-12.1\www\mapyramide.fr\lib\Cake\Controller\Controller.php(947): View->render('plansite', NULL)
+#2 C:\Program Files (x86)\EasyPHP-12.1\www\mapyramide.fr\app\Controller\PagesController.php(80): Controller->render('plansite')
+#3 [internal function]: PagesController->display('plansite')
+#4 C:\Program Files (x86)\EasyPHP-12.1\www\mapyramide.fr\lib\Cake\Controller\Controller.php(485): ReflectionMethod->invokeArgs(Object(PagesController), Array)
+#5 C:\Program Files (x86)\EasyPHP-12.1\www\mapyramide.fr\lib\Cake\Routing\Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#6 C:\Program Files (x86)\EasyPHP-12.1\www\mapyramide.fr\lib\Cake\Routing\Dispatcher.php(161): Dispatcher->_invoke(Object(PagesController), Object(CakeRequest), Object(CakeResponse))
+#7 C:\Program Files (x86)\EasyPHP-12.1\www\mapyramide.fr\app\webroot\index.php(97): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#8 {main}
+2013-03-28 06:45:08 Error: [MissingControllerException] Controller class ImgController could not be found.
+Exception Attributes: array (
+  'class' => 'ImgController',
+  'plugin' => NULL,
+)
+Request URL: /mapyramide.fr/img/load-indicator.gif
+Stack Trace:
+#0 C:\Program Files (x86)\EasyPHP-12.1\www\mapyramide.fr\app\webroot\index.php(97): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-03-28 06:56:13 Error: [MissingControllerException] Controller class ImgController could not be found.
+Exception Attributes: array (
+  'class' => 'ImgController',
+  'plugin' => NULL,
+)
+Request URL: /mapyramide.fr/img/Papaye.jpg
+Stack Trace:
+#0 C:\Program Files (x86)\EasyPHP-12.1\www\mapyramide.fr\app\webroot\index.php(97): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-03-28 06:56:13 Error: [MissingControllerException] Controller class ImgController could not be found.
+Exception Attributes: array (
+  'class' => 'ImgController',
+  'plugin' => NULL,
+)
+Request URL: /mapyramide.fr/img/Banane.jpg
+Stack Trace:
+#0 C:\Program Files (x86)\EasyPHP-12.1\www\mapyramide.fr\app\webroot\index.php(97): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-03-28 06:56:13 Error: [MissingControllerException] Controller class ImgController could not be found.
+Exception Attributes: array (
+  'class' => 'ImgController',
+  'plugin' => NULL,
+)
+Request URL: /mapyramide.fr/img/Mangue.jpg
+Stack Trace:
+#0 C:\Program Files (x86)\EasyPHP-12.1\www\mapyramide.fr\app\webroot\index.php(97): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-03-28 06:56:13 Error: [MissingControllerException] Controller class ImgController could not be found.
+Exception Attributes: array (
+  'class' => 'ImgController',
+  'plugin' => NULL,
+)
+Request URL: /mapyramide.fr/img/Melon.jpg
+Stack Trace:
+#0 C:\Program Files (x86)\EasyPHP-12.1\www\mapyramide.fr\app\webroot\index.php(97): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-03-28 06:58:19 Error: [MissingControllerException] Controller class ImgController could not be found.
+Exception Attributes: array (
+  'class' => 'ImgController',
+  'plugin' => NULL,
+)
+Request URL: /mapyramide.fr/img/Banane.jpg
+Stack Trace:
+#0 C:\Program Files (x86)\EasyPHP-12.1\www\mapyramide.fr\app\webroot\index.php(97): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-03-28 06:58:21 Error: [MissingControllerException] Controller class ImgController could not be found.
+Exception Attributes: array (
+  'class' => 'ImgController',
+  'plugin' => NULL,
+)
+Request URL: /mapyramide.fr/img/Banane.jpg
+Stack Trace:
+#0 C:\Program Files (x86)\EasyPHP-12.1\www\mapyramide.fr\app\webroot\index.php(97): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-03-28 06:58:26 Error: [MissingControllerException] Controller class ImgController could not be found.
+Exception Attributes: array (
+  'class' => 'ImgController',
+  'plugin' => NULL,
+)
+Request URL: /mapyramide.fr/img/Banane.jpg
+Stack Trace:
+#0 C:\Program Files (x86)\EasyPHP-12.1\www\mapyramide.fr\app\webroot\index.php(97): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-03-28 06:58:26 Error: [MissingControllerException] Controller class ImgController could not be found.
+Exception Attributes: array (
+  'class' => 'ImgController',
+  'plugin' => NULL,
+)
+Request URL: /mapyramide.fr/img/Papaye.jpg
+Stack Trace:
+#0 C:\Program Files (x86)\EasyPHP-12.1\www\mapyramide.fr\app\webroot\index.php(97): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-03-28 06:58:26 Error: [MissingControllerException] Controller class ImgController could not be found.
+Exception Attributes: array (
+  'class' => 'ImgController',
+  'plugin' => NULL,
+)
+Request URL: /mapyramide.fr/img/Melon.jpg
+Stack Trace:
+#0 C:\Program Files (x86)\EasyPHP-12.1\www\mapyramide.fr\app\webroot\index.php(97): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-03-28 06:58:26 Error: [MissingControllerException] Controller class ImgController could not be found.
+Exception Attributes: array (
+  'class' => 'ImgController',
+  'plugin' => NULL,
+)
+Request URL: /mapyramide.fr/img/Mangue.jpg
+Stack Trace:
+#0 C:\Program Files (x86)\EasyPHP-12.1\www\mapyramide.fr\app\webroot\index.php(97): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-03-28 07:54:59 Error: [MissingControllerException] Controller class ImgController could not be found.
+Exception Attributes: array (
+  'class' => 'ImgController',
+  'plugin' => NULL,
+)
+Request URL: /mapyramide.fr/img/load-indicator.gif
+Stack Trace:
+#0 C:\Program Files (x86)\EasyPHP-12.1\www\mapyramide.fr\app\webroot\index.php(97): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-03-28 07:55:14 Error: [MissingControllerException] Controller class ImgController could not be found.
+Exception Attributes: array (
+  'class' => 'ImgController',
+  'plugin' => NULL,
+)
+Request URL: /mapyramide.fr/img/load-indicator.gif
+Stack Trace:
+#0 C:\Program Files (x86)\EasyPHP-12.1\www\mapyramide.fr\app\webroot\index.php(97): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-03-28 10:14:54 Error: [MissingControllerException] Controller class ImgController could not be found.
+Exception Attributes: array (
+  'class' => 'ImgController',
+  'plugin' => NULL,
+)
+Request URL: /mapyramide.fr/img/load-indicator.gif
+Stack Trace:
+#0 C:\Program Files (x86)\EasyPHP-12.1\www\mapyramide.fr\app\webroot\index.php(97): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-03-28 10:15:11 Error: [MissingControllerException] Controller class ActivitephysiqueController could not be found.
+Exception Attributes: array (
+  'class' => 'ActivitephysiqueController',
+  'plugin' => NULL,
+)
+Request URL: /mapyramide.fr/activitephysique
+Stack Trace:
+#0 C:\Program Files (x86)\EasyPHP-12.1\www\mapyramide.fr\app\webroot\index.php(97): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
