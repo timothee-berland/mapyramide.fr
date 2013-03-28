@@ -25,7 +25,7 @@ class Aliment extends AppModel {
  */
 	public $belongsTo = array(
 		'Famillealiments' => array(
-			'className' => 'Famillealiments',
+			'className' => 'Famillealiment',
 			'foreignKey' => 'famillealiments_id',
 			'conditions' => '',
 			'fields' => '',

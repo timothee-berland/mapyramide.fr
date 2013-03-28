@@ -1,68 +1,100 @@
 <div id="content">	
 
 	<?php echo $this->Form->create('User'); ?>
-	
-	<!--TODO AJOUTER UNE IMAGE -->
-	<span> Personnalisez votre profil </span> 
-	<div id="bloc1">	
 
-		<!-- #TODO véifier que le nom d'utilisateur n'existe pas -->
-		<label for="UserUsername"> Identifiant <em> *</em></label>
-		<input type="text" name="data[User][username]" maxlength="50" type="text" id="UserUsername" required="required"/> <br><br>
-		
-		<label for="UserDatenaissance"> Date de naissance (aaaa/mm/jj) <em> *</em></label>
-		<input type="date" name="data[User][datenaissance]" id="UserDatenaissance" required="required"/> <br><br><br>
-		
-		<label for="UserSexe"> Vous êtes <em> *</em></label>
-		<input type="radio" name="data[User][sexe]" id="homme" value="homme" checked="checked" onClick="masquer(this)" /><a class='labelInscription'> Homme</a>
-		<input type="radio" name="data[User][sexe]" id="femme" value="femme" onClick="afficher(this)" /><a class='labelInscription'> Femme</a><br><br>
-		
-		<div id="cache">
-		    <label for="UserEnceinte"> Enceinte  <em> *</em> </label>
-		    <input type="radio" name="data[User][enceinte]" id="enceinte" value="O"/><a class='labelInscription'> Oui 
-			&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</a>
-			<input type="radio" name="data[User][enceinte]" id="pas_enceinte" value="N" checked/><a class='labelInscription'> Non </a><br><br>
+	<?php if (! (AuthComponent::user('role') == 'administrateur' && AuthComponent::user('id') != $this->request->data['User']['id'])) : ?>
+		<!--TODO AJOUTER UNE IMAGE -->
+		<span2> Personnalisez votre profil </span2> 
+		<div class="bloc1">	
 			
-			<label for="UserAllaitante"> Allaitante <em> *</em> </label>
-			<input type="radio" name="data[User][allaitante]" id="allaitante" value="O"/><a class='labelInscription'> Oui 
-			&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</a>
-			<input type="radio" name="data[User][allaitante]" id="pas_allaitante" value="N" checked/><a class='labelInscription'> Non</a><br><br><br>
+			<label for="UserDatenaissance"> Date de naissance (aaaa-mm-jj) <em> *</em></label>
+			<input type="text" name="data[User][datenaissance]" id="UserDatenaissance" required="required" title="Votre nom d'utilisateur doit faire entre 5 et 20 caractètres"/> <br><br><br>
 			
+			<label for="UserSexe"> Vous êtes <em> *</em></label>
+			<input type="radio" name="data[User][sexe]" id="homme" value="homme" checked="checked" onClick="masquer(this)" /><a class='labelInscription'> Homme</a>
+			<input type="radio" name="data[User][sexe]" id="femme" value="femme" onClick="afficher();" /><a class='labelInscription'> Femme</a><br><br>
+			
+			<div id="cache">
+			    <label for="UserEnceinte"> Enceinte  <em> *</em> </label>
+			    <input type="radio" name="data[User][enceinte]" id="enceinte" value="O"/><a class='labelInscription'> Oui 
+				&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</a>
+				<input type="radio" name="data[User][enceinte]" id="pas_enceinte" value="N" checked/><a class='labelInscription'> Non </a><br><br>
+				
+				<label for="UserAllaitante"> Allaitante <em> *</em> </label>
+				<input type="radio" name="data[User][allaitante]" id="allaitante" value="O"/><a class='labelInscription'> Oui 
+				&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</a>
+				<input type="radio" name="data[User][allaitante]" id="pas_allaitante" value="N" checked/><a class='labelInscription'> Non</a><br><br><br>
+				
+			</div>
+			
+			<label for="UserTaille"> Votre taille </label> 
+			<input type="text" name="data[User][taille]" value="" id="UserTaille" /> <br><br>
+			
+			<label for="UserPoids">  Votre poids </label> 
+			<input type="text" name="data[User][poids]" value="" id="UserPoids" /> 
+			
+			<span>* Informations obligatoires </span>
 		</div>
-		
-		<label for="UserTaille"> Votre taille </label> 
-		<input type="text" name="data[User][taille]" value="" id="UserTaille" /> <br><br>
-		
-		<label for="UserPoids">  Votre poids </label> 
-		<input type="text" name="data[User][poids]" value="" id="UserPoids" /> 
-		
-		<span>* Informations obligatoires </span>
-	</div>
+				
+		<span2> Enregistrez votre profil </span2> 
+		<div class="bloc1">	
+			<label for="UserPassword"> Mot de passe <em> *</em></label>
+			<input type="password" name="data[User][password]" id="UserPassword" required="required"/> <br><br>
 			
-	<span> Enregistrez votre profil </span> 
-	<div id="bloc1">	
-		<label for="UserPassword"> Mot de passe <em> *</em></label>
-		<input type="password" name="data[User][password]" id="UserPassword" required="required"/> <br><br>
-		
-		<label for="UserPasswordConfirmation"> Confirmation <em> *</em></label>
-		<input type="password" name="UserPasswordConfirmation" id="UserPasswordConfirmation" required="required"/> <br><br>
-		
-		<label for="UserEmail"> Email </label>
-		<input type="email" name="data[User][email]" id="UserEmail" /> 
-		
-		<span>* Informations obligatoires </span>
-	</div>
+			<label for="UserPasswordConfirmation"> Confirmation <em> *</em></label>
+			<input type="password" name="UserPasswordConfirmation" id="UserPasswordConfirmation" required="required" title="Votre mot de passe doit faire plus de 7 caractètres"/> <br><br>
+			
+			<label for="UserEmail"> Email </label>
+			<input type="email" name="data[User][email]" id="UserEmail" /> 
+			
+			<span>* Informations obligatoires </span>
+		</div>
 	
+	<?php else : ?>
+		<span2> Type de profil </span2> 
+		<div class="bloc1">	
+			<label for="UserRole"> Type d'utilisateur <em> *</em></label>
+				<?php if ($this->request->data['User']['role'] == 'administrateur') : ?>
+					<div class="input select">
+						<select name="data[User][role]" id="UserRole">
+							<option value="administrateur" selected='selected'>Administrateur</option>
+							<option value="utilisateur">Utilisateur</option>
+						</select>
+					</div>
+				<?php else : ?>
+					<div class="input select">
+						<select name="data[User][role]" id="UserRole">
+							<option value="administrateur">Administrateur</option>
+							<option value="utilisateur" selected='selected'>Utilisateur</option>
+						</select>
+					</div>
+				<?php endif; ?>
+	<?php endif; ?>
+
 	<div id="bloc2">
-	    <input type="button" value="Effacer" onClick="map()"/>
 	    <input type="submit" value="Valider" onClick="return validerForm()"/>
 	</div>
 </form>
 </div>
 
+<script>
+	$(function() {
+		$( "#UserDatenaissance" ).datepicker({
+			dateFormat: "yy-mm-dd", 
+			changeMonth: true, 
+			changeYear: true,
+			minDate: "-100Y", 
+			maxDate: "-1",
+			showOtherMonths: true,
+      		selectOtherMonths: true,
+      		defaultDate: "-20Y",
+      		yearRange: "c-101:c"
+		});
+	});
+</script>
 
 <script type="text/javascript">
-function afficher(btn) {
+function afficher() {
 
     var birthday = new Date(document.getElementById("UserDatenaissance").value);
 	var today = new Date();
@@ -77,7 +109,7 @@ function afficher(btn) {
 	    age--;
 	}
 
-    if (age >= 18 && age <= 48 && btn.checked) {
+    if (age >= 18 && age <= 48) {
 	    document.getElementById("cache").style.display = "block";
     }
 }
@@ -88,12 +120,8 @@ function masquer(btn) {
     } 
 }
 
-function map() {
-
-}
-
 function raz() {
-	var formulaire =  document.forms['UserAddForm'];
+	var formulaire =  document.forms['UserEditForm'];
     document.getElementById("UserUsername").value = "";  
 	document.getElementById("UserDatenaissance").value = "";
 	document.getElementById("UserTaille").value = "";
@@ -106,37 +134,43 @@ function raz() {
 // #TODO fonction onLoad qui renseigne les données post s'il y en a
 
 function validerForm() {
-    var formulaire =  document.forms['UserAddForm'];
+    var formulaire =  document.forms['UserEditForm'];
 
 	if (formulaire.elements['homme'].checked) {
 		formulaire.elements['pas_allaitante'].checked = true;
 		formulaire.elements['pas_enceinte'].checked = true;
 	}
 
-	if (formulaire.elements['UserUsername'].value != "") {
-	    if (formulaire.elements['UserDatenaissance'].value != "") {
-	        if (formulaire.elements['UserPassword'].value != "") {
-				if (formulaire.elements['UserPasswordConfirmation'].value != "") {
-					if (formulaire.elements['UserPasswordConfirmation'].value == 
-						formulaire.elements['UserPassword'].value) {
-						return true;
-					} else {
-						alert ('Le mot de passe ne correspond pas');
-					}
-				} else {
-				    alert ('Il vous faut un mot de passe');
-				}
-			} else {
-			    alert ('Le mot de passe n\'est pas renseingé');
-			}
-		} else {
-			alert ('L\'âge n\'est pas renseingé');
-		}
+	if (formulaire.elements['UserPasswordConfirmation'].value == 
+		formulaire.elements['UserPassword'].value) {
+		return true;
 	} else {
-	    alert ('L\'identifiant n\'est pas renseingé');
-    }
+		alert ('Le mot de passe ne correspond pas');
+	}
+	
 	return false;
 }	
+
+function postData() {
+	var formulaire =  document.forms['UserEditForm'];
+	formulaire.elements["UserDatenaissance"].value = '<?php echo $datenaissance ?>';
+	formulaire.elements["UserTaille"].value = '<?php echo $taille ?>';
+	formulaire.elements["UserPoids"].value = '<?php echo $poids ?>';
+	formulaire.elements["UserEmail"].value = '<?php echo $email ?>';
+	
+	if ('<?php echo $sexe ?>' == 'femme') {
+		formulaire.elements['femme'].checked = true;
+		afficher();
+	} 
+
+	if ('<?php echo $enceinte ?>' == 'O') {
+		formulaire.elements['enceinte'].checked = true;
+	}
+	
+	if ('<?php echo $allaitante ?>' == 'O') {
+		formulaire.elements['allaitante'].checked = true;
+	}
+}
 
 </script>
 

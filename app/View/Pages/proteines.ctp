@@ -43,7 +43,7 @@
 		</p1>
 	</div>
 	
-	<div id="texte1">
+	<div class="texte1">
 		<table width=130%; >
 			<tr>
 				<td style="padding-right:20px;"></td>
@@ -58,43 +58,21 @@
 		<table width=145%;  >
 			<tr>
 				<td>
-					<table width=200%; >
-						<tr>
-							<td>
-								<!-- Viandes, oeufs & poissons -->
-								<br>
-								<ul>
-									<li> Agneau </li>
-									<li> Anchois </li>
-									<li> Bison </li>
-									<li> Canard </li>
-									<li> Crabe </li>
-									<li> Crevette </li>
-									<li> Dinde </li>
-									<li> Homard </li>
-									<li> Huîtres </li>
-									<li> Jambon </li>
-									<li> Lapin </li>
-								</ul>
-							</td>
-					
-							<td style="padding-left: 70px ">
-								<br>
-								<ul>
-									<li> Moule </li>
-									<li> Oeuf de poule </li>
-									<li> Oie </li>
-									<li> Poulet </li>
-									<li> Porc </li>
-									<li> Sardine </li>
-									<li> Saumon </li>
-									<li> Thon </li>
-									<li> Truite </li>
-									<li> Veau </li>
-								</ul>
-							</td>
-						</tr>
-					</table>
+					<div class="listeForEach">
+						<table>
+							<!-- Liste des produits protéinés : affichage des images des différents produits protéinés à l'aide de zoombox -->
+							<?php foreach ($pdtProteines as $groupProteine) {
+								foreach ($groupProteine['Aliment'] as $pdtProteine) {
+									
+									echo '<tr><td>';
+									// Pour simplifier on ne metra qu'une image par produit différent
+									$fichier = strtok($pdtProteine['nomFR'], ',');
+									echo $this->Html->link('<li>' . $pdtProteine['nomFR'] . '</li>', '../img/' . $fichier . '.jpg', array('class' => 'zoombox', 'alt' => $pdtProteine['nomFR'], 'escape' => false));
+									echo '</td></tr>';
+								}
+							} ?>
+						</table>
+					</div>
 					
 					<td style="padding-right : 100px">
 					</td>
@@ -102,65 +80,42 @@
 				
 				<td style="padding-left: 0px ; border-left: medium solid #4D2B08" >
 				
-					<table width=200%; >
-						<tr>
-							<td style="padding-left : 10px">
-							</td>
-							
-							<!-- Noix & graines -->
-							<td>
-								<br/><br />
-								<ul>
-									<li> Amandes </li>
-									<li> Beurre d'arachide </li>
-									<li> Cacahuètes </li>
-									<li> Graines de sésame </li>
-									<li> Graines de soja </li>
-									<li> Graines de tournesol </li>
-									<li> Haricots blancs </li>
-									<li> Lentilles </li>
-								</ul>
-							</td>
-					
-							<td style="padding-left: 50px ">
-								<ul>
-									<li> Noisette </li>
-									<li> Noix </li>
-									<li> Noix de cajou </li>
-									<li> Noix de pécan </li>
-									<li> Pistaches </li>
-									<li> Pois cassés </li>
-									<li> Pois chiches </li>
-								</ul>
-							</td>
-						</tr>
-					</table>
+					<div class="listeForEach">
+						<table>
+							<!-- Liste des produits protéinés : affichage des images des différents produits protéinés à l'aide de zoombox -->
+							<?php foreach ($pdtProteines as $groupProteine) {
+								foreach ($groupProteine['Aliment'] as $pdtProteine) {
+									
+									echo '<tr><td>';
+									// Pour simplifier on ne metra qu'une image par produit différent
+									$fichier = strtok($pdtProteine['nomFR'], ',');
+									echo $this->Html->link('<li>' . $pdtProteine['nomFR'] . '</li>', '../img/' . $fichier . '.jpg', array('class' => 'zoombox', 'alt' => $pdtProteine['nomFR'], 'escape' => false));
+									echo '</td></tr>';
+								}
+							} ?>
+						</table>
+					</div>
 					<td style="padding-right : 90px">
 					</td>
 				</td>
 				
 				<td style="padding-left: 0px ; border-left: medium solid #4D2B08" >
 				
-					<table width=150%; >
-						<tr>
-							<td style="padding-left : 10px">
-							</td>
-							
-							<!-- Produits de soja traités -->
-							<td>
-							    <ul>
-									<li> Burgers végétariens </li>
-									<li> Protéines végétales texturées </li>
-								</ul>
-							</td>
-					
-							<td style="padding-left: 50px; ">
-								<ul>
-									<li> Tofu </li>
-								</ul>
-							</td>
-						</tr>
-					</table>
+					<div class="listeForEach">
+						<table>
+							<!-- Liste des produits protéinés : affichage des images des différents produits protéinés à l'aide de zoombox -->
+							<?php foreach ($pdtProteines as $groupProteine) {
+								foreach ($groupProteine['Aliment'] as $pdtProteine) {
+									
+									echo '<tr><td>';
+									// Pour simplifier on ne metra qu'une image par produit différent
+									$fichier = strtok($pdtProteine['nomFR'], ',');
+									echo $this->Html->link('<li>' . $pdtProteine['nomFR'] . '</li>', '../img/' . $fichier . '.jpg', array('class' => 'zoombox', 'alt' => $pdtProteine['nomFR'], 'escape' => false));
+									echo '</td></tr>';
+								}
+							} ?>
+						</table>
+					</div>
 					
 					<td style="padding-right : 130px">
 					</td>

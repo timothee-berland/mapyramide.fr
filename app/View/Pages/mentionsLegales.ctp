@@ -1,6 +1,6 @@
 ﻿<!-- Cette page est accessible à partir du footer : Cliquez sur "A propos de nous" -->
 <span2> Mentions légales </span2> 
-<div id="bloc1">
+<div class="bloc1">
 	<table>
 		<tr>
 			<td>

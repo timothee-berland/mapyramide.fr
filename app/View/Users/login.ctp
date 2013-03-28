@@ -4,7 +4,7 @@
 	<?php echo $this->Form->create('User'); ?>
 
 <span2> Connexion </span2> 
-<div id="bloc1">
+<div class="bloc1">
     <label for="UserUsername"> Identifiant</label>
 	<input type="text" name="data[User][username]" id="UserUsername" required="required"/> <br><br>
 	

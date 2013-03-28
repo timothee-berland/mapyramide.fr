@@ -1,4 +1,4 @@
-<div id="bloc1">
+<div class="bloc1">
 	<h1>1 - Le Logarithme Népérien de 1930 à nos jours</h1>
 	<h2>1.1 – Le Logarithme et son implication dans la révolte du Pérou oriental.</h2>
 	<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Sed non risus. Suspendisse lectus tortor, dignissim sit amet, adipiscing nec, ultricies sed, dolor.</p>

@@ -34,7 +34,7 @@
 		</table>
 	</div>
 	
-	<div id="texte1">
+	<div class="texte1">
 		<table>
 			<br/>
 			<tr>

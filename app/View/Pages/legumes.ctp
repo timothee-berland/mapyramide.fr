@@ -41,8 +41,8 @@
 		</p1>
 	</div>
 	
-	<div id="texte1">
-		<table width=145%;>
+	<div class="texte1">
+		<table style="width:158%;">
 			<tr>
 				<td style="padding-right:40px;"></td>
 				<td><h3> Légumes verts </h3> </td>
@@ -52,103 +52,68 @@
 				<td><h3> Autres légumes </h3></td>
 			</tr>
 		</table>
-		
-		<table width=145%;>
+	</div>
+	<div class="texte1">
+		<table>
 			<tr>
 				<td>
-					<table width=200%; >
-						<tr>
-							<!-- Légumes verts -->
-							<td>
-								<br/> <br/><ul><li> Brocoli </li>
-								<li> Chou vert </li>
-								<li> Chou frisé </li>
-								<li> Cresson </li>
-							</td>
-					
-							<td style="padding-left: 50px ">
-								<br/>
-								<ul>
-									<?php
-									echo $this->Html->link('<li> Epinards </li>', '../img/Epinards.jpg', array('class' => 'zoombox zgallery1', 'alt' => 'Epinards', 'escape' => false));
-									?>
-									<li> Laitue </li>
-									<li> Mesclun </li>	
-								</ul>
-							</td>
-						</tr>
-					</table>
-					
-					<td style="padding-right : 100px">
-					</td>
-				</td>
-				
-				<td style="padding-left: 0px ; border-left: medium solid #4D2B08" >
-					<table width=200%; >
-						<tr>
-							<td style="padding-left : 10px">
-							</td>
-							
-							<!-- Légumes féculents -->
-							<td>
-								<ul>
-									<?php
-										echo $this->Html->link('<li> Châtaigne </li>', '../img/Châtaigne.jpg', array('class' => 'zoombox zgallery1', 'alt' => 'Châtaigne', 'escape' => false));
-										echo("<li> Maïs </li>");
-										echo("<li> Manioc </li>");
-									?>
-								</ul>
-							</td>
-					
-							<td style="padding-left: 50px ">
-							
-								<ul>
-								   <?php 
-									echo ("<li> Petit pois </li>");
-									echo $this->Html->link('<li> Pommes de terre </li>', '../img/Pommes de terre.jpg', array('class' => 'zoombox zgallery1', 'alt' => 'Pommes de terre', 'escape' => false)); ?>
+					<div class="listeForEach">
+						<table>
+						<!-- Liste des légumes : affichage des images des différents légumes à l'aide de zoombox -->
+						<?php foreach ($legumes as $groupeLegume) {
+							foreach ($groupeLegume['Aliment'] as $legume) {
 								
-								</ul>
-							</td>
-						</tr>
-					</table>
+								echo '<tr><td>';
+								// Pour simplifier on ne metra qu'une image par légume différent
+								$fichier = strtok($legume['nomFR'], ',');
+								echo $this->Html->link('<li>' . $legume['nomFR'] . '</li>', '../img/' . $fichier . '.jpg', array('class' => 'zoombox', 'alt' => $legume['nomFR'], 'escape' => false));
+								echo '</td></tr>';
+							}
+						} ?>
+						</table>
+					</div>
 					
 					<td style="padding-right : 100px">
 					</td>
 				</td>
 				
 				<td style="padding-left: 0px ; border-left: medium solid #4D2B08" >
-					<table width=200%; >
-						<tr>
-							<td style="padding-left : 10px">
-							</td>
-							
-							<!-- Autres légumes -->
-							<td>
-								<ul>
-									<?php
-										echo("<br/> <br/><li> Artichaut </li>");
-										echo("<li> Asperge </li>");
-										echo("<li> Avocat </li>");
-									?>
-									<li> Betterave </li>
-									<li> Chou </li>
-									<li> Chou-fleur </li>
-								</ul>
-							</td>
+					<div class="listeForEach">
+						<table>
+						<!-- Liste des légumes : affichage des images des différents légumes à l'aide de zoombox -->
+						<?php foreach ($legumes as $groupeLegume) {
+							foreach ($groupeLegume['Aliment'] as $legume) {
+								
+								echo '<tr><td>';
+								// Pour simplifier on ne metra qu'une image par légume différent
+								$fichier = strtok($legume['nomFR'], ',');
+								echo $this->Html->link('<li>' . $legume['nomFR'] . '</li>', '../img/' . $fichier . '.jpg', array('class' => 'zoombox', 'alt' => $legume['nomFR'], 'escape' => false));
+								echo '</td></tr>';
+							}
+						} ?>
+						</table>
+					</div>
 					
-							<td style="padding-left: 50px ">
-								<ul>
-									<br/><br/>
-									<li> Céleri </li>
-									<li> Champignon </li>
-									<li> Concombre </li>
-									<li> Courgette </li>
-									<?php echo $this->Html->link('<li> Oignon </li>', '../img/Oignon.jpg', array('class' => 'zoombox zgallery1', 'alt' => 'Oignon', 'escape' => false)); ?>
-									<li> Navet </li>
-								</ul>
-							</td>
-						</tr>
-					</table>
+					<td style="padding-right : 100px">
+					</td>
+				</td>
+				
+				<td style="padding-left: 0px ; border-left: medium solid #4D2B08" >
+					<div class="listeForEach">
+						<table>
+						<!-- Liste des légumes : affichage des images des différents légumes à l'aide de zoombox -->
+						<?php foreach ($legumes as $groupeLegume) {
+							foreach ($groupeLegume['Aliment'] as $legume) {
+								
+								echo '<tr><td>';
+								// Pour simplifier on ne metra qu'une image par légume différent
+								$fichier = strtok($legume['nomFR'], ',');
+								echo $this->Html->link('<li>' . $legume['nomFR'] . '</li>', '../img/' . $fichier . '.jpg', array('class' => 'zoombox', 'alt' => $legume['nomFR'], 'escape' => false));
+								echo '</td></tr>';
+							}
+						} ?>
+						</table>
+					</div>
 					
 					<td style="padding-right : 130px">
 					</td>

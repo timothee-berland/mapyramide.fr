@@ -44,7 +44,7 @@ class User extends AppModel {
             ),
 			'notempty' => array(
 				'rule' => array('notempty'),
-				'message' => 'Un mot de passe est nécessaire',
+				'message' => "Un nom d'utilisateur est nécessaire",
 				//'allowEmpty' => false,
 				//'required' => false,
 				//'last' => false, // Stop validation after this rule
@@ -67,11 +67,9 @@ class User extends AppModel {
 		),
 		'role' => array(
 			'notempty' => array(
-				'valid' => array(
 					'rule' => array('inList', array('administrateur', 'contributeur','utilisateur')),
 					'message' => 'Entrez un rôle valide',
 					'allowEmpty' => false
-				)
 			),
 		),
 		'sexe' => array(

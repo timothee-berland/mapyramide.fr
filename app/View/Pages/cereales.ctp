@@ -40,7 +40,7 @@
 		</p1>
 	</div>
 	
-	<div id="texte1">
+	<div class="texte1">
 		<table width="140%">
 			<tr>
 				<td style="padding-right:50px;"></td>
@@ -53,53 +53,41 @@
 		<table width=145%;  >
 			<tr>
 				<td>
-					<table width=240%; >
-						<tr>
-							<!-- Grains entiers -->
-							<td>	
-								<ul><li> Flocon d'avoine </li>
-								<li> Orge </li>
-								<li> Pain complet </li>
-								<li> Pâtes de blé entier </li>
-								<li> Quinoa </li></ul>
-							</td>
-					
-							<td style="padding-left: 50px ">
-								<ul><li> Riz brun </li>
-								<li> Sarrasin </li>
-								<li> Seigle </li>
-								<li> Semoule de maïs </li></ul>
-							</td>
-						</tr>
-						
-					</table>
+					<div class="listeForEach">
+						<table>
+						<!-- Liste des grains : affichage des images des différents grains à l'aide de zoombox -->
+						<?php foreach ($grains as $groupeGrain) {
+							foreach ($groupeGrain['Aliment'] as $grain) {
+								
+								echo '<tr><td>';
+								// Pour simplifier on ne metra qu'une image par céréale différente
+								$fichier = strtok($grain['nomFR'], ',');
+								echo $this->Html->link('<li>' . $grain['nomFR'] . '</li>', '../img/' . $fichier . '.jpg', array('class' => 'zoombox', 'alt' => $grain['nomFR'], 'escape' => false));
+								echo '</td></tr>';
+							}
+						} ?>
+						</table>
+					</div>
 					<td style="padding-right : 100px">
 					</td>
 				</td>
 				
 				<td style="padding-left: 0px ; border-left: medium solid #4D2B08" >
-				
-					<table width=250%; >
-						<tr>
-							<td style="padding-left : 10px">
-							</td>
-							
-							<!-- Grains raffinés -->
-							<td>
-								<ul><li> Bretzels </li>
-								<li> Couscous </li>
-								<li> Nouilles </li>
-								<li> Pain blanc </li></ul>
-							</td>
-					
-							<td style="padding-left: 50px ">
-								<ul><li> Pain de maïs </li>
-								<li> Riz blanc </li>
-								<li> Tortillas de farine </li>
-								<li> Tortillas de maïs </li></ul><br/>
-							</td>
-						</tr>
-					</table>
+					<div class="listeForEach">
+						<table>
+						<!-- Liste des grains : affichage des images des différents grains à l'aide de zoombox -->
+						<?php foreach ($grains as $groupeGrain) {
+							foreach ($groupeGrain['Aliment'] as $grain) {
+								
+								echo '<tr><td>';
+								// Pour simplifier on ne metra qu'une image par céréale différente
+								$fichier = strtok($grain['nomFR'], ',');
+								echo $this->Html->link('<li>' . $grain['nomFR'] . '</li>', '../img/' . $fichier . '.jpg', array('class' => 'zoombox', 'alt' => $grain['nomFR'], 'escape' => false));
+								echo '</td></tr>';
+							}
+						} ?>
+						</table>
+					</div>
 					
 					<td style="padding-right : 170px">
 					</td>

@@ -4,7 +4,7 @@
 		<span2 class='span2'> Calculateur IMC </span2>
 	</div>
 	
-	<div id="bloc1">	
+	<div class="bloc1">	
 		<fieldset>
 			<div id="texte">
 				<p>Définition : </br> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum turpis elit, viverra vitae tempus ac, 
@@ -48,3 +48,34 @@
 		</fieldset>
 	</div>
 </form>
+
+<script type="text/javascript">
+	function postData() {
+		<?php if (!isset($noPost)) : ?>
+			var formulaire =  document.forms['ImcenfantCalculForm'];
+
+			// Calcul de l'age de l'utilisateur
+			var birthday = new Date( <?php echo $datenaissance ?> );
+			var today = new Date();
+			var age = today.getFullYear() - birthday.getFullYear();
+
+			// Reset birthday to the current year.
+			birthday.setFullYear(today.getFullYear());
+
+			// If the user's birthday has not occurred yet this year, subtract 1.
+			if (today < birthday)
+			{
+			    age--;
+			}
+
+			formulaire.elements["zt_age"].value = age;
+			formulaire.elements["zt_taille"].value = '<?php echo $taille ?>';
+			formulaire.elements["zt_poids"].value = '<?php echo $poids ?>';
+			
+			if ('<?php echo $sexe ?>' == 'femme') {
+				formulaire.elements['femme'].checked = true;
+				afficher();
+			} 
+		<?php endif; ?>
+	}
+</script>

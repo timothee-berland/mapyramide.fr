@@ -4,18 +4,17 @@
 	
 	<!--TODO AJOUTER UNE IMAGE -->
 	<span2> Personnalisez votre profil </span2> 
-	<div id="bloc1">	
+	<div class="bloc1">	
 
-		<!-- #TODO véifier que le nom d'utilisateur n'existe pas -->
 		<label for="UserUsername"> Identifiant <em> *</em></label>
-		<input type="text" name="data[User][username]" maxlength="50" type="text" id="UserUsername" required="required"/> <br><br>
+		<input type="text" name="data[User][username]" maxlength="50" type="text" id="UserUsername" required="required" title="Votre nom d'utilisateur doit faire entre 5 et 20 caractètres"/> <br><br>
 		
 		<label for="UserDatenaissance"> Date de naissance (aaaa-mm-jj) <em> *</em></label>
 		<input type="text" name="data[User][datenaissance]" id="UserDatenaissance" required="required"/> <br><br><br>
 		
 		<label for="UserSexe"> Vous êtes <em> *</em></label>
 		<input type="radio" name="data[User][sexe]" id="homme" value="homme" checked="checked" onClick="masquer(this)" /><a class='labelInscription'> Homme</a>
-		<input type="radio" name="data[User][sexe]" id="femme" value="femme" onClick="afficher(this)" /><a class='labelInscription'> Femme</a><br><br>
+		<input type="radio" name="data[User][sexe]" id="femme" value="femme" onClick="afficher();" /><a class='labelInscription'> Femme</a><br><br>
 		
 		<div id="cache">
 		    <label for="UserEnceinte"> Enceinte  <em> *</em> </label>
@@ -40,9 +39,9 @@
 	</div>
 			
 	<span2> Enregistrez votre profil </span2> 
-	<div id="bloc1">	
+	<div class="bloc1">	
 		<label for="UserPassword"> Mot de passe <em> *</em></label>
-		<input type="password" name="data[User][password]" id="UserPassword" required="required"/> <br><br>
+		<input type="password" name="data[User][password]" id="UserPassword" required="required" title="Votre mot de passe doit faire plus de 7 caractètres"/> <br><br>
 		
 		<label for="UserPasswordConfirmation"> Confirmation <em> *</em></label>
 		<input type="password" name="UserPasswordConfirmation" id="UserPasswordConfirmation" required="required"/> <br><br>
@@ -54,7 +53,7 @@
 	</div>
 	
 	<div id="bloc2">
-	    <input type="button" value="Effacer" onClick="map()"/>
+	    <input type="button" value="Effacer" onClick="raz()"/>
 	    <input type="submit" value="Valider" onClick="return validerForm()"/>
 	</div>
 </form>
@@ -77,7 +76,7 @@
 </script>
 
 <script type="text/javascript">
-function afficher(btn) {
+function afficher() {
 
     var birthday = new Date(document.getElementById("UserDatenaissance").value);
 	var today = new Date();
@@ -92,7 +91,7 @@ function afficher(btn) {
 	    age--;
 	}
 
-    if (age >= 18 && age <= 48 && btn.checked) {
+    if (age >= 18 && age <= 48) {
 	    document.getElementById("cache").style.display = "block";
     }
 }
@@ -101,10 +100,6 @@ function masquer(btn) {
     if (btn.checked) {
         document.getElementById("cache").style.display = "none";
     } 
-}
-
-function map() {
-
 }
 
 function raz() {
@@ -137,5 +132,28 @@ function validerForm() {
 	
 	return false;
 }	
+
+function postData() {
+	var formulaire =  document.forms['UserAddForm'];
+    formulaire.elements["UserUsername"].value = '<?php echo $username ?>';
+	formulaire.elements["UserDatenaissance"].value = '<?php echo $datenaissance ?>';
+	formulaire.elements["UserTaille"].value = '<?php echo $taille ?>';
+	formulaire.elements["UserPoids"].value = '<?php echo $poids ?>';
+	formulaire.elements["UserEmail"].value = '<?php echo $email ?>';
+	
+	if ('<?php echo $sexe ?>' == 'femme') {
+		formulaire.elements['femme'].checked = true;
+		afficher();
+	} 
+
+	if ('<?php echo $enceinte ?>' == 'O') {
+		formulaire.elements['enceinte'].checked = true;
+	}
+	
+	if ('<?php echo $allaitante ?>' == 'O') {
+		formulaire.elements['allaitante'].checked = true;
+	}
+}
+
 </script>
 

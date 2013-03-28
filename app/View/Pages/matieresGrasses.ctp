@@ -43,7 +43,7 @@
 		</p1>
 	</div>
 	
-	<div id="texte1">
+	<div class="texte1">
 		<table width=140%; >
 		<tr>
 			<td style="padding-right:60px;"></td>
@@ -59,20 +59,21 @@
 		<table width=145%;  >
 			<tr>
 				<td>
-					<table width=200%; >
-						<tr>
-							<td>
-								<!-- Huiles -->
-									<ul><li> Huile de maïs </li>
-									<li> Huile d'olive </li></ul>
-							</td>
-					
-							<td style="padding-left: 50px ">
-								<ul><li> Huile de soja </li>
-								<li> Huile de tournesol </li></ul>
-							</td>
-						</tr>
-					</table>
+					<div class="listeForEach">
+						<table>
+							<!-- Liste des matières grasses : affichage des images des différentes matières grasses à l'aide de zoombox -->
+							<?php foreach ($matGrasses as $groupeMatGrasse) {
+								foreach ($groupeMatGrasse['Aliment'] as $matGrasse) {
+									
+									echo '<tr><td>';
+									// Pour simplifier on ne metra qu'une image par matière grasse différente
+									$fichier = strtok($matGrasse['nomFR'], ',');
+									echo $this->Html->link('<li>' . $matGrasse['nomFR'] . '</li>', '../img/' . $fichier . '.jpg', array('class' => 'zoombox', 'alt' => $matGrasse['nomFR'], 'escape' => false));
+									echo '</td></tr>';
+								}
+							} ?>
+						</table>
+					</div>
 					
 					<td style="padding-right : 110px">
 					</td>
@@ -80,26 +81,21 @@
 				
 				<td style="padding-left: 0px ; border-left: medium solid #4D2B08" >
 				
-					<table width=200%; >
-						<tr>
-							<td style="padding-left : 10px">
-							</td>
-							
-							<!-- Aliments riches en huiles -->
-							<td>
-								<ul><li> Avocat </li>
-								<li> Maquereau </li>
-								<li> Noix </li>
-								<li> Olives </li></ul>
-							</td>
-					
-							<td style="padding-left: 50px ">
-								<ul><li> Sardine </li>
-								<li> Saumon </li>
-								<li> Thon </li></ul>
-							</td>
-						</tr>
-					</table>
+					<div class="listeForEach">
+						<table>
+							<!-- Liste des matières grasses : affichage des images des différentes matières grasses à l'aide de zoombox -->
+							<?php foreach ($matGrasses as $groupeMatGrasse) {
+								foreach ($groupeMatGrasse['Aliment'] as $matGrasse) {
+									
+									echo '<tr><td>';
+									// Pour simplifier on ne metra qu'une image par matière grasse différente
+									$fichier = strtok($matGrasse['nomFR'], ',');
+									echo $this->Html->link('<li>' . $matGrasse['nomFR'] . '</li>', '../img/' . $fichier . '.jpg', array('class' => 'zoombox', 'alt' => $matGrasse['nomFR'], 'escape' => false));
+									echo '</td></tr>';
+								}
+							} ?>
+						</table>
+					</div>
 					
 					<td style="padding-right : 130px">
 					</td>
@@ -107,23 +103,21 @@
 				
 				<td style="padding-left: 0px ; border-left: medium solid #4D2B08" >
 				
-					<table width=166%; >
-						<tr>
-							<td style="padding-left : 15px">
-							</td>
-							
-							<!-- Graisses solides -->
-							<td>
-								<ul><li> Beurre </li>
-								<li> Margarine </li></ul>
-							</td>
-					
-							<td style="padding-left: 50px ">
-								<ul><li> Matière grasse du lait </li>
-								<li> Saindoux</li></ul>				
-							</td>
-						</tr>
-					</table>
+					<div class="listeForEach">
+						<table>
+							<!-- Liste des matières grasses : affichage des images des différentes matières grasses à l'aide de zoombox -->
+							<?php foreach ($matGrasses as $groupeMatGrasse) {
+								foreach ($groupeMatGrasse['Aliment'] as $matGrasse) {
+									
+									echo '<tr><td>';
+									// Pour simplifier on ne metra qu'une image par matière grasse différente
+									$fichier = strtok($matGrasse['nomFR'], ',');
+									echo $this->Html->link('<li>' . $matGrasse['nomFR'] . '</li>', '../img/' . $fichier . '.jpg', array('class' => 'zoombox', 'alt' => $matGrasse['nomFR'], 'escape' => false));
+									echo '</td></tr>';
+								}
+							} ?>
+						</table>
+					</div>
 					
 					<td style="padding-right : 130px">
 					</td>

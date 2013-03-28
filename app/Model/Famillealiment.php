@@ -13,4 +13,24 @@ class Famillealiment extends AppModel {
  */
 	public $displayField = 'name';
 
+/**
+ * hasMany associations
+ *
+ * @var array
+ */
+	public $hasMany = array(
+		'Aliment' => array(
+			'className' => 'Aliment',
+			'foreignKey' => 'famillealiments_id',
+			'dependent' => false,
+			'conditions' => '',
+			'fields' => '',
+			'order' => '',
+			'limit' => '',
+			'offset' => '',
+			'exclusive' => '',
+			'finderQuery' => '',
+			'counterQuery' => ''
+		)
+	);
 }

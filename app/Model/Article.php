@@ -7,5 +7,12 @@ App::uses('AppModel', 'Model');
  */
 class Article extends AppModel {
 
-	public $belongsTo ='Category';
+	public $belongsTo = array(
+		'Category' => array(
+			'className' => 'Categories',
+			'foreignKey' => 'category_id',
+			'conditions' => '',
+			'fields' => '',
+			'order' => ''
+		));
 }

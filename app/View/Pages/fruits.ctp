@@ -41,59 +41,35 @@
 		</p1>
 	</div>
 	
-	<div id="texte1">
-		<table width=145%;  >
-			<tr>
-				<td>
-					<table width=300%; >
-						<tr>
-							<td>
-								<ul>
-									<!-- Liste des fruits : affichage des images des différents fruits à l'aide de zoombox -->
-									<!-- #TODO : foreach -->
-									<?php
-									echo $this->Html->link('<li> Abricot </li>', '../img/Abricot.jpg', array('class' => 'zoombox zgallery1', 'alt' => 'Abricot', 'escape' => false));
-									echo $this->Html->link('<li> Banane </li>', '../img/Banane.jpg', array('class' => 'zoombox zgallery1', 'alt' => 'Banane', 'escape' => false));
-									echo $this->Html->link('<li> Cerise </li>', '../img/Cerise.jpg', array('class' => 'zoombox zgallery1', 'alt' => 'Cerise', 'escape' => false));
-									echo $this->Html->link('<li> Mangue </li>', '../img/Mangue.jpg', array('class' => 'zoombox zgallery1', 'alt' => 'Mangue', 'escape' => false));
-									echo $this->Html->link('<li> Melon </li>', '../img/Melon.jpg', array('class' => 'zoombox zgallery1', 'alt' => 'Melon', 'escape' => false));
-									echo $this->Html->link('<li> Papaye </li>', '../img/Papaye.jpg', array('class' => 'zoombox zgallery1', 'alt' => 'Papaye', 'escape' => false));
-									?>
-								</ul>
-							</td>
-					
-							<td style="padding-left: 50px ; ">
-								<ul>
-									<li> Poire </li>
-									<li> Pomme </li>
-									<li> Raisin </li>
-									<li> Kiwi </li>
-								</ul>
-							</td>
-						</tr>
-					</table>
-					
-					<td style="padding-right : 130px">
-					</td>
-				</td>
-				
-				<td style="padding-left: 0px ; border-left: medium solid #4D2B08">
-				
-					<!-- Informations sur les fruits mixés -->
-					<h2> Fruits mixés </h2>
-					<div class="bloc">					
-					<p2>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum turpis elit, viverra vitae tempus ac </p2>
-					</div>
-					<br/> 
-					
-					<!-- Informations sur les jus de fruits -->
-					<h2> Jus de fruis </h2>
-					<div class="bloc">
-					<p2>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum turpis elit, viverra vitae tempus ac</p2>
-					</div>
-				</td>
-			</tr>
-		</table>
+	<div class="texte1">
+		<div class="listeForEach">
+			<table>
+				<!-- Liste des fruits : affichage des images des différents fruits à l'aide de zoombox -->
+				<?php foreach ($fruits as $groupeFruit) {
+					foreach ($groupeFruit['Aliment'] as $fruit) {
+						
+						echo '<tr><td>';
+						// Pour simplifier on ne metra qu'une image par fruit différent
+						$fichier = strtok($fruit['nomFR'], ',');
+						echo $this->Html->link('<li>' . $fruit['nomFR'] . '</li>', '../img/' . $fichier . '.jpg', array('class' => 'zoombox', 'alt' => $fruit['nomFR'], 'escape' => false));
+						echo '</td></tr>';
+					}
+				} ?>
+			</table>
+		</div>
+
+		<!-- Informations sur les fruits mixés --
+		<h2> Fruits mixés </h2>
+		<div class="bloc">					
+		<p2>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum turpis elit, viverra vitae tempus ac </p2>
+		</div>
+		<br/> 
+		
+		<!-- Informations sur les jus de fruits --
+		<h2> Jus de fruis </h2>
+		<div class="bloc">
+		<p2>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum turpis elit, viverra vitae tempus ac</p2>
+		</div> -->
 	</div>
 </div>
 

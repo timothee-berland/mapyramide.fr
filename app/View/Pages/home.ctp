@@ -52,15 +52,16 @@ endif;
   </legend>
 	<div id="accordeon">
 		<?php 
+			$compteurArticles=0;
 			foreach ($derniersArticles as $article): 
-				echo $this->Text->truncate(
-					$this->Html->link(
-						'<h1>' . $article['Article']['title'] . '</h1>', 
-						'/articles/article/' . $article['Article']['id'], 
-						array('escape' => false)),
-					25,
-					array('ellipsis' => '...', 'html' => true));
-				$text = "<p>" . $this->Text->truncate($article['Article']['content'], array('html' => true)) . "</p>";
+				$compteurArticles++;
+				if($compteurArticles > 7) {break;}
+				echo $this->Text->truncate('<h1>' . $article['Article']['title'] . '</h1>', 
+						25,	
+						array('ellipsis' => '...', 'html' => true));
+				$text = "<p>" . $this->Text->truncate($article['Article']['content'], array('html' => true)) . 
+						"</p><p id='suite'>" . $this->Html->link('Lire la suite ...', '/articles/article/' . $article['Article']['id'], 
+								array('escape' => false)) . "</p>";
 				echo $this->Html->div($class = null, $text , $options = array());
 			endforeach; 
 		?>

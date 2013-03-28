@@ -202,6 +202,98 @@ div.menu3 a:hover, div.menu3 a.current
     line-height: 25px;
     color:#000;
 }
+
+
+/*----------------------------
+	Search bar
+-----------------------------*/
+header #profil #searchIcon {
+	position: absolute;
+	top: 15px;
+	left: -18px;
+}
+
+header .searchform {
+	background: none;
+	-webkit-box-shadow: inset 0 0 5px rgba(0,0,0, 0.4), rgba(255,255,255,0.1) 0 1px 0;
+	box-shadow: inset 0 0 5px rgba(0,0,0, 0.4), rgba(255,255,255,0.1) 0 1px 0;
+	border-radius: 4px;
+	border: 1px solid rgba(0,0,0,0.25);
+	color: #fff;
+	text-shadow: rgba(0, 0, 0, 0.796875) 0px -1px 0px, rgba(255, 255, 255, 0.296875) 0px 0px 10px;
+	z-index: 9999;
+}
+
+header .searchform {
+	float: right;
+	width: 28%;
+	margin-top: 12px;
+	padding: 0;
+	border-radius: 20px;
+	position: relative;
+	top: -15px;
+	background-color: rgba(181, 205, 36, 0.7);
+}
+
+header .searchform input {
+	text-decoration: none;
+	font: 12px/12px "Lucida Grande", Lucida, Verdana, sans-serif;
+	padding: 5px 10px;
+	margin: 0;
+	background-color: transparent;
+	border-style: none;
+	color: #fff;
+	line-height: 1.3;
+	text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.3);
+	width: 85%;
+	box-shadow: none;
+}
+
+header .searchform input:focus {
+	outline: none;
+}
+
+.no-boxshadow header .searchform {
+	border: 1px solid #333;
+}
+
+.no-boxshadow header .searchform input {
+	background: #fff;
+	color: #333;
+}
+
+/*
+ * 1. :-moz-placeholder has been deprecated in favor of ::-moz-placeholder.
+ * 2. Using :placeholder for completeness.
+ */
+header .searchform input::-webkit-input-placeholder {
+	color: #fff;
+}
+header .searchform input:-moz-placeholder { /* 1 */
+	color: #fff;
+}
+header .searchform input::-moz-placeholder {
+	color: #fff;
+}
+header .searchform input:-ms-input-placeholder {
+	color: #fff;
+}
+header .searchform input:placeholder { /* 2 */
+	color: #fff;
+}
+
+header .searchform .icon-search {
+	position: absolute;
+	right: 10px;
+	top: 3px;
+	bottom: 3px;
+	border-width: 0;
+	border-left: 1px solid rgba(7, 7, 7, 0.65);
+	background-color: transparent;
+	padding: 0 0 0 7px;
+	opacity: 0.33;
+}
+
 /*----------------------------
 	Profil et menus
 -----------------------------*/
@@ -242,6 +334,7 @@ div.menu3 a:hover, div.menu3 a.current
 #menuEtConnexion #profil #liens {
 	position: relative;
 	height: 45px;
+	margin-left: 10px;
 }
 
 #menuEtConnexion #profil a  {
@@ -370,7 +463,7 @@ body > #container {
 	position: absolute;
 	border: 3px solid #4D2B08;
 	width: 300px;
-	height: 500px;
+	height: 530px;
 	margin: 10px;
 	margin-left: 50px;
 	padding: 10px;
@@ -390,10 +483,18 @@ body > #container {
 	height: 95%;
 }
 
+#content #derniersArticles #accordeon a {
+	text-decoration: none;
+}
+
 #content #derniersArticles #accordeon h1 {
 	font-size: 1.2em;
 	color: #434543;
 	text-decoration: none;
+}
+
+#content #derniersArticles #accordeon #suite {
+	margin-top: 30px;
 }
 
     /*--------------------
@@ -450,6 +551,7 @@ body > #container {
 	text-align: center;
 	margin-bottom: 20px;
 	position: absolute;
+	top: 223px;
 	left: -78px;
 	width: 100%;
 }
@@ -464,7 +566,7 @@ body > #container {
   	   Bloc des index et 
   	   boutons associés
     ---------------------*/
-#content #bloc-index {
+#content .bloc-index {
     float : left;
 	width: 750px;
 	height: 20px;
@@ -481,7 +583,7 @@ body > #container {
 }
 
 
-#content #bloc-index #btns-index {
+#content .bloc-index #btns-index {
 	height: 32px;
 	width: 70px;
 	margin: 0px;
@@ -493,14 +595,14 @@ body > #container {
 	top: -27px;
 }
 
-#content #bloc-index #btn-modifier {
+#content .bloc-index #btn-modifier {
 	background: url("../img/EditUser.png") no-repeat left center;
 	height: 32px;
 	width: 32px;
 	margin-right: 6px;
 }
 
-#content #bloc-index #btn-supprimer {
+#content .bloc-index #btn-supprimer {
 	background: url("../img/DeleteUser.png") no-repeat left center;
 	height: 32px;
 	width: 32px;
@@ -508,6 +610,37 @@ body > #container {
 	position: relative;
 	top: -32px;
 	left: 38px;
+}
+
+#content .bloc-index #btn-ajouter {
+	background: url("../img/add-32x32.png") no-repeat left center;
+	height: 32px;
+	width: 32px;
+	margin-right: 6px;
+	position: relative;
+	left: 19px;
+
+}
+
+#content .bloc-index .titreArticle {
+	margin-right: 20px;
+	padding-right: 20px;
+	float: left;
+	border-right: 1px solid #000;
+	height: 110%;
+	font-size: 1.3em;
+	margin-top: -3px;
+}
+
+#content .bloc-index .titreArticle a {
+	color: #434543;
+	text-decoration: none;
+}
+
+#content .bloc-index #bloc2 input[type="submit"] {
+	left: -160px;
+	top: -25px;
+	position: relative;
 }
 
 	/*--------------------
@@ -531,18 +664,28 @@ body > #container {
     /*--------------------
       Bloc Article
     ---------------------*/
-#content #bloc1 datesArticles {
+#content .bloc1 datesArticles {
 	margin-right: 20px;
 }
 
-#content #bloc1 #contenuArticle {
+#content .bloc1 #titreCategorie {
+	margin-bottom: 5px;
+}
+
+#content .bloc1 #contenuArticle {
 	margin-top: 30px;
 }
+
     /*--------------------
       Générique \ À trier
     ---------------------*/
-    /* C'EST PAS POSSIBLE ÇA, ON PEUT PAS REDEFINIR LE span ÇA FOUT LE BORDEL DANS PLEINS D'AUTRES TRUCS */
-    /* #TODO : Changer les 'span' qui utilisaient ça en class='span2'*/
+
+#content #presentation .listeForEach {
+	height: 200px;
+	overflow: scroll;
+	overflow: overlay; /* Google Chrome */
+}
+
 #content span2 {
     display: block;
 	font:20px Corbel,'Segoe UI',Arial, sans-serif;
@@ -566,7 +709,7 @@ body > #container {
 	color : #4D2B08;
     float:left;
 }
-#content #bloc1 {
+#content .bloc1 {
     float : left;
 	width: 750px;
     border:2px solid #4D2B08;
@@ -581,7 +724,7 @@ body > #container {
     border-radius:8px;	
 }
 
-#content #bloc1 fieldset {
+#content .bloc1 fieldset {
     float : left;
 	width: 750px;
     border:2px solid #4D2B08;
@@ -599,7 +742,7 @@ body > #container {
     -webkit-border-radius:8px;	
     border-radius:8px;	
 }
-#content #bloc1 label {
+#content .bloc1 label {
     display: block;
 	font:17px Corbel,'Segoe UI',Arial, sans-serif;
 	color : #000000;
@@ -610,7 +753,7 @@ body > #container {
     float: left;
 }
 
-#content #bloc1 span{
+#content .bloc1 span{
     display: block;
 	font:12px Corbel,'Segoe UI',Arial, sans-serif;
 	font-weight : italic;
@@ -618,21 +761,21 @@ body > #container {
     float: right;
 }
 
-#content #bloc1 em {
+#content .bloc1 em {
 	color : #F74200;
 	margin-right : 10px;
 	
 }
 
-#content #bloc1 a {
+#content .bloc1 a {
 	text-decoration: none;
 	
 }
 
-#content #bloc1 input[type="date"],
-#content #bloc1 input[type="text"],
-#content #bloc1 input[type="password"],
-#content #bloc1 input[type="email"]{
+#content .bloc1 input[type="date"],
+#content .bloc1 input[type="text"],
+#content .bloc1 input[type="password"],
+#content .bloc1 input[type="email"]{
   height: 30px;
   width: 200px;
   float: left;
@@ -645,13 +788,13 @@ body > #container {
 
  }
  
-#content #bloc1 input[type="radio"] {
+#content .bloc1 input[type="radio"] {
   position: relative;
   margin-left : 30px;
   top: 10px;
 }
 
-#content #bloc1 select {
+#content .bloc1 select {
   height: 35px;
   width: 220px;
   float: left;
@@ -663,7 +806,7 @@ body > #container {
   margin-top: 5px;
   margin-bottom: 3px;
 }
-#content #bloc1  input[type="submit"] {
+#content .bloc1  input[type="submit"] {
     width : 110px;
 	margin-left : 650px;
 	height : 30px;
@@ -677,14 +820,14 @@ body > #container {
     border-radius:8px;	
 }
 
-#content #bloc1 #cache {
+#content .bloc1 #cache {
     display : none;
     float : left;
 	width: 800px;
     font:15px Corbel,'Segoe UI',Arial, sans-serif;
 }
 
-#content #bloc1 #cache label {
+#content .bloc1 #cache label {
     display: block;
 	font:17px Corbel,'Segoe UI',Arial, sans-serif;
 	color : #000000;
@@ -694,11 +837,11 @@ body > #container {
     float: left;
 }
 
-#content #bloc1 #cache label[for='allaitante'] {
+#content .bloc1 #cache label[for='allaitante'] {
     position: absolute;
 }
 
-#content #bloc1 .labelInscription {
+#content .bloc1 .labelInscription {
 	position: relative;
 	text-decoration: none;
 	color:#000000;
@@ -1018,12 +1161,12 @@ padding-bottom : 30px;
 vertical-align : center;
 }
 
-#content #presentation #texte1 {
+#content #presentation .texte1 {
     float : left;
 	margin-bottom : 20px;
 }
 
-#content #presentation #texte1 p1{
+#content #presentation .texte1 p1{
     display: block;
 	text-indent : 30px;
 	margin-rigth : 50px;
@@ -1032,7 +1175,7 @@ vertical-align : center;
     float:left;
 }
 
-#content #presentation #texte1 h1{
+#content #presentation .texte1 h1{
     display: block;
 	font:20px Corbel,'Segoe UI',Arial, sans-serif;
 	font-weight : bold;
@@ -1040,7 +1183,7 @@ vertical-align : center;
     float:left;
 }
 
-#content #presentation #texte1 h2{
+#content #presentation .texte1 h2{
     display: block;
 	font:20px Corbel,'Segoe UI',Arial, sans-serif;
 	margin-left : 30px;
@@ -1049,7 +1192,7 @@ vertical-align : center;
     float:left;
 }
 
-#content #presentation #texte1 h3{
+#content #presentation .texte1 h3{
     display: block;
 	font:20px Corbel,'Segoe UI',Arial, sans-serif;
 	margin-left : 30px;
@@ -1059,7 +1202,7 @@ vertical-align : center;
     float:left;
 }
 
-#content #presentation #texte1 ul{
+#content #presentation .texte1 ul{
     display: block;
 	font:15px Corbel,'Segoe UI',Arial, sans-serif;
 	color : #000000;
@@ -1067,14 +1210,14 @@ vertical-align : center;
 }
 
 
-#content #presentation #texte1 table {
-float : left;
- width : 90%;
- margin-left : 50px;
-    
+#content #presentation .texte1 table {
+	float : left;
+ 	margin-left : 50px;
+    height: 200px;
+    overflow: overlay;
 }
 
-#content #presentation #texte1  .bloc p2{
+#content #presentation .texte1  .bloc p2{
     display: block;
 	text-indent : 30px;
 	font:17px Corbel,'Segoe UI',Arial, sans-serif;
@@ -1451,7 +1594,7 @@ float : left;
 #content #encyclo {
     float : left;
 	margin-left : 100px;
-	width: 1000px;
+	width: 1020px;
 	height : 650px;
 	padding-left : 30px;
 }
@@ -1466,7 +1609,7 @@ float : left;
 	color : #4D2B08;
 }
 
-#content #encyclo #bloc-gauche {
+#content #encyclo .bloc-gauche {
   border: 3px solid #4D2B08;
   background-color : #FFFFFF;
   float: left;
@@ -1485,25 +1628,27 @@ float : left;
   box-shadow:4px 4px 6px #888;
 }
 
-#content #encyclo #bloc-gauche  li{
+#content #encyclo .bloc-gauche  li{
     color : #000000;
 	list-style-image : url('../img/liste.png');
 	margin-left : 30px;	
 }
 
-#content #encyclo #bloc-gauche  li a {
+#content #encyclo .bloc-gauche  li a {
 	font: 16px Corbel,'Segoe UI',Arial, sans-serif;
 	color: #4D2B08;
 }
 
-#content #encyclo #bloc-gauche {
+#content #encyclo .bloc-gauche {
   border: 3px solid #4D2B08;
   background-color : #FFFFFF;
   float: left;
+  overflow: scroll;
+  overflow: overlay; /* Google Chrome */
   padding: 20px;
   margin-right : 1%;
   height: 560px;
-  width: 300px;
+  width: 340px;
   font-size: 17px;
   text-align: justify;
   position: relative;
@@ -1677,7 +1822,7 @@ margin-right : 2px;
   float: left;
   padding: 10px;
   margin-right : 10px;
-  height: 400px;
+  height: 430px;
   width: 275px;
   font-size: 17px;
   text-align: justify;
@@ -1704,13 +1849,13 @@ margin-right : 2px;
   text-align: left;
 }
 
-#content #encyclo .bloc-droit #titre  h2 {
+#content #encyclo .bloc-droit .titre  h2 {
   font-size: 22px;
   color : #A6BC2A;
   text-align: center;
 }
 
-#content #encyclo #titre p {
+#content #encyclo .titre p {
   display : block;
   height : 5px;
   float : left;
@@ -1725,16 +1870,7 @@ margin-right : 2px;
   text-align: center;
 }*/
 
-#content #encyclo #titre2 p {
-  display : block;
-  height : 5px;
-  float : left;
-  color : #4D2B08;
-  text-align: left;
-  padding-bottom : 20px;
-}
-
-#content #encyclo .bloc-droit #choix-portion {
+#content #encyclo .bloc-droit .choix-portion {
 	float : left;
 	margin-top : 10px;
 	margin-left : 8px;
@@ -1742,7 +1878,7 @@ margin-right : 2px;
 	height : 50px;
 }
 
-#content #encyclo  .bloc-droit #choix-portion p {
+#content #encyclo  .bloc-droit .choix-portion p {
     display: block;
 	font:14px Corbel,'Segoe UI',Arial, sans-serif;
 	margin-right : 90px;
@@ -1750,8 +1886,7 @@ margin-right : 2px;
     float:left;
 }
 
-#content #encyclo  .bloc-droit  #choix-portion select[id="quantite"],
-											 select[id="quantite2"]{
+#content #encyclo  .bloc-droit  .choix-portion select[class="quantite"] {
   height: 28px;
   width: 40px;
   float: left;
@@ -1763,8 +1898,7 @@ margin-right : 2px;
   padding: 3px;
 }
 
-#content #encyclo  .bloc-droit  #choix-portion select[id="portion"],
-											 select[id="portion2"]{
+#content #encyclo  .bloc-droit  .choix-portion select[class="portion"] {
   height: 28px;
   width: 125px;
   float: left;
@@ -1776,7 +1910,7 @@ margin-right : 2px;
   padding: 3px;
 }
 
-#content #encyclo  .bloc-droit #choix-portion a {
+#content #encyclo  .bloc-droit .choix-portion a {
     float : left;
 	margin-left : 20px;
     margin-top : 10px;
@@ -1784,7 +1918,7 @@ margin-right : 2px;
 	color : #4D2B08;
 }
 
-#content #encyclo  .bloc-droit #choix-portion input[type="submit"] {
+#content #encyclo  .bloc-droit .choix-portion input[type="submit"] {
     width : 60px;
 	float : left;
 	margin-left : 15px;
@@ -1803,7 +1937,7 @@ margin-right : 2px;
     border-radius:8px;	
 }
 
-#content #encyclo .bloc-droit #supprimer {
+#content #encyclo .bloc-droit .supprimer {
 	background: url('../img/supprimer.png') no-repeat left center;
     width : 20px;
     height : 25px;
@@ -1811,23 +1945,32 @@ margin-right : 2px;
     margin-left : 260px;
 }
 
-#content #encyclo .bloc-droit #supprimer a  {
+#content #encyclo .bloc-droit .supprimer a  {
 	text-decoration : none;
 	color : white;
 }
 
-#content #encyclo .bloc-droit #info-aliment {
+#content #encyclo .bloc-droit .info-aliment {
   float: left;
   height: 170px;
   width: 274px;
 }
 
-#content #encyclo .bloc-droit #info-aliment table {
+#content #encyclo .bloc-droit .info-aliment .groupeAlimentaire {
+	width: 100%;
+	text-align: center;
+}
+
+#content #encyclo .bloc-droit .info-aliment .groupeAlimentaire a {
+	text-decoration: none;
+}
+
+#content #encyclo .bloc-droit .info-aliment table {
     border: 1px solid #A6BC2A;
 	border-collapse: collapse;
 }
 
-#content #encyclo .bloc-droit #info-aliment  th {
+#content #encyclo .bloc-droit .info-aliment  th {
 	font:12px Corbel,'Segoe UI',Arial, sans-serif;
 	text-align : center;
 	font-weight : bold;
@@ -1838,7 +1981,7 @@ margin-right : 2px;
 	background-color: #EAEFC9;
 }
 
-#content #encyclo .bloc-droit #info-aliment td{
+#content #encyclo .bloc-droit .info-aliment td{
 	width: 30%;
 	padding: 5px;
 	border: 1px solid #A6BC2A;
@@ -1846,7 +1989,7 @@ margin-right : 2px;
 }
 
 
-#content #encyclo .bloc-droit #info-aliment  td li {
+#content #encyclo .bloc-droit .info-aliment  td li {
     color : #000000;
 	font:11px Corbel,'Segoe UI',Arial, sans-serif;
 	list-style : none;
@@ -1854,7 +1997,7 @@ margin-right : 2px;
 	margin-left : 5px;
 }
 
-#content #encyclo .bloc-droit #info-aliment  td li p{
+#content #encyclo .bloc-droit .info-aliment  td li p{
     display : block;
 	float : right;
 	margin-right : 5px;
@@ -1864,7 +2007,7 @@ margin-right : 2px;
 
 }
 
-#content #encyclo .bloc-droit #info-aliment #calories  {
+#content #encyclo .bloc-droit .info-aliment .calories  {
     float: left;
     padding: 5px;
     height: 20px;
@@ -1873,7 +2016,7 @@ margin-right : 2px;
 	color : #000000;
 }
 
-#content #encyclo .bloc-droit #info-aliment #calories  p{
+#content #encyclo .bloc-droit .info-aliment .calories  p{
     display : block;
 	float : right;
 	margin-right : 5px;
@@ -1883,32 +2026,37 @@ margin-right : 2px;
 
 }
 
-#content #encyclo .bloc-droit  #info-nutriment {
+#content #encyclo .bloc-droit  .info-nutriment {
   display : none; 
   float: left;
   font:14px Corbel,'Segoe UI',Arial, sans-serif;
   text-align : center;
   margin-top : 10px;
-  height: 170px;
+  height: 200px;
   width: 274px;
+  overflow: scroll;
+  overflow: overlay; /* Plus joli sur Google Chrome */
  }
 
-#content #encyclo .bloc-droit #info-nutriment table {
+#content #encyclo .bloc-droit .info-nutriment table {
 	margin-top : 1px;
     border: 1px solid #A6BC2A;
 	border-collapse: collapse;
+	width: 250px;
 }
 
-#content #encyclo .bloc-droit #info-nutriment td{
-	width: 30%;
+#content #encyclo .bloc-droit .info-nutriment td{
 	border: 1px solid #A6BC2A;
 	text-align: center;
 	color : #000000;
 	font:12px Corbel,'Segoe UI',Arial, sans-serif;
 	list-style : none;
 }
+#content #encyclo .bloc-droit .info-nutriment .nomConstituant{
+	width: 80%;
+}
 
-#content #encyclo .bloc-droit #info-nutriment  td p{
+#content #encyclo .bloc-droit .info-nutriment  td p{
     display : block;
 	float : right;
 	margin-right : 5px;
@@ -1918,109 +2066,7 @@ margin-right : 2px;
 
 }
 
-#content #encyclo .bloc-droit #info-aliment2 {
-  float: left;
-  height: 170px;
-  width: 274px;
-}
-
-#content #encyclo .bloc-droit #info-aliment2 table {
-    border: 1px solid #A6BC2A;
-	border-collapse: collapse;
-}
-
-#content #encyclo .bloc-droit #info-aliment2  th {
-	font:12px Corbel,'Segoe UI',Arial, sans-serif;
-	text-align : center;
-	font-weight : bold;
-	color : #000000;
-	border: 1px solid #A6BC2A;
-	width: 30%;
-	padding: 5px;
-	background-color: #EAEFC9;
-}
-
-#content #encyclo .bloc-droit #info-aliment2 td{
-	width: 30%;
-	padding: 5px;
-	border: 1px solid #A6BC2A;
-	text-align: left;
-}
-
-
-#content #encyclo .bloc-droit #info-aliment2  td li {
-    color : #000000;
-	font:11px Corbel,'Segoe UI',Arial, sans-serif;
-	list-style : none;
-	margin-bottom : 15px;
-	margin-left : 5px;
-}
-
-#content #encyclo .bloc-droit #info-aliment2  td li p{
-    display : block;
-	float : right;
-	margin-right : 5px;
-	font:12px Corbel,'Segoe UI',Arial, sans-serif;
-	font-weight : bold;
-	list-style : none;
-
-}
-
-#content #encyclo .bloc-droit #info-aliment2 #calories  {
-    float: left;
-    padding: 5px;
-    height: 20px;
-    width: 264px;
- 	font:15px Corbel,'Segoe UI',Arial, sans-serif;
-	color : #000000;
-}
-
-#content #encyclo .bloc-droit #info-aliment2 #calories  p{
-    display : block;
-	float : right;
-	margin-right : 5px;
-	font:17px Corbel,'Segoe UI',Arial, sans-serif;
-	font-weight : bold;
-	list-style : none;
-
-}
-
-#content #encyclo .bloc-droit  #info-nutriment2 {
-  display : none; 
-  float: left;
-  font:14px Corbel,'Segoe UI',Arial, sans-serif;
-  text-align : center;
-  margin-top : 10px;
-  height: 170px;
-  width: 274px;
-}
-
-
-#content #encyclo .bloc-droit #info-nutriment2 table {
-	margin-top : 5px;
-    border: 1px solid #A6BC2A;
-	border-collapse: collapse;
-}
-
-#content #encyclo .bloc-droit #info-nutriment2 td{
-	width: 30%;
-	border: 1px solid #A6BC2A;
-	text-align: center;
-	color : #000000;
-	font:12px Corbel,'Segoe UI',Arial, sans-serif;
-	list-style : none;
-}
-
-#content #encyclo .bloc-droit #info-nutriment2  td p{
-    display : block;
-	float : right;
-	margin-right : 5px;
-	font:14px Corbel,'Segoe UI',Arial, sans-serif;
-	font-weight : bold;
-	list-style : none;
-}
-
-#content #encyclo .bloc-droit #onglets-encyclo {
+#content #encyclo .bloc-droit .onglets-encyclo {
 	height : 30px;
 	width : 270px;
 	float : left;
@@ -2029,7 +2075,7 @@ margin-right : 2px;
 
 }
 
-#content #encyclo .bloc-droit #onglets-encyclo a {
+#content #encyclo .bloc-droit .onglets-encyclo a {
   float : left;
   width : 130px;
   color :  #4D2B08;
@@ -2044,19 +2090,19 @@ margin-right : 2px;
   border-bottom: 1px solid #4D2B08;
 }
 
-#content #encyclo .bloc-droit #onglets-encyclo a:focus {
+#content #encyclo .bloc-droit .onglets-encyclo a:focus {
   font-weight : bold;
   font-style : italic;
 }
 
-#content #encyclo .bloc-droit #onglets-encyclo2{
+#content #encyclo .bloc-droit .onglets-encyclo2{
 	height : 30px;
 	margin-top : 130px;
 	padding-left : 5px;
 
 }
 
-#content #encyclo .bloc-droit #onglets-encyclo2 a {
+#content #encyclo .bloc-droit .onglets-encyclo2 a {
   color :  #4D2B08;
   margin-right : 15px;
   font: 15px Corbel,'Segoe UI',Arial, sans-serif;
@@ -2069,12 +2115,12 @@ margin-right : 2px;
 border-bottom: 1px solid #4D2B08;
 }
 
-#content #encyclo .bloc-droit #onglets-encyclo2 a:focus {
+#content #encyclo .bloc-droit .onglets-encyclo2 a:focus {
   font-weight : bold;
   font-style : italic;
 }
 
-#content #encyclo .bloc-droit #repas {
+#content #encyclo .bloc-droit .repas {
 	background-color : #EAEFC9;
     margin-top : 5px;
     padding-left : 5px;
@@ -2083,14 +2129,14 @@ border-bottom: 1px solid #4D2B08;
 	float : left;
 }
 
-#content #encyclo .bloc-droit #repas  p{
+#content #encyclo .bloc-droit .repas  p{
     color : #000000;
     font: 18px Corbel,'Segoe UI',Arial, sans-serif;
     font-weight : bold;
     float : left;
 }
 
-#content #encyclo .bloc-droit   #info-repas{
+#content #encyclo .bloc-droit .info-repas{
 	float : left;
 	height : 40px;  
 	width : 275px;

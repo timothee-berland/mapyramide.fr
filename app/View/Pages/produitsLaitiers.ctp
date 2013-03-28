@@ -43,7 +43,7 @@
 		</p1>
 	</div>
 	
-	<div id="texte1">
+	<div class="texte1">
 		<table width=130%; >
 			<tr>
 				<td style="padding-right:20px;"></td>
@@ -60,21 +60,21 @@
 		<table width=145%;  >
 			<tr>
 				<td>
-					<table width=200%; >
-						<tr>
-							<td>
-								<!-- Lait & déserts à base de lait -->
-								<ul><li> Crème glacée </li>
-									<li> Lait aromatisé </li>
-									<li> Lait écrémé </li></ul>
-							</td>
-					
-							<td style="padding-left: 50px ">
-								<ul><li> Lait entier </li>
-								<li> Lait sans lactose </li></ul>
-							</td>
-						</tr>
-					</table>
+					<div class="listeForEach">
+						<table>
+							<!-- Liste des produits laitiers : affichage des images des différents produits laitiers à l'aide de zoombox -->
+							<?php foreach ($pdtLaitiers as $groupPdtLaitier) {
+								foreach ($groupPdtLaitier['Aliment'] as $pdtLaitier) {
+									
+									echo '<tr><td>';
+									// Pour simplifier on ne metra qu'une image par produit différent
+									$fichier = strtok($pdtLaitier['nomFR'], ',');
+									echo $this->Html->link('<li>' . $pdtLaitier['nomFR'] . '</li>', '../img/' . $fichier . '.jpg', array('class' => 'zoombox', 'alt' => $pdtLaitier['nomFR'], 'escape' => false));
+									echo '</td></tr>';
+								}
+							} ?>
+						</table>
+					</div>
 					
 					<td style="padding-right : 130px">
 					</td>
@@ -82,22 +82,21 @@
 				
 				<td style="padding-left: 0px ; border-left: medium solid #4D2B08" >
 				
-					<table width=200%; >
-						<tr>
-							<td style="padding-left : 50px">
-							</td>
-							
-							<!-- Yaourts -->
-							<td>
-								<ul><li> Yaourt 0% </li>
-								<li> Yaourt allégé </li></ul>
-							</td>
-					
-							<td style="padding-left: 30px ">
-								<ul><li> Yaourt au lait entier </li></ul>
-							</td>
-						</tr>
-					</table>
+					<div class="listeForEach">
+						<table>
+							<!-- Liste des produits laitiers : affichage des images des différents produits laitiers à l'aide de zoombox -->
+							<?php foreach ($pdtLaitiers as $groupPdtLaitier) {
+								foreach ($groupPdtLaitier['Aliment'] as $pdtLaitier) {
+									
+									echo '<tr><td>';
+									// Pour simplifier on ne metra qu'une image par produit différent
+									$fichier = strtok($pdtLaitier['nomFR'], ',');
+									echo $this->Html->link('<li>' . $pdtLaitier['nomFR'] . '</li>', '../img/' . $fichier . '.jpg', array('class' => 'zoombox', 'alt' => $pdtLaitier['nomFR'], 'escape' => false));
+									echo '</td></tr>';
+								}
+							} ?>
+						</table>
+					</div>
 					
 					<td style="padding-right : 110px">
 					</td>
@@ -105,22 +104,21 @@
 				
 				<td style="padding-left: 0px ; border-left: medium solid #4D2B08" >
 				
-					<table width=150%; >
-						<tr>
-							<td style="padding-left : 50px">
-							</td>
-							
-							<!-- Fromages -->
-							<td>
-								<ul><li> Fromage blanc </li>
-								<li> Mozzarella </li></ul>
-							</td>
-					
-							<td style="padding-left: 30px ">
-								<ul><li> Parmesan </li></ul>
-							</td>
-						</tr>
-					</table>
+					<div class="listeForEach">
+						<table>
+							<!-- Liste des produits laitiers : affichage des images des différents produits laitiers à l'aide de zoombox -->
+							<?php foreach ($pdtLaitiers as $groupPdtLaitier) {
+								foreach ($groupPdtLaitier['Aliment'] as $pdtLaitier) {
+									
+									echo '<tr><td>';
+									// Pour simplifier on ne metra qu'une image par produit différent
+									$fichier = strtok($pdtLaitier['nomFR'], ',');
+									echo $this->Html->link('<li>' . $pdtLaitier['nomFR'] . '</li>', '../img/' . $fichier . '.jpg', array('class' => 'zoombox', 'alt' => $pdtLaitier['nomFR'], 'escape' => false));
+									echo '</td></tr>';
+								}
+							} ?>
+						</table>
+					</div>
 					
 					<td style="padding-right : 250px">
 					</td>

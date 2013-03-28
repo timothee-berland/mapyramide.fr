@@ -10,7 +10,7 @@
 			
 			<input type="text" name="zone-aliment" value="" id="zone-aliment" /> <br><br><br> 
 
-			<input type="submit" value="Rechercher" />
+			<input type="submit" value="Rechercher" onClick='return validRecherche();' />
 		</div>
 		
 		<!-- <div id="lien-accueil">
@@ -20,12 +20,14 @@
 	
 	<div id="encyclo">
 		<span> Résultats </span>
-		<div id="bloc-gauche">
+		<div class="bloc-gauche">
 			<?php 
 				if (isset($resultats)) :
 					if (sizeof($resultats) >= 1) {
 						echo "<ul>";
-						foreach ($resultats as $resultat) { ?>
+						$compteurResultats=0;
+						foreach ($resultats as $resultat) { $compteurResultats++; if($compteurResultats > 100) {break;} ?>
+
 							<li>
 								<?php 
 									if (!isset($aliment1)): 
@@ -52,80 +54,165 @@
 				
 				<?php 
 					if(isset($aliment2)): 
-						echo $this->Html->link('<div id="supprimer"></div>', '/aliments/index/' . $aliment2['Aliment']['id'], array('escape' => false));
+						echo $this->Html->link('<div class="supprimer"></div>', '/aliments/index/' . $aliment2['Aliment']['id'], array('escape' => false));
 					else : 
-						echo $this->Html->link('<div id="supprimer"></div>', '/aliments/index/', array('escape' => false));
+						echo $this->Html->link('<div class="supprimer"></div>', '/aliments/index/', array('escape' => false));
 					endif; 
 				?>
 				
 
-			   	<div id="titre">
+			   	<div class="titre">
 					<?php
 						echo "<h2>".$aliment1['Aliment']['nomFR']."</h2>";
 						echo "<p> ____________________________ </p>";
 					?>				
 			    </div>
 				
-				<div id="choix-portion">
+				<div class="choix-portion">
 				   <p> Choisissez une quantité </p>
-				   <select id="quantite" name="quantite">
-					   <option value="1" selected="selected">1</option>
-					   <option value="2">2</option>
-					   <option value="3">3</option>
-					   <option value="4">4</option>
+				   <select class="quantite" name="quantite">
 					   <?php 
-						   if (isset ($_POST['valider'])) {
-								echo " <option value=\"".$_POST['quantite']."\" selected=\"selected\">".$_POST['quantite']."</option>";
+							if ($quantiteAliment1 == 1) {
+								echo "<option value='1' selected='selected'>1</option>";
+								echo "<option value='2'>2</option>";
+								echo "<option value='3'>3</option>";
+								echo "<option value='4'>4</option>";
+							} elseif ($quantiteAliment1 == 2) {
+								echo "<option value='1'>1</option>";
+								echo "<option value='2' selected='selected'>2</option>";
+								echo "<option value='3'>3</option>";
+								echo "<option value='4'>4</option>";
+							} elseif ($quantiteAliment1 == 3) {
+								echo "<option value='1'>1</option>";
+								echo "<option value='2'>2</option>";
+								echo "<option value='3' selected='selected'>3</option>";
+								echo "<option value='4'>4</option>";
+							} else {
+								echo "<option value='1'>1</option>";
+								echo "<option value='2'>2</option>";
+								echo "<option value='3'>3</option>";
+								echo "<option value='4' selected='selected'>4</option>";
 							}
 						?>
 				   </select>
 				   
-				    <select id="portion" name="portion">
-						<?php echo "<option value=\"petit(e)\">".$aliment1['Aliment']['typePortion']." -petit(e)-</option>"; ?>
-						<?php echo "<option value=\"moyen(ne)\" selected=\"selected\">".$aliment1['Aliment']['typePortion']." -moyen(ne)-</option>"; ?>
-						<?php echo "<option value=\"grand(e)\">".$aliment1['Aliment']['typePortion']." -grand(e)-</option>";
-						if (isset ($_POST['valider'])) {
-							echo " <option value=\"".$_POST['portion']."\" selected=\"selected\">".$type." -".$_POST['portion']."-</option>";
-						}; ?>
+				    <select class="portion" name="portion">
+						<?php 
+							if ($quantitePortion1 == 'quantitePetitePortion') {
+								echo "<option value='quantitePetitePortion' selected='selected'>".$aliment1['Aliment']['typePortion']." -petit(e)-</option>";
+								echo "<option value='quantiteMoyennePortion'>".$aliment1['Aliment']['typePortion']." -moyen(ne)-</option>"; 
+						 		echo "<option value='quantiteGrandePortion'>".$aliment1['Aliment']['typePortion']." -grand(e)-</option>";
+							} elseif ($quantitePortion1 == 'quantiteMoyennePortion') {
+								echo "<option value='quantitePetitePortion'>".$aliment1['Aliment']['typePortion']." -petit(e)-</option>";
+								echo "<option value='quantiteMoyennePortion' selected='selected'>".$aliment1['Aliment']['typePortion']." -moyen(ne)-</option>";
+								echo "<option value='quantiteGrandePortion'>".$aliment1['Aliment']['typePortion']." -grand(e)-</option>";
+							} else {
+								echo "<option value='quantitePetitePortion'>".$aliment1['Aliment']['typePortion']." -petit(e)-</option>";
+						 		echo "<option value='quantiteMoyennePortion'>".$aliment1['Aliment']['typePortion']." -moyen(ne)-</option>"; 
+								echo "<option value='quantiteGrandePortion' selected='selected'>".$aliment1['Aliment']['typePortion']." -grand(e)-</option>"; 
+							}
+						?>
 				   </select>
 				   
 				    <input type="submit" name="valider" value="Valider" />			   
 					<a>Ajouter *</a>
 				</div>
 			  	   
-				<div id="onglets-encyclo">
-				    <a onClick="afficherAliment();">Infos sur l'aliment </a>
-					<a onClick="afficherNutriment();">Infos nutritionnelles </a>
+				<div class="onglets-encyclo">
+				    <a onClick="afficherAliment('1');">Infos sur l'aliment </a>
+					<a onClick="afficherNutriment('1');">Infos nutritionnelles </a>
 				</div>
 				
-				<div id="info-aliment">
-					<div id="calories"> Nombre total de calories 
+				<div class="info-aliment" id='info-aliment1'>
+					<div class="calories"> Nombre total de calories 
 						<?php
-					    	foreach ($aliment1['Donneesaliment'] as $constituant) {
-							    if (!empty($_POST['quantite'])) {
-								echo "<p>".$constituant['valmoy']*$_POST['quantite']."</p>";
-								} else {
-									echo "<p>".$constituant['valmoy']."</p>";
-								}
-					    	}
+							echo "<p>". $aliment1['Donneesaliment'][1]['valmoy'] * $quantiteAliment1 . "</p>";
 						?>
 					</div>
 					
 					<table>
 					    <tr>
-						    <th> Groupe(s) alimentaire(s) </th>
+						    <th> Groupe alimentaire</th>
 							<th> Apports </th>
 						</tr>
 						 <tr>
-						    <td> &nbsp </td>
-							<td>  principauxConstituants($aliment1['numAliment']); ?> </td>
+						    <td> 
+						    	<ul>
+						    		<li>
+						    			<p class='groupeAlimentaire'>
+						    				<?php echo $this->Html->link($aliment1['Famillealiments']['name'], '/pages/groupesalimentaires'); ?>
+						    			</p>
+						    		</li>
+						    	</ul>
+						    </td>
+							<td>  
+								<ul>
+									<li>
+										Energie : 
+										<p>
+											<?php 
+												echo $aliment1['Donneesaliment'][1]['valmoy'] * $quantiteAliment1 * $quantitePortion1 / 100;
+											?> kcal
+										</p>
+									</li>
+								
+									<li>
+										Matières grasses : 
+										<p>
+											<?php 
+												echo $aliment1['Donneesaliment'][23]['valmoy'] * $quantiteAliment1 * $quantitePortion1 / 100;
+											?> g
+										</p>
+									</li>
+								
+									<li>
+										Sucres ajoutés : 
+										<p>
+											<?php 
+												echo $aliment1['Donneesaliment'][18]['valmoy'] * $quantiteAliment1 * $quantitePortion1 / 100;
+											?> g
+										</p>
+									</li>
+								
+									<li>
+										Graisses saturés : 
+										<p>
+											<?php 
+												echo $aliment1['Donneesaliment'][24]['valmoy'] * $quantiteAliment1 * $quantitePortion1 / 100;
+											?> g
+										</p>
+									</li>
+								
+									<li>
+										Sodium : 
+										<p>
+											<?php 
+												echo $aliment1['Donneesaliment'][5]['valmoy'] * $quantiteAliment1 * $quantitePortion1 / 100;
+											?> mg
+										</p>
+									</li>
+								</ul>
+							</td>
 						</tr>
 					</table>
 					      
 				</div>
 				
-				<div id="info-nutriment"> 
-				 tousLesCompos($aliment1['numAliment']) ?> !!!!!!!!!!!!!!!!!
+				<div class="info-nutriment" id="info-nutriment-aliment1"> 
+				 	<table>
+				 		<?php for ($i=0; $i <= 56; $i++) : ?>
+					 		<tr>
+					 			<td class='nomConstituant'>
+					 				<?php echo $constituantsAliment1[$i]['Constituantaliments']['name'] ?>
+					 			</td>
+					 			<td>
+					 				<p>
+					 					<?php echo $aliment1['Donneesaliment'][$i]['valmoy'] * $quantiteAliment1 * $quantitePortion1 / 100; ?>
+					 				</p>
+					 			</td>
+					 		</tr>
+				 		<?php endfor; ?>
+				 	</table>
 				</div>
 			</div>
 		<?php endif; ?>
@@ -133,75 +220,161 @@
 		<?php if(isset($aliment2)): ?>
 			<div class="bloc-droit"> 
 				  
-				<?php echo $this->Html->link('<div id="supprimer2"></div>', '/aliments/index/' . $aliment1['Aliment']['id'], array('escape' => false)); ?>
+				<?php echo $this->Html->link('<div class="supprimer"></div>', '/aliments/index/' . $aliment1['Aliment']['id'], array('escape' => false)); ?>
 				
-			   	<div id="titre2">
+			   	<div class="titre">
 					<?php
 						echo "<h2>".$aliment2['Aliment']['nomFR']."</h2>";
 						echo "<p> ____________________________ </p>";
 					?>				
 			    </div>
 				
-				<div id="choix-portion2">
+				<div class="choix-portion">
 				   <p> Choisissez une quantité </p>
-				   <select id="quantite2" name="quantite2">
-					   <option value="1" selected="selected">1</option>
-					   <option value="2">2</option>
-					   <option value="3">3</option>
-					   <option value="4">4</option>
+				   <select class="quantite" name="quantite2">
 					   <?php 
-						   if (isset ($_POST['valider2'])) {
-								echo " <option value=\"".$_POST['quantite2']."\" selected=\"selected\">".$_POST['quantite2']."</option>";
+							if ($quantiteAliment2 == 1) {
+								echo "<option value='1' selected='selected'>1</option>";
+								echo "<option value='2'>2</option>";
+								echo "<option value='3'>3</option>";
+								echo "<option value='4'>4</option>";
+							} elseif ($quantiteAliment2 == 2) {
+								echo "<option value='1'>1</option>";
+								echo "<option value='2' selected='selected'>2</option>";
+								echo "<option value='3'>3</option>";
+								echo "<option value='4'>4</option>";
+							} elseif ($quantiteAliment2 == 3) {
+								echo "<option value='1'>1</option>";
+								echo "<option value='2'>2</option>";
+								echo "<option value='3' selected='selected'>3</option>";
+								echo "<option value='4'>4</option>";
+							} else {
+								echo "<option value='1'>1</option>";
+								echo "<option value='2'>2</option>";
+								echo "<option value='3'>3</option>";
+								echo "<option value='4' selected='selected'>4</option>";
 							}
 						?>
 				   </select>
 				   
-				    <select id="portion2" name="portion2">
-						<?php echo "<option value=\"petit(e)\">".$aliment2['Aliment']['typePortion']." -petit(e)-</option>"; ?>
-						<?php echo "<option value=\"moyen(ne)\" selected=\"selected\">".$aliment2['Aliment']['typePortion']." -moyen(ne)-</option>"; ?>
-						<?php echo "<option value=\"grand(e)\">".$aliment2['Aliment']['typePortion']." -grand(e)-</option>";
-						if (isset ($_POST['valider2'])) {
-							echo " <option value=\"".$_POST['portion']."\" selected=\"selected\">".$type." -".$_POST['portion']."-</option>";
-						}; ?>
+				    <select class="portion" name="portion2">
+						<?php 
+							if ($quantitePortion2 == 'quantitePetitePortion') {
+								echo "<option value='quantitePetitePortion' selected='selected'>".$aliment2['Aliment']['typePortion']." -petit(e)-</option>";
+								echo "<option value='quantiteMoyennePortion'>".$aliment2['Aliment']['typePortion']." -moyen(ne)-</option>"; 
+						 		echo "<option value='quantiteGrandePortion'>".$aliment2['Aliment']['typePortion']." -grand(e)-</option>";
+							} elseif ($quantitePortion2 == 'quantiteMoyennePortion') {
+								echo "<option value='quantitePetitePortion'>".$aliment2['Aliment']['typePortion']." -petit(e)-</option>";
+								echo "<option value='quantiteMoyennePortion' selected='selected'>".$aliment2['Aliment']['typePortion']." -moyen(ne)-</option>";
+								echo "<option value='quantiteGrandePortion'>".$aliment2['Aliment']['typePortion']." -grand(e)-</option>";
+							} else {
+								echo "<option value='quantitePetitePortion'>".$aliment2['Aliment']['typePortion']." -petit(e)-</option>";
+						 		echo "<option value='quantiteMoyennePortion'>".$aliment2['Aliment']['typePortion']." -moyen(ne)-</option>"; 
+								echo "<option value='quantiteGrandePortion' selected='selected'>".$aliment2['Aliment']['typePortion']." -grand(e)-</option>"; 
+							}
+						?>
 				   </select>
 				   
 				    <input type="submit" name="valider2" value="Valider2" />			   
 					<a>Ajouter *</a>
 				</div>
 			  	   
-				<div id="onglets-encyclo2">
+				<div class="onglets-encyclo">
 				    <a onClick="afficherAliment('2');">Infos sur l'aliment </a>
 					<a onClick="afficherNutriment('2');">Infos nutritionnelles </a>
 				</div>
 				
-				<div id="info-aliment2">
-					<div id="calories2"> Nombre total de calories 
+				<div class="info-aliment" id='info-aliment2'>
+					<div class="calories"> Nombre total de calories 
 						<?php
-					    	foreach ($aliment1['Donneesaliment'] as $constituant) {
-							    if (!empty($_POST['quantite'])) {
-								echo "<p>".$constituant['valmoy']*$_POST['quantite']."</p>";
-								} else {
-									echo "<p>".$constituant['valmoy']."</p>";
-								}
-					    	}
+							echo "<p>". $aliment2['Donneesaliment'][1]['valmoy'] * $quantiteAliment2 . "</p>";
 						?>
 					</div>
 					
 					<table>
 					    <tr>
-						    <th> Groupe(s) alimentaire(s) </th>
+						    <th> Groupe alimentaire</th>
 							<th> Apports </th>
 						</tr>
 						 <tr>
-						    <td> &nbsp </td>
-							<td>  principauxConstituants($aliment1['numAliment']); ?> </td>
+						    <td> 
+						    	<ul>
+						    		<li>
+						    			<p class='groupeAlimentaire'>
+						    				<?php echo $this->Html->link($aliment2['Famillealiments']['name'], '/pages/groupesalimentaires'); ?>
+
+						    			</p>
+						    		</li>
+						    	</ul>
+						    </td>
+							<td>  
+								<ul>
+									<li>
+										Energie : 
+										<p>
+											<?php 
+												echo $aliment2['Donneesaliment'][1]['valmoy'] * $quantiteAliment2 * $quantitePortion2 / 100;
+											?> kcal
+										</p>
+									</li>
+								
+									<li>
+										Matières grasses : 
+										<p>
+											<?php 
+												echo $aliment2['Donneesaliment'][23]['valmoy'] * $quantiteAliment2 * $quantitePortion2 / 100;
+											?> g
+										</p>
+									</li>
+								
+									<li>
+										Sucres ajoutés : 
+										<p>
+											<?php 
+												echo $aliment2['Donneesaliment'][18]['valmoy'] * $quantiteAliment2 * $quantitePortion2 / 100;
+											?> g
+										</p>
+									</li>
+								
+									<li>
+										Graisses saturés : 
+										<p>
+											<?php 
+												echo $aliment2['Donneesaliment'][24]['valmoy'] * $quantiteAliment2 * $quantitePortion2 / 100;
+											?> g
+										</p>
+									</li>
+								
+									<li>
+										Sodium : 
+										<p>
+											<?php 
+												echo $aliment2['Donneesaliment'][5]['valmoy'] * $quantiteAliment2 * $quantitePortion2 / 100;
+											?> mg
+										</p>
+									</li>
+								</ul>
+							</td>
 						</tr>
 					</table>
 					      
 				</div>
 				
-				<div id="info-nutriment2"> 
-				 tousLesCompos($aliment1['numAliment']) ?>
+				<div class="info-nutriment" id="info-nutriment-aliment2"> 
+				 	<table>
+				 		<?php for ($i=0; $i <= 56; $i++) : ?>
+					 		<tr>
+					 			<td class='nomConstituant'>
+					 				<?php echo $constituantsAliment2[$i]['Constituantaliments']['name'] ?>
+					 			</td>
+					 			<td>
+					 				<p>
+					 					<?php echo $aliment2['Donneesaliment'][$i]['valmoy'] * $quantiteAliment2 * $quantitePortion2 / 100; ?>
+					 				</p>
+					 			</td>
+					 		</tr>
+				 		<?php endfor; ?>
+				 	</table>
 				</div>
 			</div>
 		<?php endif; ?>
@@ -213,13 +386,22 @@
 			alert("Vous avez déjà choisi deux aliments. Pour en remplacer un, supprimez le d'abord !");
 	}
 
-	function afficherNutriment() {
-		document.getElementById("info-nutriment").style.display = "block";
-		document.getElementById("info-aliment").style.display = "none";
+	function validRecherche() {
+			if (document.getElementById("zone-aliment").value.length >= 3) {
+				return true; 
+			} else {
+				alert('Vous devez saisir au moins trois lettres pour votre recherche.');
+				return false
+			}
 	}
 
-	function afficherAliment() {
-		document.getElementById("info-aliment").style.display = "block";
-		document.getElementById("info-nutriment").style.display = "none";
+	function afficherNutriment($numAliment) {
+		document.getElementById("info-nutriment-aliment" + $numAliment).style.display = "block";
+		document.getElementById("info-aliment" + $numAliment).style.display = "none";
+	}
+
+	function afficherAliment($numAliment) {
+		document.getElementById("info-aliment" + $numAliment).style.display = "block";
+		document.getElementById("info-nutriment-aliment" + $numAliment).style.display = "none";
 	}
 </script>

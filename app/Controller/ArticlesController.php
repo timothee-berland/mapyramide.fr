@@ -15,13 +15,12 @@ class ArticlesController extends AppController {
 
 	public function index() {
 
-		$articles = $this->Category->find('all');
+		$articles = $this->Article->find('all');
 		$this->set('articles', $articles);
-
 	}
 
 	public function article($id) {
-		$article = $this->Article->find('first', array('options', array('id' => $id)));
+		$article = $this->Article->find('first', array('conditions' => array('Article.id' => $id)));
 			$this->set('article', $article);
 	}
 
@@ -32,11 +31,20 @@ class ArticlesController extends AppController {
 		debug($articles);
 	}
 
-	public function edit($id) {
+	public function edit($id=null) {
 		$this->Article->id = $id;
 		if (!$this->Article->exists()) {
 			throw new NotFoundException(__('Article invalide'));
 		}
+
+		$this->set('id', $id);
+
+		$article = $this->Article->find('first', array('conditions' => array('Article.id' => $id)));
+		$this->set('titre', $article['Article']['title']);
+		$this->set('idCategorie', $article['Article']['category_id']);
+		$this->set('contenu', $article['Article']['content']);
+		$this->set('categories', $this->Category->find('all'));
+
 		if ($this->request->is('post') || $this->request->is('put')) {
 			if ($this->Article->save($this->request->data)) {
 				$this->Session->setFlash(__("L'article a été modifié"));
@@ -48,6 +56,8 @@ class ArticlesController extends AppController {
 	}
 
 	public function add() {
+		$this->set('categories', $this->Category->find('all'));
+
 		if ($this->request->is('post')) {
 				$this->Article->create();
 				if ($this->Article->save($this->request->data)) {

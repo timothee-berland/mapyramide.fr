@@ -74,24 +74,52 @@ $cakeDescription = __d('cake_dev', 'CakePHP: the rapid development php framework
 	</script>
 	<!-- ENDS superfish -->
 
+	<!-- Barre de recherche -->
+	<script>
+	  $(function() {
+	    // run the currently selected effect
+	    function runEffect() {
+	    	var options = {};
+	      // run the effect
+	      $( "#searchForm" ).show( "drop", options, 500, callback );
+	    };
+	 
+	    //callback function to bring a hidden box back
+	    function callback() {
+			setTimeout(function() {
+		        $( "#searchForm:visible" ).removeAttr( "style" ).fadeOut();
+		      }, 10000 ); // timout de 10 secondes 
+		    };
+		 // set effect from select menu value
+	    $( "#searchIcon" ).click(function() {
+	      runEffect();
+	      return false;
+	    });
+
+	    	$( "#searchForm" ).hide();
+  		});
+  	</script>
+
 </head>
 
-<body>
+<body onLoad='postData();'>
 
 	<header>
 		<?php if (AuthComponent::user('id') == 1): ?>
 		<div class="menu3">
-		    <?php echo $this->Html->link('Gérer les photos', '#'); ?>
-		    <?php echo $this->Html->link('Gérer les articles', '#'); ?>
-		    <?php echo $this->Html->link('Gérer la base de données', '#'); ?>
-		    <?php echo $this->Html->link('Gérer les utilisateurs', '#'); ?>
+		    <?php echo $this->Html->link('Gérer les photos', '#', array('onClick' => "pasDisponible();")); ?>
+		    <?php echo $this->Html->link('Gérer les articles', '/articles'); ?>
+		    <?php echo $this->Html->link('Gérer la base de données', 'https://phpmyadmin.ovh.net'); ?>
+		    <?php echo $this->Html->link('Gérer les utilisateurs', '/users'); ?>
 		</div>
 		<?php endif; ?>
+
+			
+		</div>
 		
 		<div id='nomEtLogo'>
 			<?php echo $this->Html->link('<div id="AGD-logo">AG Diététique </div>', '/', array('escape' => false)); ?>
 			<?php echo $this->Html->link('<div id="NomSite"> Ma Pyramide Alimentaire </div>', '/', array('escape' => false)); ?>
-			<!-- <a href="javascript:void(0)" class="button green"> <span class="phone"></span> Contact </a> -->
 		</div>
 
 		<div id='menuEtConnexion'>
@@ -113,7 +141,7 @@ $cakeDescription = __d('cake_dev', 'CakePHP: the rapid development php framework
 									<li class="dropdown-last"><?php echo $this->Html->link('Haricots & pois', '/pages/legumesbeansandpeas'); ?></li>
 								</ul>
 							</li>
-							<li class="dropdown-middle"><?php echo $this->Html->link('Céréales', '#'); ?>
+							<li class="dropdown-middle"><?php echo $this->Html->link('Céréales', '/pages/cereales'); ?>
 								<ul class="dropdown">
 									<li class="dropdown-first"><?php echo $this->Html->link('Bienfaits', '/pages/bienfaitscereales'); ?></li>
 									<li class="dropdown-last"><?php echo $this->Html->link('Conseils', '/pages/conseilscereales'); ?></li>
@@ -128,7 +156,7 @@ $cakeDescription = __d('cake_dev', 'CakePHP: the rapid development php framework
 							</li>
 							<li class="dropdown-middle"><?php echo $this->Html->link('Produits Laitiers', '/pages/produitslaitiers'); ?>
 								<ul class="dropdown">
-									<li class="dropdown-first"><?php echo $this->Html->link('Bienfaits', '/pages/bienfaitsPL'); ?></li>
+									<li class="dropdown-first"><?php echo $this->Html->link('Bienfaits', '/pages/bienfaitspl'); ?></li>
 									<li class="dropdown-last"><?php echo $this->Html->link('Conseils', '/pages/conseilspl'); ?></li>
 								</ul>
 							</li>
@@ -142,7 +170,7 @@ $cakeDescription = __d('cake_dev', 'CakePHP: the rapid development php framework
 					</li>
 					<li><?php echo $this->Html->link('Poids & Calories', '#'); ?>
 						<ul class="dropdown">
-							<li class="dropdown-first"><?php echo $this->Html->link('Gestion pondérale', '/pages/fruits'); ?>				
+							<li class="dropdown-first"><?php echo $this->Html->link('Gestion pondérale', '/pages/gestionpoids'); ?>				
 								<ul class="dropdown">
 									<li class="dropdown-first"><?php echo $this->Html->link('Nourriture actuelle', '/pages/nourritureactuelle'); ?></li>
 									<li class="dropdown-middle"><?php echo $this->Html->link('Que manger ?', '/pages/quemanger'); ?></li>
@@ -158,7 +186,7 @@ $cakeDescription = __d('cake_dev', 'CakePHP: the rapid development php framework
 							<li class="dropdown-last"><?php echo $this->Html->link('Calories', '/pages/calories'); ?>
 								<ul class="dropdown">
 									<li class="dropdown-first"><?php echo $this->Html->link('Calories vides', '/pages/caloriesvides'); ?></li>
-									<li class="dropdown-middle"><?php echo $this->Html->link('Matières grasses', '/pages/caloriesMG'); ?></li>
+									<li class="dropdown-middle"><?php echo $this->Html->link('Matières grasses', '/pages/caloriesmg'); ?></li>
 									<li class="dropdown-middle"><?php echo $this->Html->link('Sucres ajoutés', '/pages/sucresajoutes'); ?></li>
 									<li class="dropdown-last"><?php echo $this->Html->link('Quantifier calories', '/pages/comptercalories'); ?></li>
 								</ul>
@@ -173,7 +201,7 @@ $cakeDescription = __d('cake_dev', 'CakePHP: the rapid development php framework
 							<li class="dropdown-last"><?php echo $this->Html->link('Conseils', '/pages/conseilssportifs'); ?></li>
 						</ul>
 					</li>
-					<li><?php echo $this->Html->link('Ressources', '#'); ?>
+					<li><?php echo $this->Html->link('Ressources', '/imcenfants'); ?>
 						<ul class="dropdown">
 							<li class="dropdown-first"><?php echo $this->Html->link('Calculateur IMC', '/imcenfants'); ?></li>
 							<li class="dropdown-last"><?php echo $this->Html->link('Super Traqueur', '/pages/supertracker'); ?></li>
@@ -191,23 +219,26 @@ $cakeDescription = __d('cake_dev', 'CakePHP: the rapid development php framework
 					</div>
 				<?php else: ?>
 					<div id='liens'>
-						<?php echo $this->Html->link('Bonjour ' . AuthComponent::user('username'), '/users/edit'); ?>
+						<?php echo $this->Html->link('Bonjour ' . AuthComponent::user('username'), '/users'); ?>
 						<br>
 						<?php echo $this->Html->link('me déconnecter', '/users/logout', array('id' => 'connexionLink')); ?>
 					</div>
 				<?php endif; ?>
+				<p class="ui-state-default ui-corner-all" id="searchIcon"><span class="ui-icon ui-icon-search"></span></p>
 			</div>
+
+			
+			<form method="get" class="searchform" id="searchForm" action="http://mapyramide.fr/">
+				<button type="submit" class="icon-search"><span class="visuallyhidden">Chercher</span></button>
+				<label>
+					<input type="text" name="s" value="" placeholder="Rechercher sur mapyramide.fr">
+				</label>
+			</form>
 			
 		</div>
 	</header>
 
 	<div id="container">
-
-		<!-- <div id="header">
-			<div id="AGD-logo">AG Diététique </div>
-			<div id="NomSite"> Ma Pyramide Alimentaire </div>
-			<a href="javascript:void(0)" class="button green"> <span class="phone"></span> Contact </a>
-		</div> -->
 
 		<div id="content">
 
@@ -247,3 +278,9 @@ $cakeDescription = __d('cake_dev', 'CakePHP: the rapid development php framework
 
 </body>
 </html>
+
+<script type="text/javascript">
+	function pasDisponible() {
+		alert("Cette fonctionnalité n'est pas encore disponible.")
+	}
+</script>

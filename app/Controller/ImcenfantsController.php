@@ -6,9 +6,24 @@ App::uses('AppController', 'Controller');
  * @property Imcenfant $Imcenfant
  */
 class ImcenfantsController extends AppController {
+
+	// Pour utiliser des modèles spécifiques
+	public $uses = array('Imcenfant', 'User');
+
 	public function index()
 	{
-		# Nothing to do here...
+		$id = AuthComponent::user('id');
+		if ($id != null) {
+			$user = $this->User->find('first', array('conditions' => array('id' => $id)));
+			$this->set('datenaissance', $user['User']['datenaissance']);
+			$this->set('taille', $user['User']['taille']);
+			$this->set('poids', $user['User']['poids']);
+			$this->set('sexe', $user['User']['sexe']);
+			$this->set('enceinte', $user['User']['enceinte']);
+			$this->set('allaitante', $user['User']['allaitante']);
+		} else {
+			$this->set('noPost', 1);
+		}
 	}
 
 	public function beforeFilter() {
