@@ -21148,3 +21148,21 @@ Request URL: /mapyramide.fr/activitephysique
 Stack Trace:
 #0 C:\Program Files (x86)\EasyPHP-12.1\www\mapyramide.fr\app\webroot\index.php(97): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
 #1 {main}
+2013-03-28 11:03:24 Error: [MissingControllerException] Controller class ImgController could not be found.
+Exception Attributes: array (
+  'class' => 'ImgController',
+  'plugin' => NULL,
+)
+Request URL: /mapyramide.fr/img/load-indicator.gif
+Stack Trace:
+#0 C:\Program Files (x86)\EasyPHP-12.1\www\mapyramide.fr\app\webroot\index.php(97): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-03-28 12:35:53 Error: [MissingControllerException] Controller class ImgController could not be found.
+Exception Attributes: array (
+  'class' => 'ImgController',
+  'plugin' => NULL,
+)
+Request URL: /mapyramide.fr/img/load-indicator.gif
+Stack Trace:
+#0 C:\Program Files (x86)\EasyPHP-12.1\www\mapyramide.fr\app\webroot\index.php(97): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
