@@ -75,7 +75,7 @@ class ImcenfantsController extends AppController {
 			} else {
 				switch ($_POST['AP']) {
 					case 1: 
-						$AP = 1000.0;
+						$AP = 1.0;
 						break;
 					case 2: 
 						$AP = 1.12;
