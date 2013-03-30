@@ -14,7 +14,9 @@ class AlimentsController extends AppController {
 		if ($this->request->is('post')) {
 			if (!empty ($_POST['zone-aliment'])) {
 				$aRechercher = $_POST['zone-aliment'];
-				$resultats = $this->Aliment->find('all', array('conditions' => array('Aliment.nomFR LIKE' => '%'.$aRechercher.'%')));
+				$resultats = $this->Aliment->find('all', array('conditions' => array('OR' => array(
+																				array('Aliment.nomFR LIKE' => '%'. ucfirst(strtolower($aRechercher)) .'%'),
+																				array('Aliment.nomFR LIKE' => '%'. strtolower($aRechercher) .'%')))));
 				$this->set('resultats', $resultats);
 			}
 		}
