@@ -5,8 +5,10 @@
 	echo $this->Form->input('id', array('type'=>'hidden')); 
 ?>
 
+<!-- Cette page est accessible dans la partie administration. Cliquez sur : gérer des articles -->
 <span2>Informations sur l'article</span2>
 <div class="bloc1">
+	<!-- Permet à l'administrateur de préciser le titre de l'article ainsi que la catégorie à laquelle il appartient -->
 	<label for="ArticleTitle">Titre de l'article</label>
 	<div class="input text">
 		<input name="data[Article][title]" maxlength="150" type="text" id="ArticleTitle" required="required"/>
@@ -20,6 +22,7 @@
 		</select>
 	</div>
 </div>
+<!-- Ceci correspond à l'éditeur de texte. L'administrateur peut ici saisir le contenu de son article -->
 <span2>Contenu de l'article</span2>
 <div id="bloc-editeur">
 	<div class="input textarea">
@@ -29,6 +32,8 @@
 	</div>
 </div>
 <div id="bloc2">
+	<!-- Lorsqu'un administrateur clique sur le bouton "Enregistrer", les modifications qu'il vient d'effectuer son automatiquement reportées sur la page du 
+	     site concernée -->
     <?php echo $this->Form->end("Enregistrer"); ?> 
 </div>
 
