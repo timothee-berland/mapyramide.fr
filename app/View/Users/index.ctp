@@ -19,10 +19,10 @@
 		}
 	</script>
 
-<?php else : ?>
+<?php elseif (isset($users)) : ?>
 
 	<div class="bloc-index">
-		<p id="user"><?php echo $users['User']['username']; ?> : <?php echo $users['User']['role']; ?> </p>
+		<p id="user">Compte : <?php echo $users['User']['username']; ?>. Vous avez le statut : <?php echo $users['User']['role']; ?>. </p>
 
 		<div id="btns-index">
 			<!-- Bouton modifications -->

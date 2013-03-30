@@ -115,7 +115,7 @@
 				   </select>
 				   
 				    <input type="submit" name="valider" value="Valider" />			   
-					<a>Ajouter *</a>
+					<!-- <a>Ajouter *</a> -->
 				</div>
 			  	   
 				<div class="onglets-encyclo">
@@ -126,6 +126,7 @@
 				<div class="info-aliment" id='info-aliment1'>
 					<div class="calories"> Nombre total de calories 
 						<?php
+							$energieAliment1 = $aliment1['Donneesaliment'][1]['valmoy'] * $quantiteAliment1 * $aliment1['Aliment'][$quantitePortion1] / 100;
 							echo "<p>". $aliment1['Donneesaliment'][1]['valmoy'] * $quantiteAliment1 . "</p>";
 						?>
 					</div>
@@ -151,7 +152,7 @@
 										Energie : 
 										<p>
 											<?php 
-												echo $aliment1['Donneesaliment'][1]['valmoy'] * $quantiteAliment1 * $quantitePortion1 / 100;
+												echo $energieAliment1;
 											?> kcal
 										</p>
 									</li>
@@ -160,7 +161,7 @@
 										Matières grasses : 
 										<p>
 											<?php 
-												echo $aliment1['Donneesaliment'][23]['valmoy'] * $quantiteAliment1 * $quantitePortion1 / 100;
+												echo $aliment1['Donneesaliment'][23]['valmoy'] * $quantiteAliment1 * $aliment1['Aliment'][$quantitePortion1] / 100;
 											?> g
 										</p>
 									</li>
@@ -169,7 +170,7 @@
 										Sucres ajoutés : 
 										<p>
 											<?php 
-												echo $aliment1['Donneesaliment'][18]['valmoy'] * $quantiteAliment1 * $quantitePortion1 / 100;
+												echo $aliment1['Donneesaliment'][18]['valmoy'] * $quantiteAliment1 * $aliment1['Aliment'][$quantitePortion1] / 100;
 											?> g
 										</p>
 									</li>
@@ -178,7 +179,7 @@
 										Graisses saturés : 
 										<p>
 											<?php 
-												echo $aliment1['Donneesaliment'][24]['valmoy'] * $quantiteAliment1 * $quantitePortion1 / 100;
+												echo $aliment1['Donneesaliment'][24]['valmoy'] * $quantiteAliment1 * $aliment1['Aliment'][$quantitePortion1] / 100;
 											?> g
 										</p>
 									</li>
@@ -187,7 +188,7 @@
 										Sodium : 
 										<p>
 											<?php 
-												echo $aliment1['Donneesaliment'][5]['valmoy'] * $quantiteAliment1 * $quantitePortion1 / 100;
+												echo $aliment1['Donneesaliment'][5]['valmoy'] * $quantiteAliment1 * $aliment1['Aliment'][$quantitePortion1] / 100;
 											?> mg
 										</p>
 									</li>
@@ -201,16 +202,18 @@
 				<div class="info-nutriment" id="info-nutriment-aliment1"> 
 				 	<table>
 				 		<?php for ($i=0; $i <= 56; $i++) : ?>
+				 			<?php if (($nutrimentAliment1 = $aliment1['Donneesaliment'][$i]['valmoy'] * $quantiteAliment1 * $aliment1['Aliment'][$quantitePortion1] / 100) != 0) : ?>
 					 		<tr>
 					 			<td class='nomConstituant'>
 					 				<?php echo $constituantsAliment1[$i]['Constituantaliments']['name'] ?>
 					 			</td>
 					 			<td>
 					 				<p>
-					 					<?php echo $aliment1['Donneesaliment'][$i]['valmoy'] * $quantiteAliment1 * $quantitePortion1 / 100; ?>
+					 					<?php echo round($nutrimentAliment1); ?>
 					 				</p>
 					 			</td>
 					 		</tr>
+				 			<?php endif; ?>
 				 		<?php endfor; ?>
 				 	</table>
 				</div>
@@ -276,7 +279,7 @@
 				   </select>
 				   
 				    <input type="submit" name="valider2" value="Valider2" />			   
-					<a>Ajouter *</a>
+					<!-- <a>Ajouter *</a> -->
 				</div>
 			  	   
 				<div class="onglets-encyclo">
@@ -287,7 +290,8 @@
 				<div class="info-aliment" id='info-aliment2'>
 					<div class="calories"> Nombre total de calories 
 						<?php
-							echo "<p>". $aliment2['Donneesaliment'][1]['valmoy'] * $quantiteAliment2 . "</p>";
+							$energieAliment2 = $aliment2['Donneesaliment'][1]['valmoy'] * $quantiteAliment2 * $aliment2['Aliment'][$quantitePortion2] / 100;
+							echo "<p>". $energieAliment2 . "</p>";
 						?>
 					</div>
 					
@@ -313,7 +317,7 @@
 										Energie : 
 										<p>
 											<?php 
-												echo $aliment2['Donneesaliment'][1]['valmoy'] * $quantiteAliment2 * $quantitePortion2 / 100;
+												echo $energieAliment2;
 											?> kcal
 										</p>
 									</li>
@@ -322,7 +326,7 @@
 										Matières grasses : 
 										<p>
 											<?php 
-												echo $aliment2['Donneesaliment'][23]['valmoy'] * $quantiteAliment2 * $quantitePortion2 / 100;
+												echo $aliment2['Donneesaliment'][23]['valmoy'] * $quantiteAliment2 * $aliment2['Aliment'][$quantitePortion2] / 100;
 											?> g
 										</p>
 									</li>
@@ -331,7 +335,7 @@
 										Sucres ajoutés : 
 										<p>
 											<?php 
-												echo $aliment2['Donneesaliment'][18]['valmoy'] * $quantiteAliment2 * $quantitePortion2 / 100;
+												echo $aliment2['Donneesaliment'][18]['valmoy'] * $quantiteAliment2 * $aliment2['Aliment'][$quantitePortion2] / 100;
 											?> g
 										</p>
 									</li>
@@ -340,7 +344,7 @@
 										Graisses saturés : 
 										<p>
 											<?php 
-												echo $aliment2['Donneesaliment'][24]['valmoy'] * $quantiteAliment2 * $quantitePortion2 / 100;
+												echo $aliment2['Donneesaliment'][24]['valmoy'] * $quantiteAliment2 * $aliment2['Aliment'][$quantitePortion2] / 100;
 											?> g
 										</p>
 									</li>
@@ -349,7 +353,7 @@
 										Sodium : 
 										<p>
 											<?php 
-												echo $aliment2['Donneesaliment'][5]['valmoy'] * $quantiteAliment2 * $quantitePortion2 / 100;
+												echo $aliment2['Donneesaliment'][5]['valmoy'] * $quantiteAliment2 * $aliment2['Aliment'][$quantitePortion2] / 100;
 											?> mg
 										</p>
 									</li>
@@ -363,16 +367,18 @@
 				<div class="info-nutriment" id="info-nutriment-aliment2"> 
 				 	<table>
 				 		<?php for ($i=0; $i <= 56; $i++) : ?>
+				 			<?php if (($nutrimentAliment2 = $aliment2['Donneesaliment'][$i]['valmoy'] * $quantiteAliment2 * $aliment2['Aliment'][$quantitePortion2] / 100) != 0) : ?>
 					 		<tr>
 					 			<td class='nomConstituant'>
 					 				<?php echo $constituantsAliment2[$i]['Constituantaliments']['name'] ?>
 					 			</td>
 					 			<td>
 					 				<p>
-					 					<?php echo $aliment2['Donneesaliment'][$i]['valmoy'] * $quantiteAliment2 * $quantitePortion2 / 100; ?>
+					 					<?php echo round($nutrimentAliment2); ?>
 					 				</p>
 					 			</td>
 					 		</tr>
+					 		<?php endif; ?>
 				 		<?php endfor; ?>
 				 	</table>
 				</div>

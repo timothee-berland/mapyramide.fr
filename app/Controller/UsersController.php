@@ -53,12 +53,13 @@
 				$this->set('allaitante', $_POST['data']['User']['allaitante']);
 
 				$pseudoExiste = $this->User->find('first', array('conditions' => array('username' => $this->request->data['User']['username'])));
-
-				if (empty($pseudoExiste)) {
+				if (strlen($_POST['data']['User']['password']) < 7) {
+					$this->Session->setFlash(__("Le mot de passe est trop court. Il doit faire au moins 7 caractères."));
+				} elseif (empty($pseudoExiste)) {
 					$this->request->data['User']['role'] = 'utilisateur';
 					$this->User->create();
 					if ($this->User->save($this->request->data)) {
-						$this->Session->setFlash(__("Le compte a été créé."));
+						$this->Session->setFlash(__("Le compte a été créé. Vous pouvez maintenant vous connecter."));
 						$this->redirect(array('action' => 'index'));
 					} else {
 						$this->Session->setFlash(__("Erreur lors de la creation du compte. Merci de réessayer."));
