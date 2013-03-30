@@ -1,6 +1,7 @@
 <div class="bloc1">
 	<h1><?php echo $article['Article']['title'] ?></h1>
 	<h2 id="titreCategorie">Catégorie : <?php echo $article['Category']['name'] ?></h2>
+	<!-- Permet de préciser les dates de création et de modification de l'article ainsi que le contenu de ce dernier-->
 	<h5>
 		<datesArticles>Date de création : <?php echo $article['Article']['created'] ?></datesArticles>
 		<datesArticles>Date de dernière modification : <?php echo $article['Article']['modified'] ?></datesArticles>

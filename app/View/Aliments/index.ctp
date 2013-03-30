@@ -1,13 +1,17 @@
 <?php echo $this->Form->create('Aliment'); ?>
 	<div id="presentation">
+	<!-- Cette page est accessible depuis le menu situé en haut de page. Cliquez sur Ressources --> SuperTracker --> Encyclopédie -->
 	    <div id="titre-accueil">
 			<span> Encyclopédie </span> 
 			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum turpis elit, viverra vitae tempus ac, interdum eu enim </p> 
 			
+			<!-- Liste déroulante permettant à l'utilisateur de choisir dans quelle catégorie d'aliments, se trouve l'aliment qu'il recherche.
+			     Cette dernière a pour but de faciliter la recherche. -->
 			<select id="recherche">
 			<option value="1">Tous les aliments</option>
 			</select> 
 			
+			<!-- Zone de texte permettant à l'utilisateur de saisir le nom de l'aliment recherché -->
 			<input type="text" name="zone-aliment" value="" id="zone-aliment" /> <br><br><br> 
 
 			<input type="submit" value="Rechercher" onClick='return validRecherche();' />
@@ -20,6 +24,7 @@
 	
 	<div id="encyclo">
 		<span> Résultats </span>
+		<!-- On affiche ici les caractéristique du premier aliment pour lequel l'utilisateur souhaite effectuer une comparaison avec un autre aliment -->
 		<div class="bloc-gauche">
 			<?php 
 				if (isset($resultats)) :
@@ -50,6 +55,7 @@
 		</div>
 
 		<?php if(isset($aliment1)): ?>
+		<!-- On affiche ici les caractéristique du second aliment pour lequel l'utilisateur souhaite effectuer une comparaison avec un autre aliment -->
 			<div class="bloc-droit"> 
 				
 				<?php 
@@ -69,6 +75,7 @@
 			    </div>
 				
 				<div class="choix-portion">
+				<!-- Ici, l'utilisateur peut chosir la quantité pour laquelle il souhaite effectuer la comparaison -->
 				   <p> Choisissez une quantité </p>
 				   <select class="quantite" name="quantite">
 					   <?php 
@@ -96,6 +103,7 @@
 						?>
 				   </select>
 				   
+				   <!-- L'utilisateur choisi ici la taille de la portion : "petites portions", "moyennes portions" ou "grandes portions" -->
 				    <select class="portion" name="portion">
 						<?php 
 							if ($quantitePortion1 == 'quantitePetitePortion') {
@@ -117,7 +125,7 @@
 				    <input type="submit" name="valider" value="Valider" />			   
 					<!-- <a>Ajouter *</a> -->
 				</div>
-			  	   
+			  	<!-- L'utilisateur peut afficher des informations concernant l'aliment mais aussi les caractéristiques nutritionelles de ce dernier -->
 				<div class="onglets-encyclo">
 				    <a onClick="afficherAliment('1');">Infos sur l'aliment </a>
 					<a onClick="afficherNutriment('1');">Infos nutritionnelles </a>
