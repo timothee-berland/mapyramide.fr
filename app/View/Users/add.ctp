@@ -125,9 +125,13 @@ function validerForm() {
 
 	if (formulaire.elements['UserPasswordConfirmation'].value == 
 		formulaire.elements['UserPassword'].value) {
-		return true;
+		if (formulaire.elements['UserPassword'].value.length >= 7) {
+			return true;
+		} else {
+			alert('Le mot de passe saisi est trop court. Il doit faire au moins 7 caractères.');
+		}
 	} else {
-		alert ('Le mot de passe ne correspond pas');
+		alert('Le mot de passe ne correspond pas');
 	}
 	
 	return false;

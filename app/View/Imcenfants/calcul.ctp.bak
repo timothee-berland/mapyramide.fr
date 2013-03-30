@@ -5,20 +5,20 @@
 			<table>
 				<tr>
 					<td>
-						<h1>Résultat</h1>
-						<br/> <br />
-						<p2>Mon IMC est : <?php echo round($imc,2);?></p2>
-						<p2>Mes besoins énergétiques estimés sont de <?php echo $BEE ?> calories par jour.</p2>
+						<h2>Résultat</h2>
+						<br/><br/>
+						<p>Mon IMC est : <?php echo round($imc,2);?></p>
+						<p id='besoinsEnergetiques'>Mes besoins énergétiques estimés sont de <?php echo $BEE ?> calories par jour.</p>
 						<br/><br/>
 						<!--Si la personne a plus de 18 ans, on calcule son IMC avec l'équation suivante poids/ taille² -->
 						<?php if ($_POST['zt_age'] > 18): ?>
 							<?php if ($imc<$imcMin): ?>
 							<!-- IMC<16.5 -> Insuffisance pondérale -->
-							<p3>Vous êtes en insuffisance pondérale. Ce site ne peut pas vous prendre en charge, consultez un médecin ou un diététicien.</p3>
+							Vous êtes en insuffisance pondérale. Ce site ne peut pas vous prendre en charge, consultez un médecin ou un diététicien.
 							<?php elseif ($imc>=$imcMin && $imc<=$imcMax) : ?>
 							<!--IMC>=18.5 && IMC <=25 -> Corpulence normale -->
 							<?php $categorie="Corpulence normale";
-							echo("<p3>"."Je suis dans la catégorie : ".$categorie."</p3>"); ?>
+							echo("<p>"."Je suis dans la catégorie :<br/> ".$categorie."</p>"); ?>
 							<?php elseif ($imc>$imcMax): ?>
 							<!-- IMC >25 -> Surpoids 
 							   On demande alors à l'utilisateur s'il souhaite perdre du poids : deux possibilités s'offrent à lui "Oui" et "Non". 
@@ -29,8 +29,8 @@
 							
 							<!-- #TODO : mettre dans une balise <form> sinon le input ne sert à rien -->
 						  	<div id='choixPertePoids'>
-							<p3>Vous êtes en surcharge pondérale. Souhaitez-vous perdre du poids ?<br /></p3>
-						  	<br/>
+							Vous êtes en surcharge pondérale <br/> Souhaitez-vous perdre du poids ?
+						  	<br/> <br/>
 						  		<a id='oui'><input type="submit" value="Oui"/></a>
 								<a id='non'><input type="submit" value="Non"/></a>
 							</div>
@@ -38,25 +38,25 @@
 							<?php endif; ?>
 						<?php else : 
 							if($imc >= $imcMin && $imc <= $imcMax) {
-								echo("<p3>Corpulence normale</p3>");
+								echo("Corpulence normale");
 							} else {
-								echo("<p3>Vos paramètres corporels font que ce site ne peut pas vous prendre en charge et vous demande de consulter un médecin ou un diététicien</p3>");
+								echo("Vos paramètres corporels font que ce site ne peut pas vous prendre en charge et vous demande de consulter un médecin ou un diététicien");
 							}
 						endif;?>
-						<br/><br/>
+						<br/><br/><br/><br/>
 					</td>
 					<td><span></span></td>
 					<td>
 						<!-- On récupère l'age de la personne. Si c'est un adulte, on affiche l'interprétation suivante -->
 						<?php 
 							if($_POST['zt_age']>=18): ?>
-							<h1>Interprétation</h1>
+							<h2>Interprétation</h2>
 							<br/><br/>
 							<table cellpadding =20px; width=310px; >
 								<tr>
-									<td><h2>IMC kg.m-2</h2></td>
+									<td><b>IMC kg.m-2</b></td>
 									<td><div id=\"span1\"></div></td>
-									<td><h2>Interprétation</h2></td>
+									<td><b>Interprétation</b></td>
 								</tr>
 								
 								<tr>
@@ -115,16 +115,16 @@
 
 <div id="blocQuestion">
 	<br/>
-	<p1>
+	<p>
 		Perdre du poids et après maintenir ce poids stable ne peut réussir que si deux impératifs sont remplis :<br/>
 		<ul>
 			<li> une réduction des apports alimentaires (nous allons vous aider)</li>
 			<li> et la pratique d'une activité physique continue (nous allons vous aider aussi).</li>
 		</ul> 
-	</p1>
+	</p>
 	<br/>
 
-	<p1>Souhaitez-vous, effectuer une : </p1>
+	<p>Souhaitez-vous, effectuer une : </p>
 
 	<p1><input type="radio" name="radio" value="250" id='m' /> Perte pondérale modérée dans six mois (Conseillée)</p1>
 	<br/>
@@ -148,11 +148,11 @@
 	    });
 	    $('#blocQuestion #m').click(function(e){
 	        var newBEE = <?php echo $BEE ?> - 250;
-	        document.getElementById('besoinsEnergetiques').innerHTML = "Mes nouveaux besoins énergétiques conseillés</p1><p1>sont de " + newBEE + " calories par jour.";
+	        document.getElementById('besoinsEnergetiques').innerHTML = "Mes nouveaux besoins énergétiques conseillés</p><p>sont de " + newBEE + " calories par jour.";
 	    });
 		$('#blocQuestion #c').click(function(e){
 	        var newBEE = <?php echo $BEE ?> - 500;
-	        document.getElementById('besoinsEnergetiques').innerHTML = "Mes nouveaux besoins énergétiques conseillés</p1><p1>sont de " + newBEE + " calories par jour.";
+	        document.getElementById('besoinsEnergetiques').innerHTML = "Mes nouveaux besoins énergétiques conseillés</p><p>sont de " + newBEE + " calories par jour.";
 	    });
 	    $('#blocQuestion #v').click(function(e){
 	        $('#blocQuestion').fadeOut();

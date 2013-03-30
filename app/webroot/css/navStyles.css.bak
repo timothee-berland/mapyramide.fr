@@ -2123,6 +2123,7 @@ margin-right : 2px;
 
 #content #encyclo .bloc-droit .info-aliment .groupeAlimentaire a {
 	text-decoration: none;
+	color : #4D2B08;
 }
 
 #content #encyclo .bloc-droit .info-aliment table {

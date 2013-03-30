@@ -34,7 +34,7 @@
 			
 			<label for="age"> Age </label>
 			<input type="text" MAXLENGTH=2 name="zt_age" />
-			<p2>ans</p2>
+			<p style="text-indent:25px;">ans</p>
 			<br/> <br/>
 			
 			<label for="actPhys"> Activité physique  </label> 

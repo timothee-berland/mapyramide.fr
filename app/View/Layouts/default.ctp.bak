@@ -39,8 +39,12 @@ $cakeDescription = __d('cake_dev', 'CakePHP: the rapid development php framework
 	<meta name="viewport" content="width=device-width, initial-scale=1"/>
 	<!-- Adding "maximum-scale=1" fixes the Mobile Safari auto-zoom bug: http://filamentgroup.com/examples/iosScaleBug/ -->		
 			
-	<!-- JS -->
-	<?php echo $this->html->script('slider/jquery-1.7.1.min.js'); ?>
+	<!-- JQuery & Jquery UI -->
+	<?php echo $this->html->script('jquery-ui-1.10.2.custom/js/jquery-1.9.1.js'); ?>
+	<?php echo $this->html->script('jquery-ui-1.10.2.custom/js/jquery-ui-1.10.2.custom.min.js'); ?>
+	<?php echo $this->Html->css('/js/jquery-ui-1.10.2.custom/css/smoothness/jquery-ui-1.10.2.custom.css'); ?>
+
+	<!-- Slider -->
 	<?php echo $this->html->script('slider/custom.js'); ?>
 	<?php echo $this->html->script('slider/tabs.js'); ?>
 	<?php echo $this->html->script('slider/css3-mediaqueries.js'); ?>
@@ -61,6 +65,7 @@ $cakeDescription = __d('cake_dev', 'CakePHP: the rapid development php framework
 	<?php echo $this->html->script('superfish-1.4.8/js/hoverIntent.js'); ?>
 	<?php echo $this->html->script('superfish-1.4.8/js/superfish.js'); ?>
 	<?php echo $this->html->script('superfish-1.4.8/js/supersubs.js'); ?>
+	<?php echo $this->html->script('superfish-1.4.8/jquery.mb.browser-master/jquery.mb.browser.min.js'); ?>
 	<script type="text/javascript">
 		// initialise plugins
 		jQuery(function(){
@@ -69,122 +74,171 @@ $cakeDescription = __d('cake_dev', 'CakePHP: the rapid development php framework
 	</script>
 	<!-- ENDS superfish -->
 
+	<!-- Barre de recherche -->
+	<script>
+	  $(function() {
+	    // run the currently selected effect
+	    function runEffect() {
+	    	var options = {};
+	      // run the effect
+	      $( "#searchForm" ).show( "drop", options, 500, callback );
+	    };
+	 
+	    //callback function to bring a hidden box back
+	    function callback() {
+			setTimeout(function() {
+		        $( "#searchForm:visible" ).removeAttr( "style" ).fadeOut();
+		      }, 10000 ); // timout de 10 secondes 
+		    };
+		 // set effect from select menu value
+	    $( "#searchIcon" ).click(function() {
+	      runEffect();
+	      return false;
+	    });
+
+	    	$( "#searchForm" ).hide();
+  		});
+  	</script>
+
 </head>
 
-<body>
+<body onLoad='postData();'>
 
 	<header>
 		<?php if (AuthComponent::user('id') == 1): ?>
 		<div class="menu3">
-		    <?php echo $this->Html->link('Gérer les photos', '#'); ?>
-		    <?php echo $this->Html->link('Gérer les articles', '#'); ?>
-		    <?php echo $this->Html->link('Gérer la base de données', '#'); ?>
-		    <?php echo $this->Html->link('Gérer les utilisateurs', '#'); ?>
+		    <?php echo $this->Html->link('Gérer les photos', '#', array('onClick' => "pasDisponible();")); ?>
+		    <?php echo $this->Html->link('Gérer les articles', '/articles'); ?>
+		    <?php echo $this->Html->link('Gérer la base de données', 'https://phpmyadmin.ovh.net'); ?>
+		    <?php echo $this->Html->link('Gérer les utilisateurs', '/users'); ?>
 		</div>
 		<?php endif; ?>
-		
-		<?php echo $this->Html->link('<div id="AGD-logo">AG Diététique </div>', '/', array('escape' => false)); ?>
-		<?php echo $this->Html->link('<div id="NomSite"> Ma Pyramide Alimentaire </div>', '/', array('escape' => false)); ?>
-		<!-- <a href="javascript:void(0)" class="button green"> <span class="phone"></span> Contact </a> -->
-	</header>
 
-	<div id='menuEtConnexion'>
-	
-		<nav id="filter">
-			<ul id="navigation" class="sf-menu"> 
-				<li><?php echo $this->Html->link('Mon assiette', '/pages/groupesalimentaires'); ?>
-					<ul class="dropdown">
-						<li class="dropdown-first"><?php echo $this->Html->link('Fruits', '/pages/fruits'); ?>
-							<ul class="dropdown">
-								<li class="dropdown-first"><?php echo $this->Html->link('Bienfaits', '/pages/bienfaits'); ?></li>
-								<li class="dropdown-last"><?php echo $this->Html->link('Conseils fruités', '/pages/conseilsfruits'); ?></li>
-							</ul>
-						</li>
-						<li class="dropdown-middle"><?php echo $this->Html->link('Légumes', '/pages/legumes'); ?>
-							<ul class="dropdown">
-								<li class="dropdown-first"><?php echo $this->Html->link('Bienfaits', '#'); ?></li>
-								<li class="dropdown-middle"><?php echo $this->Html->link('Conseils de légumes', '#'); ?></li>
-								<li class="dropdown-last"><?php echo $this->Html->link('Aliments uniques', '#'); ?></li>
-							</ul>
-						</li>
-						<li class="dropdown-middle"><?php echo $this->Html->link('Céréales', '#'); ?>
-							<ul class="dropdown">
-								<li class="dropdown-first"><?php echo $this->Html->link('Bienfaits', '#'); ?></li>
-								<li class="dropdown-last"><?php echo $this->Html->link('Conseils céréaliers', '#'); ?></li>
-							</ul>
-						</li>
-						<li class="dropdown-middle"><?php echo $this->Html->link('Protéines', '/pages/proteines'); ?>
-							<ul class="dropdown">
-								<li class="dropdown-first"><?php echo $this->Html->link('Nutriments et santé', '#'); ?></li>
-								<li class="dropdown-middle"><?php echo $this->Html->link('Conseils protéinés', '#'); ?></li>
-								<li class="dropdown-last"><?php echo $this->Html->link('Végétariens', '#'); ?></li>
-							</ul>
-						</li>
-						<li class="dropdown-middle"><?php echo $this->Html->link('Produits Laitiers', '/pages/produitslaitiers'); ?>
-							<ul class="dropdown">
-								<li class="dropdown-first"><?php echo $this->Html->link('Bienfaits', '#'); ?></li>
-								<li class="dropdown-last"><?php echo $this->Html->link('Conseils laitiers', '#'); ?></li>
-							</ul>
-						</li>
-						<li class="dropdown-last"><?php echo $this->Html->link('Huiles', '/pages/matieresgrasses'); ?>
-							<ul class="dropdown">
-								<li class="dropdown-first"><?php echo $this->Html->link('Importance', '#'); ?></li>
-								<li class="dropdown-middle"><?php echo $this->Html->link('Indemnité', '#'); ?></li>
-								<li class="dropdown-last"><?php echo $this->Html->link('Quantité', '#'); ?></li>
-							</ul>
-						</li>
-					</ul>
-				</li>
-				<li><?php echo $this->Html->link('Poids / Calories', '#'); ?>
-					<ul class="dropdown">
-						<li class="dropdown-first"><?php echo $this->Html->link('Gestion du poids', '/pages/gestionpoids'); ?></li>
-						<li class="dropdown-last"><?php echo $this->Html->link('Calories', '/pages/calories'); ?></li>
-					</ul>
-				</li>
-				<li><?php echo $this->Html->link('Activité physique', '#'); ?>
-					<ul class="dropdown">
-						<li class="dropdown-first"><?php echo $this->Html->link("C'est quoi ?", '#'); ?></li>
-						<li class="dropdown-middle"><?php echo $this->Html->link('Ça ? Important ?', '/pages/importancesport'); ?></li>
-						<li class="dropdown-middle"><?php echo $this->Html->link('Temps de pratique', '#'); ?></li>
-						<li class="dropdown-middle"><?php echo $this->Html->link('Calories brulées', '#'); ?></li>
-						<li class="dropdown-last"><?php echo $this->Html->link('Conseils sportifs', '#'); ?></li>
-					</ul>
-				</li>
-				<li><?php echo $this->Html->link('Ressources', '#'); ?>
-					<ul class="dropdown">
-						<li class="dropdown-first"><?php echo $this->Html->link('Calculateur IMC', '/imcenfants'); ?></li>
-						<li class="dropdown-last"><?php echo $this->Html->link('Super traqueur', '/pages/supertracker'); ?></li>
-					</ul>
-				</li>
-			</ul>
-		</nav>
-
-		<div id="profil">
-			<?php if (AuthComponent::user('id') == NULL): ?>
-				<div id="logo-connexion"> Créer rofil</div>
-				<div id='liens'>
-					<?php echo $this->Html->link('Créer mon profil', '/users/add'); ?>
-					<br>
-					<?php echo $this->Html->link('ou me connecter', '/users/login', array('id' => 'connexionLink')); ?>
-				</div>
-			<?php else: ?>
-				<div id='liens'>
-					<?php echo $this->Html->link('Bonjour ' . AuthComponent::user('username'), '/users/edit'); ?>
-					<br>
-					<?php echo $this->Html->link('me déconnecter', '/users/logout', array('id' => 'connexionLink')); ?>
-				</div>
-			<?php endif; ?>
+			
 		</div>
 		
-	</div>
+		<div id='nomEtLogo'>
+			<?php echo $this->Html->link('<div id="AGD-logo">AG Diététique </div>', '/', array('escape' => false)); ?>
+			<?php echo $this->Html->link('<div id="NomSite"> Ma Pyramide Alimentaire </div>', '/', array('escape' => false)); ?>
+		</div>
+
+		<div id='menuEtConnexion'>
+		
+			<nav id="filter">
+				<ul id="navigation" class="sf-menu"> 
+					<li><?php echo $this->Html->link('Mon assiette', '/pages/groupesalimentaires'); ?>
+						<ul class="dropdown">
+							<li class="dropdown-first"><?php echo $this->Html->link('Fruits', '/pages/fruits'); ?>
+								<ul class="dropdown">
+									<li class="dropdown-first"><?php echo $this->Html->link('Bienfaits', '/pages/bienfaits'); ?></li>
+									<li class="dropdown-last"><?php echo $this->Html->link('Conseils', '/pages/conseilsfruits'); ?></li>
+								</ul>
+							</li>
+							<li class="dropdown-middle"><?php echo $this->Html->link('Légumes', '/pages/legumes'); ?>
+								<ul class="dropdown">
+									<li class="dropdown-first"><?php echo $this->Html->link('Bienfaits', '/pages/bienfaitslegumes'); ?></li>
+									<li class="dropdown-middle"><?php echo $this->Html->link('Conseils', '/pages/conseilslegumes'); ?></li>
+									<li class="dropdown-last"><?php echo $this->Html->link('Haricots & pois', '/pages/legumesbeansandpeas'); ?></li>
+								</ul>
+							</li>
+							<li class="dropdown-middle"><?php echo $this->Html->link('Céréales', '/pages/cereales'); ?>
+								<ul class="dropdown">
+									<li class="dropdown-first"><?php echo $this->Html->link('Bienfaits', '/pages/bienfaitscereales'); ?></li>
+									<li class="dropdown-last"><?php echo $this->Html->link('Conseils', '/pages/conseilscereales'); ?></li>
+								</ul>
+							</li>
+							<li class="dropdown-middle"><?php echo $this->Html->link('Protéines', '/pages/proteines'); ?>
+								<ul class="dropdown">
+									<li class="dropdown-first"><?php echo $this->Html->link('Bienfaits', '/pages/bienfaitsproteines'); ?></li>
+									<li class="dropdown-middle"><?php echo $this->Html->link('Conseils', '/pages/conseilsproteines'); ?></li>
+									<li class="dropdown-last"><?php echo $this->Html->link('Plats végétariens', '/pages/choixvegetariens'); ?></li>
+								</ul>
+							</li>
+							<li class="dropdown-middle"><?php echo $this->Html->link('Produits Laitiers', '/pages/produitslaitiers'); ?>
+								<ul class="dropdown">
+									<li class="dropdown-first"><?php echo $this->Html->link('Bienfaits', '/pages/bienfaitspl'); ?></li>
+									<li class="dropdown-last"><?php echo $this->Html->link('Conseils', '/pages/conseilspl'); ?></li>
+								</ul>
+							</li>
+							<li class="dropdown-last"><?php echo $this->Html->link('Matières grasses', '/pages/matieresgrasses'); ?>
+								<ul class="dropdown">
+									<li class="dropdown-first"><?php echo $this->Html->link('Importance', '/pages/importancemg'); ?></li>
+									<li class="dropdown-middle"><?php echo $this->Html->link('Dose recommandée', 'quantiterecommandeemg'); ?></li>
+								</ul>
+							</li>
+						</ul>
+					</li>
+					<li><?php echo $this->Html->link('Poids & Calories', '#'); ?>
+						<ul class="dropdown">
+							<li class="dropdown-first"><?php echo $this->Html->link('Gestion pondérale', '/pages/gestionpoids'); ?>				
+								<ul class="dropdown">
+									<li class="dropdown-first"><?php echo $this->Html->link('Nourriture actuelle', '/pages/nourritureactuelle'); ?></li>
+									<li class="dropdown-middle"><?php echo $this->Html->link('Que manger ?', '/pages/quemanger'); ?></li>
+									<li class="dropdown-middle"><?php echo $this->Html->link('Meilleurs choix', '/pages/meilleurschoix'); ?></li>
+									<li class="dropdown-middle"><?php echo $this->Html->link('Quantité calories', '/pages/quantitequiconvient'); ?></li>
+									<li class="dropdown-middle"><?php echo $this->Html->link('Diminuer portions', '/pages/diminuerportions'); ?></li>
+									<li class="dropdown-middle"><?php echo $this->Html->link('Mes aliments', '/pages/alimentsnecessaires'); ?></li>
+									<li class="dropdown-middle"><?php echo $this->Html->link('Manger à l\'extérieur', '/pages/mangerdehors'); ?></li>
+									<li class="dropdown-middle"><?php echo $this->Html->link('Cuisine maison', '/pages/cuisinemaison'); ?></li>
+									<li class="dropdown-middle"><?php echo $this->Html->link('Plus de sport', '/pages/augmentersport'); ?></li>
+									<li class="dropdown-last"><?php echo $this->Html->link('Moins d\'écrans', '/pages/moinsdecrans'); ?></li>
+								</ul>
+							<li class="dropdown-last"><?php echo $this->Html->link('Calories', '/pages/calories'); ?>
+								<ul class="dropdown">
+									<li class="dropdown-first"><?php echo $this->Html->link('Calories vides', '/pages/caloriesvides'); ?></li>
+									<li class="dropdown-middle"><?php echo $this->Html->link('Matières grasses', '/pages/caloriesmg'); ?></li>
+									<li class="dropdown-middle"><?php echo $this->Html->link('Sucres ajoutés', '/pages/sucresajoutes'); ?></li>
+									<li class="dropdown-last"><?php echo $this->Html->link('Quantifier calories', '/pages/comptercalories'); ?></li>
+								</ul>
+						</ul>
+					</li>
+					<li><?php echo $this->Html->link('Activité physique', '#'); ?>
+						<ul class="dropdown">
+							<li class="dropdown-first"><?php echo $this->Html->link("Définition", '/pages/activitephysique'); ?></li>
+							<li class="dropdown-middle"><?php echo $this->Html->link('Importance', '/pages/importancesport'); ?></li>
+							<li class="dropdown-middle"><?php echo $this->Html->link('Temps de pratique', '/pages/tempspratique'); ?></li>
+							<li class="dropdown-middle"><?php echo $this->Html->link('Calories brulées', '/pages/caloriesbrulees'); ?></li>
+							<li class="dropdown-last"><?php echo $this->Html->link('Conseils', '/pages/conseilssportifs'); ?></li>
+						</ul>
+					</li>
+					<li><?php echo $this->Html->link('Ressources', '/imcenfants'); ?>
+						<ul class="dropdown">
+							<li class="dropdown-first"><?php echo $this->Html->link('Calculateur IMC', '/imcenfants'); ?></li>
+							<li class="dropdown-last"><?php echo $this->Html->link('Super Traqueur', '/pages/supertracker'); ?></li>
+						</ul>
+					</li>
+				</ul>
+			</nav>
+			<div id="profil">
+				<?php if (AuthComponent::user('id') == NULL): ?>
+					<div id="logo-connexion"> Créer profil</div>
+					<div id='liens'>
+						<?php echo $this->Html->link('Créer mon profil', '/users/add'); ?>
+						<br>
+						<?php echo $this->Html->link('ou me connecter', '/users/login', array('id' => 'connexionLink')); ?>
+					</div>
+				<?php else: ?>
+					<div id='liens'>
+						<?php echo $this->Html->link('Bonjour ' . AuthComponent::user('username'), '/users'); ?>
+						<br>
+						<?php echo $this->Html->link('me déconnecter', '/users/logout', array('id' => 'connexionLink')); ?>
+					</div>
+				<?php endif; ?>
+				<p class="ui-state-default ui-corner-all" id="searchIcon"><span class="ui-icon ui-icon-search"></span></p>
+			</div>
+
+			
+			<form method="get" class="searchform" id="searchForm" action="http://mapyramide.fr/">
+				<button type="submit" class="icon-search"><span class="visuallyhidden">Chercher</span></button>
+				<label>
+					<input type="text" name="s" value="" placeholder="Rechercher sur mapyramide.fr">
+				</label>
+			</form>
+			
+		</div>
+	</header>
 
 	<div id="container">
-
-		<!-- <div id="header">
-			<div id="AGD-logo">AG Diététique </div>
-			<div id="NomSite"> Ma Pyramide Alimentaire </div>
-			<a href="javascript:void(0)" class="button green"> <span class="phone"></span> Contact </a>
-		</div> -->
 
 		<div id="content">
 
@@ -224,3 +278,9 @@ $cakeDescription = __d('cake_dev', 'CakePHP: the rapid development php framework
 
 </body>
 </html>
+
+<script type="text/javascript">
+	function pasDisponible() {
+		alert("Cette fonctionnalité n'est pas encore disponible.")
+	}
+</script>

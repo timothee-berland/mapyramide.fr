@@ -27,7 +27,7 @@
 	     détaillée de votre alimentation -->
 	<div id="b1">
 		<article class="bloc-menu">
-			<h3> Mon suivi alimentaire </h3>
+			<h3> <a href="#" onClick="nonImplemente();"> Mon suivi alimentaire </a></h3>
 			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum turpis elit, viverra vitae tempus ac, interdum eu enim</p>
 		</article>
     </div>
@@ -36,7 +36,7 @@
 	    détaillée de votre activité physique (Cette fonctionnalité n'a pas encore été implémentée) -->
     <div id="b1">
 		<article class="bloc-menu">
-			<h3> Mon suivi physique </h3>
+			<h3> <a href="#" onClick="nonImplemente();""> Mon suivi physique </a></h3>
 			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum turpis elit, viverra vitae tempus ac, interdum eu enim</p>
 		</article>
     </div>
@@ -45,7 +45,7 @@
 	     idéal que vous devriez peser en fonction de votre taille & vous aide à gérer ce dernier (Cette fonctionnalité n'a pas encore été implémentée) -->
 	<div id="b1">
 		<article class="bloc-menu">
-			<h3> Mon gestionnaire de poids </h3>
+			<h3> <a href="#" onClick="nonImplemente();""> Mon gestionnaire de poids </a></h3>
 			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum turpis elit, viverra vitae tempus ac, interdum eu enim</p>
 		</article>
     </div>
@@ -55,7 +55,7 @@
 		 été implémentée) -->
 	<div id="b1">
 		<article class="bloc-menu">
-			<h3> Mes 5 objectifs </h3>
+			<h3> <a href="#" onClick="nonImplemente();""> Mes 5 objectifs </a></h3>
 			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum turpis elit, viverra vitae tempus ac, interdum eu enim</p>
 		</article>
     </div>
@@ -64,8 +64,14 @@
 	     l'évolution de votre alimentation & de votre activité physique (Cette fonctionnalité n'a pas encore été implémentée) -->
 	<div id="b1">
 		<article class="bloc-menu">
-			<h3> Mes rapports d'évolution </h3>
+			<h3> <a href="#" onClick="nonImplemente();""> Mes rapports d'évolution </a></h3>
 			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum turpis elit, viverra vitae tempus ac, interdum eu enim</p>
 		</article>
     </div>
 </div>
+
+<script type="text/javascript">
+function nonImplemente() {
+    alert('Cette fonctionnalité n\'est pas encore disponible.');
+}
+</script>

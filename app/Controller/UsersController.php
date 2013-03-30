@@ -53,9 +53,7 @@
 				$this->set('allaitante', $_POST['data']['User']['allaitante']);
 
 				$pseudoExiste = $this->User->find('first', array('conditions' => array('username' => $this->request->data['User']['username'])));
-				if (strlen($_POST['data']['User']['password']) < 7) {
-					$this->Session->setFlash(__("Le mot de passe est trop court. Il doit faire au moins 7 caractères."));
-				} elseif (empty($pseudoExiste)) {
+				if (empty($pseudoExiste)) {
 					$this->request->data['User']['role'] = 'utilisateur';
 					$this->User->create();
 					if ($this->User->save($this->request->data)) {

@@ -6,7 +6,6 @@
 		<span1> Combien de calories vides  </span1> <br/>
 		<span1> puis-je consommer ?</span1> <br/>
 		<br />
-		<h1>Introduction </h1>
 		<p1>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum turpis elit, viverra vitae tempus ac, 
 		    ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum turpis elit, viverra vitae tempus ac, interdum eu enim
 			ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum turpis elit, viverra vitae tempus ac, interdum eu enim. 

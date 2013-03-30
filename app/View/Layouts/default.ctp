@@ -263,7 +263,7 @@ $cakeDescription = __d('cake_dev', 'CakePHP: the rapid development php framework
 		<p><a>Plan du site</a> | <a>lien 1</a> | <a>lien 2</a> | <a>lien 3</a></p>
 		</div>
 		<div class="bloc-droit">
-			<pre><a>FAQ</a>   <a>A propos de nous</a>   <a>Contact</a></pre>
+			<pre><a>FAQ</a>   <?php echo $this->Html->link('A propos de nous', '/pages/mentionslegales'); ?>  <?php echo $this->Html->link('Contacts', '/pages/contacts'); ?></pre>
 			<p> - Association Gradient  2013© - </p>
 		</div>
 	</footer>

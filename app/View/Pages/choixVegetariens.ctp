@@ -7,11 +7,10 @@
 		<span1> dans les plats végétariens </span1> <br />
 	</div>
 	
-	<div id="texte3">
+	<div id="texte4">
 		<table>
 			<tr>
 				<td >
-					<br/>
 					<h1> Paragraphe 1 </h1>
 					<p1>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum turpis elit, viverra vitae,
 					ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum turpis elit, viverra vitae tempus ac, interdum eu enim
@@ -21,17 +20,20 @@
 					ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum turpis elit, viverra vitae tempus ac, interdum eu enim.
 					</p1>
 				</td>
+				
 				<td>
-					<br/>
-					<!-- Image illustrant le paragraphe n°1 -->
+					<!-- Image illustrant le paragrpahe n°1 -->
 					<p1><?php echo $this->Html->image('Fruits.png', array('height' => '200px', 'width' => '260px', 'alt' => 'Fruits')); ?></p1>
 				</td>
 			</tr>
-			
+		</table>
+	</div>
+	
+	<div id="texte4">
+		<table>
 			<tr>
 				<td >
-					<br/>
-					<h1> Paragraphe 2 </h1>
+					<h1> Paragraphe 2</h1>
 					<p1>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum turpis elit, viverra vitae,
 					ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum turpis elit, viverra vitae tempus ac, interdum eu enim
 					ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum turpis elit, viverra vitae tempus ac, interdum eu enim. 
@@ -40,12 +42,13 @@
 					ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum turpis elit, viverra vitae tempus ac, interdum eu enim.
 					</p1>
 				</td>
+				
 				<td>
-					<br/>
-					<!-- Image illustrant le paragraphe n°2 -->
+					<!-- Image illustration du paragraphe n°2 -->
 					<p1><?php echo $this->Html->image('Fruits.png', array('height' => '200px', 'width' => '260px', 'alt' => 'Fruits')); ?></p1>
 				</td>
 			</tr>
 		</table>
 	</div>
+</div>
 </div>

@@ -4,12 +4,12 @@
 	
     <div id="texte">
 		<!-- Cette page est accessible à partir du menu situé en haut de page : Cliquez sur "Ressources" -> "Super Traqueur" -->
-		<span> SuperTracker </span> 
+		<span1> SuperTracker </span1> 
 		
-		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum turpis elit, viverra vitae tempus ac, interdum eu enim
+		<p1>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum turpis elit, viverra vitae tempus ac, interdum eu enim
 		ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum turpis elit, viverra vitae tempus ac, interdum eu enim
 		ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum turpis elit, viverra vitae tempus ac, interdum eu enim. 
-		</p>
+		</p1>
 	</div>
 
 </div>
@@ -18,7 +18,7 @@
 		 nutritionnelles deux aliments -->
     <div id="b1">
 		<article class="bloc-menu">
-			<h3> Encyclopédie </h3>
+			<h3> <?php echo $this->Html->link('Encyclopédie', '/aliments/index'); ?></h3>
 			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum turpis elit, viverra vitae tempus ac, interdum eu enim</p>
 		</article>
     </div>
