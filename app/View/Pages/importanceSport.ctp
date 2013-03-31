@@ -5,7 +5,7 @@
     <div id="texte">
 		<br/><br/>
 		<!-- Cette page est accessible depuis le menu situé en haut de la page : Cliquez sur "Activité physique" -> "Importance" -->
-		<span1> Pourquoi est-ce important ? </span1> 
+		<span3> Pourquoi est-ce important ? </span3> 
 	</div>
 	
 	<div id="texte4">

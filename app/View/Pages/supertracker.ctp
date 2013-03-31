@@ -4,7 +4,7 @@
 	
     <div id="texte">
 		<!-- Cette page est accessible à partir du menu situé en haut de page : Cliquez sur "Ressources" -> "Super Traqueur" -->
-		<span1> SuperTracker </span1> 
+		<span2> SuperTracker </span2> 
 		
 		<p1>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum turpis elit, viverra vitae tempus ac, interdum eu enim
 		ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum turpis elit, viverra vitae tempus ac, interdum eu enim

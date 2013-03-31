@@ -3,8 +3,8 @@
 	</div>
     <div id="texte">
 		<!-- Titre de la page accessible depuis le menu situé en haut de la page en cliquant sur "Activité physique" -->
-		<span1> Qu'est-ce que </span1> <br/>
-		<span1> l'activité physique ? </span1> 
+		<span2> Qu'est-ce que </span2> <br/>
+		<span4>l'activité physique ? </span4> 
 		<br/>
 		<p1>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum turpis elit, viverra vitae tempus ac, 
 		    ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum turpis elit, viverra vitae tempus ac, interdum eu enim

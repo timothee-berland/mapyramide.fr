@@ -3,7 +3,7 @@
 	</div>
     <div id="texte">
 		<!-- Titre de la page accessible depuis le menu situé en haut de la page en cliquant sur "Activité physique" -> Conseils sportifs -->
-		<span1> Conseils sportifs </span1> 
+		<span2> Conseils sportifs </span2> 
 	</div>
 	
 	<div id="texte">

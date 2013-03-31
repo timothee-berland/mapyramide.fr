@@ -3,8 +3,8 @@
 	</div>
     <div id="texte">
 		<!-- Cette page est accessible depuis le menu situé en haut de page : Cliquez sur "Mon assiette" -> "Fruits" -> "Conseils pour manger des fruits" -->
-		<span1> Conseils pour consommer </span1> <br />
-		<span1> plus de fruits </span1> <br />
+		<span3> Conseils pour consommer </span3> <br />
+		<span2> plus de fruits </span2> <br />
 	</div>
 	
 	<div id="texte3">

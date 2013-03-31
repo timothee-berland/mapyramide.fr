@@ -4,8 +4,8 @@
     <div id="texte">
 		<!-- Cette page est accessible à partir du menu situé en haut de page : Cliquez sur "Mon assiette" ->"Protéines" ->"Bienfaits"
 		     Elle présente les effets bénéfiques qu'ont les protéines sur notre santé -->
-		<span1> L'importance de manger </span1> <br/>
-		<span1> des protéines </span1> <br/>
+		<span3> L'importance de manger </span3> <br/>
+		<span2> des protéines </span2> <br/>
 		<p1>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum turpis elit, viverra vitae tempus ac, 
 		ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum turpis elit, viverra vitae tempus ac, interdum eu enim
 		ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum turpis elit, viverra vitae tempus ac, interdum eu enim. 

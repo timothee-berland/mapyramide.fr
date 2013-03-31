@@ -1,7 +1,12 @@
+<div id="content">	
+
 	<?php echo $this->Form->create('User'); ?>
 	
+	<!-- Cette page est accessible depuis le bouton "Créer mon profil" situé en haut à droite de chaque page -->
 	<!--TODO AJOUTER UNE IMAGE -->
 	<span2> Personnalisez votre profil </span2> 
+	<!-- Pour créer son profil, l'utilisateur doit fournir obligatoirement un identifiant, sa date de naissance au fomat aaaa/mm/jj (un calendrier est là pour
+		l'aider) et doit préciser son sexe --> 
 	<div class="bloc1">	
 
 		<label for="UserUsername"> Identifiant <em> *</em></label>
@@ -14,6 +19,7 @@
 		<input type="radio" name="data[User][sexe]" id="homme" value="homme" checked="checked" onClick="masquer(this)" /><a class='labelInscription'> Homme</a>
 		<input type="radio" name="data[User][sexe]" id="femme" value="femme" onClick="afficher();" /><a class='labelInscription'> Femme</a><br><br>
 		
+		<!-- Si l'internaute est une femme et a entre 18 et 48ans, nous lui demandons si elle est actuellement enceinte ou allaitante -->
 		<div id="cache">
 		    <label for="UserEnceinte"> Enceinte  <em> *</em> </label>
 		    <input type="radio" name="data[User][enceinte]" id="enceinte" value="O"/><a class='labelInscription'> Oui 
@@ -27,6 +33,7 @@
 			
 		</div>
 		
+		<!-- L'utilisateur peut égalment préciser de manière optionnelle sa taille et son poids -->
 		<label for="UserTaille"> Votre taille </label> 
 		<input type="text" name="data[User][taille]" value="" id="UserTaille" /> <br><br>
 		
@@ -38,23 +45,27 @@
 			
 	<span2> Enregistrez votre profil </span2> 
 	<div class="bloc1">	
+		<!--L'utilisateur doit préciser son mot de passe -->
 		<label for="UserPassword"> Mot de passe <em> *</em></label>
 		<input type="password" name="data[User][password]" id="UserPassword" required="required" title="Votre mot de passe doit faire plus de 7 caractètres"/> <br><br>
 		
 		<label for="UserPasswordConfirmation"> Confirmation <em> *</em></label>
 		<input type="password" name="UserPasswordConfirmation" id="UserPasswordConfirmation" required="required"/> <br><br>
 		
+		<!-- S'il le souhaite, il peut préciser son adresse email -->
 		<label for="UserEmail"> Email </label>
 		<input type="email" name="data[User][email]" id="UserEmail" /> 
 		
 		<span>* Informations obligatoires </span>
 	</div>
 	
+	<!-- L'utilisateur peut valider son profil ou remettre le formulaire à 0 -->
 	<div id="bloc2">
 	    <input type="button" value="Effacer" onClick="raz()"/>
 	    <input type="submit" value="Valider" onClick="return validerForm()"/>
 	</div>
 </form>
+</div>
 
 <script>
 	$(function() {

@@ -1,6 +1,6 @@
 <?php echo $this->Form->create('Aliment'); ?>
 	<div id="presentation">
-	<!-- Cette page est accessible depuis le menu situé en haut de page. Cliquez sur Ressources --> SuperTracker --> Encyclopédie -->
+	<!-- Cette page est accessible depuis le menu situé en haut de page. Cliquez sur "Ressources" -> "SuperTracker" -> "Encyclopédie" -->
 	    <div id="titre-accueil">
 			<span> Encyclopédie </span> 
 			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum turpis elit, viverra vitae tempus ac, interdum eu enim </p> 

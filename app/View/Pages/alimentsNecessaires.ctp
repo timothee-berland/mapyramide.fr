@@ -4,8 +4,8 @@
     <div id="texte">
 		<!-- Cette page est accessible à partir du menu situé en haut de page : Cliquez sur "Poids et calories" ->"Gestion pondérale" ->"Mes aliments"
 		     Elle donne des conseils sur les aliments dont l'utilisateur à besoin -->
-		<span1> Les aliments dont </span1> <br/>
-		<span1> j'ai besoin </span1> <br/>
+		<span2> Les aliments dont </span2> <br/>
+		<span2> j'ai besoin </span2> <br/>
 		<br />
 		<p1>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum turpis elit, viverra vitae tempus ac, 
 		ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum turpis elit, viverra vitae tempus ac, interdum eu enim

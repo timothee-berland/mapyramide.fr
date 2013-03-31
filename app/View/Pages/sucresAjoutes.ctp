@@ -3,7 +3,7 @@
 	</div>
     <div id="texte">
 		<!-- Cette page est accessible depuis le menu situé en haut de page : Cliquez sur "Poids & Calories" -> "Calories" -> "Sucres ajoutés" -->
-		<span1> Que sont les sucres ajoutés ? </span1> <br/>
+		<span6> Que sont les sucres ajoutés ? </span6> <br/>
 		<br />
 		<p1>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum turpis elit, viverra vitae tempus ac, 
 		    ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum turpis elit, viverra vitae tempus ac, interdum eu enim

@@ -3,8 +3,8 @@
 	</div>
     <div id="texte">
 		<!-- Cette page est accessible depuis le menu situé en haut de page : Cliquez sur "Mon assiette" -> "Protéines" -> "Conseils pour des choix judicieux" -->
-		<span1> Conseils pour </span1> <br />
-		<span1> des choix judicieux </span1> <br />
+		<span3> Conseils pour </span3> <br />
+		<span3> des choix judicieux </span3> <br />
 	</div>
 	
 	<div id="texte3">

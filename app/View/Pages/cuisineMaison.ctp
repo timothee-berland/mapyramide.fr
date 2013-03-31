@@ -4,8 +4,8 @@
     <div id="texte">
 		<!-- Cette page est accessible à partir du menu situé en haut de page : Cliquez sur "Poids et calories" ->"Gestion pondérale" ->"Cuisine maison"
 		     Elle donne des conseils sur la cuisine maison, plus efficace que la nourriture achetée -->
-		<span1> Cuisiner plus souvent </span1> <br/>
-		<span1> à la maison  </span1> <br/>
+		<span3> Cuisiner plus souvent </span3> <br/>
+		<span4> à la maison  </span4> <br/>
 		<br />
 		<p1>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum turpis elit, viverra vitae tempus ac, 
 		ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum turpis elit, viverra vitae tempus ac, interdum eu enim

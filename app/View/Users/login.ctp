@@ -2,7 +2,8 @@
 
 	<?php echo $this->Session->flash('auth'); ?>
 	<?php echo $this->Form->create('User'); ?>
-
+	
+<!-- Cette page est accessible depuis le bouton "me connecter" situé en haut à droite de chaque page -->
 <span2> Connexion </span2> 
 <div class="bloc1">
     <label for="UserUsername"> Identifiant</label>

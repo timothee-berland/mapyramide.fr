@@ -3,7 +3,7 @@
 	</div>
     <div id="texte">
 		<!-- Cette page est accessible depuis le menu situé en haut de page : Cliquez sur "Poids & Calories" -> "Calories" -> "Quantifier calories" -->
-		<span1> Compter les calories vides </span1> <br/>
+		<span3> Compter les calories vides </span3> <br/>
 		<br />
 		<p1>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum turpis elit, viverra vitae tempus ac, 
 		    ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum turpis elit, viverra vitae tempus ac, interdum eu enim

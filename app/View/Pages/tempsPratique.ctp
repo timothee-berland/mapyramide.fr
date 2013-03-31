@@ -3,7 +3,7 @@
 	</div>
     <div id="texte">
 		<!-- Titre de la page accessible depuis le menu situé en haut de la page en cliquant sur "Activité physique" -> "Temps de pratique" -->
-		<span1> Temps de pratique conseillé </span1> 
+		<span3> Temps de pratique conseillé </span3> 
 		<br/>
 	</div>	
 	

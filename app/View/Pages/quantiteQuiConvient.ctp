@@ -4,8 +4,8 @@
     <div id="texte">
 		<!-- Cette page est accessible à partir du menu situé en haut de page : Cliquez sur "Poids et calories" ->"Gestion pondérale" ->"Quantité calories"
 		     Elle donne des conseils sur la quantité de calories recommandée en fonction des personnes -->
-		<span1> Consommer la quantité  </span1> <br/>
-		<span1> de calories qui me convient  </span1> <br/>
+		<span3> Consommer la quantité de </span3> <br/>
+		<span3> calories qui me convient  </span3> <br/>
 		<br />
 		<p1>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum turpis elit, viverra vitae tempus ac, 
 		ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum turpis elit, viverra vitae tempus ac, interdum eu enim
