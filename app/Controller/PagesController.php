@@ -52,6 +52,7 @@
 			$this->Auth->allow('display'); // Letting non-users see public pages
 		}
 
+		//Permet l'affichage des éléments dans les différentes catégories
 		public function display() {
 
 			$derniersArticles = $this->Article->find('all', array(

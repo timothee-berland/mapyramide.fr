@@ -9,6 +9,6 @@
 
 <script type="text/javascript">
 	function confirmation() {
-		return(confirm("Êtes vous sûrs de vouloir supprimer votre compte ? (cette action est irreversible)"));
+		return(confirm("Êtes vous sûrs de vouloir supprimer votre compte ? (cette action est irréversible)"));
 	}
 </script>

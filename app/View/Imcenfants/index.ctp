@@ -37,6 +37,7 @@
 			<p2>ans</p2>
 			<br/> <br/>
 			
+			<!-- Liste déroulante permettantà l'utilisateur de préciser de quelle façon il pratique une activité physique -->
 			<label for="actPhys"> Activité physique  </label> 
 			<select id="actPhys" name='AP'>
 				<option value="1" title="Je fais moins de 15 minutes d'activité physique par jour"> Sédentaire </option>
