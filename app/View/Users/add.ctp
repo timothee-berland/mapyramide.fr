@@ -1,5 +1,3 @@
-<div id="content">	
-
 	<?php echo $this->Form->create('User'); ?>
 	
 	<!--TODO AJOUTER UNE IMAGE -->
@@ -57,7 +55,6 @@
 	    <input type="submit" value="Valider" onClick="return validerForm()"/>
 	</div>
 </form>
-</div>
 
 <script>
 	$(function() {

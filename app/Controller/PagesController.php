@@ -59,25 +59,8 @@
 				'order' => 'created DESC'));
 			$this->set('derniersArticles', $derniersArticles);
 
-			$fruits = $this->Famillealiment->find('all', array('conditions' => array('name' => 'Fruits')));
-			$this->set('fruits', $fruits);
-
-			$legumes = $this->Famillealiment->find('all', array('conditions' => array('name' => 'Légumes')));
-			$this->set('legumes', $legumes);
-			
-			$grains = $this->Famillealiment->find('all', array('conditions' => array('name' => 'Céréales')));
-			$this->set('grains', $grains);
-
-			$pdtProteines = $this->Famillealiment->find('all', array('conditions' => array('name' => 'Produits protéinés')));
-			$this->set('pdtProteines', $pdtProteines);
-			
-			$pdtLaitiers = $this->Famillealiment->find('all', array('conditions' => array('name' => 'Produits laitiers')));
-			$this->set('pdtLaitiers', $pdtLaitiers);
-			
-			$matGrasses = $this->Famillealiment->find('all', array('conditions' => array('name' => 'Matières grasses')));
-			$this->set('matGrasses', $matGrasses);
-			
-
+			$donnees = $this->Famillealiment->find('all', array('group' => array('subname')));
+			$this->set('donnees', $donnees);
 
 			$path = func_get_args();
 

@@ -49,10 +49,10 @@ class ImcenfantsController extends AppController {
 					$imcMin = $imcenfants['Imcenfant']['minf'];
 					$imcMax = $imcenfants['Imcenfant']['maxf'];
 				}
-			//Si l'utilisateur est un adulte, son IMC doit être compris entre 18.5 et 24.9 inclus
+			//Si l'utilisateur est un adulte, son IMC doit être compris entre 18.5 et 25 inclus
 			} else {
 				$imcMin = 18.5;
-				$imcMax = 24.9;
+				$imcMax = 25;
 			}
 
 			if ($_POST['sexe'] == 'homme') {

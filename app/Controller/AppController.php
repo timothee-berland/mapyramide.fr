@@ -46,4 +46,7 @@
 			$this->Auth->allow('index', 'view', 'home');
 		}
 
+		public function beforeRender() {
+			$this->requestAction('/stats/visite');
+		}
 	}

@@ -441,21 +441,18 @@ header .searchform .icon-search {
 /*----------------------------
 	Content area
 -----------------------------*/
-html, body, #container {
+html, body, #content {
 	height: 100%;
 }
 
-body > #container {
+body > #content {
 	height: auto; 
 	min-height: 100%;
+	width: 1100px;
+	margin-left: auto;
+	margin-right: auto;
 }
 
-#content {
-	padding-bottom: 150px;
-	max-width: 1400px;
-	margin-left: auto;
-  	margin-right: auto;
-}
     /*--------------------
     	Accueil
     ---------------------*/
@@ -563,9 +560,14 @@ body > #container {
 }
 
 #authMessage {
-  font-size: 22px;
-  color : #e11818;
-  text-align: center;
+  	font-size: 22px;
+	color : #e11818;
+	text-align: center;
+	margin-bottom: 20px;
+	position: absolute;
+	top: 223px;
+	left: -78px;
+	width: 100%;
 }
 
 	/*--------------------
@@ -696,7 +698,8 @@ body > #container {
     display: block;
 	font:20px Corbel,'Segoe UI',Arial, sans-serif;
 	margin-top :5px;
-	margin-left : 240px;
+	margin-left: 150px;
+	margin-right: 150px;
 
 	padding-top : 30px;
 	font-weight : bold;
@@ -776,7 +779,8 @@ body > #container {
 	width: 750px;
     border:2px solid #4D2B08;
 	background-color : #FFFFFF;
-	margin :  0 0 30px 240px;
+	margin-left: 150px;
+	margin-right: 150px;
 	padding-top : 20px;
 	padding-left : 20px;
 	padding-right : 20px;
@@ -955,9 +959,10 @@ body > #container {
 } 
 
 #content #bloc2  {
-    float: left;
-	margin-left : 820px;
-	margin-bottom : 30px;
+    float: right;
+	margin-top: 10px;
+	right: 160px;
+	position: relative;
 }
 
 #content #bloc2 p1 {
@@ -1012,14 +1017,10 @@ body > #container {
 
 #content #bloc5 {
 	width : 820px;
-	padding-left: 30px;
-	padding-right: 30px;
-	padding-top: 30px;
-	padding-bottom: 30px;
-	margin-left: -600px;
+	padding: 30px;
 	margin-bottom: 20px;
 	margin-top : 20px;
-	margin-right:60px;
+	margin-left: 109px;
 	background-color : #FFFFFF;
 	font : 15px Corbel, 'Segoe UI',Arial, sans-serif;
 	border: 1px solid #4D2B08;
@@ -1027,9 +1028,16 @@ body > #container {
     -webkit-border-radius:8px;	
     border-radius:8px;	
 }
-#content #bloc5  table td{
-	padding-right: 30px;
+
+#content #bloc5  table td {
 	vertical-align : top;
+}
+#content #bloc5 table table {
+	width: 300px;
+}
+
+#content #bloc5 p {
+	font:17px Corbel,'Segoe UI',Arial, sans-serif;
 }
 
 #content #bloc5 p2{
@@ -1045,7 +1053,6 @@ body > #container {
 	margin-top : 50px;
 	font:17px Corbel,'Segoe UI',Arial, sans-serif;
 	color : #000000;
-    float:left;
 }
 
 #content  #bloc5 h1{
@@ -1066,11 +1073,14 @@ body > #container {
 
 #content  #bloc5 a{
 	text-decoration : none;
+	left: 120px;
+	margin-left: 11px;
+	position: relative;
 }
 
 #content #bloc5  input{
     width : 100px;
-	margin-left : 5px;
+	
 	margin-top : 20px;
 	height : 30px;
 	padding-left: 5px;
@@ -1164,11 +1174,10 @@ body > #container {
 #content #blocQuestion {
 	position: absolute;
 	width: 690px;
-	left: 440px;
 	top: 305px;
     border:4px solid #4D2B08;
 	background-color : #FFFFFF;
-	margin :  0 0 30px 240px;
+	margin-left: 205px;
 	padding-top : 20px;
 	padding-left : 20px;
 	padding-bottom : 10px;
@@ -1179,9 +1188,9 @@ body > #container {
 }
 
 #content #blocQuestion p1 {
-	text-indent : 80px;
+	text-indent : 10px;
 }
-
+#content #blocQuestion p,
 #content #blocQuestion ul {
 	margin-left: 40px;
 	margin-top: 3px;
@@ -1207,14 +1216,11 @@ body > #container {
 #content #presentation {
     float : left;
 	width: 950px;
-	margin-left : 12%;
 }
 
 #content #presentation {
     float : left;
 	width: 1100px;
-	margin :  0 0 0 55px;
-	padding-left : 50px;
 }
 
 #content #presentation  #lien-accueil a {
@@ -1650,37 +1656,36 @@ vertical-align : center;
 
 #content #menus {
     float : left;
-	width: 1000px;
-	height : 600px;
-	margin :  0 0 30px 150px;
-	padding-left : 20px;
+	width: 950px;
+	height : 610px;
+	margin-left: 75px;
 }
 
-#content #menus #b1  .bloc-menus #fruits {
+#content #menus .b1  .bloc-menus #fruits {
 	color: #00A64A;
 }
 
-#content #menus #b1  .bloc-menus #legumes {
+#content #menus .b1  .bloc-menus #legumes {
 	color:#95ED6F;
 }
 
-#content #menus #b1  .bloc-menus #cereales{
+#content #menus .b1  .bloc-menus #cereales{
 	color:#D66918;
 }
 
-#content #menus #b1  .bloc-menus #proteines {
+#content #menus .b1  .bloc-menus #proteines {
 	 color:#CE1C21;
 }
 
-#content #menus #b1  .bloc-menus #produitsLaitiers {
+#content #menus .b1  .bloc-menus #produitsLaitiers {
 	 color:#5286C6;
 }
 
-#content #menus #b1  .bloc-menus #matieresGrasses {
+#content #menus .b1  .bloc-menus #matieresGrasses {
 	 color:#E1D201;
 }
 
-#content #menus  #b1 .bloc-menu {
+#content #menus  .b1 .bloc-menu {
   border: 3px solid #4D2B08;
   background-color : #FFFFFF;
   float: left;
@@ -1701,7 +1706,7 @@ vertical-align : center;
 }
 
 
-#content #menus  #b1 .bloc-menu h3 {
+#content #menus  .b1 .bloc-menu h3 {
   font-size: 20px;
   color : #A6BC2A;
   text-align: center;
@@ -1712,7 +1717,7 @@ vertical-align : center;
 }
 /* #RAJOUT */
 
-#content #menus  #b1 .bloc-menu a {
+#content #menus  .b1 .bloc-menu a {
   font-size: 20px;
   color : #A6BC2A;
   text-align: center;
@@ -1727,11 +1732,11 @@ vertical-align : center;
   border-bottom : 1px solid #4D2B08;
 }
 
-#content #menus  #b1 .bloc-menu h3 a {
+#content #menus  .b1 .bloc-menu h3 a {
   border-bottom : 0px; /* Pas de deux deuxième bordure ici */
 }
 
-#content #menus #b1 .bloc-menu p{
+#content #menus .b1 .bloc-menu p{
   font-size: 14px;
   padding-top : 10px;
   color : #000000;
