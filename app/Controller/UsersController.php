@@ -6,6 +6,7 @@
 			$this->Auth->allow('add'); // Letting users register themselves
 		}
 
+		//Permet à l'utilisateur de se connecter en cliquant sur le bouton "me connecter" situé en haut à droite de chaque page
 		public function login() {
 			if ($this->request->is('post')) {
 				if ($this->Auth->login()) {
@@ -16,6 +17,8 @@
 			}
 		}
 
+		//Permet à l'utilisateur de se déconnecter en cliquant sur le bouton "me déconnecter" situé en haut à droite de chaque page une fois que l'utilisateur
+		//s'est authentifié
 		public function logout() {
 			$this->redirect($this->Auth->logout());
 		}
@@ -41,6 +44,7 @@
 			$this->set('user', $this->User->read(null, $id));
 		}
 
+		//Permet à l'tuilisateur de créer son profil en cliquant sur "créer mon profil" situé en haut à droite de chaque page 
 		public function add() {
 			if ($this->request->is('post')) {
 				$this->set('username', $_POST['data']['User']['username']);
@@ -77,6 +81,7 @@
 			}
 		}
 
+		//Permet de modfier le profil d'un utilisateur
 		public function edit($id = null) {
 
 			if (AuthComponent::user('role') != 'administrateur') {
@@ -112,6 +117,7 @@
 			}
 		}
 
+		//Permet de supprimer le compte d'un utilisateur 
 		public function delete($id = null) {
 			
 			$this->Session->setFlash('Veuillez confirmer la suppression du compte');

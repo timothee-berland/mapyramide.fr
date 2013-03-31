@@ -10,6 +10,7 @@ class ImcenfantsController extends AppController {
 	// Pour utiliser des modèles spécifiques
 	public $uses = array('Imcenfant', 'User');
 
+	
 	public function index()
 	{
 		$id = AuthComponent::user('id');
@@ -69,7 +70,7 @@ class ImcenfantsController extends AppController {
 					case 4: 
 						$AP = 1.48;
 				}
-
+				//Calcul des besoins énergétiques estimés pour un homme en fonction de son age et de son poids
 				$BEE = round(864 - 9.72 * $_POST['zt_age'] + $AP * (14.2 * $_POST['zt_poids'] + 503 * $_POST['zt_taille'] / 100));
 
 			} else {
@@ -86,7 +87,7 @@ class ImcenfantsController extends AppController {
 					case 4: 
 						$AP = 1.45;
 				}
-
+				//Calcul des besoins énergétiques estimés pour une femme en fonction de son age et de son poids
 				$BEE = round(387 - 7.31 * $_POST['zt_age'] + $AP * (10.9 * $_POST['zt_poids'] + 660.7 * $_POST['zt_taille'] / 100));
 
 			}

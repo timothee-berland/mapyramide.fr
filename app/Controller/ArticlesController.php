@@ -13,6 +13,7 @@ class ArticlesController extends AppController {
 			$this->Auth->allow('article'); // Letting non-users see public articles
 		}
 
+	//Permet d'afficher l'ensemble des articles
 	public function index() {
 
 		$articles = $this->Article->find('all');
@@ -24,6 +25,7 @@ class ArticlesController extends AppController {
 			$this->set('article', $article);
 	}
 
+	
 	public function recherche($id_aliment, $gyf) {
 		$articles = $this->Article->find('first', array(
 			'conditions' => array('Article.id' => $id_aliment)));
@@ -31,6 +33,7 @@ class ArticlesController extends AppController {
 		debug($articles);
 	}
 
+	//Permet d'effectuer les modifications concernant un article 
 	public function edit($id=null) {
 		$this->Article->id = $id;
 		if (!$this->Article->exists()) {
@@ -55,6 +58,7 @@ class ArticlesController extends AppController {
 		}
 	}
 
+	//Permet d'ajouter un article
 	public function add() {
 		$this->set('categories', $this->Category->find('all'));
 

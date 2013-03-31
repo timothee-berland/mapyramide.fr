@@ -4,9 +4,12 @@
 
 	<?php if (! (AuthComponent::user('role') == 'administrateur' && AuthComponent::user('id') != $this->request->data['User']['id'])) : ?>
 		<!--TODO AJOUTER UNE IMAGE -->
+		<!-- Cette page permet à un administrateur de modifier le profil d'un utilisateur ou d'un administrateur. Elle est accessible depuis l'administration.
+		     Cliquez sur "gérer les utilisateur" puis sur le bouton représenté par un engrenage pour modifier le profil concerné -->
 		<span2> Personnalisez votre profil </span2> 
 		<div class="bloc1">	
 			
+			<!-- Les informations saisies lors de l'inscription sont déjà préremplies -->
 			<label for="UserDatenaissance"> Date de naissance (aaaa-mm-jj) <em> *</em></label>
 			<input type="text" name="data[User][datenaissance]" id="UserDatenaissance" required="required" title="Votre nom d'utilisateur doit faire entre 5 et 20 caractètres"/> <br><br><br>
 			
@@ -71,6 +74,7 @@
 				<?php endif; ?>
 	<?php endif; ?>
 
+	<!-- Ce bouton vous permet de valider les modifications effectuées -->
 	<div id="bloc2">
 	    <input type="submit" value="Valider" onClick="return validerForm()"/>
 	</div>

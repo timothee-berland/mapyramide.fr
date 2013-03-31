@@ -115,6 +115,7 @@
 	<!-- Fader -->
 </div>
 
+<!-- Sil'utilisateur est en surpoids, on lui demande s'il souhaite effectué une pere pondérale modérée sur six mois ou une perte pondérale plus contraignante -->
 <div id="blocQuestion">
 	<br/>
 	<p1>
