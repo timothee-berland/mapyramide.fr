@@ -260,7 +260,7 @@ $cakeDescription = __d('cake_dev', 'CakePHP: the rapid development php framework
 	
 	<footer>
 		<div class="bloc-gauche">
-		<p><a>Plan du site</a> | <a>lien 1</a> | <a>lien 2</a> | <a>lien 3</a></p>
+		<p><?php echo $this->Html->link('Plan du site', ''); ?> | <?php echo $this->Html->link('ChooseMyPlate', 'http://www.choosemyplate.gov/'); ?>  | <?php echo $this->Html->link('mangerbouger', 'http://www.mangerbouger.fr/pnns/'); ?>  </p>
 		</div>
 		<div class="bloc-droit">
 			<pre><a>FAQ</a>   <?php echo $this->Html->link('A propos de nous', '/pages/mentionslegales'); ?>  <?php echo $this->Html->link('Contacts', '/pages/contacts'); ?></pre>
