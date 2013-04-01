@@ -47,7 +47,7 @@ endif;
 
 
 <fieldset id='derniersArticles'>
-  <legend align="center" id='daj'>
+  <legend  class='legendCenter'>
     Derniers articles ajoutés
   </legend>
 	<div id="accordeon">
@@ -60,7 +60,7 @@ endif;
 						25,	
 						array('ellipsis' => '...', 'html' => true));
 				$text = "<p>" . $this->Text->truncate($article['Article']['content'], array('html' => true)) . 
-						"</p><p id='suite'>" . $this->Html->link('Lire la suite ...', '/articles/article/' . $article['Article']['id'], 
+						"</p><p class='suite'>" . $this->Html->link('Lire la suite ...', '/articles/article/' . $article['Article']['id'], 
 								array('escape' => false)) . "</p>";
 				echo $this->Html->div($class = null, $text , $options = array());
 			endforeach; 

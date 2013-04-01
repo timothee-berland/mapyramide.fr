@@ -37,7 +37,7 @@ class StatsController extends AppController {
 
 		//on verifie si on a pas changé de jour et on recupere le chiffre du compteur
 		$ligne = $this->Stat->find('first', array('conditions' => array('id' => 'compteur')));
-		$date = date("Y-m-d");
+		$date = new DateTime();
 
 		//on convertit l heure courante en minute d une journee
 		$time=(date("H") * 60) + date("i");
@@ -48,26 +48,29 @@ class StatsController extends AppController {
 		$d=$ligne['Stat']['duree']; //duree de renouvellement de reference
 
 		//on test si on a changé de jour
-		if ($date!=$ligne['Stat']['date'])
+		if ($date->format('Y-m-d') != $ligne['Stat']['date'])
 		{
-			//on vide toutes les addresses ip enregistrées dans la table lors du changement de jour
-			$this->Stat->deleteAll(array('id !=' => 'compteur'));
 			//on met a jour la nouvelle date dans la table
-			$this->Stat->query("update stat set date='$date';");
+			$date2 = $date->format('Y-m-d');
+			$this->Stat->query("update stat set date='$date2';");
+			//On soustrait 3 mois pour la limite des statistiques
+			$date2 = $date->sub(new DateInterval('P31D'));
+			$date2 = $date2->format('Y-m-d');
+			//on vide toutes les addresses ip enregistrées dans la table qui sont trop vieilles
+			$this->Stat->deleteAll(array('id !=' => 'compteur', 'date <' => '$date2'));
 		}
+
+		//on stoque la date d'aujourd'hui
+		$date = $date->format('Y-m-d');
 
 		//on verifie l'adresse ip du visiteur et aussi son heure de passage
 		$ligne = $this->Stat->find('first', array('conditions' => array('id' => $adress)));
 		if (empty($ligne))
 		{
 			//on enregistre l adresse ip si elle est inconnu et on incremente le compteur
-			$sql="insert into stat (id,time,duree) values ('$adress','$time','$time')";
-			$this->Stat->create();
-			$this->Stat->set('id', $adress);
-			$this->Stat->set('time', $time);
-			$this->Stat->set('duree', $time);
-			$this->Stat->save($this->request->data);
+			$this->Stat->query("insert into stat (id,time,duree, date, compteur) values ('$adress','$time','$time', '$date', '1');");
 			$compteur+=1;
+
 			$this->Stat->query("update stat set compteur=$compteur where id='compteur';");
 		}
 		else
@@ -84,38 +87,48 @@ class StatsController extends AppController {
 				//comme nouvelle visite et on met a jour sa nouvelle heure de passage
 				$this->Stat->query("update stat set time=$time,duree=$time where id='$adress';");
 				
-				//on cree une ligne fictive pour pouvoir le comptabilisé dans les connectés de jour
+				//on cree une ligne fictive pour pouvoir le comptabilisé dans les visites du jour
 				$adress1=$adress.".".$compteur;
-				$this->Stat->create();
-				$this->Stat->set('id', $adress1);
-				$this->Stat->set('time', $time);
-				$this->Stat->set('duree', $time);
-				$this->Stat->save($this->request->data);
+				$this->Stat->query("insert into stat (id,time,duree, date, compteur) values ('$adress1','$time','$time', '$date', '1');");
 				
 				//et on increment le compteur de visite
 				$compteur+=1;
 				$this->Stat->query("update stat set compteur=$compteur where id='compteur';");
 			}
-			else
-			{
-				//on met a jour son heure de passage si elle est superieure a t
-				if ($time > $time1 + $t)
-				{
-					$this->Stat->query("update stat set time=$time where id='$adress';");
-				}
-			}
 		}
 
 
-		//on compte le nb de connecté de la journée
-		$compteur_j = $this->Stat->find('count') - 1;
+		//on compte le nb de visites de la journée
+		$compteur_j = $this->Stat->find('count', array('conditions' => array('date' => $date, 'id !=' => 'compteur')));
 
-		//on compte le nb de connecté
+		//on compte le nb de visites
 		$time-=$t;
-		$compteur_c = $this->Stat->find('count', array('conditions' => array('time >=' => $time, 'id !=' => 'compteur')));
-		$this->set('nbUser', $compteur);
-		$this->set('nbUserToday', $compteur_j);
-		$this->set('nbUserNow', $compteur_c);
-	}
+		$compteur_c = $this->Stat->find('count', array('conditions' => array('date' => $date, 'time >=' => $time, 'id !=' => 'compteur')));
+
+		//on fait un tableau avec toutes les visites
+		$visites = $this->Stat->find('all', array(
+			'fields' => array( 'date'), 
+			'order' => array('date' => 'asc'),
+			'conditions' => array('id !=' => 'compteur')));
+		
+		//on met les données en forme
+		$dateVisite = new DateTime();
+		$dateVisite = $dateVisite->sub(new DateInterval('P31D'));
+		for ($dateVisite ; $dateVisite <= new DateTime(); $dateVisite->add(new DateInterval('P1D'))) { 
+				$nbUserTab[$dateVisite->format('Y-m-d')]=0;
+		}
+
+		$dateActuelle = $visites[0]['Stat']['date'];
+		$nbUserTab[$dateActuelle] = 1;
+		foreach ($visites as $visite) {
+			$nbUserTab[$visite['Stat']['date']] += 1;
+		}
+
+		$donnees['nbUserTab'] = $nbUserTab;
+		$donnees['nbUserToday'] = $compteur_j;
+		$donnees['nbUserNow'] = $compteur_c;
+		$donnees['nbUser'] = $compteur;
+		$this->set('donnees', $donnees);
+	}     
 
 }

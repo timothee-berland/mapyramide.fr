@@ -43,87 +43,64 @@
 		</p1>
 	</div>
 	
-	<div class="texte1">
-		<table width=140%; >
-		<tr>
-			<td style="padding-right:60px;"></td>
-			<td><h3> Huiles </h3> </td>
-			<td style="padding-right:100px;"></td>
-			<td><h3> Aliments riches en huiles </h3></td>
-			<td style="padding-right:10px;"></td>
-			<td><h3> Graisses solides </h3></td>
-			</tr>
-			<tr><td><br /></td></tr>
-		</table>
-		
-		<table width=145%;  >
-			<tr>
-				<td>
-					<div class="listeForEach">
-						<table>
-							<!-- Liste des matières grasses : affichage des images des différentes matières grasses à l'aide de zoombox -->
-							<?php foreach ($matGrasses as $groupeMatGrasse) {
-								foreach ($groupeMatGrasse['Aliment'] as $matGrasse) {
-									
-									echo '<tr><td>';
-									// Pour simplifier on ne metra qu'une image par matière grasse différente
-									$fichier = strtok($matGrasse['nomFR'], ',');
-									echo $this->Html->link('<li>' . $matGrasse['nomFR'] . '</li>', '../img/' . $fichier . '.jpg', array('class' => 'zoombox', 'alt' => $matGrasse['nomFR'], 'escape' => false));
-									echo '</td></tr>';
-								}
-							} ?>
-						</table>
-					</div>
-					
-					<td style="padding-right : 110px">
-					</td>
-				</td>
-				
-				<td style="padding-left: 0px ; border-left: medium solid #4D2B08" >
-				
-					<div class="listeForEach">
-						<table>
-							<!-- Liste des matières grasses : affichage des images des différentes matières grasses à l'aide de zoombox -->
-							<?php foreach ($matGrasses as $groupeMatGrasse) {
-								foreach ($groupeMatGrasse['Aliment'] as $matGrasse) {
-									
-									echo '<tr><td>';
-									// Pour simplifier on ne metra qu'une image par matière grasse différente
-									$fichier = strtok($matGrasse['nomFR'], ',');
-									echo $this->Html->link('<li>' . $matGrasse['nomFR'] . '</li>', '../img/' . $fichier . '.jpg', array('class' => 'zoombox', 'alt' => $matGrasse['nomFR'], 'escape' => false));
-									echo '</td></tr>';
-								}
-							} ?>
-						</table>
-					</div>
-					
-					<td style="padding-right : 130px">
-					</td>
-				</td>
-				
-				<td style="padding-left: 0px ; border-left: medium solid #4D2B08" >
-				
-					<div class="listeForEach">
-						<table>
-							<!-- Liste des matières grasses : affichage des images des différentes matières grasses à l'aide de zoombox -->
-							<?php foreach ($matGrasses as $groupeMatGrasse) {
-								foreach ($groupeMatGrasse['Aliment'] as $matGrasse) {
-									
-									echo '<tr><td>';
-									// Pour simplifier on ne metra qu'une image par matière grasse différente
-									$fichier = strtok($matGrasse['nomFR'], ',');
-									echo $this->Html->link('<li>' . $matGrasse['nomFR'] . '</li>', '../img/' . $fichier . '.jpg', array('class' => 'zoombox', 'alt' => $matGrasse['nomFR'], 'escape' => false));
-									echo '</td></tr>';
-								}
-							} ?>
-						</table>
-					</div>
-					
-					<td style="padding-right : 130px">
-					</td>
-				</td>
-			</tr>
-		</table>
+	<div id="containerLiensImages2cat">
+		<fieldset class='listeFruitsLegumes'>
+		  <legend class='legendCenter'>Huiles</legend>
+			<div class="listeForEach">
+				<ul>
+				<!-- Liste des légumes : affichage des images des différents légumes à l'aide de zoombox -->
+				<?php 
+				foreach ($donnees['Matières grasses']['Huiles'] as $groupeMatiereGrasse) {
+					foreach ($groupeMatiereGrasse['Aliment'] as $matiereGrasse) {
+						// Pour simplifier on ne metra qu'une image par légume différent
+						$fichier = strtok($matiereGrasse['nomFR'], ',');
+						echo $this->Html->link('<li>' . $matiereGrasse['nomFR'] . '</li>', '../img/' . $fichier . '.jpg', array('class' => 'zoombox', 'alt' => $matiereGrasse['nomFR'], 'escape' => false));
+					}
+				} ?>
+				</ul>
+			</div>
+		</fieldset>
+
+		<fieldset class='listeFruitsLegumes'>
+		  <legend class='legendCenter'>Graisses solides</legend>
+			<div class="listeForEach">
+				<ul>
+				<!-- Liste des légumes : affichage des images des différents légumes à l'aide de zoombox -->
+				<?php 
+				foreach ($donnees['Matières grasses']['Graisses solides'] as $groupeMatiereGrasse) {
+					foreach ($groupeMatiereGrasse['Aliment'] as $matiereGrasse) {
+						// Pour simplifier on ne metra qu'une image par légume différent
+						$fichier = strtok($matiereGrasse['nomFR'], ',');
+						echo $this->Html->link('<li>' . $matiereGrasse['nomFR'] . '</li>', '../img/' . $fichier . '.jpg', array('class' => 'zoombox', 'alt' => $matiereGrasse['nomFR'], 'escape' => false));
+					}
+				} ?>
+				</ul>
+			</div>
+		</fieldset>
 	</div>
 </div>	
 
+
+<!--Script permettant l'affichage des images à l'aide de zoombox -->
+<?php echo $this->Html->script('zoombox/zoombox.js'); ?>
+<?php echo $this->Html->css('/js/zoombox/zoombox.css'); ?>
+
+<script type="text/javascript">
+    jQuery(function($){
+        $('a.zoombox').zoombox();
+
+        /**
+        * Or You can also use specific options
+        $('a.zoombox').zoombox({
+            theme       : 'zoombox',        //available themes : zoombox,lightbox, prettyphoto, darkprettyphoto, simple
+            opacity     : 0.8,              // Black overlay opacity
+            duration    : 800,              // Animation duration
+            animation   : true,             // Do we have to animate the box ?
+            width       : 500,              // Default width
+            height      : 500,              // Default height
+            gallery     : true,             // Allow gallery thumb view
+            autoplay : false                // Autoplay for video
+        });
+        */
+	});
+</script>

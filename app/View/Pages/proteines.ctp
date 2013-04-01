@@ -43,86 +43,80 @@
 		</p1>
 	</div>
 	
-	<div class="texte1">
-		<table width=130%; >
-			<tr>
-				<td style="padding-right:20px;"></td>
-				<td><h3> Viandes, oeufs & poissons </h3> </td>
-				<td style="padding-right: 20px;"></td>
-				<td><h3> Noix & graines </h3></td>
-				<td style="padding-right:70px;"></td>
-				<td><h3> Produits de soja traités </h3></td>
-			</tr>
-		</table>
-	
-		<table width=145%;  >
-			<tr>
-				<td>
-					<div class="listeForEach">
-						<table>
-							<!-- Liste des produits protéinés : affichage des images des différents produits protéinés à l'aide de zoombox -->
-							<?php foreach ($pdtProteines as $groupProteine) {
-								foreach ($groupProteine['Aliment'] as $pdtProteine) {
-									
-									echo '<tr><td>';
-									// Pour simplifier on ne metra qu'une image par produit différent
-									$fichier = strtok($pdtProteine['nomFR'], ',');
-									echo $this->Html->link('<li>' . $pdtProteine['nomFR'] . '</li>', '../img/' . $fichier . '.jpg', array('class' => 'zoombox', 'alt' => $pdtProteine['nomFR'], 'escape' => false));
-									echo '</td></tr>';
-								}
-							} ?>
-						</table>
-					</div>
-					
-					<td style="padding-right : 100px">
-					</td>
-				</td>
-				
-				<td style="padding-left: 0px ; border-left: medium solid #4D2B08" >
-				
-					<div class="listeForEach">
-						<table>
-							<!-- Liste des produits protéinés : affichage des images des différents produits protéinés à l'aide de zoombox -->
-							<?php foreach ($pdtProteines as $groupProteine) {
-								foreach ($groupProteine['Aliment'] as $pdtProteine) {
-									
-									echo '<tr><td>';
-									// Pour simplifier on ne metra qu'une image par produit différent
-									$fichier = strtok($pdtProteine['nomFR'], ',');
-									echo $this->Html->link('<li>' . $pdtProteine['nomFR'] . '</li>', '../img/' . $fichier . '.jpg', array('class' => 'zoombox', 'alt' => $pdtProteine['nomFR'], 'escape' => false));
-									echo '</td></tr>';
-								}
-							} ?>
-						</table>
-					</div>
-					<td style="padding-right : 90px">
-					</td>
-				</td>
-				
-				<td style="padding-left: 0px ; border-left: medium solid #4D2B08" >
-				
-					<div class="listeForEach">
-						<table>
-							<!-- Liste des produits protéinés : affichage des images des différents produits protéinés à l'aide de zoombox -->
-							<?php foreach ($pdtProteines as $groupProteine) {
-								foreach ($groupProteine['Aliment'] as $pdtProteine) {
-									
-									echo '<tr><td>';
-									// Pour simplifier on ne metra qu'une image par produit différent
-									$fichier = strtok($pdtProteine['nomFR'], ',');
-									echo $this->Html->link('<li>' . $pdtProteine['nomFR'] . '</li>', '../img/' . $fichier . '.jpg', array('class' => 'zoombox', 'alt' => $pdtProteine['nomFR'], 'escape' => false));
-									echo '</td></tr>';
-								}
-							} ?>
-						</table>
-					</div>
-					
-					<td style="padding-right : 130px">
-					</td>
-				</td>
-			</tr>
-		</table>
+	<div id="containerLiensImages3cat">
+		<fieldset class='listeFruitsLegumes'>
+		  <legend class='legendCenter'>Viandes</legend>
+			<div class="listeForEach">
+				<ul>
+				<!-- Liste des légumes : affichage des images des différents légumes à l'aide de zoombox -->
+				<?php 
+				foreach ($donnees['Protéines']['Viandes'] as $groupeProteine) {
+					foreach ($groupeProteine['Aliment'] as $proteine) {
+						// Pour simplifier on ne metra qu'une image par légume différent
+						$fichier = strtok($proteine['nomFR'], ',');
+						echo $this->Html->link('<li>' . $proteine['nomFR'] . '</li>', '../img/' . $fichier . '.jpg', array('class' => 'zoombox', 'alt' => $proteine['nomFR'], 'escape' => false));
+					}
+				} ?>
+				</ul>
+			</div>
+		</fieldset>
+
+		<fieldset class='listeFruitsLegumes'>
+		  <legend class='legendCenter'>Poissons</legend>
+			<div class="listeForEach">
+				<ul>
+				<!-- Liste des légumes : affichage des images des différents légumes à l'aide de zoombox -->
+				<?php 
+				foreach ($donnees['Protéines']['Poissons'] as $groupeProteine) {
+					foreach ($groupeProteine['Aliment'] as $proteine) {
+						// Pour simplifier on ne metra qu'une image par légume différent
+						$fichier = strtok($proteine['nomFR'], ',');
+						echo $this->Html->link('<li>' . $proteine['nomFR'] . '</li>', '../img/' . $fichier . '.jpg', array('class' => 'zoombox', 'alt' => $proteine['nomFR'], 'escape' => false));
+					}
+				} ?>
+				</ul>
+			</div>
+		</fieldset>
+
+		<fieldset class='listeFruitsLegumes'>
+		  <legend class='legendCenter'>Œufs et dérivés</legend>
+			<div class="listeForEach">
+				<ul>
+				<!-- Liste des légumes : affichage des images des différents légumes à l'aide de zoombox -->
+				<?php 
+				foreach ($donnees['Protéines']['Œufs et dérivés'] as $groupeProteine) {
+					foreach ($groupeProteine['Aliment'] as $proteine) {
+						// Pour simplifier on ne metra qu'une image par légume différent
+						$fichier = strtok($proteine['nomFR'], ',');
+						echo $this->Html->link('<li>' . $proteine['nomFR'] . '</li>', '../img/' . $fichier . '.jpg', array('class' => 'zoombox', 'alt' => $proteine['nomFR'], 'escape' => false));
+					}
+				} ?>
+				</ul>
+			</div>
+		</fieldset>
 	</div>
 </div>
 
+<!--Script permettant l'affichage des images à l'aide de zoombox -->
+<?php echo $this->Html->script('zoombox/zoombox.js'); ?>
+<?php echo $this->Html->css('/js/zoombox/zoombox.css'); ?>
 
+<script type="text/javascript">
+    jQuery(function($){
+        $('a.zoombox').zoombox();
+
+        /**
+        * Or You can also use specific options
+        $('a.zoombox').zoombox({
+            theme       : 'zoombox',        //available themes : zoombox,lightbox, prettyphoto, darkprettyphoto, simple
+            opacity     : 0.8,              // Black overlay opacity
+            duration    : 800,              // Animation duration
+            animation   : true,             // Do we have to animate the box ?
+            width       : 500,              // Default width
+            height      : 500,              // Default height
+            gallery     : true,             // Allow gallery thumb view
+            autoplay : false                // Autoplay for video
+        });
+        */
+	});
+</script>

@@ -60,8 +60,25 @@
 				'order' => 'created DESC'));
 			$this->set('derniersArticles', $derniersArticles);
 
-			$donnees = $this->Famillealiment->find('all', array('group' => array('subname')));
+			// Recherche et tri des aliments par catégorie
+			$donnees['Céréales']['Grains entiers'] = $this->Famillealiment->findAllBySubname('Grains entiers');
+			$donnees['Céréales']['Grains raffinés'] = $this->Famillealiment->findAllBySubname('Grains raffinés');
+			$donnees['Produits laitiers']['Yaourts'] = $this->Famillealiment->findAllBySubname('Yaourts');
+			$donnees['Produits laitiers']['Fromages'] = $this->Famillealiment->findAllBySubname('Fromages');
+			$donnees['Produits laitiers']['Lait et desserts à base de lait'] = $this->Famillealiment->findAllBySubname('Lait et desserts à base de lait');
+			$donnees['Protéines']['Viandes'] = $this->Famillealiment->findAllBySubname('Viandes');
+			$donnees['Protéines']['Poissons'] = $this->Famillealiment->findAllBySubname('Poissons');
+			$donnees['Protéines']['Œufs et dérivés'] = $this->Famillealiment->findAllBySubname('Œufs et dérivés');
+			$donnees['Matières grasses']['Huiles'] = $this->Famillealiment->findAllBySubname('Huiles');
+			$donnees['Matières grasses']['Graisses solides'] = $this->Famillealiment->findAllBySubname('Graisses solides');
+			$donnees['Légumes']['Légumes verts'] = $this->Famillealiment->findAllBySubname('Légumes verts');
+			$donnees['Légumes']['Légumes féculents'] = $this->Famillealiment->findAllBySubname('Légumes féculents');
+			$donnees['Légumes']['Autres légumes'] = $this->Famillealiment->findAllBySubname('Autres légumes');
+			$donnees['Fruits']['Fruits'] = $this->Famillealiment->findAllBySubname('Fruits');
+			$donnees['Fruits']['Jus de fruits'] = $this->Famillealiment->findAllBySubname('Jus de fruits');
 			$this->set('donnees', $donnees);
+			
+			
 
 			$path = func_get_args();
 

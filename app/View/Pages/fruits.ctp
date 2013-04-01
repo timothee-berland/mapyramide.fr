@@ -41,35 +41,40 @@
 		</p1>
 	</div>
 	
-	<div class="texte1">
-		<div class="listeForEach">
-			<table>
-				<!-- Liste des fruits : affichage des images des différents fruits à l'aide de zoombox -->
-				<?php foreach ($fruits as $groupeFruit) {
+	<div id="containerLiensImages2cat">
+		<fieldset class='listeFruitsLegumes'>
+		  <legend class='legendCenter'>Fruits</legend>
+			<div class="listeForEach">
+				<ul>
+				<!-- Liste des légumes : affichage des images des différents légumes à l'aide de zoombox -->
+				<?php 
+				foreach ($donnees['Fruits']['Fruits'] as $groupeFruit) {
 					foreach ($groupeFruit['Aliment'] as $fruit) {
-						
-						echo '<tr><td>';
-						// Pour simplifier on ne metra qu'une image par fruit différent
+						// Pour simplifier on ne metra qu'une image par légume différent
 						$fichier = strtok($fruit['nomFR'], ',');
 						echo $this->Html->link('<li>' . $fruit['nomFR'] . '</li>', '../img/' . $fichier . '.jpg', array('class' => 'zoombox', 'alt' => $fruit['nomFR'], 'escape' => false));
-						echo '</td></tr>';
 					}
 				} ?>
-			</table>
-		</div>
+				</ul>
+			</div>
+		</fieldset>
 
-		<!-- Informations sur les fruits mixés --
-		<h2> Fruits mixés </h2>
-		<div class="bloc">					
-		<p2>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum turpis elit, viverra vitae tempus ac </p2>
-		</div>
-		<br/> 
-		
-		<!-- Informations sur les jus de fruits --
-		<h2> Jus de fruis </h2>
-		<div class="bloc">
-		<p2>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum turpis elit, viverra vitae tempus ac</p2>
-		</div> -->
+		<fieldset class='listeFruitsLegumes'>
+		  <legend class='legendCenter'>Jus de fruits</legend>
+			<div class="listeForEach">
+				<ul>
+				<!-- Liste des légumes : affichage des images des différents légumes à l'aide de zoombox -->
+				<?php 
+				foreach ($donnees['Fruits']['Jus de fruits'] as $groupeFruit) {
+					foreach ($groupeFruit['Aliment'] as $fruit) {
+						// Pour simplifier on ne metra qu'une image par légume différent
+						$fichier = strtok($fruit['nomFR'], ',');
+						echo $this->Html->link('<li>' . $fruit['nomFR'] . '</li>', '../img/' . $fichier . '.jpg', array('class' => 'zoombox', 'alt' => $fruit['nomFR'], 'escape' => false));
+					}
+				} ?>
+				</ul>
+			</div>
+		</fieldset>
 	</div>
 </div>
 
@@ -94,14 +99,7 @@
             autoplay : false                // Autoplay for video
         });
         */
-    });
-    </script>
-<script type="text/javascript">
-//<![CDATA[
-    $(function(){
-        $('a.zoombox').zoombox();
-    });
-//]]>
+	});
 </script>
 
 

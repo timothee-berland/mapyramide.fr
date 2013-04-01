@@ -111,11 +111,9 @@ $cakeDescription = __d('cake_dev', 'CakePHP: the rapid development php framework
 		    <?php echo $this->Html->link('Gérer les articles', '/articles'); ?>
 		    <?php echo $this->Html->link('Gérer la base de données', 'https://phpmyadmin.ovh.net'); ?>
 		    <?php echo $this->Html->link('Gérer les utilisateurs', '/users'); ?>
+		    <?php echo $this->Html->link('Statistiques du site', '/stats/visite'); ?>
 		</div>
 		<?php endif; ?>
-
-			
-		</div>
 		
 		<div id='nomEtLogo'>
 			<?php echo $this->Html->link('<div id="AGD-logo">AG Diététique </div>', '/', array('escape' => false)); ?>
@@ -183,6 +181,7 @@ $cakeDescription = __d('cake_dev', 'CakePHP: the rapid development php framework
 									<li class="dropdown-middle"><?php echo $this->Html->link('Plus de sport', '/pages/augmentersport'); ?></li>
 									<li class="dropdown-last"><?php echo $this->Html->link('Moins d\'écrans', '/pages/moinsdecrans'); ?></li>
 								</ul>
+							</li>
 							<li class="dropdown-last"><?php echo $this->Html->link('Calories', '/pages/calories'); ?>
 								<ul class="dropdown">
 									<li class="dropdown-first"><?php echo $this->Html->link('Calories vides', '/pages/caloriesvides'); ?></li>
@@ -190,6 +189,7 @@ $cakeDescription = __d('cake_dev', 'CakePHP: the rapid development php framework
 									<li class="dropdown-middle"><?php echo $this->Html->link('Sucres ajoutés', '/pages/sucresajoutes'); ?></li>
 									<li class="dropdown-last"><?php echo $this->Html->link('Quantifier calories', '/pages/comptercalories'); ?></li>
 								</ul>
+							</li>
 						</ul>
 					</li>
 					<li><?php echo $this->Html->link('Activité physique', '#'); ?>
