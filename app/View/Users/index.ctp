@@ -8,16 +8,10 @@
 			<a href="users/edit/<?php echo $user['User']['id']; ?>"><div id="btn-modifier">Modifier</div></a>
 
 			<!-- Bouton suppression -->
-			<a href="users/delete/<?php echo $user['User']['id'];?>" onClick="return(confirmation())"><div id="btn-supprimer">Supprimer</div></a>
+			<a href="users/delete/<?php echo $user['User']['id'];?>"><div id="btn-supprimer">Supprimer</div></a>
 		</div>
 	</div>
 <?php endforeach; ?>
-
-	<script type="text/javascript">
-		function confirmation() {
-			return(confirm("Êtes vous sûrs de vouloir supprimer cet utilisateur ?"));
-		}
-	</script>
 
 <?php elseif (isset($users)) : ?>
 

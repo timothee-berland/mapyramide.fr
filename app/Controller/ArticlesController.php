@@ -72,4 +72,31 @@ class ArticlesController extends AppController {
 				}
 			}
 	}
+
+	//Permet de supprimer un article 
+		public function delete($id = null) {
+			
+			$this->Session->setFlash("Veuillez confirmer la suppression de l'article");
+			
+			if (AuthComponent::user('role') == 'administrateur') {
+				$article = $this->Article->find('first', array('conditions' => array('Article.id' => $id)));
+				$this->set('article', $article);
+
+				if ($this->request->is('post')) {
+					$this->Article->id = $id;
+					if (!$this->Article->exists()) {
+						throw new NotFoundException(__('Article invalide'));
+					}
+					if ($this->Article->delete()) {
+						$this->Session->setFlash(__('Article supprimé'));
+						$this->redirect(array('action' => 'index'));
+					}
+					$this->Session->setFlash(__("L'article n'a pas pu être supprimé. Merci de réessayer."));
+					$this->redirect(array('action' => 'index'));
+				}
+			} else {
+				$this->Session->setFlash(__("Vous n'avez pas accès à cette page"));
+				$this->redirect(array('action' => 'index'));
+			}
+		}
 }

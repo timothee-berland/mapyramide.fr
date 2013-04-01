@@ -1,4 +1,4 @@
-<form action="/mapyramide.fr/users/login" id="UserLoginForm" method="post" accept-charset="utf-8">
+<?php echo $this->Form->create('User'); ?>
 
 	<?php echo $this->Session->flash('auth'); ?>
 	<?php echo $this->Form->create('User'); ?>

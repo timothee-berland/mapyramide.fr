@@ -643,12 +643,14 @@ body > #content {
   	   boutons associés
     ---------------------*/
 #content .bloc-index {
+	height: 20px;	
     float : left;
 	width: 750px;
-	height: 20px;
     border:2px solid #4D2B08;
 	background-color : #FFFFFF;
-	margin :  0 0 -2px 240px;
+	margin-left: 150px;
+	margin-right: 150px;
+	margin-top: -2px;
 	padding-top : 10px;
 	padding-left : 20px;
 	padding-right : 20px;
@@ -714,8 +716,8 @@ body > #content {
 }
 
 #content .bloc-index #bloc2 input[type="submit"] {
-	left: -160px;
-	top: -25px;
+	left: 175px;
+	top: -35px;
 	position: relative;
 }
 

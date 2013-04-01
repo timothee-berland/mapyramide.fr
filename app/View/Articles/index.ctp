@@ -26,17 +26,9 @@
 
 			<!-- Bouton suppression : pour supprimer un article, l'administrateur doit cliquez sur le bouton symbolisé par une croix rouge correspondant
 				 à l'article qu'il souhaite modifier -->
-			<?php echo $this->Html->link('<div id="btn-supprimer">Supprimer</div>', '/articles/delete/' . $article['Article']['id'], array('onClick' => 'return (confirmation())', 'escape' => false)); ?>
+			<?php echo $this->Html->link('<div id="btn-supprimer">Supprimer</div>', '/articles/delete/' . $article['Article']['id'], array('escape' => false)); ?>
 			
 		</div>
 	</div>
 	<!-- Catégorie : <?php echo $article['Category']['name']; ?> -->
 <?php endforeach; ?>
-
-<!-- Si l'administrateur décide de supprimer un article, avant de faire la suppression, on s'assure qu'il n'a pas commis d'erreur -->
-<script type="text/javascript">
-function confirmation() {
-	return(confirm("Êtes vous sûrs de vouloir supprimer cet article ?"));
-}
-
-</script>
