@@ -1,6 +1,4 @@
-<div id="content">	
-
-	<?php echo $this->Form->create('User'); ?>
+<?php echo $this->Form->create('User'); ?>
 	
 	<!-- Cette page est accessible depuis le bouton "Créer mon profil" situé en haut à droite de chaque page -->
 	<!--TODO AJOUTER UNE IMAGE -->
@@ -65,7 +63,7 @@
 	    <input type="submit" value="Valider" onClick="return validerForm()"/>
 	</div>
 </form>
-</div>
+
 
 <script>
 	$(function() {

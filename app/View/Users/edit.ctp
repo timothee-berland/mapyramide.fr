@@ -1,6 +1,4 @@
-<div id="content">	
-
-	<?php echo $this->Form->create('User'); ?>
+<?php echo $this->Form->create('User'); ?>
 
 	<?php if (! (AuthComponent::user('role') == 'administrateur' && AuthComponent::user('id') != $this->request->data['User']['id'])) : ?>
 		<!--TODO AJOUTER UNE IMAGE -->
@@ -79,7 +77,6 @@
 	    <input type="submit" value="Valider" onClick="return validerForm()"/>
 	</div>
 </form>
-</div>
 
 <script>
 	$(function() {
