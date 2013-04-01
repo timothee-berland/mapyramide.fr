@@ -143,10 +143,10 @@ endif;
 <!-- Boutons -->
 <div id="btns-home">
 	<!-- Bouton calcul IMC -->
-	<div id="btn-calcul-imc">Calculer mon IMC</div>
+	<?php echo $this->Html->link('<div id="btn-calcul-imc">Calculer mon IMC</div>', '/imcenfants', array('escape' => false)); ?>
 
 	<!-- Bouton Super Traqueur -->
-	<div id="btn-super-traqueur">Super Traqueur</div>
+	<?php echo $this->Html->link('<div id="btn-super-traqueur">Super Traqueur</div>', '/pages/supertracker', array('escape' => false)); ?>
 </div>
 
 <script>
