@@ -4,7 +4,7 @@
     <div id="texte">
 		<!-- Cette page est accessible à partir du menu situé en haut de page : Cliquez sur "Poids et calories" ->"Gestion pondérale" ->"Que manger ?"
 		     Elle donne des conseils sur ce qu'il faut manger et boire -->
-		<span1> Que manger et boire ?  </span1> <br/>
+		<span3> Que manger et boire ?  </span3> <br/>
 		<br />
 		<p1>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum turpis elit, viverra vitae tempus ac, 
 		ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum turpis elit, viverra vitae tempus ac, interdum eu enim

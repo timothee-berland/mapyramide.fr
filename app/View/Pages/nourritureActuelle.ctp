@@ -4,8 +4,8 @@
     <div id="texte">
 		<!-- Cette page est accessible à partir du menu situé en haut de page : Cliquez sur "Poids et calories" ->"Gestion pondérale" ->"Nourriture actuelle"
 		     Elle présente certains critères/conseils pour que l'utilisateur détermine ce qu'il mange et boit actuellement -->
-		<span1> Ce que je mange et bois  </span1> <br/>
-		<span1> actuellement </span1> <br/>
+		<span3> Ce que je mange et bois  </span3> <br/>
+		<span2> actuellement </span2> <br/>
 		<br />
 		<p1>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum turpis elit, viverra vitae tempus ac, 
 		ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum turpis elit, viverra vitae tempus ac, interdum eu enim

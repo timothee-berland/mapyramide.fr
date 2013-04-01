@@ -3,8 +3,8 @@
 	</div>
     <div id="texte">
 		<!-- Cette page est accessible depuis le menu situé en haut de page : Cliquez sur "Mon assiette" -> "Céréales" -> "Conseils pour manger des céréales" -->
-		<span1> Conseils pour consommer </span1> </br>
-		<span1>  plus de céréales </span1> <br />
+		<span3> Conseils pour consommer </span3> </br>
+		<span2>  plus de céréales </span2> <br />
 	</div>
 	
 	<div id="texte3">

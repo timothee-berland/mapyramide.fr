@@ -3,8 +3,8 @@
 	</div>
     <div id="texte">
 		<!-- Cette page est accessible depuis le menu situé en haut de page : Cliquez sur "Mon assiette" -> "Protéines" -> "Plats protéinés végétariens" -->
-		<span1> Les protéines  </span1> <br />
-		<span1> dans les plats végétariens </span1> <br />
+		<span3> Les protéines dans  </span3> <br />
+		<span3> les plats végétariens </span3> <br />
 	</div>
 	
 	<div id="texte4">

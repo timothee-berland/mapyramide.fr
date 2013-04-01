@@ -4,8 +4,8 @@
     <div id="texte">
 		<!-- Cette page est accessible à partir du menu situé en haut de page : Cliquez sur "Poids et calories" ->"Gestion pondérale" ->"Diminuer portions"
 		     Elle donne des conseils pour diminuer les portions consommées -->
-		<span1> Diminuer la taille   </span1> <br/>
-		<span1> de mes portions  </span1> <br/>
+		<span2> Diminuer la taille   </span2> <br/>
+		<span2> de mes portions  </span2> <br/>
 		<br />
 		<p1>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum turpis elit, viverra vitae tempus ac, 
 		ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum turpis elit, viverra vitae tempus ac, interdum eu enim

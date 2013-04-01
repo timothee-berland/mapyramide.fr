@@ -4,8 +4,8 @@
     <div id="texte">
 		<!-- Cette page est accessible à partir du menu situé en haut de page : Cliquez sur "Poids et calories" ->"Gestion pondérale" ->"Moins d'écrans"
 		     Elle conseille la réduction du temps passé devant les écrans -->
-		<span1> Diminuer mon temps </span1> <br/>
-		<span1> passé devant les écrans  </span1> <br/>
+		<span3> Diminuer mon temps </span3> <br/>
+		<span3> passé devant les écrans  </span3> <br/>
 		<br />
 		<p1>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum turpis elit, viverra vitae tempus ac, 
 		ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum turpis elit, viverra vitae tempus ac, interdum eu enim

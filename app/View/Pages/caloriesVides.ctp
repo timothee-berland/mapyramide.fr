@@ -3,8 +3,8 @@
 	</div>
     <div id="texte">
 		<!-- Cette page est accessible depuis le menu situé en haut de page : Cliquez sur "Poids & Calories" -> "Calories" -> "Calories vides" -->
-		<span1> Combien de calories vides  </span1> <br/>
-		<span1> puis-je consommer ?</span1> <br/>
+		<span3> Combien de calories vides  </span3> <br/>
+		<span5> puis-je consommer ?</span5> <br/>
 		<br />
 		<p1>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum turpis elit, viverra vitae tempus ac, 
 		    ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum turpis elit, viverra vitae tempus ac, interdum eu enim

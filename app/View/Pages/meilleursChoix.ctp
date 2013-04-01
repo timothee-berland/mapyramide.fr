@@ -4,8 +4,8 @@
     <div id="texte">
 		<!-- Cette page est accessible à partir du menu situé en haut de page : Cliquez sur "Poids et calories" ->"Gestion pondérale" ->"Meilleurs choix"
 		     Elle donne des conseils afin de faire de meilleurs choix lors des repas -->
-		<span1> Faire de meilleurs choix  </span1> <br/>
-		<span1> lorsque je mange  </span1> <br/>
+		<span3> Faire de meilleurs choix  </span3> <br/>
+		<span2> lorsque je mange  </span2> <br/>
 		<br />
 		<p1>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum turpis elit, viverra vitae tempus ac, 
 		ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum turpis elit, viverra vitae tempus ac, interdum eu enim

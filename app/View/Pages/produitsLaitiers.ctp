@@ -4,7 +4,7 @@
 	
 	<div id="texte">
 		<!-- Cette page est accessible à partir du menu situé en haut de page : Cliquez sur "Mon assiette" -> "Produits laitiers" -->
-		<span1> Produits laitiers </span1> 
+		<span2> Produits laitiers </span2> 
 		<br/>
 		<h1> Quantité quotidienne conseillée </h1>
 		<p1> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum turpis elit, viverra vitae tempus ac, 

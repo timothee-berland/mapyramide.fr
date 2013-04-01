@@ -3,8 +3,8 @@
 	</div>
     <div id="texte">
 		<!-- Cette page est accessible depuis le menu situé en haut de page : Cliquez sur "Mon assiette" -> "Légumes" -> "Légumes uniques : haricots et petits pois" -->
-		<span1> Des légumes uniques : </span1> <br />
-		<span1> haricots et petits pois </span1> <br />
+		<span3> Des légumes uniques : </span3> <br />
+		<span3> haricots et petits pois </span3> <br />
 	</div>
 	
 	<div id="texte4">

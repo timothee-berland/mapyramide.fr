@@ -4,8 +4,8 @@
     <div id="texte">
 		<!-- Cette page est accessible à partir du menu situé en haut de page : Cliquez sur "Poids et calories" ->"Gestion pondérale" ->"Plus de sport"
 		     Elle conseille sur la pratique de l'activité physique -->
-		<span1> Augmenter ma pratique  </span1> <br/>
-		<span1> de l'activité physique  </span1> <br/>
+		<span3> Augmenter ma pratique  </span3> <br/>
+		<span3> de l'activité physique  </span3> <br/>
 		<br />
 		<p1>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum turpis elit, viverra vitae tempus ac, 
 		ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum turpis elit, viverra vitae tempus ac, interdum eu enim

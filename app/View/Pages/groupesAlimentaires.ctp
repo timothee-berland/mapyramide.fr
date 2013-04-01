@@ -3,7 +3,7 @@
 	</div>
     <div id="texte">
 		<!-- Cette page est accessible depuis le menu situé en haut de page : Cliquez sur "Mon assiette" -->
-		<span1> Groupes alimentaires </span1> 
+		<span3> Groupes alimentaires </span3> 
 	</div>
 	<div id="texte">
 		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum turpis elit, viverra vitae tempus ac, interdum eu enim

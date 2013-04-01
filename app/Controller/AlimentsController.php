@@ -35,7 +35,8 @@ class AlimentsController extends AppController {
 					));
 			$this->set('aliment1', $aliment1);
 			$this->set('constituantsAliment1', $constituantsAliment1);
-
+			
+			//On récupère la quantité du premier aliment que l'utilisateur souhaite comparer
 			if (isset($_POST['quantite'])) {
 				$quantiteAliment1 = $_POST['quantite'];
 				$this->set('quantiteAliment1', $quantiteAliment1);
@@ -43,6 +44,7 @@ class AlimentsController extends AppController {
 				$this->set('quantiteAliment1', 1);
 			}
 			
+			//On récupère la portion du premier aliment que l'utilisateur souhaite comparer
 			if (isset($_POST['portion'])) {
 				$quantitePortion1 = $_POST['portion'];
 				$this->set('quantitePortion1', $quantitePortion1);
@@ -66,6 +68,7 @@ class AlimentsController extends AppController {
 			$this->set('aliment2', $aliment2);
 			$this->set('constituantsAliment2', $constituantsAliment2);
 
+			//On récupère la quantité du deuxième aliment que l'utilisateur souhaite comparer
 			if (isset($_POST['quantite2'])) {
 				$quantiteAliment2 = $_POST['quantite2'];
 				$this->set('quantiteAliment2', $quantiteAliment2);
@@ -73,6 +76,7 @@ class AlimentsController extends AppController {
 				$this->set('quantiteAliment2', 1);
 			}
 			
+			//On récupère la portion du deuxième aliment que l'utilisateur souhaite comparer
 			if (isset($_POST['portion2'])) {
 				$quantitePortion2 = $_POST['portion2'];
 				$this->set('quantitePortion2', $quantitePortion2);
