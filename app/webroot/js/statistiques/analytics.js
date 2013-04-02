@@ -57,7 +57,7 @@ window.onload = function () {
         bottomgutter = 20,
         topgutter = 20,
         colorhue = .6 || Math.random(),
-        color = "hsl(" + [colorhue, .5, .5] + ")",
+        color = "hsl(" + [colorhue, .7, .7] + ")",
         r = Raphael("holder", width, height),
         txt = {font: '12px Helvetica, Arial', fill: "#fff"},
         txt1 = {font: '10px Helvetica, Arial', fill: "#fff"},
@@ -96,7 +96,7 @@ window.onload = function () {
             p = p.concat([a.x1, a.y1, x, y, a.x2, a.y2]);
             bgpp = bgpp.concat([a.x1, a.y1, x, y, a.x2, a.y2]);
         }
-        var dot = r.circle(x, y, 4).attr({fill: "#333", stroke: color, "stroke-width": 2});
+        var dot = r.circle(x, y, 4).attr({fill: "#fff", stroke: color, "stroke-width": 2});
         blanket.push(r.rect(leftgutter + X * i, 0, X, height - bottomgutter).attr({stroke: "none", fill: "#fff", opacity: 0}));
         var rect = blanket[blanket.length - 1];
         (function (x, y, data, lbl, dot) {
