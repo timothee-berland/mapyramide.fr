@@ -4,7 +4,7 @@
 	echo $this->Form->input('id', array('type'=>'hidden')); 
 ?>
 <!-- Cette page est accessible dans la partie administration. Cliquez sur : gérer des articles -->
-<span2>Informations sur l'article</span2>
+<div class="span2">Informations sur l'article</div>
 <div class="bloc1">
 	<!-- Permet à l'utilisateur de saisir le titre de l'article -->
 	<label for="ArticleTitle">Titre de l'article</label>
@@ -22,7 +22,7 @@
 	</div>
 </div>
 <!-- L'utilisateur saisi ici le contenu de l'article -->
-<span2>Contenu de l'article</span2>
+<div class="span2">Contenu de l'article</div>
 <div id="bloc-editeur">
 	<div class="input textarea">
 		<label for="ArticleContent"></label>

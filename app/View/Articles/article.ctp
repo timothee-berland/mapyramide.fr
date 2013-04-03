@@ -10,6 +10,6 @@
 	</h5>
 
 	<div id='contenuArticle'>
-		<?php echo "<p1>".$article['Article']['content']."<p1>" ?>
+		<?php echo "<div class="p1">".$article['Article']['content']."<div class="p1">" ?>
 	</div>
 </div>

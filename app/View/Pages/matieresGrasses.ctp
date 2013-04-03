@@ -4,13 +4,13 @@
 	
 	<div class="texte">
 		<!-- Cette page est accessible depuis le menu situé en haut de page : Cliquez sur "Mon assiette" -> "Matières grasses" -->
-		<span2> Matières grasses </span2> 
+		<div class="span2"> Matières grasses </div> 
 		<br/>
 		<h1> Quantité quotidienne conseillée </h1>
-		<p1> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum turpis elit, viverra vitae tempus ac, 
+		<div class="p1"> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum turpis elit, viverra vitae tempus ac, 
 		ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum turpis elit, viverra vitae tempus ac, interdum eu enim
 		ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum turpis elit, viverra vitae tempus ac, interdum eu enim. 
-		</p1> 
+		</div> 
 		<br/>
 	</div>
 	
@@ -20,15 +20,15 @@
 				<td >
 					<!-- class = "images"-->
 					<h1>  Equivalence pour une coupe de protéines </h1>
-					<p1> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum turpis elit, viverra vitae,
+					<div class="p1"> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum turpis elit, viverra vitae,
 					ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum turpis elit, viverra vitae tempus ac, interdum eu enim
-					ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum turpis elit, viverra vitae tempus ac, interdum eu enim. </p1>
+					ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum turpis elit, viverra vitae tempus ac, interdum eu enim. </div>
 				</td>
 				
 				<td>
 					<br/><br/><br/>
 					<!-- Image illustrant le paragraphe n°2 -->
-					<p1><?php echo $this->Html->image('Fruits.png', array('height' => '200px', 'width' => '260px', 'alt' => 'Fruits')); ?></p1>
+					<div class="p1"><?php echo $this->Html->image('Fruits.png', array('height' => '200px', 'width' => '260px', 'alt' => 'Fruits')); ?></div>
 				</td>
 			</tr>
 		</table>
@@ -37,10 +37,10 @@
 	
 	<div id="texte6">
 		<h1>  Conseils de consommation </h1> <br />
-		<p1> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum turpis elit, viverra vitae,
+		<div class="p1"> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum turpis elit, viverra vitae,
 			ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum turpis elit, viverra vitae tempus ac, interdum eu enim
 			ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum turpis elit, viverra vitae tempus ac, interdum eu enim. 
-		</p1>
+		</div>
 	</div>
 	
 	<div id="containerLiensImages2cat">

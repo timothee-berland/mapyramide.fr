@@ -3,7 +3,7 @@
 	</div>
     <div class="texte">
 		<!-- Cette page est accessible à partir du menu situé en haut de page : Cliquez sur "Poids/Calories" -> "Gestion du poids" -->
-		<span2> Gestion du poids </span2> 
+		<div class="span2"> Gestion du poids </div> 
 		
 	</div>
 	 <div class="texte">

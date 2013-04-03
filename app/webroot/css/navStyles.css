@@ -795,7 +795,7 @@ min-height : 800px;
       Générique \ À trier
     ---------------------*/
 
-#content span2 {
+#content .span2 {
     display: block;
 	font:20px Corbel,'Segoe UI',Arial, sans-serif;
 	margin-top :5px;
@@ -809,7 +809,7 @@ min-height : 800px;
 	width: 60%;
 }
 
-#content #span1{
+#content .span1{
     display: block;
 	font:20px Corbel,'Segoe UI',Arial, sans-serif;
 	margin-top :5px;
@@ -836,14 +836,14 @@ min-height : 800px;
     border-radius:8px;	
 }
 
-#content #blocMentions p1{
+#content #blocMentions .p1{
     display: block;
 	font:15px Corbel,'Segoe UI',Arial, sans-serif;
 	color : #000000;
 	text-indent : 30px;
 }
 
-#content #blocMentions p2{
+#content #blocMentions .p2{
     display: block;
 	margin-bottom : -10px;
 	padding-right : 10px;
@@ -916,7 +916,7 @@ min-height : 800px;
     float:left;
 }
 
-#content .bloc1 p1{
+#content .bloc1 .p1{
     display: block;
 	font:17px Corbel,'Segoe UI',Arial, sans-serif;
 	margin-left : 20px;
@@ -925,7 +925,7 @@ min-height : 800px;
     float:left;
 }
 
-#content .bloc1  p2{
+#content .bloc1  .p2{
     display: block;
 	padding-top : 10px;
 	margin-bottom : 30px;
@@ -935,7 +935,7 @@ min-height : 800px;
     float:left;
 }
 
-#content .bloc1 p3{
+#content .bloc1 .p3{
     display: block;
 	font:12px Corbel,'Segoe UI',Arial, sans-serif;
 	font-style : italic;
@@ -1075,7 +1075,7 @@ min-height : 800px;
 	position: relative;
 }
 
-#content #bloc2 p1 {
+#content #bloc2 .p1 {
 	text-indent : 80px; 
 }
 
@@ -1151,7 +1151,7 @@ min-height : 800px;
 	font:17px Corbel,'Segoe UI',Arial, sans-serif;
 }
 
-#content #bloc5 p2{
+#content #bloc5 .p2{
     display: block;
 	margin-top : 10px;
 	font:17px Corbel,'Segoe UI',Arial, sans-serif;
@@ -1159,7 +1159,7 @@ min-height : 800px;
     float:left;
 }
 
-#content #bloc5 p3{
+#content #bloc5 .p3{
     display: block;
 	margin-top : 50px;
 	font:17px Corbel,'Segoe UI',Arial, sans-serif;
@@ -1372,7 +1372,7 @@ min-height : 800px;
     z-index: 2;
 }
 
-#content #blocQuestion p1 {
+#content #blocQuestion .p1 {
 	text-indent : 10px;
 }
 #content #blocQuestion p,
@@ -1442,7 +1442,7 @@ min-height : 800px;
 	
 }
 
-#content #presentation .texte span1{
+#content #presentation .texte .span1{
 	font:50px Corbel,'Segoe UI',Arial, sans-serif;
 	text-align : center;
 	margin-left : 250px;
@@ -1452,7 +1452,7 @@ min-height : 800px;
 
 }
 
-#content #presentation .texte span2{
+#content #presentation .texte .span2{
 	font:50px Corbel,'Segoe UI',Arial, sans-serif;
 	text-align : center;
 	margin-left : 150px;
@@ -1463,7 +1463,7 @@ min-height : 800px;
 
 }
 
-#content #presentation .texte span3{
+#content #presentation .texte .span3{
 	font:50px Corbel,'Segoe UI',Arial, sans-serif;
 	text-align : center;
 	margin-left : 50px;
@@ -1472,7 +1472,7 @@ min-height : 800px;
 
 }
 
-#content #presentation .texte span4{
+#content #presentation .texte .span4{
 	font:50px Corbel,'Segoe UI',Arial, sans-serif;
 	text-align : center;
 	margin-left : 160px;
@@ -1482,7 +1482,7 @@ min-height : 800px;
 
 }
 
-#content #presentation .texte span5{
+#content #presentation .texte .span5{
 	font:50px Corbel,'Segoe UI',Arial, sans-serif;
 	text-align : center;
 	margin-left : 100px;
@@ -1492,7 +1492,7 @@ min-height : 800px;
 
 }
 
-#content #presentation .texte span6{
+#content #presentation .texte .span6{
 	font:50px Corbel,'Segoe UI',Arial, sans-serif;
 	text-align : center;
 	margin-left : 30px;
@@ -1501,7 +1501,7 @@ min-height : 800px;
 
 }
 
-#content #presentation .texte p1{
+#content #presentation .texte .p1{
     display: block;
 	text-indent : 30px;
 	margin-top : 20px;
@@ -1526,7 +1526,7 @@ min-height : 800px;
     float : left;
 }
 
-#content #presentation #texte0 p1{
+#content #presentation #texte0 .p1{
     display: block;
 	vertical-align : middle;
 	text-indent : 30px;
@@ -1564,7 +1564,7 @@ vertical-align : middle;
 	margin-bottom : 20px;
 }
 
-#content #presentation .texte1 p1{
+#content #presentation .texte1 .p1{
     display: block;
 	text-indent : 30px;
 	margin-right : 50px;
@@ -1612,7 +1612,7 @@ vertical-align : middle;
  	margin-left : 50px;
 }
 
-#content #presentation .texte1  .bloc p2{
+#content #presentation .texte1  .bloc .p2{
     display: block;
 	text-indent : 30px;
 	font:17px Corbel,'Segoe UI',Arial, sans-serif;
@@ -1634,7 +1634,7 @@ vertical-align : middle;
     float : left;
 }
 
-#content #presentation #texte2 p1{
+#content #presentation #texte2 .p1{
     display: block;
 	text-indent : 30px;
 	font:17px Corbel,'Segoe UI',Arial, sans-serif;
@@ -1666,7 +1666,7 @@ vertical-align : middle;
     float : left;
 }
 
-#content #presentation #texte3 p1{
+#content #presentation #texte3 .p1{
     display: block;
 	text-indent : 30px;
 	vertical-align : middle;
@@ -1701,7 +1701,7 @@ vertical-align : middle;
     float : left;
 }
 
-#content #presentation #texte4 p1{
+#content #presentation #texte4 .p1{
     display: block;
 	text-indent : 30px;
 	font:17px Corbel,'Segoe UI',Arial, sans-serif;
@@ -1751,7 +1751,7 @@ vertical-align : middle;
     
 }
 
-#content #presentation #texte5 p1{
+#content #presentation #texte5 .p1{
     display: block;
 	font:17px Corbel,'Segoe UI',Arial, sans-serif;
 	margin-left : 20px;
@@ -1790,7 +1790,7 @@ vertical-align : middle;
     float:left;
 }
 
-#content  #presentation #texte6 p1 {
+#content  #presentation #texte6 .p1 {
 	display: block;
 	font:17px Corbel,'Segoe UI',Arial, sans-serif;
 	margin-left : 20px;
@@ -1890,27 +1890,27 @@ vertical-align : middle;
 	margin-left: 75px;
 }
 
-#content #menus .b1  .bloc-menus #fruits {
+#content #menus .b1 #fruits {
 	color: #00A64A;
 }
 
-#content #menus .b1  .bloc-menus #legumes {
+#content #menus .b1 #legumes {
 	color:#95ED6F;
 }
 
-#content #menus .b1  .bloc-menus #cereales{
+#content #menus .b1 #cereales{
 	color:#D66918;
 }
 
-#content #menus .b1  .bloc-menus #proteines {
+#content #menus .b1 #proteines {
 	 color:#CE1C21;
 }
 
-#content #menus .b1  .bloc-menus #produitsLaitiers {
+#content #menus .b1 #produitsLaitiers {
 	 color:#5286C6;
 }
 
-#content #menus .b1  .bloc-menus #matieresGrasses {
+#content #menus .b1 #matieresGrasses {
 	 color:#E1D201;
 }
 

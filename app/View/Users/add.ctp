@@ -2,7 +2,7 @@
 	
 	<!-- Cette page est accessible depuis le bouton "Créer mon profil" situé en haut à droite de chaque page -->
 	<!--TODO AJOUTER UNE IMAGE -->
-	<span2> Personnalisez votre profil </span2> 
+	<div class="span2"> Personnalisez votre profil </div> 
 	<!-- Pour créer son profil, l'utilisateur doit fournir obligatoirement un identifiant, sa date de naissance au fomat aaaa/mm/jj (un calendrier est là pour
 		l'aider) et doit préciser son sexe --> 
 	<div class="bloc1">	
@@ -41,7 +41,7 @@
 		<span>* Informations obligatoires </span>
 	</div>
 			
-	<span2> Enregistrez votre profil </span2> 
+	<div class="span2"> Enregistrez votre profil </div> 
 	<div class="bloc1">	
 		<!--L'utilisateur doit préciser son mot de passe -->
 		<label for="UserPassword"> Mot de passe <em> *</em></label>

@@ -6,7 +6,7 @@
 ?>
 
 <!-- Cette page est accessible dans la partie administration. Cliquez sur : gérer des articles -->
-<span2>Informations sur l'article</span2>
+<div class="span2">Informations sur l'article</div>
 <div class="bloc1">
 	<!-- Permet à l'administrateur de préciser le titre de l'article ainsi que la catégorie à laquelle il appartient -->
 	<label for="ArticleTitle">Titre de l'article</label>
@@ -23,7 +23,7 @@
 	</div>
 </div>
 <!-- Ceci correspond à l'éditeur de texte. L'administrateur peut ici saisir le contenu de son article -->
-<span2>Contenu de l'article</span2>
+<div class="span2">Contenu de l'article</div>
 <div id="bloc-editeur">
 	<div class="input textarea">
 		<label for="ArticleContent"></label>

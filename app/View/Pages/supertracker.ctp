@@ -4,12 +4,12 @@
 	
     <div class="texte">
 		<!-- Cette page est accessible à partir du menu situé en haut de page : Cliquez sur "Ressources" -> "Super Traqueur" -->
-		<span2> SuperTracker </span2> 
+		<div class="span2"> SuperTracker </div> 
 		
-		<p1>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum turpis elit, viverra vitae tempus ac, interdum eu enim
+		<div class="p1">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum turpis elit, viverra vitae tempus ac, interdum eu enim
 		ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum turpis elit, viverra vitae tempus ac, interdum eu enim
 		ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum turpis elit, viverra vitae tempus ac, interdum eu enim. 
-		</p1>
+		</div>
 	</div>
 
 </div>

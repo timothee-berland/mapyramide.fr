@@ -1,16 +1,16 @@
 <?php echo $this->Form->create('Imcenfant',array('action' => 'calcul')); ?>
 	<!-- Cette page est accessible à partir du menu situé en haut de la page : Clquez sur "Ressources" -> "Calculateur IMC" -->
 	<div id="IMC">
-		<span2 class='span2'> Calculateur IMC </span2>
+		<span2 class='span2'> Calculateur IMC </div>
 	</div>
 	
 	<div class="bloc1">	
 		<div class="texte">
 		    <h1> Définition </h1>
-			<p1>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum turpis elit, viverra vitae tempus ac, 
+			<div class="p1">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum turpis elit, viverra vitae tempus ac, 
 				ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum turpis elit, viverra vitae tempus ac, interdum eu enim
 				ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum turpis elit, viverra vitae tempus ac, interdum eu enim. 
-			</p1> 
+			</div> 
 		</div>
 		<br/><br/><br/><br/>
 		
@@ -23,17 +23,17 @@
 
 		<label for="taille"> Taille </label>
 		<input type="text" MAXLENGTH=3 name="zt_taille" required="required" />
-		<p2>cm</p2>
+		<div class="p2">cm</div>
 		<br/> <br/>
 		
 		<label for="poids"> Poids </label>
 		<input type="text" MAXLENGTH=3 name="zt_poids" required="required" />
-		<p2>kg</p2>
+		<div class="p2">kg</div>
 		<br/> <br/>
 		
 		<label for="age"> Age </label>
 		<input type="text" MAXLENGTH=2 name="zt_age" required="required" />
-		<p2>ans</p2>
+		<div class="p2">ans</div>
 		<br/> <br/>
 		
 		<label for="actPhys"> Activité physique  </label> 
@@ -44,7 +44,7 @@
 			<option value="4" title="Tous les jours, ou presque, je fais de 45 à 60 minutes d’activité physique modérée (environ 300 à 400 min par semaine)&#13;			OU&#13;au moins 3 fois par semaine, à raison de 45 à 60 minutes par séance, je pratique une activité physique d’intensité élevée"> Très actif </option> 
 		</select> 
 		
-		<p3> Tous les champs sont obligatoires </p3>
+		<div class="p3"> Tous les champs sont obligatoires </div>
 		
 		<?php echo $this->Form->end('Calculer'); ?>
 	</div>

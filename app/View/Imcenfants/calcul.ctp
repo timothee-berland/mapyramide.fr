@@ -1,22 +1,22 @@
-<p1>
+<div class="p1">
 	<div id="bloc5">
 		<table>
 			<tr>
 				<td>
 					<h1>Résultat</h1>
 					<br/> <br />
-					<p2>Mon IMC est de <?php echo round($imc,2);?> et&nbsp;</p2>
-					<p2>mes besoins énergétiques estimés sont</p2><p2 id="besoinsEnergetiques">de <?php echo $BEE ?> calories par jour.</p2>
+					<div class="p2">Mon IMC est de <?php echo round($imc,2);?> et&nbsp;</div>
+					<div class="p2">mes besoins énergétiques estimés sont</div><p2 id="besoinsEnergetiques">de <?php echo $BEE ?> calories par jour.</div>
 					<br/><br/>
 					<!--Si la personne a plus de 18 ans, on calcule son IMC avec l'équation suivante poids/ taille² -->
 					<?php if ($_POST['zt_age'] > 18): ?>
 						<?php if ($imc<$imcMin): ?>
 						<!-- IMC<16.5 -> Insuffisance pondérale -->
-						<p3>Vous êtes en insuffisance pondérale. Ce site ne peut pas vous prendre en charge, consultez un médecin ou un diététicien.</p3>
+						<div class="p3">Vous êtes en insuffisance pondérale. Ce site ne peut pas vous prendre en charge, consultez un médecin ou un diététicien.</div>
 						<?php elseif ($imc>=$imcMin && $imc<=$imcMax) : ?>
 						<!--IMC>=18.5 && IMC <=25 -> Corpulence normale -->
 						<?php $categorie="Corpulence normale";
-						echo("<p3>"."Je suis dans la catégorie : ".$categorie."</p3>"); ?>
+						echo("<div class="p3">"."Je suis dans la catégorie : ".$categorie."</div>"); ?>
 						<?php elseif ($imc>$imcMax && $imc < 40): ?>
 						<!-- IMC >25 -> Surpoids 
 						   On demande alors à l'utilisateur s'il souhaite perdre du poids : deux possibilités s'offrent à lui "Oui" et "Non". 
@@ -27,7 +27,7 @@
 						
 						<!-- #TODO : mettre dans une balise <form> sinon le input ne sert à rien -->
 					  	<div id='choixPertePoids'>
-						<p3>Vous êtes en surcharge pondérale. Souhaitez-vous perdre du poids ?<br /></p3>
+						<div class="p3">Vous êtes en surcharge pondérale. Souhaitez-vous perdre du poids ?<br /></div>
 					  	<br/>
 					  		<a id='oui'><input type="submit" value="Oui"/></a>
 							<a id='non'><input type="submit" value="Non"/></a>
@@ -35,14 +35,14 @@
 						<!-- Si l'utilisateur est un enfant (age<=18 ans), nous lui indiquons seulement, si sa corpulence est "normale" ou non -->
 						<?php else : ?>
 						<!-- IMC>40 -> Surcharge pondérale -->
-						<p3>Vous êtes en surcharge pondérale trop élevée. Ce site ne peut pas vous prendre en charge, consultez un médecin ou un diététicien.</p3>
+						<div class="p3">Vous êtes en surcharge pondérale trop élevée. Ce site ne peut pas vous prendre en charge, consultez un médecin ou un diététicien.</div>
 						<?php endif; ?>
 
 					<?php else : 
 						if($imc >= $imcMin && $imc <= $imcMax) {
-							echo("<p3>Corpulence normale</p3>");
+							echo("<div class="p3">Corpulence normale</div>");
 						} else {
-							echo("<p3>Vos paramètres corporels font que ce site ne peut pas vous prendre en charge et vous demande de consulter un médecin ou un diététicien</p3>");
+							echo("<div class="p3">Vos paramètres corporels font que ce site ne peut pas vous prendre en charge et vous demande de consulter un médecin ou un diététicien</div>");
 						}
 					endif;?>
 					<br/><br/>
@@ -62,46 +62,46 @@
 							</tr>
 							
 							<tr>
-								<td><p1> &lt; 16.5</p1></td>
+								<td><div class="p1"> &lt; 16.5</div></td>
 								<td><div id=\"span1\"></div></td>
-								<td><p1>Dénutrition</p1></td>
+								<td><div class="p1">Dénutrition</div></td>
 							</tr>
 							
 							<tr>
-								<td><p1> Entre 16.5 et 18.5</p1></td>
+								<td><div class="p1"> Entre 16.5 et 18.5</div></td>
 								<td><div id=\"span1\"></div></td>
-								<td><p1>Maigreur</p1></td>
+								<td><div class="p1">Maigreur</div></td>
 							</tr>
 							
 							<tr>
-								<td><p1>Entre 18.5 et 25</p1></td>
+								<td><div class="p1">Entre 18.5 et 25</div></td>
 								<td><div id=\"span1\"></div></td>
-								<td><p1>Corpulence normale</p1></td>
+								<td><div class="p1">Corpulence normale</div></td>
 							</tr>
 							
 							<tr>
-								<td><p1>Entre 25 et 30</p1></td>
+								<td><div class="p1">Entre 25 et 30</div></td>
 								<td><div id=\"span1\"></div></td>
-								<td><p1>Surpoids</p1></td>
+								<td><div class="p1">Surpoids</div></td>
 							</tr>
 							
 							<tr>
-								<td><p1>Entre 30 et 35</p1></td>
+								<td><div class="p1">Entre 30 et 35</div></td>
 								<td><div id=\"span1\"></div></td>
-								<td><p1>Obésité modérée</p1></td>
+								<td><div class="p1">Obésité modérée</div></td>
 							</tr>
 							
 							<tr>
-								<td><p1>Entre 35 et 40</p1></td>
+								<td><div class="p1">Entre 35 et 40</div></td>
 								<td><div id=\"span1\"></div></td>
-								<td><p1>Obésité élevée</p1></td>
+								<td><div class="p1">Obésité élevée</div></td>
 
 							</tr>
 							
 							<tr>
-								<td><p1> &gt; 40</p1></td>
+								<td><div class="p1"> &gt; 40</div></td>
 								<td><div id=\"span1\"></div></td>
-								<td><p1>Obésité morbide</p1></td>
+								<td><div class="p1">Obésité morbide</div></td>
 							</tr>
 						</table>
 					<?php endif; ?>
@@ -109,7 +109,7 @@
 			</tr>
 		</table>
 	</div>
-</p1>
+</div>
 
 <div id="blocIMC">
 	<!-- Fader -->
@@ -118,16 +118,16 @@
 <!-- Sil'utilisateur est en surpoids, on lui demande s'il souhaite effectué une pere pondérale modérée sur six mois ou une perte pondérale plus contraignante -->
 <div id="blocQuestion">
 	<br/>
-	<p1>
+	<div class="p1">
 		Perdre du poids et après maintenir ce poids stable ne peut réussir que si deux impératifs sont remplis :<br/>
 		<ul>
 			<li> une réduction des apports alimentaires (nous allons vous aider)</li>
 			<li> et la pratique d'une activité physique continue (nous allons vous aider aussi).</li>
 		</ul> 
-	</p1>
+	</div>
 	<br/>
 
-	<p1>Souhaitez-vous, effectuer une : </p1>
+	<div class="p1">Souhaitez-vous, effectuer une : </div>
 
 	<p><input type="radio" name="radio" value="250" id='m' /> Perte pondérale modérée dans six mois (Conseillée)</p>
 	<p><input type="radio" name="radio" value="500" id='c' /> Perte pondérale plus contraignante </p>

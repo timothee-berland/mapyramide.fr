@@ -4,7 +4,7 @@
 		<!--TODO AJOUTER UNE IMAGE -->
 		<!-- Cette page permet à un administrateur de modifier le profil d'un utilisateur ou d'un administrateur. Elle est accessible depuis l'administration.
 		     Cliquez sur "gérer les utilisateur" puis sur le bouton représenté par un engrenage pour modifier le profil concerné -->
-		<span2> Personnalisez votre profil </span2> 
+		<div class="span2"> Personnalisez votre profil </div> 
 		<div class="bloc1">	
 			
 			<!-- Les informations saisies lors de l'inscription sont déjà préremplies -->
@@ -37,7 +37,7 @@
 			<span>* Informations obligatoires </span>
 		</div>
 				
-		<span2> Enregistrez votre profil </span2> 
+		<div class="span2"> Enregistrez votre profil </div> 
 		<div class="bloc1">	
 			<label for="UserPassword"> Mot de passe <em> *</em></label>
 			<input type="password" name="data[User][password]" id="UserPassword" required="required"/> <br><br>
@@ -52,7 +52,7 @@
 		</div>
 	
 	<?php else : ?>
-		<span2> Type de profil </span2> 
+		<div class="span2"> Type de profil </div> 
 		<div class="bloc1">	
 			<label for="UserRole"> Type d'utilisateur <em> *</em></label>
 				<?php if ($this->request->data['User']['role'] == 'administrateur') : ?>

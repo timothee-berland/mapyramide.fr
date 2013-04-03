@@ -16,7 +16,7 @@
 <?php elseif (isset($users)) : ?>
 
 	<div class="bloc-index">
-		<p1 id="user">Compte : <?php echo $users['User']['username']; ?> &nbsp&nbsp&nbsp&nbsp (statut : <?php echo $users['User']['role']; ?>) </p1>
+		<p1 id="user">Compte : <?php echo $users['User']['username']; ?> &nbsp&nbsp&nbsp&nbsp (statut : <?php echo $users['User']['role']; ?>) </div>
 
 		<div id="btns-index2">
 			<!-- Bouton modifications -->
