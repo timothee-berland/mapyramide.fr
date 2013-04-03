@@ -1,7 +1,7 @@
 ﻿<div id="presentation">
 	<div id="image">
 	</div>
-    <div id="texte">
+    <div class="texte">
 		<!-- Cette page est accessible depuis le menu situé en haut de page : Cliquez sur "Mon assiette" -> "Fruits" -->
 		<span1> Fruits </span1> <br />
 		<h1> Quantité quotidienne conseillée </h1>
@@ -52,7 +52,9 @@
 					foreach ($groupeFruit['Aliment'] as $fruit) {
 						// Pour simplifier on ne metra qu'une image par légume différent
 						$fichier = strtok($fruit['nomFR'], ',');
-						echo $this->Html->link('<li>' . $fruit['nomFR'] . '</li>', '../img/' . $fichier . '.jpg', array('class' => 'zoombox', 'alt' => $fruit['nomFR'], 'escape' => false));
+						echo "<li>";
+						echo $this->Html->link($fruit['nomFR'], '../img/' . $fichier . '.jpg', array('class' => 'zoombox', 'alt' => $fruit['nomFR'], 'escape' => true));
+						echo "</li>";
 					}
 				} ?>
 				</ul>
@@ -69,7 +71,9 @@
 					foreach ($groupeFruit['Aliment'] as $fruit) {
 						// Pour simplifier on ne metra qu'une image par légume différent
 						$fichier = strtok($fruit['nomFR'], ',');
-						echo $this->Html->link('<li>' . $fruit['nomFR'] . '</li>', '../img/' . $fichier . '.jpg', array('class' => 'zoombox', 'alt' => $fruit['nomFR'], 'escape' => false));
+						echo "<li>";
+						echo $this->Html->link($fruit['nomFR'], '../img/' . $fichier . '.jpg', array('class' => 'zoombox', 'alt' => $fruit['nomFR'], 'escape' => true));
+						echo "</li>";
 					}
 				} ?>
 				</ul>

@@ -2,7 +2,7 @@
 	<div id="image">
 	</div>
 	
-    <div id="texte">
+    <div class="texte">
 		<br/><br/>
 		<!-- Cette page est accessible depuis le menu situé en haut de la page : Cliquez sur "Activité physique" -> "Importance" -->
 		<span3> Pourquoi est-ce important ? </span3> 

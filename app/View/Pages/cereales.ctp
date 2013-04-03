@@ -1,7 +1,7 @@
 ﻿<div id="presentation">
 	<div id="image">
 	</div>
-    <div id="texte">
+    <div class="texte">
 		<!-- Cette page est accessible depuis le menu situé en haut de la page : Cliquez sur "Mon assiette" -> "Céréales" -->
 		<span1> Céréales </span1> <br/>
 		<h1> Quantité quotidienne conseillée </h1>

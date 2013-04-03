@@ -1,7 +1,7 @@
 <div id="presentation">
 	<div id="image">
 	</div>
-    <div id="texte">
+    <div class="texte">
 		<!-- Cette page est accessible à partir du menu situé en haut de page : Cliquez sur "Poids et calories" ->"Gestion pondérale" ->"Meilleurs choix"
 		     Elle donne des conseils afin de faire de meilleurs choix lors des repas -->
 		<span3> Faire de meilleurs choix  </span3> <br/>

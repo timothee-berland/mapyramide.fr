@@ -2,7 +2,7 @@
 	<div id="image">
 	</div>
 	
-	<div id="texte">
+	<div class="texte">
 		<!-- Cette page est accessible à partir du mnu situé en haut de page : Cliquez sur "Mon assiette" -> "Protéines" -->
 		<span3> Produits protéinés </span3> 
 		<br/>

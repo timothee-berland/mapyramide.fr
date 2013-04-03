@@ -1,7 +1,7 @@
 ﻿<div id="presentation">
 	<div id="image">
 	</div>
-    <div id="texte">
+    <div class="texte">
 		<!-- Cette page est accessible depuis le menu situé en haut de page : Cliquez sur "Mon assiette" -> "Matières grasses" -> "Importance des matières grasses" -->
 		<span3> &nbsp&nbsp&nbsp&nbsp L'importance de    </span3> <br />
 		<span3> &nbsp&nbsp&nbsp&nbsp  consommer des      </span3> <br />

@@ -1,7 +1,7 @@
 <div id="presentation">
 	<div id="image">
 	</div>
-    <div id="texte">
+    <div class="texte">
 		<!-- Cette page est accessible à partir du menu situé en haut de page : Cliquez sur "Poids et calories" ->"Gestion pondérale" ->"Manger à l'extérieur"
 		     Elle donne des conseils sur la nourriture consommée lors de diner hors de la maison -->
 		<span3> Faire de meilleurs choix lors </span3> <br/>

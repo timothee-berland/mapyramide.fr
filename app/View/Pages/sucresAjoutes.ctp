@@ -1,7 +1,7 @@
 <div id="presentation">
 	<div id="image">
 	</div>
-    <div id="texte">
+    <div class="texte">
 		<!-- Cette page est accessible depuis le menu situé en haut de page : Cliquez sur "Poids & Calories" -> "Calories" -> "Sucres ajoutés" -->
 		<span6> Que sont les sucres ajoutés ? </span6> <br/>
 		<br />

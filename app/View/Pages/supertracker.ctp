@@ -2,7 +2,7 @@
 	<div id="image">
 	</div>
 	
-    <div id="texte">
+    <div class="texte">
 		<!-- Cette page est accessible à partir du menu situé en haut de page : Cliquez sur "Ressources" -> "Super Traqueur" -->
 		<span2> SuperTracker </span2> 
 		

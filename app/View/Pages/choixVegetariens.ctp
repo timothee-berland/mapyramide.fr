@@ -1,7 +1,7 @@
 <div id="presentation">
 	<div id="image">
 	</div>
-    <div id="texte">
+    <div class="texte">
 		<!-- Cette page est accessible depuis le menu situé en haut de page : Cliquez sur "Mon assiette" -> "Protéines" -> "Plats protéinés végétariens" -->
 		<span3> Les protéines dans  </span3> <br />
 		<span3> les plats végétariens </span3> <br />

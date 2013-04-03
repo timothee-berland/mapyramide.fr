@@ -1,7 +1,7 @@
 <div id="presentation">
 	<div id="image">
 	</div>
-    <div id="texte">
+    <div class="texte">
 		<!-- Cette page est accessible depuis le menu situé en haut de page : Cliquez sur "Mon assiette" -> "Matières grasses" -> "Consommer la quantité recommandée" -->
 		<span3> Consommer la quantité  </span3> <br />
 		<span3> de calories recommandée </span3> <br />

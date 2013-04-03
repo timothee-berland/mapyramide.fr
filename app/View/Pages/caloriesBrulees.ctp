@@ -1,7 +1,7 @@
 ﻿<div id="presentation">
 	<div id="image">
 	</div>
-    <div id="texte">
+    <div class="texte">
 		<!-- Titre de la page accessible depuis le menu situé en haut de la page en cliquant sur "Activité physique" -> "Calories brûlées" -->
 		<span3> Combien de calories </span3><br/>
 		<span4>dois-je brûler ? </span4> 

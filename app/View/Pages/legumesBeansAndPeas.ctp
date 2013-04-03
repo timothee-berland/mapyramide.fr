@@ -1,7 +1,7 @@
 <div id="presentation">
 	<div id="image">
 	</div>
-    <div id="texte">
+    <div class="texte">
 		<!-- Cette page est accessible depuis le menu situé en haut de page : Cliquez sur "Mon assiette" -> "Légumes" -> "Légumes uniques : haricots et petits pois" -->
 		<span3> Des légumes uniques : </span3> <br />
 		<span3> haricots et petits pois </span3> <br />

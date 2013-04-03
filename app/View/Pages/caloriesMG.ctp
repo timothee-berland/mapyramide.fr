@@ -1,7 +1,7 @@
 <div id="presentation">
 	<div id="image">
 	</div>
-    <div id="texte">
+    <div class="texte">
 		<!-- Cette page est accessible depuis le menu situé en haut de page : Cliquez sur "Poids & Calories" -> "Calories" -> "Matières grasses" -->
 		<span3> Que sont les matières </span3> <br/>
 		<span2> grasses ? </span2> <br/>

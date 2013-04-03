@@ -1,7 +1,7 @@
 <div id="presentation">
 	<div id="image">
 	</div>
-    <div id="texte">
+    <div class="texte">
 		<!-- Cette page est accessible depuis le menu situé en haut de page : Cliquez sur "Mon assiette" -> "Légumes" -> "Conseils pour manger des légumes" -->
 		<span3> Conseils pour consommer </span3> <br />
 		<span2> plus de légumes </span2> <br />

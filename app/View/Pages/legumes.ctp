@@ -1,7 +1,7 @@
 ﻿<div id="presentation">
 	<div id="image">
 	</div>
-	<div id="texte">
+	<div class="texte">
 		<!-- Cette page est accessible depuis le menu situé en haut de la page : Cliquez sur "Mon assiette" -> Légumes -->
 		<span1> Légumes </span1> 
 		<br/>

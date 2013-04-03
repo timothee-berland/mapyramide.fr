@@ -1,7 +1,7 @@
 <div id="presentation">
 	<div id="image">
 	</div>
-    <div id="texte">
+    <div class="texte">
 		<!-- Cette page est accessible à partir du menu situé en haut de page : Cliquez sur "Poids et calories" ->"Gestion pondérale" ->"Mes aliments"
 		     Elle donne des conseils sur les aliments dont l'utilisateur à besoin -->
 		<span2> Les aliments dont </span2> <br/>

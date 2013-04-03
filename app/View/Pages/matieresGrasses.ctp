@@ -2,7 +2,7 @@
 	<div id="image">
 	</div>
 	
-	<div id="texte">
+	<div class="texte">
 		<!-- Cette page est accessible depuis le menu situé en haut de page : Cliquez sur "Mon assiette" -> "Matières grasses" -->
 		<span2> Matières grasses </span2> 
 		<br/>

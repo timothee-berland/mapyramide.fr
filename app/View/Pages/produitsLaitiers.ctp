@@ -2,7 +2,7 @@
 	<div id="image">
 	</div>
 	
-	<div id="texte">
+	<div class="texte">
 		<!-- Cette page est accessible à partir du menu situé en haut de page : Cliquez sur "Mon assiette" -> "Produits laitiers" -->
 		<span2> Produits laitiers </span2> 
 		<br/>

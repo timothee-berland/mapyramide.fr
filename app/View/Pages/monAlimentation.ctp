@@ -2,7 +2,7 @@
 	<div id="image">
 	</div>
 	
-    <div id="texte">
+    <div class="texte">
 		<span> <span></span><span></span><span></span>Identifier ce que je <br/> <span></span><span></span><span></span>mange actuellement </span> 
 		<br/><br/><br/><br/><br/><br/><br/><br/><br/>
 		<h1>Introduction </h1>
@@ -12,7 +12,7 @@
 		</p> 
 	</div>
 	
-	<div id="texte">
+	<div class="texte">
 		<table  width=145%; >
 			<br/><br/><br/><br/><br/><br/>
 			<tr>
@@ -35,7 +35,7 @@
 		</table>
 	</div>
 	
-	<div id="texte">
+	<div class="texte">
 		<table  width=145%; border=1px; >
 			<br/><br/><br/><br/><br/><br/>
 			<h1>Paragraphe 2 </h1>

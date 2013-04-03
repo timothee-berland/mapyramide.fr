@@ -1,7 +1,7 @@
 <div id="presentation">
 	<div id="image">
 	</div>
-    <div id="texte">
+    <div class="texte">
 		<!-- Cette page est accessible à partir du menu situé en haut de page : Cliquez sur "Poids et calories" ->"Gestion pondérale" ->"Plus de sport"
 		     Elle conseille sur la pratique de l'activité physique -->
 		<span3> Augmenter ma pratique  </span3> <br/>

@@ -1,7 +1,7 @@
 <div id="presentation">
 	<div id="image">
 	</div>
-    <div id="texte">
+    <div class="texte">
 		<!-- Cette page est accessible à partir du menu situé en haut de page : Cliquez sur "Mon assiette" ->"Produits laitiers" ->"Bienfaits"
 		     Elle présente les effets bénéfiques qu'ont les produits laitiers sur notre santé -->
 		<span3> L'importance de manger </span3> <br />

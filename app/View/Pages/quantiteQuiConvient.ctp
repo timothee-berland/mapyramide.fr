@@ -1,7 +1,7 @@
 <div id="presentation">
 	<div id="image">
 	</div>
-    <div id="texte">
+    <div class="texte">
 		<!-- Cette page est accessible à partir du menu situé en haut de page : Cliquez sur "Poids et calories" ->"Gestion pondérale" ->"Quantité calories"
 		     Elle donne des conseils sur la quantité de calories recommandée en fonction des personnes -->
 		<span3> Consommer la quantité de </span3> <br/>

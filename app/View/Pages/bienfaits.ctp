@@ -1,7 +1,7 @@
 ﻿<div id="presentation">
 	<div id="image">
 	</div>
-    <div id="texte">
+    <div class="texte">
 		<!-- Cette page est accessible à partir du menu situé en haut de page : Cliquez sur "Mon assiette" ->"Fruits" ->"Bienfaits des fruits"
 		     Elle présente les effets bénéfiques qu'ont les fruits sur notre santé -->
 		<span3> L'importance de manger </span3>

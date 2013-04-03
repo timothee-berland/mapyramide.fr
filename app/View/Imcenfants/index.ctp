@@ -5,7 +5,7 @@
 	</div>
 	
 	<div class="bloc1">	
-		<div id="texte">
+		<div class="texte">
 		    <h1> Définition </h1>
 			<p1>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum turpis elit, viverra vitae tempus ac, 
 				ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum turpis elit, viverra vitae tempus ac, interdum eu enim

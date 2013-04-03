@@ -1428,12 +1428,12 @@ min-height : 800px;
 	
 }
 
-#content #presentation #texte{
+#content #presentation .texte {
     float : left;
 	width: 650px;
 	padding: 10px 20px 10px 20px;
 }
-#content #presentation #texte .images{
+#content #presentation .texte .images{
     float : right;
 	width: 165px;
 	height : 128px;
@@ -1442,7 +1442,7 @@ min-height : 800px;
 	
 }
 
-#content #presentation #texte span1{
+#content #presentation .texte span1{
 	font:50px Corbel,'Segoe UI',Arial, sans-serif;
 	text-align : center;
 	margin-left : 250px;
@@ -1452,7 +1452,7 @@ min-height : 800px;
 
 }
 
-#content #presentation #texte span2{
+#content #presentation .texte span2{
 	font:50px Corbel,'Segoe UI',Arial, sans-serif;
 	text-align : center;
 	margin-left : 150px;
@@ -1463,7 +1463,7 @@ min-height : 800px;
 
 }
 
-#content #presentation #texte span3{
+#content #presentation .texte span3{
 	font:50px Corbel,'Segoe UI',Arial, sans-serif;
 	text-align : center;
 	margin-left : 50px;
@@ -1472,7 +1472,7 @@ min-height : 800px;
 
 }
 
-#content #presentation #texte span4{
+#content #presentation .texte span4{
 	font:50px Corbel,'Segoe UI',Arial, sans-serif;
 	text-align : center;
 	margin-left : 160px;
@@ -1482,7 +1482,7 @@ min-height : 800px;
 
 }
 
-#content #presentation #texte span5{
+#content #presentation .texte span5{
 	font:50px Corbel,'Segoe UI',Arial, sans-serif;
 	text-align : center;
 	margin-left : 100px;
@@ -1492,7 +1492,7 @@ min-height : 800px;
 
 }
 
-#content #presentation #texte span6{
+#content #presentation .texte span6{
 	font:50px Corbel,'Segoe UI',Arial, sans-serif;
 	text-align : center;
 	margin-left : 30px;
@@ -1501,7 +1501,7 @@ min-height : 800px;
 
 }
 
-#content #presentation #texte p1{
+#content #presentation .texte p1{
     display: block;
 	text-indent : 30px;
 	margin-top : 20px;
@@ -1511,7 +1511,7 @@ min-height : 800px;
     float:left;
 }
 
-#content #presentation #texte h1{
+#content #presentation .texte h1{
     display: block;
 	font:20px Corbel,'Segoe UI',Arial, sans-serif;
 	margin-top : 50px;

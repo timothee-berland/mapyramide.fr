@@ -1,7 +1,7 @@
 <div id="presentation">
 	<div id="image">
 	</div>
-    <div id="texte">
+    <div class="texte">
 		<!-- Cette page est accessible à partir du menu situé en haut de page : Cliquez sur "Poids et calories" ->"Gestion pondérale" ->"Nourriture actuelle"
 		     Elle présente certains critères/conseils pour que l'utilisateur détermine ce qu'il mange et boit actuellement -->
 		<span3> Ce que je mange et bois  </span3> <br/>
