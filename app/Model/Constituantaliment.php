@@ -20,6 +20,7 @@ class Constituantaliment extends AppModel {
  *
  * @var array
  */
+	// Un constituant appartient à plusieurs aliments
 	public $hasMany = array(
 		'Donneesaliment' => array(
 			'className' => 'Donneescompilee',

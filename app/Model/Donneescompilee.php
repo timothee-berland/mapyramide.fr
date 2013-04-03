@@ -16,6 +16,7 @@ class Donneescompilee extends AppModel {
  *
  * @var array
  */
+	// Les données compilées font appel aux aliments et aux constituants
 	public $belongsTo = array(
 		'Aliments' => array(
 			'className' => 'Aliments',

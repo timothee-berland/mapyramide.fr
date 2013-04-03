@@ -7,15 +7,6 @@ App::uses('AppController', 'Controller');
  */
 class StatsController extends AppController {
 
-/**
- * admin_index method
- *
- * @return void
- */
-	public function beforeFilter() {
-			parent::beforeFilter();
-			$this->Auth->allow('visite'); // Letting users register themselves
-		}
 	public function visite() {
 		//on recupere l adresse ip du visiteur
 		if($_SERVER) 	{

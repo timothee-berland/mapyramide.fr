@@ -144,9 +144,10 @@
 					if (AuthComponent::user('role') != 'administrateur') {
 						$this->redirect($this->Auth->logout());
 					}
+				} else {
+					$this->Session->setFlash(__("L'utilisateur n'a pas pu être supprimé. Merci de réessayer."));
+					$this->redirect(array('action' => 'index'));
 				}
-				$this->Session->setFlash(__("L'utilisateur n'a pas pu être supprimé. Merci de réessayer."));
-				$this->redirect(array('action' => 'index'));
 			}
 		}
 	}

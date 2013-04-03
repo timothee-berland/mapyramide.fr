@@ -18,6 +18,7 @@ class Famillealiment extends AppModel {
  *
  * @var array
  */
+	// Les familles d'aliment contiennent plusieurs aliments
 	public $hasMany = array(
 		'Aliment' => array(
 			'className' => 'Aliment',

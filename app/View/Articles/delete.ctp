@@ -1,4 +1,6 @@
-<?php echo $this->Form->create('Article'); ?>
+<?php
+if (AuthComponent::user('role') == 'administrateur') :
+	echo $this->Form->create('Article'); ?>
     <div id="retour"> <?php echo $this->Html->link('<< Retour', '/articles/index'); ?> </div>
 	<div class="bloc-index">
 		<p id="article"><?php echo $article['Article']['title']; ?></p>
@@ -14,3 +16,4 @@
 		return(confirm("Êtes vous sûrs de vouloir supprimer cet article ?"));
 	}
 </script>
+<?php endif; ?>

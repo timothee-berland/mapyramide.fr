@@ -23,6 +23,7 @@ class Aliment extends AppModel {
  *
  * @var array
  */
+	// Un aliment appartient à une famille d'aliments
 	public $belongsTo = array(
 		'Famillealiments' => array(
 			'className' => 'Famillealiment',
@@ -38,6 +39,7 @@ class Aliment extends AppModel {
  *
  * @var array
  */
+	// Un aliment à plusieurs données le concernant
 	public $hasMany = array(
 		'Donneesaliment' => array(
 			'className' => 'Donneescompilee',

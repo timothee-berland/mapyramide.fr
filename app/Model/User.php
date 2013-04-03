@@ -18,6 +18,7 @@ class User extends AppModel {
  *
  * @var array
  */
+	// Règles de validation des nouveaux utilisateurs
 	public $validate = array(
 		'id' => array(
 			'notempty' => array(
@@ -165,6 +166,7 @@ class User extends AppModel {
 			// ),
 		),
 	);
+	
 	public function beforeSave($options = array()) {
 		if (isset($this->data[$this->alias]['password'])) {
 			$this->data[$this->alias]['password'] = AuthComponent::password($this->data[$this->alias]['password']);

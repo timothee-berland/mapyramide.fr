@@ -10,6 +10,10 @@ class ImcenfantsController extends AppController {
 	// Pour utiliser des modèles spécifiques
 	public $uses = array('Imcenfant', 'User');
 
+	public function beforeFilter() {
+		parent::beforeFilter();
+		$this->Auth->allow('index', 'calcul'); // Letting non-users see these pages
+	}
 	
 	public function index()
 	{
@@ -27,10 +31,6 @@ class ImcenfantsController extends AppController {
 		}
 	}
 
-	public function beforeFilter() {
-		parent::beforeFilter();
-		$this->Auth->allow('calcul'); // Letting non-users see these pages
-	}
 
 	//Permet de calculer l'IMC d'une personne
 	public function calcul() {

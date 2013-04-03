@@ -16,17 +16,14 @@
 	Simple reset
 --------------------------*/
 
-
 *{
 	margin:0;
 	padding:0;
 }
 
-
 /*-------------------------
 	General Styles
 --------------------------*/
-
 
 html{
 	background:url('../img/bg-stripe-body-1x1247.png') repeat-x center top #BFCE64;
@@ -37,7 +34,6 @@ body{
 	font:16px/1.3 Corbel,'Segoe UI',Arial, sans-serif;
 	min-height: 930px;
 	overflow: auto;
-	/*background-color:#a2b81f; */
 }
 
 a, a:visited {
@@ -50,14 +46,11 @@ a:hover{
 	text-decoration:underline;
 }
 
-
 /*----------------------------
 	Headers
 -----------------------------*/
 
-
 header{
-	/* background:url('../img/header.png') repeat-x; */
 	display: block;
 	height: 230px;
 	padding: 10px;
@@ -143,7 +136,7 @@ div.menu3 a
     line-height: 24px;
     border:1px solid #CAD0DB;
     color:#666;
-    vertical-align:top;/*ChangeSet#2*/
+    vertical-align:top;
     text-decoration:none;
 }
 
@@ -153,7 +146,6 @@ div.menu3 a:hover, div.menu3 a.current
     line-height: 25px;
     color:#000;
 }
-
 
 /*----------------------------
 	Search bar
@@ -306,7 +298,6 @@ header .searchform .icon-search {
 	Braun filter bar
 -----------------------------*/
 
-
 #filter {
 	background: url("../img/bar.png") repeat-x 0 -94px;
 	display: block;
@@ -387,7 +378,6 @@ header .searchform .icon-search {
 				1px 0 1px rgba(0,0,0,0.2) inset,
 				-1px 0 1px rgba(0,0,0,0.2) inset;
 }
-
 
 /*----------------------------
 	Content area
@@ -512,29 +502,9 @@ min-height : 800px;
 	overflow:visible; /* corrige le problème de fluidité de l'animation */
 }
 
-
     /*--------------------
     	Boutons IMC et Super Traqueur
     ---------------------*/
-    /* Plus besoin */
-/*#content #btns-home {
-	height: 93px;
-	width: 508px;
-	margin: 12px 12px;
-	overflow: hidden;
-	text-align: center;
-	text-indent: -99999px;
-	position: absolute;
-	top: 690px;
-	left: 45%;
-}
-
-#content #btn-calcul-imc {
-	background: url("../img/CalculIMCbutton.png") no-repeat left center;
-	height: 69px;
-	width: 232px;
-	margin: 12px 12px;
-}*/
 
 #content #btn-super-traqueur {
 	background: url("../img/SuperTrackerButton.png") no-repeat left center;
@@ -572,8 +542,6 @@ min-height : 800px;
 #content .blocStatistiques svg {
 	height: 249px;
 }
-
-
 
     /*--------------------
       Messages importants
@@ -629,7 +597,6 @@ min-height : 800px;
     -webkit-border-radius:8px;	
     border-radius:8px;	
 }
-
 
 #content .bloc-index #btns-index {
 	height: 32px;
@@ -729,8 +696,6 @@ min-height : 800px;
 	left: 38px;
 }
 
-
-
 	/*--------------------
   	 Bloc editeur de texte
     ---------------------*/
@@ -787,9 +752,6 @@ min-height : 800px;
 #content .bloc1 #accordeon .suite {
 	margin-top: 30px;
 }
-
-
-
 
     /*--------------------
       Générique \ À trier
@@ -1017,8 +979,6 @@ min-height : 800px;
   height: 35px;
   width: 220px;
   float: left;
-  /*margin-bottom : 8px; 
-  margin-top : 10px;*/
   border: 1px solid #A6BC2A;
   font:15px Corbel,'Segoe UI',Arial, sans-serif;
   padding: 5px;
@@ -1607,7 +1567,6 @@ vertical-align : middle;
     float:left;
 }
 
-
 #content #presentation .texte1 table {
  	margin-left : 50px;
 }
@@ -1628,7 +1587,6 @@ vertical-align : middle;
     -webkit-border-radius:8px;	
     border-radius:8px;	
 }	
-
 
 #content #presentation #texte2 {
     float : left;
@@ -1934,7 +1892,6 @@ vertical-align : middle;
   box-shadow:4px 4px 6px #888;
 }
 
-
 #content #menus  .b1 .bloc-menu h3 {
   font-size: 20px;
   color : #A6BC2A;
@@ -1944,7 +1901,6 @@ vertical-align : middle;
   padding-bottom : 5px;
   border-bottom : 1px solid #4D2B08;
 }
-/* #RAJOUT */
 
 #content #menus  .b1 .bloc-menu a {
   font-size: 20px;
@@ -1973,7 +1929,6 @@ vertical-align : middle;
   position: relative;
   width: 250px;
 }
-
 
 #content #menus span{
     display: block;
@@ -2207,12 +2162,6 @@ margin-right : 2px;
   text-align: left;
   padding-bottom : 20px;
 }
-/* #ENLEVE
-#content #encyclo .bloc-droit #titre2 h2 {
-  font-size: 22px;
-  color : #A6BC2A;
-  text-align: center;
-}*/
 
 #content #encyclo .bloc-droit .choix-portion {
 	float : left;
@@ -2334,7 +2283,6 @@ margin-right : 2px;
 	text-align: left;
 }
 
-
 #content #encyclo .bloc-droit .info-aliment  td li {
     color : #000000;
 	font:11px Corbel,'Segoe UI',Arial, sans-serif;
@@ -2381,7 +2329,7 @@ margin-right : 2px;
   height: 200px;
   width: 274px;
   overflow: scroll;
-  overflow: overlay; /* Plus joli sur Google Chrome */
+  overflow: overlay; /* Google Chrome */
  }
 
 #content #encyclo .bloc-droit .info-nutriment table {
@@ -2488,7 +2436,6 @@ border-bottom: 1px solid #4D2B08;
 	width : 275px;
 }
 
-
 /*----------------------------
 	The Footer
 -----------------------------*/
@@ -2548,7 +2495,6 @@ footer .bloc-gauche a {
 	color : #945906;
 }
 
-
 footer .bloc-gauche p{
 	margin-left:10px;
 	font:16px Corbel,'Segoe UI',Arial, sans-serif;
@@ -2556,19 +2502,19 @@ footer .bloc-gauche p{
 	color:#000000;
 }
 
-
 /*----------------------------
 	DropDown Menus
 -----------------------------*/
 .dropdown-first {
 	border-top: solid 1px #cccccc;
-
 }
 
 .dropdown-middle {
+	/* Disponible si besoin de modification */
 }
 
 .dropdown-last {
+	/* Disponible si besoin de modification */
 }
 
 #navigation li {
@@ -2579,6 +2525,7 @@ footer .bloc-gauche p{
 	list-style: none;
 	background: url("../img/bar.png") repeat-x 0 -94px;
 }
+
 #navigation ul {
 	display: none;
 	margin: 0;
@@ -2588,45 +2535,10 @@ footer .bloc-gauche p{
 	position: absolute;
 	top: 35px;
 	left: 0;
-	
-	/*background: url("../img/bar.png") repeat-x 0 -94px;*/
 }
+
 #navigation ul li ul {
 	left: 180px;
     top: -1px;
 }
 
-/* dropdown */
-/*#navigation li:hover > ul {
-	display: block;
-	z-index:9999;
-}
-#navigation ul li {
-	float: none;
-	margin: 0;
-	padding: 0;
-}
-#navigation ul a {
-	font-weight: normal;
-	text-shadow:1px 1px 1px #315218;
-}*/
-
-
-
-
-
-/*----------------------------
-	DEBUG area
------------------------------*/
-
-    /*--------------------
-    	Debug
-    ---------------------*/
-#debug {
-	position: absolute;
-	bottom: 0px;
-	right: 0px;
-	margin-top: 50px;
-	margin-left: 15px;
-
-}

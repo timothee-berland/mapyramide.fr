@@ -20,9 +20,14 @@ class ArticlesController extends AppController {
 		$this->set('articles', $articles);
 	}
 
-	public function article($id) {
-		$article = $this->Article->find('first', array('conditions' => array('Article.id' => $id)));
-			$this->set('article', $article);
+	public function article($id = null) {
+		if ($id != null) {
+			$article = $this->Article->find('first', array('conditions' => array('Article.id' => $id)));
+				$this->set('article', $article);
+		} else {
+			$article = $this->Article->find('all');
+				$this->set('article', $article);
+		}
 	}
 
 	

@@ -22,6 +22,7 @@ class Category extends AppModel {
  *
  * @var array
  */
+	// Une catégorie doit apparaître sur plusieurs articles
 	public $hasMany = array(
 		'Article' => array(
 			'className' => 'Article',

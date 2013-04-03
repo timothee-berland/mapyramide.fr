@@ -10,6 +10,10 @@ class AlimentsController extends AppController {
 	// Pour utiliser des modèles spécifiques
 	public $uses = array('Aliment', 'Constituantaliment', 'Donneescompilee', 'Famillealiment');
 
+	public function beforeFilter() {
+			$this->Auth->allow('index');
+		}
+
 	public function index($id1=NULL, $id2=NULL) {
 		if ($this->request->is('post')) {
 			if (!empty ($_POST['zone-aliment'])) {
