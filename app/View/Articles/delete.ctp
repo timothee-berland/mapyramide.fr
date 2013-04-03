@@ -1,4 +1,5 @@
 <?php echo $this->Form->create('Article'); ?>
+    <div id="retour"> <?php echo $this->Html->link('<< Retour', '/articles/index'); ?> </div>
 	<div class="bloc-index">
 		<p id="article"><?php echo $article['Article']['title']; ?></p>
 		<div id="bloc2">

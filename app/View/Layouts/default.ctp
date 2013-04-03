@@ -109,7 +109,6 @@ $cakeDescription = __d('cake_dev', 'CakePHP: the rapid development php framework
 		<div class="menu3">
 		    <?php echo $this->Html->link('Gérer les photos', '#', array('onClick' => "pasDisponible();")); ?>
 		    <?php echo $this->Html->link('Gérer les articles', '/articles'); ?>
-		    <?php echo $this->Html->link('Gérer la base de données', 'https://phpmyadmin.ovh.net'); ?>
 		    <?php echo $this->Html->link('Gérer les utilisateurs', '/users'); ?>
 		    <?php echo $this->Html->link('Statistiques du site', '/stats/visite'); ?>
 		</div>
@@ -166,7 +165,7 @@ $cakeDescription = __d('cake_dev', 'CakePHP: the rapid development php framework
 							</li>
 						</ul>
 					</li>
-					<li><?php echo $this->Html->link('Poids & Calories', '#'); ?>
+					<li><?php echo $this->Html->link('Poids & Calories', '/pages/gestionpoids'); ?>
 						<ul class="dropdown">
 							<li class="dropdown-first"><?php echo $this->Html->link('Gestion pondérale', '/pages/gestionpoids'); ?>				
 								<ul class="dropdown">
@@ -192,7 +191,7 @@ $cakeDescription = __d('cake_dev', 'CakePHP: the rapid development php framework
 							</li>
 						</ul>
 					</li>
-					<li><?php echo $this->Html->link('Activité physique', '#'); ?>
+					<li><?php echo $this->Html->link('Activité physique', '/pages/activitephysique'); ?>
 						<ul class="dropdown">
 							<li class="dropdown-first"><?php echo $this->Html->link("Définition", '/pages/activitephysique'); ?></li>
 							<li class="dropdown-middle"><?php echo $this->Html->link('Importance', '/pages/importancesport'); ?></li>
@@ -204,7 +203,7 @@ $cakeDescription = __d('cake_dev', 'CakePHP: the rapid development php framework
 					<li><?php echo $this->Html->link('Ressources', '/imcenfants'); ?>
 						<ul class="dropdown">
 							<li class="dropdown-first"><?php echo $this->Html->link('Calculateur IMC', '/imcenfants'); ?></li>
-							<li class="dropdown-last"><?php echo $this->Html->link('Super Traqueur', '/pages/supertracker'); ?></li>
+							<li class="dropdown-last"><?php echo $this->Html->link('SuperTracker', '/pages/supertracker'); ?></li>
 						</ul>
 					</li>
 				</ul>
@@ -228,7 +227,7 @@ $cakeDescription = __d('cake_dev', 'CakePHP: the rapid development php framework
 			</div>
 
 			
-			<form method="get" class="searchform" id="searchForm" action="http://mapyramide.fr/">
+			<form method="get" class="searchform" id="searchForm" action="/mapyramide.fr/articles/recherche">
 				<button type="submit" class="icon-search"><span class="visuallyhidden">Chercher</span></button>
 				<label>
 					<input type="text" name="s" value="" placeholder="Rechercher sur mapyramide.fr">
@@ -252,7 +251,7 @@ $cakeDescription = __d('cake_dev', 'CakePHP: the rapid development php framework
 		<p><?php echo $this->Html->link('Plan du site', ''); ?> | <?php echo $this->Html->link('ChooseMyPlate', 'http://www.choosemyplate.gov/'); ?>  | <?php echo $this->Html->link('mangerbouger', 'http://www.mangerbouger.fr/pnns/'); ?>  </p>
 		</div>
 		<div class="bloc-droit">
-			<pre><a>FAQ</a>   <?php echo $this->Html->link('A propos de nous', '/pages/mentionslegales'); ?>  <?php echo $this->Html->link('Contacts', '/pages/contacts'); ?></pre>
+			<pre><a>FAQ</a>   <?php echo $this->Html->link('Mentions légales', '/pages/mentionslegales'); ?>  <?php echo $this->Html->link('Contacts', '/pages/contacts'); ?></pre>
 			<p> - Association Gradient  2013© - </p>
 		</div>
 	</footer>

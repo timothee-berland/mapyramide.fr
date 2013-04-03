@@ -5,7 +5,7 @@
 				<td>
 					<h1>Résultat</h1>
 					<br/> <br />
-					<p2>Mon IMC est : <?php echo round($imc,2);?> et&nbsp;</p2>
+					<p2>Mon IMC est de <?php echo round($imc,2);?> et&nbsp;</p2>
 					<p2>mes besoins énergétiques estimés sont</p2><p2 id="besoinsEnergetiques">de <?php echo $BEE ?> calories par jour.</p2>
 					<br/><br/>
 					<!--Si la personne a plus de 18 ans, on calcule son IMC avec l'équation suivante poids/ taille² -->
@@ -62,46 +62,46 @@
 							</tr>
 							
 							<tr>
-								<td> &lt; 16.5</td>
+								<td><p1> &lt; 16.5</p1></td>
 								<td><div id=\"span1\"></div></td>
-								<td>Dénutrition</td>
+								<td><p1>Dénutrition</p1></td>
 							</tr>
 							
 							<tr>
-								<td> Entre 16.5 et 18.5</td>
+								<td><p1> Entre 16.5 et 18.5</p1></td>
 								<td><div id=\"span1\"></div></td>
-								<td>Maigreur</td>
+								<td><p1>Maigreur</p1></td>
 							</tr>
 							
 							<tr>
-								<td>Entre 18.5 et 25</td>
+								<td><p1>Entre 18.5 et 25</p1></td>
 								<td><div id=\"span1\"></div></td>
-								<td>Corpulence normale</td>
+								<td><p1>Corpulence normale</p1></td>
 							</tr>
 							
 							<tr>
-								<td>Entre 25 et 30</td>
+								<td><p1>Entre 25 et 30</p1></td>
 								<td><div id=\"span1\"></div></td>
-								<td>Surpoids</td>
+								<td><p1>Surpoids</p1></td>
 							</tr>
 							
 							<tr>
-								<td>Entre 30 et 35</td>
+								<td><p1>Entre 30 et 35</p1></td>
 								<td><div id=\"span1\"></div></td>
-								<td>Obésité modérée</td>
+								<td><p1>Obésité modérée</p1></td>
 							</tr>
 							
 							<tr>
-								<td>Entre 35 et 40</td>
+								<td><p1>Entre 35 et 40</p1></td>
 								<td><div id=\"span1\"></div></td>
-								<td>Obésité élevée</td>
+								<td><p1>Obésité élevée</p1></td>
 
 							</tr>
 							
 							<tr>
-								<td> &gt; 40</td>
+								<td><p1> &gt; 40</p1></td>
 								<td><div id=\"span1\"></div></td>
-								<td>Obésité morbide</td>
+								<td><p1>Obésité morbide</p1></td>
 							</tr>
 						</table>
 					<?php endif; ?>

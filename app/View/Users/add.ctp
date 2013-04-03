@@ -58,9 +58,9 @@
 	</div>
 	
 	<!-- L'utilisateur peut valider son profil ou remettre le formulaire à 0 -->
-	<div id="bloc2">
-	    <input type="button" value="Effacer" onClick="raz()"/>
-	    <input type="submit" value="Valider" onClick="return validerForm()"/>
+	<div id="bloc9">
+		<input type="button" value="Effacer" onClick="raz()"/>
+		<input type="submit" value="Valider" onClick="return validerForm()"/>
 	</div>
 </form>
 

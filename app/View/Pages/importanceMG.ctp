@@ -3,8 +3,9 @@
 	</div>
     <div id="texte">
 		<!-- Cette page est accessible depuis le menu situé en haut de page : Cliquez sur "Mon assiette" -> "Matières grasses" -> "Importance des matières grasses" -->
-		<span3> L'importance de consommer</span3> <br />
-		<span3> des matières grasses </span3> <br />
+		<span3> &nbsp&nbsp&nbsp&nbsp L'importance de    </span3> <br />
+		<span3> &nbsp&nbsp&nbsp&nbsp  consommer des      </span3> <br />
+		<span3> &nbsp&nbsp&nbsp&nbsp  matières grasses   </span3> <br />
 	</div>
 	
 	<div id="texte3">

@@ -30,6 +30,6 @@
 		<?php echo $this->Ck->load('Article.content'); ?>
 	</div>
 </div>
-<div id="bloc2">
+<div id="bloc11">
     <?php echo $this->Form->end("Enregistrer"); ?> 
 </div>

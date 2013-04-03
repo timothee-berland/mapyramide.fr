@@ -4,7 +4,7 @@
 	
 	<div id="texte">
 		<!-- Cette page est accessible à partir du mnu situé en haut de page : Cliquez sur "Mon assiette" -> "Protéines" -->
-		<span1> Produits protéinés </span1> 
+		<span3> Produits protéinés </span3> 
 		<br/>
 		<h1> Quantité quotidienne conseillée </h1>
 		<p1> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum turpis elit, viverra vitae tempus ac, 

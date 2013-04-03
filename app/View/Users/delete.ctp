@@ -1,4 +1,5 @@
 <?php echo $this->Form->create('User'); ?>
+    <div id="retour"> <?php echo $this->Html->link('<< Retour', '/users/index'); ?> </div>
 	<div class="bloc-index">
 		<p id="user"><?php echo $user['User']['username']; ?> (<?php echo $user['User']['role']; ?>) </p>
 		<div id="bloc2">
@@ -9,6 +10,6 @@
 
 <script type="text/javascript">
 	function confirmation() {
-		return(confirm("Êtes vous sûrs de vouloir supprimer votre compte ? (cette action est irréversible)"));
+		return(confirm("Êtes vous sûrs de vouloir supprimer votre compte ? (Cette action est irréversible)"));
 	}
 </script>

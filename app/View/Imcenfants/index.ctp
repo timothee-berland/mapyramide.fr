@@ -44,6 +44,8 @@
 			<option value="4" title="Tous les jours, ou presque, je fais de 45 à 60 minutes d’activité physique modérée (environ 300 à 400 min par semaine)&#13;			OU&#13;au moins 3 fois par semaine, à raison de 45 à 60 minutes par séance, je pratique une activité physique d’intensité élevée"> Très actif </option> 
 		</select> 
 		
+		<p3> Tous les champs sont obligatoires </p3>
+		
 		<?php echo $this->Form->end('Calculer'); ?>
 	</div>
 </form>

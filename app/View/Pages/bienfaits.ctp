@@ -4,7 +4,7 @@
     <div id="texte">
 		<!-- Cette page est accessible à partir du menu situé en haut de page : Cliquez sur "Mon assiette" ->"Fruits" ->"Bienfaits des fruits"
 		     Elle présente les effets bénéfiques qu'ont les fruits sur notre santé -->
-		<span3> L'importance de manger </span3> <br/>
+		<span3> L'importance de manger </span3>
 		<span2> des fruits </span2> <br/>
 		<p1>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum turpis elit, viverra vitae tempus ac, 
 		ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum turpis elit, viverra vitae tempus ac, interdum eu enim

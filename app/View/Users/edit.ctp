@@ -47,7 +47,7 @@
 			
 			<label for="UserEmail"> Email </label>
 			<input type="email" name="data[User][email]" id="UserEmail" /> 
-			
+	
 			<span>* Informations obligatoires </span>
 		</div>
 	
@@ -73,7 +73,7 @@
 	<?php endif; ?>
 
 	<!-- Ce bouton vous permet de valider les modifications effectuées -->
-	<div id="bloc2">
+	<div id="bloc12">
 	    <input type="submit" value="Valider" onClick="return validerForm()"/>
 	</div>
 </form>

@@ -141,7 +141,9 @@
 				}
 				if ($this->User->delete()) {
 					$this->Session->setFlash(__('Utilisateur supprimé'));
-					$this->redirect($this->Auth->logout());
+					if (AuthComponent::user('role') != 'administrateur') {
+						$this->redirect($this->Auth->logout());
+					}
 				}
 				$this->Session->setFlash(__("L'utilisateur n'a pas pu être supprimé. Merci de réessayer."));
 				$this->redirect(array('action' => 'index'));

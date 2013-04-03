@@ -26,11 +26,11 @@ class ArticlesController extends AppController {
 	}
 
 	
-	public function recherche($id_aliment, $gyf) {
-		$articles = $this->Article->find('first', array(
-			'conditions' => array('Article.id' => $id_aliment)));
-
-		debug($articles);
+	public function recherche() {
+		$termes = str_replace(" ", "%", $_GET['s']);
+		$articles = $this->Article->find('all', array(
+			'conditions' => array('content LIKE' => '%' . $termes . '%')));
+		$this->set('articles', $articles);
 	}
 
 	//Permet d'effectuer les modifications concernant un article 

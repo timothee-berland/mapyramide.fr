@@ -3,8 +3,8 @@
 	</div>
     <div id="texte">
 		<!-- Cette page est accessible depuis le menu situé en haut de page : Cliquez sur "Mon assiette" -> "Produits laitiers" -> "Conseils pour des choix judicieux" -->
-		<span3> Conseils pour </span3> <br />
-		<span3> des choix judicieux </span3> <br />
+		<span3> &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspConseils pour </span3> <br />
+		<span3> &nbsp&nbsp&nbsp&nbspdes choix judicieux </span3> <br />
 	</div>
 	
 	<div id="texte3">

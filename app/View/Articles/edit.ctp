@@ -31,7 +31,7 @@
 		<?php echo $this->Ck->load('Article.content'); ?>
 	</div>
 </div>
-<div id="bloc2">
+<div id="bloc11">
 	<!-- Lorsqu'un administrateur clique sur le bouton "Enregistrer", les modifications qu'il vient d'effectuer son automatiquement reportées sur la page du 
 	     site concernée -->
     <?php echo $this->Form->end("Enregistrer"); ?> 

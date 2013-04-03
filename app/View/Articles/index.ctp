@@ -1,12 +1,9 @@
 <!-- Cette page est accessible dans la partie administration. Cliquez sur : gérer des articles -->
-<div class="bloc-index">
-		<p id="article">
-			Ajouter un nouvel article
-		</p>
-
+<br />
+<div class="bloc-index1">
 		<div id="btns-index">
 			<!-- Bouton ajout : pour ajouter un nouvel artcile cliquez sur la croix verte-->
-			<?php echo $this->Html->link('<div id="btn-ajouter">Ajouter</div>', '/articles/add/', array('escape' => false)); ?>
+			<?php echo $this->Html->link('<div id="btn-ajouter">  </div>', '/articles/add/', array('escape' => false)); ?>
 		</div>
 	</div>
 
@@ -22,11 +19,11 @@
 		<div id="btns-index">
 			<!-- Bouton modifications : pour effectuer des modifications concernant un article, l'administrateur doit cliquez sur le bouton symbolisé par un engrenage correspondant
 				 à l'article qu'il souhaite modifier -->
-			<?php echo $this->Html->link('<div id="btn-modifier">Modifier</div>', '/articles/edit/' . $article['Article']['id'], array('escape' => false)); ?>
+			<?php echo $this->Html->link('<div class="btn-modifier">Modifier</div>', '/articles/edit/' . $article['Article']['id'], array('escape' => false)); ?>
 
 			<!-- Bouton suppression : pour supprimer un article, l'administrateur doit cliquez sur le bouton symbolisé par une croix rouge correspondant
 				 à l'article qu'il souhaite modifier -->
-			<?php echo $this->Html->link('<div id="btn-supprimer">Supprimer</div>', '/articles/delete/' . $article['Article']['id'], array('escape' => false)); ?>
+			<?php echo $this->Html->link('<div class="btn-supprimer">Supprimer</div>', '/articles/delete/' . $article['Article']['id'], array('escape' => false)); ?>
 			
 		</div>
 	</div>

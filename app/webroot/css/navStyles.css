@@ -452,11 +452,15 @@ body > #content {
     /*--------------------
     	Accueil
     ---------------------*/
+#content {
+min-height : 800px;
+}
+
 #content #derniersArticles {
 	position: absolute;
 	border: 3px solid #4D2B08;
 	width: 300px;
-	height: 530px;
+	height: 540px;
 	margin: 10px;
 	margin-left: 50px;
 	padding: 10px;
@@ -504,10 +508,11 @@ body > #content {
 
 #content #presentation .listeForEach li {
 	margin-bottom: 7px;
+	color: #000000;
 }
 
 #content #presentation .listeForEach a {
-	color: #434543;
+	color: #000000;
 }
 
     /*--------------------
@@ -524,6 +529,7 @@ body > #content {
 
 #content #derniersArticles #accordeon {
 	height: 95%;
+	overflow: hidden;
 }
 
 #content #derniersArticles #accordeon a {
@@ -555,7 +561,8 @@ body > #content {
     /*--------------------
     	Boutons IMC et Super Traqueur
     ---------------------*/
-#content #btns-home {
+    /* Plus besoin */
+/*#content #btns-home {
 	height: 93px;
 	width: 508px;
 	margin: 12px 12px;
@@ -572,16 +579,14 @@ body > #content {
 	height: 69px;
 	width: 232px;
 	margin: 12px 12px;
-}
+}*/
 
 #content #btn-super-traqueur {
-	background: url("../img/SuperTrackerButton.png") no-repeat left center;
-	height: 69px;
-	width: 232px;
-	margin: 12px 12px;
+	height: 50px;
+	width: 230px;
 	position: relative;
-	top: -81px;
-	left: 252px;
+	right: 60px;
+	top: 500px;
 
 }
 
@@ -641,7 +646,15 @@ body > #content {
 	/*--------------------
   	   Bloc des index et 
   	   boutons associés
-    ---------------------*/
+      ---------------------*/
+#content #retour  a{
+	margin-left: 180px;
+	font:16px Corbel,'Segoe UI',Arial, sans-serif;
+	vertical-align:central;
+	color:#4D2B08;
+	text-decoration : none;
+}
+
 #content .bloc-index {
 	height: 20px;	
     float : left;
@@ -664,7 +677,6 @@ body > #content {
 #content .bloc-index #btns-index {
 	height: 32px;
 	width: 70px;
-	margin: 0px;
 	overflow: hidden;
 	text-align: center;
 	text-indent: -99999px;
@@ -673,14 +685,14 @@ body > #content {
 	top: -27px;
 }
 
-#content .bloc-index #btn-modifier {
+#content .bloc-index .btn-modifier {
 	background: url("../img/EditUser.png") no-repeat left center;
 	height: 32px;
 	width: 32px;
 	margin-right: 6px;
 }
 
-#content .bloc-index #btn-supprimer {
+#content .bloc-index .btn-supprimer {
 	background: url("../img/DeleteUser.png") no-repeat left center;
 	height: 32px;
 	width: 32px;
@@ -688,16 +700,6 @@ body > #content {
 	position: relative;
 	top: -32px;
 	left: 38px;
-}
-
-#content .bloc-index #btn-ajouter {
-	background: url("../img/add-32x32.png") no-repeat left center;
-	height: 32px;
-	width: 32px;
-	margin-right: 6px;
-	position: relative;
-	left: 19px;
-
 }
 
 #content .bloc-index .titreArticle {
@@ -720,6 +722,57 @@ body > #content {
 	top: -35px;
 	position: relative;
 }
+
+#content .bloc-index1 #btns-index {
+	height: 32px;
+	width: 70px;
+	overflow: hidden;
+	margin-right : 165px;
+	text-align: center;
+	position: relative;
+	float: right;
+	top: -10px;
+}
+
+#content .bloc-index1 #btn-ajouter {
+	background: url("../img/add-32x32.png") no-repeat left center;
+	height: 32px;
+	width: 32px;
+	margin-right: 6px;
+	position: relative;
+	left: 19px;
+
+}
+
+#content .bloc-index #btns-index2{
+	height: 32px;
+	width: 70px;
+	overflow: hidden;
+	margin-top : 23px;
+	text-align: center;
+	position: relative;
+	float: right;
+	top : -30px;
+}
+
+#content .bloc-index #btn-modifier2 {
+	background: url("../img/EditUser.png") no-repeat left center;
+	height: 32px;
+	width: 32px;
+	margin-right: 6px;
+}
+
+#content .bloc-index #btn-supprimer2 {
+	background: url("../img/DeleteUser.png") no-repeat left center;
+	height: 32px;
+	width: 32px;
+	margin-right: 6px;
+	position: relative;
+	top: -32px;
+	left: 38px;
+}
+
+
 
 	/*--------------------
   	 Bloc editeur de texte
@@ -751,8 +804,35 @@ body > #content {
 }
 
 #content .bloc1 #contenuArticle {
+	margin-top: 80px;
+}
+
+    /*--------------------
+      Page de recherche
+    ---------------------*/
+
+#content .bloc1 #accordeon {
+	height: 95%;
+	overflow: hidden;
+}
+
+#content .bloc1 #accordeon a {
+	text-decoration: none;
+}
+
+#content .bloc1 #accordeon h1 {
+	font-size: 1.2em;
+	color: #434543;
+	text-decoration: none;
+	width: 696px;
+}
+
+#content .bloc1 #accordeon .suite {
 	margin-top: 30px;
 }
+
+
+
 
     /*--------------------
       Générique \ À trier
@@ -788,7 +868,8 @@ body > #content {
 	height : 500px;
     border:2px solid #4D2B08;
 	background-color : #FFFFFF;
-	margin :  0 0 30px 240px;
+	margin-left: 150px;
+	margin-right: 150px;
 	padding-top : 20px;
 	padding-left : 20px;
 	padding-right : 20px;
@@ -897,6 +978,17 @@ body > #content {
     float:left;
 }
 
+#content .bloc1 p3{
+    display: block;
+	font:12px Corbel,'Segoe UI',Arial, sans-serif;
+	font-weight : italic;
+	color : #F74200;
+	margin-top : 100px;
+	position : absolute;
+    float: right;
+	margin-right : 500;
+}
+
 #content .bloc1 fieldset {
     float : left;
 	width: 750px;
@@ -931,6 +1023,7 @@ body > #content {
 	font:12px Corbel,'Segoe UI',Arial, sans-serif;
 	font-weight : italic;
 	color : #F74200;
+	margin-top : 20px;
     float: right;
 }
 
@@ -960,6 +1053,21 @@ body > #content {
   margin-bottom: 3px;
 
  }
+ 
+ #content .bloc1  input[type="submit"] {				
+    width : 100px;
+	margin-left : 5px;
+	height : 30px;
+	padding-left: 5px;
+	padding-right: 5px;
+	background-color : #FFFFFF;
+	font: 17px Corbel,'Segoe UI',Arial, sans-serif;
+	color : #4D2B08;
+	border: 1px solid #4D2B08;
+	-moz-border-radius:8px;
+    -webkit-border-radius:8px;	
+    border-radius:8px;	
+}
  
 #content .bloc1 input[type="radio"] {
   position: relative;
@@ -1040,6 +1148,7 @@ body > #content {
 	height : 30px;
 	padding-left: 5px;
 	padding-right: 5px;
+	background-color : #FFFFFF;
 	font: 17px Corbel,'Segoe UI',Arial, sans-serif;
 	color : #4D2B08;
 	border: 1px solid #4D2B08;
@@ -1220,6 +1329,80 @@ body > #content {
     border-radius:8px;	
 }
 
+#content #bloc9 {
+    width : 250px;
+	float : left;
+	margin-left : 730px;
+	margin-top : 10px;
+}
+
+#content #bloc9  input[type="submit"],
+                input[type="button"] {
+				
+    width : 100px;
+	margin-left : 5px;
+	height : 30px;
+	padding-left: 5px;
+	padding-right: 5px;
+	background-color : #FFFFFF;
+	font: 17px Corbel,'Segoe UI',Arial, sans-serif;
+	color : #4D2B08;
+	border: 1px solid #4D2B08;
+	-moz-border-radius:8px;
+    -webkit-border-radius:8px;	
+    border-radius:8px;	
+}
+
+#content #bloc10  input[type="submit"] {
+    float : left;				
+    width : 100px;
+	margin-left : 840px;
+	margin-top : 10px;
+	height : 30px;
+	padding-left: 5px;
+	padding-right: 5px;
+	background-color : #FFFFFF;
+	font: 17px Corbel,'Segoe UI',Arial, sans-serif;
+	color : #4D2B08;
+	border: 1px solid #4D2B08;
+	-moz-border-radius:8px;
+    -webkit-border-radius:8px;	
+    border-radius:8px;	
+}
+
+#content #bloc11  input[type="submit"] {
+    float : left;				
+    width : 100px;
+	margin-left : 840px;
+	margin-top : -10px;
+	height : 30px;
+	padding-left: 5px;
+	padding-right: 5px;
+	background-color : #FFFFFF;
+	font: 17px Corbel,'Segoe UI',Arial, sans-serif;
+	color : #4D2B08;
+	border: 1px solid #4D2B08;
+	-moz-border-radius:8px;
+    -webkit-border-radius:8px;	
+    border-radius:8px;	
+}
+
+#content #bloc12  input[type="submit"] {				
+    width : 100px;
+	margin-left : 100px;
+	margin-top : 5px;
+	height : 30px;
+	padding-left: 5px;
+	padding-right: 5px;
+	background-color : #FFFFFF;
+	font: 17px Corbel,'Segoe UI',Arial, sans-serif;
+	color : #4D2B08;
+	border: 1px solid #4D2B08;
+	-moz-border-radius:8px;
+    -webkit-border-radius:8px;	
+    border-radius:8px;	
+}
+
 #content #blocIMC {
 	position: absolute;
 	top: 0;	
@@ -1303,7 +1486,7 @@ body > #content {
 	width: 300px;
 	height : 280px;
 	background-color : #FFFFFF;
-	background: url('../img/accueilSPT.png') no-repeat left center;
+	background: url('../img/accueilFruit.png') no-repeat left center;
 	
 }
 
@@ -1325,7 +1508,7 @@ body > #content {
 	font:50px Corbel,'Segoe UI',Arial, sans-serif;
 	text-align : center;
 	margin-left : 250px;
-	margin-bottom : 20px;
+
 	font-weight : bold;
 	color : #A6BC2A;
 
@@ -1336,6 +1519,7 @@ body > #content {
 	text-align : center;
 	margin-left : 150px;
 	margin-bottom : 20px;
+	margin-top : -30px;
 	font-weight : bold;
 	color : #A6BC2A;
 
@@ -1392,7 +1576,6 @@ body > #content {
 #content #presentation #texte h1{
     display: block;
 	font:20px Corbel,'Segoe UI',Arial, sans-serif;
-	margin-bottom :7px;
 	margin-top : 50px;
 	margin-left : 20px;
 	font-weight : bold;
@@ -1593,7 +1776,7 @@ vertical-align : center;
 #content #presentation #texte4 h1{
     display: block;
 	font:20px Corbel,'Segoe UI',Arial, sans-serif;
-	margin-top :5px;
+	margin-top :10px;
 	margin-bottom :7px;
 	margin-left : 20px;
 	padding-top : 30px;
@@ -1643,7 +1826,6 @@ vertical-align : center;
     display: block;
 	font:20px Corbel,'Segoe UI',Arial, sans-serif;
 	margin-top :5px;
-	margin-bottom :7px;
 	margin-left : 20px;
 	padding-top : 30px;
 	font-weight : bold;
@@ -1697,7 +1879,7 @@ vertical-align : center;
 
 #content #presentation #titre-accueil span{
 	font:50px Corbel,'Segoe UI',Arial, sans-serif;
-	margin-left : 20px;
+	margin-left : 40px;
 	margin-bottom : 20px;
 	font-weight : bold;
 	color : #A6BC2A;
@@ -1707,7 +1889,7 @@ vertical-align : center;
 #content #presentation #titre-accueil p{
     display: block;
 	font:17px Corbel,'Segoe UI',Arial, sans-serif;
-	margin-left : 20px;
+	margin-left : 40px;
 	margin-top : 10px;
 	color : #000000;
     float:left;
@@ -1717,7 +1899,7 @@ vertical-align : center;
     display: block;
 	font:17px Corbel,'Segoe UI',Arial, sans-serif;
 	color : #000000;
-	margin-left : 20px;
+	margin-left : 40px;
 	margin-top : 35px;
     width: 150px;
     float: left;
@@ -1728,7 +1910,7 @@ vertical-align : center;
   width: 170px;
   float: left;
   margin-bottom : 8px; 
-  margin-left : 20px;
+  margin-left : 40px;
   margin-top : 40px;
   border: 1px solid #A6BC2A;
   font:15px Corbel,'Segoe UI',Arial, sans-serif;
@@ -1867,7 +2049,7 @@ vertical-align : center;
 
 #content #encyclo {
     float : left;
-	margin-left : 100px;
+	margin-left : 20px;
 	width: 1020px;
 	height : 650px;
 	padding-left : 30px;
@@ -1904,7 +2086,7 @@ vertical-align : center;
 
 #content #encyclo .bloc-gauche  li{
     color : #000000;
-	list-style-image : url('../img/liste.png');
+	list-style-image : url('../img/liste2.png');
 	margin-left : 30px;	
 }
 
@@ -2040,56 +2222,6 @@ vertical-align : center;
 margin-right : 2px;
 }
 
-/* #content #encyclo #petitBloc-droit2 {
-  border: 3px solid #4D2B08;
-  background-color : #FFFFFF;
-  padding: 5px;
-  height: 335px;
-  width: 285px;
-  float : left;
-  position : relative;
-  margin-left : -12px;
-  font-size: 17px;
-  text-align: justify;
-  -moz-border-radius:8px;
-  -webkit-border-radius:8px;	
-  border-radius:8px;
-  -moz-box-shadow: 4px 4px 10px #888;  
-  -webkit-box-shadow: 4px 4px 10px #888;  
-  box-shadow:4px 4px 6px #888;
-}
-
-#content #encyclo #petitBloc-droit2 #repas {
-	background-color : #EAEFC9;
-    margin-top : 5px;
-    padding-left : 5px;
-	height : 30px;  
-	width : 270px;
-	float : left;
-}
-
-#content #encyclo #petitBloc-droit2 #repas  p{
-    color : #000000;
-    font: 18px Corbel,'Segoe UI',Arial, sans-serif;
-    font-weight : bold;
-    float : left;
-}
-
-#content #encyclo #petitBloc-droit2  #info-repas{
-	float : left;
-	height : 40px;  
-	width : 275px;
-}
-
-#content #encyclo  #petitBloc-droit2  p{
-    color : #000000;
-    font: 20px Corbel,'Segoe UI',Arial, sans-serif;
-    font-weight : bold;
-	margin-bottom : 5px;
-    float : left;
-}
-*/
-
 #content #encyclo .bloc-droit {
   border: 3px solid #4D2B08;
   background-color : #FFFFFF;
@@ -2174,7 +2306,7 @@ margin-right : 2px;
 
 #content #encyclo  .bloc-droit  .choix-portion select[class="portion"] {
   height: 28px;
-  width: 125px;
+  width: 150px;
   float: left;
   margin-top : 5px;
   margin-bottom : 2px;
@@ -2195,7 +2327,8 @@ margin-right : 2px;
 #content #encyclo  .bloc-droit .choix-portion input[type="submit"] {
     width : 60px;
 	float : left;
-	margin-left : 15px;
+	margin-left : 10px;
+	margin-right: -20px;
 	margin-top : 10px;
 	position : relative;
 	height : 20px;
@@ -2237,6 +2370,7 @@ margin-right : 2px;
 
 #content #encyclo .bloc-droit .info-aliment .groupeAlimentaire a {
 	text-decoration: none;
+	color : #4D2B08;
 }
 
 #content #encyclo .bloc-droit .info-aliment table {

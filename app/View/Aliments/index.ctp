@@ -31,6 +31,7 @@
 					if (sizeof($resultats) >= 1) {
 						echo "<ul>";
 						$compteurResultats=0;
+						// Ici on peut modifier le nombre de résultats affichés
 						foreach ($resultats as $resultat) { $compteurResultats++; if($compteurResultats > 100) {break;} ?>
 
 							<li>
@@ -286,7 +287,7 @@
 						?>
 				   </select>
 				   
-				    <input type="submit" name="valider2" value="Valider2" />			   
+				    <input type="submit" name="valider2" value="Valider" />			   
 					<!-- <a>Ajouter *</a> -->
 				</div>
 			  	   

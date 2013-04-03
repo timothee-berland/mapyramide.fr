@@ -15,6 +15,7 @@
  * @since         CakePHP(tm) v 0.10.0.1076
  * @license       MIT License (http://www.opensource.org/licenses/mit-license.php)
  */
+
 if (!Configure::read('debug')):
 	throw new NotFoundException();
 endif;
@@ -27,25 +28,7 @@ if (Configure::read('debug') > 0):
 endif;
 ?>
 
-<?php
-if (isset($filePresent)):
-	App::uses('ConnectionManager', 'Model');
-	try {
-		$connected = ConnectionManager::getDataSource('default');
-	} catch (Exception $connectionError) {
-		$connected = false;
-		$errorMsg = $connectionError->getMessage();
-		if (method_exists($connectionError, 'getAttributes')) {
-			$attributes = $connectionError->getAttributes();
-			if (isset($errorMsg['message'])) {
-				$errorMsg .= '<br />' . $attributes['message'];
-			}
-		}
-	}
-endif;
-?>
-
-
+<div>
 <fieldset id='derniersArticles'>
   <legend  class='legendCenter'>
     Derniers articles ajoutés
@@ -59,7 +42,7 @@ endif;
 				echo $this->Text->truncate('<h1>' . $article['Article']['title'] . '</h1>', 
 						25,	
 						array('ellipsis' => '...', 'html' => true));
-				$text = "<p>" . $this->Text->truncate($article['Article']['content'], array('html' => true)) . 
+				$text = "<p>" . $this->Text->truncate($article['Article']['content'],100, array('html' => true)) . 
 						"</p><p class='suite'>" . $this->Html->link('Lire la suite ...', '/articles/article/' . $article['Article']['id'], 
 								array('escape' => false)) . "</p>";
 				echo $this->Html->div($class = null, $text , $options = array());
@@ -69,6 +52,9 @@ endif;
 	
 </fieldset>
 
+<!-- Bouton Super Traqueur -->
+<?php echo $this->Html->link('<button id="btn-super-traqueur">Super Traqueur</button>', '/pages/supertracker', array('escape' => false)); ?>
+</div>
 
 <!-- SLIDER -->				
 <div id="home-slider" class="lof-slidecontent">
@@ -140,17 +126,16 @@ endif;
           
 </div>
 <!-- ENDS SLIDER -->
-<!-- Boutons -->
-<div id="btns-home">
-	<!-- Bouton calcul IMC -->
-	<?php echo $this->Html->link('<div id="btn-calcul-imc">Calculer mon IMC</div>', '/imcenfants', array('escape' => false)); ?>
 
-	<!-- Bouton Super Traqueur -->
-	<?php echo $this->Html->link('<div id="btn-super-traqueur">Super Traqueur</div>', '/pages/supertracker', array('escape' => false)); ?>
-</div>
+
 
 <script>
   $(function() {
     $( "#accordeon" ).accordion();
+  });
+
+  $(function() {
+    $( "button" )
+      .button()
   });
 </script>
