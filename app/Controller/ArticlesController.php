@@ -10,7 +10,7 @@ class ArticlesController extends AppController {
 
 	public function beforeFilter() {
 			parent::beforeFilter();
-			$this->Auth->allow('article'); // Letting non-users see public articles
+			$this->Auth->allow('article', 'recherche'); // Letting non-users see public articles
 		}
 
 	//Permet d'afficher l'ensemble des articles

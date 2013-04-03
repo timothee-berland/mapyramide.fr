@@ -42,9 +42,12 @@ endif;
 				echo $this->Text->truncate('<h1>' . $article['Article']['title'] . '</h1>', 
 						25,	
 						array('ellipsis' => '...', 'html' => true));
-				$text = "<p>" . $this->Text->truncate($article['Article']['content'],100, array('html' => true)) . 
-						"</p><p class='suite'>" . $this->Html->link('Lire la suite ...', '/articles/article/' . $article['Article']['id'], 
-								array('escape' => false)) . "</p>";
+
+				$text = $this->Text->truncate($article['Article']['content'],100, array('html' => true)) . 
+					"<p class='suite'>" . 
+					$this->Html->link('Lire la suite ...', '/articles/article/' . $article['Article']['id'], 
+						array('escape' => false)) . "</p>";
+
 				echo $this->Html->div($class = null, $text , $options = array());
 			endforeach; 
 		?>
@@ -53,7 +56,7 @@ endif;
 </fieldset>
 
 <!-- Bouton Super Traqueur -->
-<?php echo $this->Html->link('<button id="btn-super-traqueur">Super Traqueur</button>', '/pages/supertracker', array('escape' => false)); ?>
+	<?php echo $this->Html->link('<div id="btn-super-traqueur">Super Traqueur</div>', '/pages/supertracker', array('escape' => false)); ?>
 </div>
 
 <!-- SLIDER -->				

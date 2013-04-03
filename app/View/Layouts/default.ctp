@@ -248,27 +248,20 @@ $cakeDescription = __d('cake_dev', 'CakePHP: the rapid development php framework
 	
 	<footer>
 		<div class="bloc-gauche">
-		<p><?php echo $this->Html->link('Plan du site', ''); ?> | <?php echo $this->Html->link('ChooseMyPlate', 'http://www.choosemyplate.gov/'); ?>  | <?php echo $this->Html->link('mangerbouger', 'http://www.mangerbouger.fr/pnns/'); ?>  </p>
+		<p><?php echo $this->Html->link('Plan du Site', ''); ?> | <?php echo $this->Html->link('ChooseMyPlate', 'http://www.choosemyplate.gov/'); ?>  | <?php echo $this->Html->link('MangerBouger', 'http://www.mangerbouger.fr/pnns/'); ?>  </p>
 		</div>
 		<div class="bloc-droit">
-			<pre><a>FAQ</a>   <?php echo $this->Html->link('Mentions légales', '/pages/mentionslegales'); ?>  <?php echo $this->Html->link('Contacts', '/pages/contacts'); ?></pre>
+			<pre><a>FAQ</a>   <?php echo $this->Html->link('Mentions Légales', '/pages/mentionslegales'); ?>  <?php echo $this->Html->link('Contacts', '/pages/contacts'); ?></pre>
 			<p> - Association Gradient  2013© - </p>
 		</div>
 	</footer>
 
 
-<!-- <fieldset id='debug'>
-  <legend align="center">
-    DEBUG AREA
-  </legend>
-	<div><?php echo $this->element('sql_dump'); ?></div>
-</fieldset> -->
+	<script type="text/javascript">
+		function pasDisponible() {
+			alert("Cette fonctionnalité n'est pas encore disponible.")
+		}
+	</script>
 
 </body>
 </html>
-
-<script type="text/javascript">
-	function pasDisponible() {
-		alert("Cette fonctionnalité n'est pas encore disponible.")
-	}
-</script>

@@ -582,10 +582,12 @@ min-height : 800px;
 }*/
 
 #content #btn-super-traqueur {
-	height: 50px;
-	width: 230px;
+	background: url("../img/SuperTrackerButton.png") no-repeat left center;
+	height: 69px;
+	width: 232px;
 	position: relative;
-	right: 60px;
+	text-indent: -99999px;
+	left: 650px;
 	top: 500px;
 
 }
