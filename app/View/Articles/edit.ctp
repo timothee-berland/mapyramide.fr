@@ -4,7 +4,6 @@ if (AuthComponent::user('role') == 'administrateur') :
 	<?php 
 		echo $this->html->script('ckeditor/ckeditor.js');
 		echo $this->Form->create('Article'); 
-		echo $this->Form->input('id', array('type'=>'hidden')); 
 	?>
 
 		<!-- Cette page est accessible dans la partie administration. Cliquez sur : gérer des articles -->

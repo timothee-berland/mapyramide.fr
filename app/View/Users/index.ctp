@@ -3,12 +3,12 @@
 	<div class="bloc-index">
 		<p id="user"><?php echo $user['User']['username']; ?> : <?php echo $user['User']['role']; ?> </p>
 
-		<div id="btns-index">
+		<div class="btns-index">
 			<!-- Bouton modifications -->
-			<a href="users/edit/<?php echo $user['User']['id']; ?>"><div class="btn-modifier"> Modifier </div></a>
+			<?php echo $this->Html->link('<div class="btn-modifier">Modifier</div>', '/users/edit/' . $user['User']['id'], array('escape' => false)); ?>
 
 			<!-- Bouton suppression -->
-			<a href="users/delete/<?php echo $user['User']['id'];?>"><div class="btn-supprimer"> Supprimer </div></a>
+			<?php echo $this->Html->link('<div class="btn-supprimer">Supprimer</div>', '/users/delete/' . $user['User']['id'], array('escape' => false)); ?>
 		</div>
 	</div>
 <?php endforeach; ?>
@@ -16,14 +16,14 @@
 <?php elseif (isset($users)) : ?>
 
 	<div class="bloc-index">
-		<p1 id="user">Compte : <?php echo $users['User']['username']; ?> &nbsp&nbsp&nbsp&nbsp (statut : <?php echo $users['User']['role']; ?>) </div>
+		<p id="user">Compte : <?php echo $users['User']['username']; ?> &nbsp&nbsp&nbsp&nbsp (statut : <?php echo $users['User']['role']; ?>)</p>
 
-		<div id="btns-index2">
+		<div class="btns-index">
 			<!-- Bouton modifications -->
-			<a href="users/edit/<?php echo $users['User']['id']; ?>"><div class="btn-modifier"> Modifier </div></a>
+			<?php echo $this->Html->link('<div class="btn-modifier">Modifier</div>', '/users/edit/' . $users['User']['id'], array('escape' => false)); ?>
 
 			<!-- Bouton suppression -->
-			<a href="users/delete/<?php echo $users['User']['id'];?>"><div class="btn-supprimer"> Supprimer </div></a>
+			<?php echo $this->Html->link('<div class="btn-supprimer">Supprimer</div>', '/users/delete/' . $users['User']['id'], array('escape' => false)); ?>
 		</div>
 	</div>
 <?php endif; ?>

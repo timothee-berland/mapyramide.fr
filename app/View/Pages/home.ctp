@@ -70,8 +70,12 @@ endif;
 	    <li>
 	          <?php echo $this->Html->image('slider/slide-1.png', array('title' => '', 'alt' => 'alt')); ?>
 	          <div class="slider-description">
-	            <h4>Lorem ipsum dolor</h4>
-	            <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est...
+	            <h4>Titre</h4>
+	            <p>En plus de vous sentir mieux dans votre corps et d’avoir une silhouette plus svelte, le maintien d’un
+poids corporel de santé est indispensable pour votre propre état de santé et de votre bien-être.
+Si, vous êtes en surpoids, ou obèse, vous présentez un risque plus élevé de développer plusieurs
+maladies parmi lesquelles : l’hypertension, le diabète de type 2, des maladies cardio-vasculaires et
+certains types de cancers.
 	            <?php echo $this->Html->link('En savoir plus', '#', array('class' => 'link')); ?>
 	            </p>
 	         </div>
@@ -80,8 +84,12 @@ endif;
 	    <li>
 	          <?php echo $this->Html->image('slider/slide-2.png', array('title' => '', 'alt' => 'alt')); ?>
 	          <div class="slider-description">
-	            <h4>Lorem ipsum dolor</h4>
-	            <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est...
+	            <h4>Titre</h4>
+	            <p>En plus de vous sentir mieux dans votre corps et d’avoir une silhouette plus svelte, le maintien d’un
+poids corporel de santé est indispensable pour votre propre état de santé et de votre bien-être.
+Si, vous êtes en surpoids, ou obèse, vous présentez un risque plus élevé de développer plusieurs
+maladies parmi lesquelles : l’hypertension, le diabète de type 2, des maladies cardio-vasculaires et
+certains types de cancers.
 	            <?php echo $this->Html->link('En savoir plus', '#', array('class' => 'link')); ?>
 	            </p>
 	         </div>
@@ -90,8 +98,12 @@ endif;
 	    <li>
 	          <?php echo $this->Html->image('slider/slide-3.png', array('title' => '', 'alt' => 'alt')); ?>
 	          <div class="slider-description">
-	            <h4>Lorem ipsum dolor</h4>
-	            <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est...
+	            <h4>Titre</h4>
+	            <p>En plus de vous sentir mieux dans votre corps et d’avoir une silhouette plus svelte, le maintien d’un
+poids corporel de santé est indispensable pour votre propre état de santé et de votre bien-être.
+Si, vous êtes en surpoids, ou obèse, vous présentez un risque plus élevé de développer plusieurs
+maladies parmi lesquelles : l’hypertension, le diabète de type 2, des maladies cardio-vasculaires et
+certains types de cancers.
 	            <?php echo $this->Html->link('En savoir plus', '#', array('class' => 'link')); ?>
 	            </p>
 	         </div>
@@ -100,8 +112,12 @@ endif;
 	    <li>
 	          <?php echo $this->Html->image('slider/slide-4.png', array('title' => '', 'alt' => 'alt')); ?>
 	          <div class="slider-description">
-	            <h4>Lorem ipsum dolor</h4>
-	            <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est...
+	            <h4>Titre</h4>
+	            <p>En plus de vous sentir mieux dans votre corps et d’avoir une silhouette plus svelte, le maintien d’un
+poids corporel de santé est indispensable pour votre propre état de santé et de votre bien-être.
+Si, vous êtes en surpoids, ou obèse, vous présentez un risque plus élevé de développer plusieurs
+maladies parmi lesquelles : l’hypertension, le diabète de type 2, des maladies cardio-vasculaires et
+certains types de cancers.
 	            <?php echo $this->Html->link('En savoir plus', '#', array('class' => 'link')); ?>
 	            </p>
 	         </div>

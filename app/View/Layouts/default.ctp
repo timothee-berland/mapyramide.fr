@@ -202,7 +202,8 @@ $cakeDescription = __d('cake_dev', 'CakePHP: the rapid development php framework
 					</li>
 					<li><?php echo $this->Html->link('Ressources', '/imcenfants'); ?>
 						<ul class="dropdown">
-							<li class="dropdown-first"><?php echo $this->Html->link('Calculateur IMC', '/imcenfants'); ?></li>
+							<li class="dropdown-first"><?php echo $this->Html->link('Articles', '/articles/recherche?s='); ?></li>
+							<li class="dropdown-middle"><?php echo $this->Html->link('Calculateur IMC', '/imcenfants'); ?></li>
 							<li class="dropdown-last"><?php echo $this->Html->link('SuperTracker', '/pages/supertracker'); ?></li>
 						</ul>
 					</li>
@@ -228,7 +229,7 @@ $cakeDescription = __d('cake_dev', 'CakePHP: the rapid development php framework
 
 			
 			<form method="get" class="searchform" id="searchForm" action="/mapyramide.fr/articles/recherche">
-				<button type="submit" class="icon-search"><span class="visuallyhidden">Chercher</span></button>
+				<input type="submit" class="icon-search"/>
 				<label>
 					<input type="text" name="s" value="" placeholder="Rechercher sur mapyramide.fr">
 				</label>
@@ -248,7 +249,7 @@ $cakeDescription = __d('cake_dev', 'CakePHP: the rapid development php framework
 	
 	<footer>
 		<div class="bloc-gauche">
-		<p><?php echo $this->Html->link('Plan du Site', ''); ?> | <?php echo $this->Html->link('ChooseMyPlate', 'http://www.choosemyplate.gov/'); ?>  | <?php echo $this->Html->link('MangerBouger', 'http://www.mangerbouger.fr/pnns/'); ?>  </p>
+		<p><?php echo $this->Html->link('Plan du Site', '/pages/sitemap'); ?> | <?php echo $this->Html->link('ChooseMyPlate', 'http://www.choosemyplate.gov/'); ?>  | <?php echo $this->Html->link('MangerBouger', 'http://www.mangerbouger.fr/pnns/'); ?>  </p>
 		</div>
 		<div class="bloc-droit">
 			<pre><a>FAQ</a>   <?php echo $this->Html->link('Mentions Légales', '/pages/mentionslegales'); ?>  <?php echo $this->Html->link('Contacts', '/pages/contacts'); ?></pre>

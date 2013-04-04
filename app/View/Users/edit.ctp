@@ -50,6 +50,9 @@
 	
 			<span>* Informations obligatoires </span>
 		</div>
+		<div id="bloc12">
+	    <input type="submit" value="Valider" onClick="return validerForm()"/>
+	</div>
 	
 	<?php else : ?>
 		<div class="span2"> Type de profil </div> 
@@ -70,12 +73,13 @@
 						</select>
 					</div>
 				<?php endif; ?>
+				<div id="bloc13">
+	    <input type="submit" value="Valider" onClick="return validerForm()"/>
+	</div>
 	<?php endif; ?>
 
 	<!-- Ce bouton vous permet de valider les modifications effectuées -->
-	<div id="bloc12">
-	    <input type="submit" value="Valider" onClick="return validerForm()"/>
-	</div>
+	
 </form>
 
 <script>

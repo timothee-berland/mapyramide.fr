@@ -7,6 +7,11 @@ App::uses('AppController', 'Controller');
  */
 class StatsController extends AppController {
 
+	public function beforeFilter() {
+			parent::beforeFilter();
+			$this->Auth->allow('visite'); // Letting users register themselves
+		}
+
 	public function visite() {
 		//on recupere l adresse ip du visiteur
 		if($_SERVER) 	{
@@ -43,7 +48,7 @@ class StatsController extends AppController {
 		{
 			//on met a jour la nouvelle date dans la table
 			$date2 = $date->format('Y-m-d');
-			$this->Stat->query("update stat set date='$date2';");
+			$this->Stat->query("update stat set date='$date2' where id='compteur';");
 			//On soustrait 3 mois pour la limite des statistiques
 			$date2 = $date->sub(new DateInterval('P31D'));
 			$date2 = $date2->format('Y-m-d');

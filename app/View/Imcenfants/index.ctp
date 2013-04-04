@@ -1,15 +1,17 @@
 <?php echo $this->Form->create('Imcenfant',array('action' => 'calcul')); ?>
 	<!-- Cette page est accessible à partir du menu situé en haut de la page : Clquez sur "Ressources" -> "Calculateur IMC" -->
 	<div id="IMC">
-		<span2 class='span2'> Calculateur IMC </div>
+		<div class='span2'> Calculateur IMC </div>
 	</div>
 	
 	<div class="bloc1">	
 		<div class="texte">
 		    <h1> Définition </h1>
-			<div class="p1">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum turpis elit, viverra vitae tempus ac, 
-				ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum turpis elit, viverra vitae tempus ac, interdum eu enim
-				ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum turpis elit, viverra vitae tempus ac, interdum eu enim. 
+			<div class="p1">En plus de vous sentir mieux dans votre corps et d’avoir une silhouette plus svelte, le maintien d’un
+poids corporel de santé est indispensable pour votre propre état de santé et de votre bien-être.
+Si, vous êtes en surpoids, ou obèse, vous présentez un risque plus élevé de développer plusieurs
+maladies parmi lesquelles : l’hypertension, le diabète de type 2, des maladies cardio-vasculaires et
+certains types de cancers. 
 			</div> 
 		</div>
 		<br/><br/><br/><br/>

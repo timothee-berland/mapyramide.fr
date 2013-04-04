@@ -1,4 +1,4 @@
-<div class="bloc1">
+<div id="bloc-editeur">
 	<div id="accordeon">
 		<?php
 		if (!empty($articles)) {

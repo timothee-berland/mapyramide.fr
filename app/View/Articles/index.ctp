@@ -1,12 +1,9 @@
 <?php if (AuthComponent::user('role') == 'administrateur') : ?>
 	<!-- Cette page est accessible dans la partie administration. Cliquez sur : gérer des articles -->
 	<br />
-	<div class="bloc-index1">
-			<div id="btns-index">
-				<!-- Bouton ajout : pour ajouter un nouvel artcile cliquez sur la croix verte-->
-				<?php echo $this->Html->link('<div id="btn-ajouter">  </div>', '/articles/add/', array('escape' => false)); ?>
-			</div>
-		</div>
+	
+	<!-- Bouton ajout : pour ajouter un nouvel artcile cliquez sur la croix verte-->
+	<?php echo $this->Html->link('<div id="btn-ajouter">  </div>', '/articles/add/', array('escape' => false)); ?>
 
 	<?php foreach ($articles as $article) : ?>
 		<div class="bloc-index">
@@ -17,7 +14,7 @@
 			  	?>
 			</p>
 
-			<div id="btns-index">
+			<div class="btns-index">
 				<!-- Bouton modifications : pour effectuer des modifications concernant un article, l'administrateur doit cliquez sur le bouton symbolisé par un engrenage correspondant
 					 à l'article qu'il souhaite modifier -->
 				<?php echo $this->Html->link('<div class="btn-modifier">Modifier</div>', '/articles/edit/' . $article['Article']['id'], array('escape' => false)); ?>

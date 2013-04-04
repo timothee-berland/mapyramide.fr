@@ -5,15 +5,15 @@
 	<table>
 		<tr>
 			<td>
-				<h1>Implémentation des pages du site </h1><div class="p2">BERLAND Timothée<br/>SOULLIE Lauriane<br/>VELAY Elsa</div><br/><br/>
+				<h1>Implémentation des pages du site </h1><div class="p2">Timothée BERLAND<br/>Lauriane SOULLIE<br/>Elsa VELAY</div><br/><br/>
 			</td>
  
-			<td style="padding-left: 80px ">
-				<h1>Directeur de production </h1><div class="p2">ALAUX André </div> <br/><br/><br/>
+			<td style="padding-left: 65px ">
+				<h1>Directeur de production </h1><div class="p2">Docteur André ALAUX</div> <br/><br/><br/>
 			</td>
 	
 			<td style="padding-left: 80px ">
-				<br/><h1>Hébergement du site </h1><div class="p2">OVH_Siège Social<br/>2 rue Kellermann</br>59100 Roubaix<br/>France</div><br/><br/><br/>
+				<br/><h1>Hébergement du site </h1><div class="p2">OVH Siège Social<br/>2 rue Kellermann</br>59100 Roubaix<br/>France</div><br/><br/><br/>
 			</td>
 		</tr>
 	</table>

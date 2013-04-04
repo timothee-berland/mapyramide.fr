@@ -3,7 +3,11 @@
 	<!-- Cette page est accessible depuis le menu situé en haut de page. Cliquez sur "Ressources" -> "SuperTracker" -> "Encyclopédie" -->
 	    <div id="titre-accueil">
 			<span> Encyclopédie </span> 
-			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum turpis elit, viverra vitae tempus ac, interdum eu enim </p> 
+			<p>En plus de vous sentir mieux dans votre corps et d’avoir une silhouette plus svelte, le maintien d’un
+poids corporel de santé est indispensable pour votre propre état de santé et de votre bien-être.
+Si, vous êtes en surpoids, ou obèse, vous présentez un risque plus élevé de développer plusieurs
+maladies parmi lesquelles : l’hypertension, le diabète de type 2, des maladies cardio-vasculaires et
+certains types de cancers. </p> 
 			
 			<!-- Liste déroulante permettant à l'utilisateur de choisir dans quelle catégorie d'aliments, se trouve l'aliment qu'il recherche.
 			     Cette dernière a pour but de faciliter la recherche. -->

@@ -6,7 +6,7 @@
 					<h1>Résultat</h1>
 					<br/> <br />
 					<div class="p2">Mon IMC est de <?php echo round($imc,2);?> et&nbsp;</div>
-					<div class="p2">mes besoins énergétiques estimés sont</div><p2 id="besoinsEnergetiques">de <?php echo $BEE ?> calories par jour.</div>
+					<div class="p2">mes besoins énergétiques estimés sont</div><div class="p2" id="besoinsEnergetiques">de <?php echo $BEE ?> calories par jour.</div>
 					<br/><br/>
 					<!--Si la personne a plus de 18 ans, on calcule son IMC avec l'équation suivante poids/ taille² -->
 					<?php if ($_POST['zt_age'] > 18): ?>
@@ -16,7 +16,7 @@
 						<?php elseif ($imc>=$imcMin && $imc<=$imcMax) : ?>
 						<!--IMC>=18.5 && IMC <=25 -> Corpulence normale -->
 						<?php $categorie="Corpulence normale";
-						echo("<div class="p3">"."Je suis dans la catégorie : ".$categorie."</div>"); ?>
+						echo('<div class="p3">"."Je suis dans la catégorie : '.$categorie."</div>"); ?>
 						<?php elseif ($imc>$imcMax && $imc < 40): ?>
 						<!-- IMC >25 -> Surpoids 
 						   On demande alors à l'utilisateur s'il souhaite perdre du poids : deux possibilités s'offrent à lui "Oui" et "Non". 
@@ -40,9 +40,9 @@
 
 					<?php else : 
 						if($imc >= $imcMin && $imc <= $imcMax) {
-							echo("<div class="p3">Corpulence normale</div>");
+							echo('<div class="p3">Corpulence normale</div>');
 						} else {
-							echo("<div class="p3">Vos paramètres corporels font que ce site ne peut pas vous prendre en charge et vous demande de consulter un médecin ou un diététicien</div>");
+							echo('<div class="p3">Vos paramètres corporels font que ce site ne peut pas vous prendre en charge et vous demande de consulter un médecin ou un diététicien</div>');
 						}
 					endif;?>
 					<br/><br/>

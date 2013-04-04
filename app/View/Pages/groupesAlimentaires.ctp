@@ -6,10 +6,12 @@
 		<div class="span3"> Groupes alimentaires </div> 
 	</div>
 	<div class="texte">
-		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum turpis elit, viverra vitae tempus ac, interdum eu enim
-		ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum turpis elit, viverra vitae tempus ac, interdum eu enim
-		ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum turpis elit, viverra vitae tempus ac, interdum eu enim. 
-		</p> 			
+		<div class="p1">En plus de vous sentir mieux dans votre corps et d’avoir une silhouette plus svelte, le maintien d’un
+poids corporel de santé est indispensable pour votre propre état de santé et de votre bien-être.
+Si, vous êtes en surpoids, ou obèse, vous présentez un risque plus élevé de développer plusieurs
+maladies parmi lesquelles : l’hypertension, le diabète de type 2, des maladies cardio-vasculaires et
+certains types de cancers. 
+		</div> 			
 	</div>
 </div>
 
@@ -52,7 +54,7 @@
 	<div class="b1">
 		<article class="bloc-menu">
 			<h3 id="produitsLaitiers"> Produits laitiers </h3>
-			<a href="produitslaitiers" ><p><?php echo $this->Html->image('ProduitsLaitiers.jpg', array('height' => '180', 'width' => '250', 'alt' => 'ProduitsLaitiers')); ?></p></a>
+			<a href="produitslaitiers" ><p><?php echo $this->Html->image('ProduitsLaitiers.png', array('height' => '180', 'width' => '250', 'alt' => 'ProduitsLaitiers')); ?></p></a>
 		</article>
     </div>
 	
@@ -61,7 +63,7 @@
 	<div class="b1">
 		<article class="bloc-menu">
 			<h3 id="matieresGrasses"> Matières grasses </h3>
-			<a href="matieresgrasses" ><p><?php echo $this->Html->image('Huiles.jpg', array('height' => '180', 'width' => '250', 'alt' => 'MatieresGrasses')); ?></p></a>
+			<a href="matieresgrasses" ><p><?php echo $this->Html->image('Huiles.png', array('height' => '180', 'width' => '250', 'alt' => 'MatieresGrasses')); ?></p></a>
 		</article>
     </div>
 </div>

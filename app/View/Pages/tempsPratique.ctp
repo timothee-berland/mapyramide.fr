@@ -8,52 +8,45 @@
 	</div>	
 	
 	<div class="texte">
-		<div class="p1">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum turpis elit, viverra vitae tempus ac, 
-		    ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum turpis elit, viverra vitae tempus ac, interdum eu enim
-			ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum turpis elit, viverra vitae tempus ac, interdum eu enim. </div> 
+		<div class="p1">En plus de vous sentir mieux dans votre corps et d’avoir une silhouette plus svelte, le maintien d’un
+			poids corporel de santé est indispensable pour votre propre état de santé et de votre bien-être.
+			Si, vous êtes en surpoids, ou obèse, vous présentez un risque plus élevé de développer plusieurs
+			maladies parmi lesquelles : l’hypertension, le diabète de type 2, des maladies cardio-vasculaires et
+			certains types de cancers. 
+		</div> 
 	</div>
 	
 	<div id="texte5">
-		<table>
+		<table id="tableTempsPratique">
 			<tr>
 				<td >
 					<h1> Adultes </h1>
-					<div class="p1">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum turpis elit, viverra vitae,
-					ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum turpis elit, viverra vitae tempus ac, interdum eu enim
-					ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum turpis elit, viverra vitae tempus ac, interdum eu enim. 
-					orem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum turpis elit, viverra vitae tempus ac, 
-					ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum turpis elit, viverra vitae tempus ac, interdum eu enim
-					ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum turpis elit, viverra vitae tempus ac, interdum eu enim.
+					<div class="p1">En plus de vous sentir mieux dans votre corps et d’avoir une silhouette plus svelte, le maintien d’un
+						poids corporel de santé est indispensable pour votre propre état de santé et de votre bien-être.
+						Si, vous êtes en surpoids, ou obèse, vous présentez un risque plus élevé de développer plusieurs
+						maladies parmi lesquelles : l’hypertension, le diabète de type 2, des maladies cardio-vasculaires et
+						certains types de cancers.
 					</div>
 				</td>
-				<td></td>
 				<td >
 					<h1> Adolescents </h1>
-					<div class="p1">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum turpis elit, viverra vitae,
-					ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum turpis elit, viverra vitae tempus ac, interdum eu enim
-					ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum turpis elit, viverra vitae tempus ac, interdum eu enim. 
-					orem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum turpis elit, viverra vitae tempus ac, 
-					ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum turpis elit, viverra vitae tempus ac, interdum eu enim
-					ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum turpis elit, viverra vitae tempus ac, interdum eu enim.
+					<div class="p1">En plus de vous sentir mieux dans votre corps et d’avoir une silhouette plus svelte, le maintien d’un
+						poids corporel de santé est indispensable pour votre propre état de santé et de votre bien-être.
+						Si, vous êtes en surpoids, ou obèse, vous présentez un risque plus élevé de développer plusieurs
+						maladies parmi lesquelles : l’hypertension, le diabète de type 2, des maladies cardio-vasculaires et
+						certains types de cancers.
 					</div>
-				</td>
-				<td>
 				</td>
 					<td >
 					<h1> Jeunes enfants </h1>
-					<div class="p1">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum turpis elit, viverra vitae,
-					ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum turpis elit, viverra vitae tempus ac, interdum eu enim
-					ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum turpis elit, viverra vitae tempus ac, interdum eu enim. 
-					orem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum turpis elit, viverra vitae tempus ac, 
-					ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum turpis elit, viverra vitae tempus ac, interdum eu enim
-					ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum turpis elit, viverra vitae tempus ac, interdum eu enim.
+					<div class="p1">En plus de vous sentir mieux dans votre corps et d’avoir une silhouette plus svelte, le maintien d’un
+						poids corporel de santé est indispensable pour votre propre état de santé et de votre bien-être.
+						Si, vous êtes en surpoids, ou obèse, vous présentez un risque plus élevé de développer plusieurs
+						maladies parmi lesquelles : l’hypertension, le diabète de type 2, des maladies cardio-vasculaires et
+						certains types de cancers.
 					</div>
-				</td>
-				<td>
 				</td>
 			</tr>
 		</table>
-		<br/><br/><br/><br/>
-		
 	</div>
 </div>

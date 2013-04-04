@@ -3,7 +3,7 @@
 
 		public function beforeFilter() {
 			parent::beforeFilter();
-			$this->Auth->allow('add'); // Letting users register themselves
+			$this->Auth->allow('add', 'login'); // Letting users register themselves
 		}
 
 		//Permet à l'utilisateur de se connecter en cliquant sur le bouton "me connecter" situé en haut à droite de chaque page
@@ -62,7 +62,7 @@
 					$this->User->create();
 					if ($this->User->save($this->request->data)) {
 						$this->Session->setFlash(__("Le compte a été créé. Vous pouvez maintenant vous connecter."));
-						$this->redirect(array('action' => 'index'));
+						$this->redirect(array('action' => 'login'));
 					} else {
 						$this->Session->setFlash(__("Erreur lors de la creation du compte. Merci de réessayer."));
 					}
@@ -146,8 +146,8 @@
 					}
 				} else {
 					$this->Session->setFlash(__("L'utilisateur n'a pas pu être supprimé. Merci de réessayer."));
-					$this->redirect(array('action' => 'index'));
 				}
+				$this->redirect(array('action' => 'index'));
 			}
 		}
 	}

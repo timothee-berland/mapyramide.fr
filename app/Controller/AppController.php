@@ -45,4 +45,8 @@
 		public function beforeRender() {
 			$this->requestAction('/stats/visite');
 		}
+		public function beforeSave($options = array()) {
+			$this->data = Sanitize::clean($this->data, array('encode' => false));
+			return true;
+		}
 	}

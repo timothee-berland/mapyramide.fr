@@ -7,30 +7,40 @@
 		
 	</div>
 	 <div class="texte">
-		<h1> Pourquoi est-ce important ? </h1><br/><br/><br/><br/><br/><br/>
-		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum turpis elit, viverra vitae tempus ac, 
-		ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum turpis elit, viverra vitae tempus ac, interdum eu enim
-		ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum turpis elit, viverra vitae tempus ac, interdum eu enim. 
+		<h1> Pourquoi est-ce important ? </h1>
+		<div class="p1">En plus de vous sentir mieux dans votre corps et d’avoir une silhouette plus svelte, le maintien d’un
+poids corporel de santé est indispensable pour votre propre état de santé et de votre bien-être.
+Si, vous êtes en surpoids, ou obèse, vous présentez un risque plus élevé de développer plusieurs
+maladies parmi lesquelles : l’hypertension, le diabète de type 2, des maladies cardio-vasculaires et
+certains types de cancers. 
 		<br/><br/>
-		</p> 
+		</div> 
 
-		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum turpis elit, viverra vitae tempus ac, 
-		ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum turpis elit, viverra vitae tempus ac, interdum eu enim 
+		<div class="p1">En plus de vous sentir mieux dans votre corps et d’avoir une silhouette plus svelte, le maintien d’un
+poids corporel de santé est indispensable pour votre propre état de santé et de votre bien-être.
+Si, vous êtes en surpoids, ou obèse, vous présentez un risque plus élevé de développer plusieurs
+maladies parmi lesquelles : l’hypertension, le diabète de type 2, des maladies cardio-vasculaires et
+certains types de cancers. 
 		<br/><br/>
-		</p>
+		</div>
 		
-		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum turpis elit, viverra vitae tempus ac, 
-		ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum turpis elit, viverra vitae tempus ac, interdum eu enim 
+		<div class="p1">En plus de vous sentir mieux dans votre corps et d’avoir une silhouette plus svelte, le maintien d’un
+poids corporel de santé est indispensable pour votre propre état de santé et de votre bien-être.
+Si, vous êtes en surpoids, ou obèse, vous présentez un risque plus élevé de développer plusieurs
+maladies parmi lesquelles : l’hypertension, le diabète de type 2, des maladies cardio-vasculaires et
+certains types de cancers. 
 		<br/><br/>
-		</p>
+		</div>
 			
-		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum turpis elit, viverra vitae tempus ac, 
-		ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum turpis elit, viverra vitae tempus ac, interdum eu enim
-		ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum turpis elit, viverra vitae tempus ac, interdum eu enim.
+		<div class="p1">En plus de vous sentir mieux dans votre corps et d’avoir une silhouette plus svelte, le maintien d’un
+poids corporel de santé est indispensable pour votre propre état de santé et de votre bien-être.
+Si, vous êtes en surpoids, ou obèse, vous présentez un risque plus élevé de développer plusieurs
+maladies parmi lesquelles : l’hypertension, le diabète de type 2, des maladies cardio-vasculaires et
+certains types de cancers.
 		<br/><br/><br/><br/><br/>
-		</p> 
+		</div> 
 		
 		<!-- Image située en bas de page -->
-		<?php echo $this->Html->image('calories.jpg', array('height' => '130px', 'width' => '660px', 'alt' => 'Calories')); ?>
+		<?php echo $this->Html->image('calories.jpg', array('height' => '130', 'width' => '660', 'alt' => 'Calories')); ?>
 	</div>
 </div>
