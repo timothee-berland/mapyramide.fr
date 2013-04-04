@@ -140,7 +140,7 @@ certains types de cancers. </p>
 					<div class="calories"> Nombre total de calories 
 						<?php
 							$energieAliment1 = $aliment1['Donneesaliment'][1]['valmoy'] * $quantiteAliment1 * $aliment1['Aliment'][$quantitePortion1] / 100;
-							echo "<p>". $aliment1['Donneesaliment'][1]['valmoy'] * $quantiteAliment1 . "</p>";
+							echo "<p>". $energieAliment1 . "</p>";
 						?>
 					</div>
 					

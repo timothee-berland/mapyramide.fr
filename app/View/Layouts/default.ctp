@@ -105,7 +105,7 @@ $cakeDescription = __d('cake_dev', 'CakePHP: the rapid development php framework
 <body onLoad='postData();'>
 
 	<header>
-		<?php if (AuthComponent::user('id') == 1): ?>
+		<?php if (AuthComponent::user('role') == 'administrateur'): ?>
 		<div class="menu3">
 		    <?php echo $this->Html->link('Gérer les photos', '#', array('onClick' => "pasDisponible();")); ?>
 		    <?php echo $this->Html->link('Gérer les articles', '/articles'); ?>
